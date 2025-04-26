@@ -1,0 +1,31 @@
+.cover-background {
+  background-image: url("https://kargonwp.websitelayout.net/wp-content/uploads/2024/12/slide-01.jpg");
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cover-background::after {
+  content: "";
+  background: linear-gradient(-90deg, transparent, #0f313a 75%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.min-calc-height-nav {
+  min-height: calc(100vh - 90px);
+}
+
+.cover-background div:nth-child(1) {
+    z-index: 11;
+}
+
+.cover-background h1 {
+    font-weight: 800;
+}

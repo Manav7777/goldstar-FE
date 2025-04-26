@@ -1,0 +1,131 @@
+.card-style04 {
+    position: relative;
+    overflow: hidden;
+    max-height: 450px;
+}
+
+.card-style04 img {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    height: auto;
+    max-width: 100%;
+}
+
+.opacity-light {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+}
+
+.card-style04 .card-overlay {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    background-color: rgba(37, 46, 56, 0.8);
+}
+
+.card-style04 .card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-style04 .card-custom-1, .card-style04 .card-custom-2 {
+    padding: 5rem 4.5rem;
+    position: relative;
+}
+
+.card-style04 .card-data {
+    opacity: 1;
+    position: absolute;
+    bottom: -25px;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+}
+
+.card-style04 .card-custom-1, .card-style04 .card-custom-2 {
+    padding: 5rem 4.5rem;
+}
+
+.card-style04 .card-text {
+    overflow: visible;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    min-height: 75px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: #fff;
+    opacity: 0.8;
+    margin-bottom: 0;
+    width: 85%;
+    position: relative;
+    top: -50px;
+}
+
+.card-style04 .btn-link-1 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 7px 0 2px;
+    margin-top: 20px;
+    position: relative;
+    text-decoration: none;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    border-radius: 0;
+    color: #fff;
+}
+
+.bg-extra-dark-gray {
+    background-color: #1c1c1c;
+}
+
+.card-style04:hover .card-overlay {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+}
+
+.card-style04:hover img {
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    transform: scale(1.4);
+    -o-transform: scale(1.4);
+    -webkit-transition-duration: 4s;
+    transition-duration: 4s;
+}
+
+.display-19 {
+    font-size: 2.0rem;
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 1499px) {
+    .card-style04 .card-custom-1 {
+        padding: 2rem;
+    }
+
+    .card-style04 .card-custom-2 {
+        padding: 3rem 2rem;
+    }
+}
