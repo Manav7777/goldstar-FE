@@ -6,6 +6,10 @@
   background-size: cover;
 }
 
+.cover-background {
+  z-index: 0;
+}
+
 .cover-background::after {
   content: "";
   background: linear-gradient(-90deg, transparent, #0f313a 75%);

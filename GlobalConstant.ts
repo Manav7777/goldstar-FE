@@ -44,12 +44,11 @@ export const footersLinks = [
 ];
 
 export const openingTimes = [
-  { id: 11, menu: "Monday - 6:00AM to 9:00PM" },
-  { id: 12, menu: "Tuesday - 6:00AM to 9:00PM" },
-  { id: 13, menu: "Our Service" },
-  { id: 14, menu: "Wednesday - 6:00AM to 9:00PM" },
-  { id: 15, menu: "Thursday - 6:00AM to 9:00PM" },
-  { id: 16, menu: "Friday - 6:00AM to 9:00PM" },
-  { id: 17, menu: "Saturday - 7:00AM to 8:00PM" },
-  { id: 18, menu: "Sunday - 7:00AM to 8:00PM" },
+  { id: 11, day: "Monday", time: "6:00AM to 9:00PM" },
+  { id: 12, day: "Tuesday", time: "6:00AM to 9:00PM" },
+  { id: 14, day: "Wednesday", time: "6:00AM to 9:00PM" },
+  { id: 15, day: "Thursday", time: "6:00AM to 9:00PM" },
+  { id: 16, day: "Friday", time: "6:00AM to 9:00PM" },
+  { id: 17, day: "Saturday", time: "7:00AM to 8:00PM" },
+  { id: 18, day: "Sunday", time: "7:00AM to 8:00PM" },
 ];
