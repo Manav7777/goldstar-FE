@@ -1,0 +1,75 @@
+import TopSection from "@/components/Top-Section/TopSection";
+import "./about.css";
+import ProcessSteps from "@/components/Process-Steps/ProcessSteps";
+import ClientRatings from "@/components/ClientRatings/ClientRatings";
+
+const About = () => {
+  return (
+    <>
+      <TopSection title={"About Us"}/>
+      <div className="container sm-container-1100">
+        <div className="row mt-5 mb-5 justify-content-center">
+          <div className="col-md-6 col-sm-12 about-us-image">
+            <img
+              decoding="async"
+              src="https://demo.awaikenthemes.com/html-preview/movein/images/about-image.jpg"
+              alt="gold-star-movers"
+              className="border-radius-5"
+              title="gold-star-movers"
+            />
+          </div>
+          <div className="col-md-6 col-sm-12">
+            <div className="about-section">
+              <h1>Setting new standards in the moving industry</h1>
+              <span>Our story began 2017 in Mississauga, Ontario.</span>
+              <p>
+                We started performing local residential relocation and piano
+                moving in the beginning.
+              </p>
+              <p>
+                Soon, we've expanded our range of services covering the business
+                industry, with the same quality as for residential.We started
+                from Mississauga and right now we are operating all around
+                Ontario and all across Canada.
+              </p>
+              <p>
+                We've got everything you need to make your moving experience
+                seamless and stress-free.
+              </p>
+              <p>
+                For a very short period of time, our company became one of the
+                best choices for your move in Toronto.
+              </p>
+              <p>
+                At Gold Star Movers, we promise to take the greatest care of
+                you, your family and your belongings from the time you ask us to
+                move until after we settle you in your new home. We promise to
+                take every precaution in packing, loading and transporting your
+                belongings to protect them while they're in our care. We promise
+                to settle any damage claims quickly and fairly.
+              </p>
+              <p>
+                Give us the opportunity and you'll look back on it as one smart
+                move!
+              </p>
+              <a
+                href="javascript:void(0);"
+                className="button-primary button text-dark"
+              >
+                <span>Request Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <ProcessSteps/>
+        </div>
+        <div className="row">
+          <ClientRatings />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default About;

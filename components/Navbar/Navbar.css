@@ -49,7 +49,7 @@ header {
 .navbar-nav li.has-sub a:hover,
 .navbar-nav li.has-sub a:active,
 .navbar-nav li.has-sub a:focus {
-    color: #fff;
+    color: var(--gs-primary-color);
     background: none
 }
 

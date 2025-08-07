@@ -1,15 +1,17 @@
-import Footer from "@/components/Footer/Footer";
+import ClientRatings from "@/components/ClientRatings/ClientRatings";
 import HomePage from "@/components/Home/HomePage";
-import NavBar from "@/components/Navbar/NavBar";
+import LastMomentDelivery from "@/components/last-moment-delivery/LastMomentDelivery";
 import ServicesCard from "@/components/services/ServicesCard";
+import WhyChooseUs from "@/components/Why-choose-us/WhyChooseUs";
 
 export default function MainScreen() {
   return (
     <div className="">
-      <NavBar />
       <HomePage />
       <ServicesCard/>
-      <Footer/>
+      <ClientRatings/>
+      <WhyChooseUs/>
+      <LastMomentDelivery/>
     </div>
   );
 }

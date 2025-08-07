@@ -1,0 +1,16 @@
+.about-section p,
+span {
+  font-size: 0.9rem;
+}
+
+.about-section h1 {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+}
+
+.about-us-image img {
+  width: 100%;
+  aspect-ratio: 1 / 0.9244;
+  object-fit: cover;
+  border-radius: 40px;
+}
