@@ -2,7 +2,6 @@ import { Fragment } from "react";
 import "./Navbar.css";
 import Link from "next/link";
 import { goldStarMenus } from "@/GlobalConstant";
-import Image from "next/image";
 
 const NavBar = () => {
   return (

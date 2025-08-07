@@ -1,0 +1,43 @@
+.form-control {
+  line-height: 2;
+}
+
+.overlay-bg {
+  background-color: #0f313a;
+  opacity: 0.9;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  inset: 0;
+  position: absolute;
+}
+
+.contact-info-wrapper {
+  z-index: 1;
+  position: relative;
+}
+
+.social-icon {
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  line-height: 35px;
+  font-size: 14px;
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: var(--gs-white);
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--gs-primary-color);
+    border-color: var(--gs-primary-color);
+}
+
+.wrapper-icon svg {
+    font-size: 26px;
+    margin-right: 8px;
+}
+
+.contact-info-wrapper div {
+    margin-top: 15px;
+}

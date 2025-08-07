@@ -1,5 +1,3 @@
-import { title } from "process";
-
 export const goldStarMenus = [
   { id: 1, name: "Home", url: "/" },
   { id: 2, name: "About", url: "/about" },
@@ -8,10 +6,10 @@ export const goldStarMenus = [
     name: "Services",
     url: "/services",
     subMenu: [
-      { id: 4, name: "Residential", url: "/residential" },
-      { id: 5, name: "Commercial", url: "/commercial" },
-      { id: 6, name: "Cross-Country", url: "/cross-country" },
-      { id: 7, name: "Junk Removal", url: "/junk-removal" },
+      { id: 4, name: "Residential", url: "/residential-moving-service" },
+      { id: 5, name: "Commercial", url: "/commercial-moving-service" },
+      { id: 6, name: "Cross-Country", url: "/cross-country-moving-service" },
+      { id: 7, name: "Junk Removal", url: "/junk-removal-moving-service" },
     ],
   },
   { id: 8, name: "Gallery", url: "/gallery" },
