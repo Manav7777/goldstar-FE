@@ -1,7 +1,7 @@
 import ClientRatings from "@/components/ClientRatings/ClientRatings";
 import ServiceSection from "@/components/services/ServiceSection/ServiceSection";
 import TopSection from "@/components/Top-Section/TopSection";
-import WhyChooseGoldStar from "@/components/Why-choose-us/WhyChooseGoldstar";
+import WhyChooseGoldStar from "@/components/Why-choose-us/WhyChooseGoldStar";
 
 const GoldStarServices = () => {
   const services = [
