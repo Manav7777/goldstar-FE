@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./ServicesCard.css";
 const ServicesCard = () => {
   return (
@@ -6,14 +7,14 @@ const ServicesCard = () => {
         <div className="col-md-12">
           <h2 className="text-center">INCLUDED SERVICES</h2>
         </div>
-        <div className="col-12 col-sm-8 col-md-6 col-xl-4 mt-4">
+        <div className="col-12 col-md-6 col-xl-4 mt-4">
           <div className="card-style04 border-radius-5 cursor-pointer">
             <img
               decoding="async"
               src="https://kargonwp.websitelayout.net/wp-content/uploads/2024/12/service-11.jpg"
-              alt="..."
+              alt="GoldStar-residential-service"
               className="border-radius-5"
-              title="..."
+              title="goldStar-residential-service"
             />
             <div className="opacity-light bg-extra-dark-gray border-radius-5" />
             <div className="card-overlay border-radius-5" />
@@ -23,12 +24,12 @@ const ServicesCard = () => {
                   01
                 </span>
                 <h5 className="font-weight-800 display-19 position-relative z-index-1 mb-0">
-                  <a
-                    href="service/warehousing/index.html"
+                  <Link
+                    href="/services/residential-moving-service"
                     className="text-white text-primary-hover"
                   >
-                    Residential Moving
-                  </a>
+                    RESIDENTIAL MOVING
+                  </Link>
                 </h5>
               </div>
               <div className="card-data align-items-end d-flex">
@@ -37,25 +38,25 @@ const ServicesCard = () => {
                     Let us assist you in completing your residential move. We
                     have have the team and expertise to assist you in relocating
                   </p>
-                  <a
-                    href="service/warehousing/index.html"
+                  <Link
+                    href="/services/residential-moving-service"
                     className="button-primary button text-dark"
                   >
                     Read More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="col-12 col-sm-8 col-md-6 col-xl-4 mt-4">
+        <div className="col-12 col-md-6 col-xl-4 mt-4">
           <div className="card-style04 border-radius-5 cursor-pointer">
             <img
               decoding="async"
               src="https://kargonwp.websitelayout.net/wp-content/uploads/2024/12/service-12.jpg"
-              alt="..."
+              alt="commercial-moving-service"
               className="border-radius-5"
-              title="..."
+              title="commercial-moving-service"
             />
             <div className="opacity-light bg-extra-dark-gray border-radius-5" />
             <div className="card-overlay border-radius-5" />
@@ -65,12 +66,12 @@ const ServicesCard = () => {
                   02
                 </span>
                 <h5 className="font-weight-800 display-19 position-relative z-index-1 mb-0">
-                  <a
-                    href="service/air-freight/index.html"
+                  <Link
+                    href="/services/residential-service"
                     className="text-white text-primary-hover"
                   >
                     COMMERCIAL MOVING
-                  </a>
+                  </Link>
                 </h5>
               </div>
               <div className="card-data align-items-end d-flex">
@@ -80,25 +81,25 @@ const ServicesCard = () => {
                     and sizes. Contact us today for a free consultation on your
                     next move.
                   </p>
-                  <a
-                    href="service/air-freight/index.html"
+                  <Link
+                    href="/services/commercial-moving-service"
                     className="button-primary button text-dark"
                   >
                     Read More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="col-12 col-sm-8 col-md-6 col-xl-4 mt-4 wow fadeInUp">
+        <div className="col-12 col-md-6 col-xl-4 mt-4">
           <div className="card-style04 border-radius-5 cursor-pointer">
             <img
               decoding="async"
               src="https://kargonwp.websitelayout.net/wp-content/uploads/2024/12/service-13.jpg"
-              alt="..."
+              alt="cross-country-moving-service"
               className="border-radius-5"
-              title="..."
+              title="cross-country-moving-service"
             />
             <div className="opacity-light bg-extra-dark-gray border-radius-5" />
             <div className="card-overlay border-radius-5" />
@@ -108,12 +109,12 @@ const ServicesCard = () => {
                   03
                 </span>
                 <h5 className="font-weight-800 display-19 position-relative z-index-1 mb-0">
-                  <a
-                    href="service/ocen-freight/index.html"
+                  <Link
+                    href="services/cross-country-moving-service"
                     className="text-white text-primary-hover"
                   >
                     CROSS-COUNTRY MOVING
-                  </a>
+                  </Link>
                 </h5>
               </div>
               <div className="card-data align-items-end d-flex">
@@ -123,17 +124,60 @@ const ServicesCard = () => {
                     experts are ready to haul all your belongings anywhere
                     across Canada.
                   </p>
-                  <a
-                    href="service/ocen-freight/index.html"
+                  <Link
+                    href="services/cross-country-moving-service"
                     className="button-primary button text-dark"
                   >
                     Read More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        {/* <div className="col-12 col-md-6 col-xl-3 mt-4">
+          <div className="card-style04 border-radius-5 cursor-pointer">
+            <img
+              decoding="async"
+              src="https://kargonwp.websitelayout.net/wp-content/uploads/2024/12/service-13.jpg"
+              alt="cross-country-moving-service"
+              className="border-radius-5"
+              title="cross-country-moving-service"
+            />
+            <div className="opacity-light bg-extra-dark-gray border-radius-5" />
+            <div className="card-overlay border-radius-5" />
+            <div className="card-content">
+              <div className="card-custom-1">
+                <span className="text-white opacity6 d-block mb-2 position-relative z-index-1">
+                  03
+                </span>
+                <h5 className="font-weight-800 display-19 position-relative z-index-1 mb-0">
+                  <Link
+                    href="services/cross-country-moving-service"
+                    className="text-white text-primary-hover"
+                  >
+                    CROSS-COUNTRY MOVING
+                  </Link>
+                </h5>
+              </div>
+              <div className="card-data align-items-end d-flex">
+                <div className="card-custom-2">
+                  <p className="card-text">
+                    Need help moving across Canada? No problem! Our team of
+                    experts are ready to haul all your belongings anywhere
+                    across Canada.
+                  </p>
+                  <Link
+                    href="services/cross-country-moving-service"
+                    className="button-primary button text-dark"
+                  >
+                    Read More
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
       </div>
     </div>
   );

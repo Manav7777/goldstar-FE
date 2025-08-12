@@ -11,6 +11,7 @@ const ServiceSection = ({
   price,
   buttonText,
   reverse = false,
+  reverseClassNameDivOne = "",
 }: any) => {
   return (
     <section className="py-5">
@@ -20,7 +21,7 @@ const ServiceSection = ({
           {reverse ? (
             <>
               {/* Image First */}
-              <div className="col-lg-5 col-md-12 mb-4 mb-md-0">
+              <div className="col-lg-5 col-md-12 mb-4 mb-lg-0">
                 <img
                   src={imageSrc}
                   alt={imageAlt || title}
@@ -44,7 +45,7 @@ const ServiceSection = ({
           ) : (
             <>
               {/* Content First */}
-              <div className="col-lg-7 col-md-12">
+              <div className={`col-lg-7 col-md-12 order-2 order-lg-1`}>
                 <ServiceContent
                   title={title}
                   subtitle={subtitle}
@@ -56,7 +57,7 @@ const ServiceSection = ({
                 />
               </div>
               {/* Image Second */}
-              <div className="col-md-5 mt-4 mt-md-0">
+              <div className={`col-md-5 mt-4 mt-md-0 ${reverseClassNameDivOne}`}>
                 <img
                   src={imageSrc}
                   alt={imageAlt || title}

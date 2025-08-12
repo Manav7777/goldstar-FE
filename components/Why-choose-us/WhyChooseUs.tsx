@@ -5,7 +5,7 @@ const WhyChooseUs = () => {
       <h2 className="text-center">WHY CHOOSE US</h2>
       <div className="container">
         <div className="row p-3 mt-3">
-          <div className="col-md-6 col-sm-12">
+          <div className="col-lg-6 col-md-12 col-sm-12">
             <h2>We Professional Moving Company</h2>
             <p>
               At <span className="text-primary">Gold Star Mover Company</span>,
@@ -41,15 +41,14 @@ const WhyChooseUs = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-6 col-sm-12">
+          <div className="col-lg-6 col-md-12 col-sm-12">
             <img
               src={
                 process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL +
                 "why-choose-goldstar-movers.webp"
               }
-              style={{height:"100%" , maxHeight: '550px'}}
               alt={"why-choose-goldstar-movers"}
-              className="border-radius-5"
+              className="border-radius-5 img-fluid"
             />
           </div>
         </div>

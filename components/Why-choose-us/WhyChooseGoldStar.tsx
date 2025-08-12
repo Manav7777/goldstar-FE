@@ -1,4 +1,5 @@
 import Link from "next/link";
+import GsButton from "../ui/GsButton";
 
 const WhyChooseGoldStar = () => {
   return (
@@ -43,12 +44,10 @@ const WhyChooseGoldStar = () => {
             ))}
           </ul>
           <div className="d-flex flex-column flex-sm-row gap-3">
-            <button className="btn btn-warning text-black fw-bold px-4 py-2">
-              Get Free Quote
-            </button>
+            <GsButton type="defaultPrimary" text="Get Free Quote" />
             <Link
               href="tel:2895417282"
-              className="btn btn-outline-warning fw-bold px-4 py-2 d-flex align-items-center"
+              className="btn btn-outline-warning fw-bold px-4 py-2 d-flex align-items-center text-dark"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -74,10 +73,9 @@ const WhyChooseGoldStar = () => {
           <div className="position-relative rounded shadow overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=600&h=400&fit=crop"
-              className="img-fluid rounded"
+              className="img-fluid rounded w-100"
               alt="Professional moving team"
             />
-            {/* <div className="position-absolute top-0 start-0 w-100 h-100 bg-warning opacity-10 rounded"></div> */}
           </div>
 
           {/* Stats Card */}

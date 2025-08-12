@@ -41,11 +41,11 @@ const ClientRatings = () => {
       <h2 className="text-center fw-bold mb-4">WHAT OUR CLIENTS SAY</h2>
       <div className="customer-review-wrapper p-5 bg-light rounded">
         <div className="row">
-          <div className="col-md-3 col-sm-12">
+          <div className="col-lg-3 col-md-12 col-sm-12">
             <h5>Testimonials</h5>
             <h3>What our <span className="text-primary h3">Customers</span> Says</h3>
           </div>
-          <div className="col-md-9 col-sm-12">
+          <div className="col-lg-9 col-md-12 col-sm-12">
             <Swiper
               modules={[Autoplay, Pagination]}
               autoplay={{ delay: 3000, disableOnInteraction: false }}

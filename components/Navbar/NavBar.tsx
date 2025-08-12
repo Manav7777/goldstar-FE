@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import "./Navbar.css";
 import Link from "next/link";
 import { goldStarMenus } from "@/GlobalConstant";
+import GsButton from "../ui/GsButton";
 
 const NavBar = () => {
   return (
@@ -16,7 +17,7 @@ const NavBar = () => {
                   <Link href="/" className="navbar-brand show-scroll">
                     <img
                       id="redux_logo"
-                      src="https://goldstarmovers.ca/wp-content/uploads/2021/01/logo.png"
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}logo.png`}
                       alt="Logo"
                     />
                   </Link>
@@ -69,12 +70,7 @@ const NavBar = () => {
                 <div className="attr-nav align-items-xl-center ms-xl-auto main-font">
                   <ul>
                     <li className="d-xl-inline-block">
-                      <Link
-                        className="button-primary button md text-white"
-                        href="/contact"
-                      >
-                        <span>Request Now</span>
-                      </Link>
+                      <GsButton type="primary" />
                     </li>
                   </ul>
                 </div>

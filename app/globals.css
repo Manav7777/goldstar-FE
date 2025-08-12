@@ -35,6 +35,7 @@ body {
   font-family: var(--font-plus-jakarta) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 * {
@@ -200,6 +201,7 @@ input[type="color"],
 textarea,
 select {
   color: var(--text-color);
+  font-size: 0.9rem;
 }
 
 input[type="text"]:focus,
@@ -218,8 +220,14 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus,
-select:focus {
-  border-color: var(--gs-primary-color);
+select:focus,textarea:focus {
+  border-color: var(--gs-primary-color) !important;
+  box-shadow: 0 0 0 2px hsl(0 0% 100%), 0 0 0 calc(2px + 2px) hsl(45 100% 50%),
+    0 0 0 4px rgba(0, 0, 0, 0) !important;
+}
+
+.text-gray-300 {
+  color: rgb(203 213 225);
 }
 
 .button-primary {
@@ -266,14 +274,14 @@ select:focus {
   outline: 1.5px solid var(--gs-primary-color);
 }
 
-/* .client-slider-box {
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-    0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
-    0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: 0 0 #0000,
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-} */
+.wi-18 {
+  width: 20px;
+}
+
+.form-label {
+  font-size: 0.9rem;
+}
+
 
 .last-moment-box {
   background-color: var(--gs-primary-color);
@@ -284,11 +292,19 @@ select:focus {
   margin-top: 1rem;
   margin-bottom: 2rem;
   border-radius: 0.3rem;
+  flex-wrap: wrap;
 }
 
 .mb-1-9,
 .my-1-9 {
   margin-bottom: 1.9rem;
+}
+
+.DialogOverlay {
+  background-color: var(--black-a9);
+  position: fixed;
+  inset: 0;
+  animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -298,17 +314,38 @@ select:focus {
 }
 
 @media (min-width: 1200px) {
-  .container,
+  /* .container,
   .container-lg,
   .container-md,
   .container-sm,
   .container-xl {
     max-width: 1250px;
-  }
+  } */
 }
 
 @media screen and (max-width: 1199px) {
   /* .sm-container-1100 {
     max-width: 1100px !important;
   } */
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 850px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-bottom {
+    text-align: center;
+  }
+}
+
+
+@media screen and (min-width: 767px) {
+  .footer-bottom div:last-child {
+    text-align: right;
+  }
 }

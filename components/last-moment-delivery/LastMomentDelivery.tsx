@@ -1,4 +1,5 @@
 import Link from "next/link";
+import GsButton from "../ui/GsButton";
 
 const LastMomentDelivery = () => {
   return (
@@ -6,16 +7,14 @@ const LastMomentDelivery = () => {
       <div className="row">
         <div className="last-moment-box">
           <div className="box-content">
-            <h4>Last Minute Move?</h4>
-            <p>
+            <h4 className="text-dark">Last Minute Move?</h4>
+            <p className="text-muted">
               Don't worry! We specialize in emergency and last-minute <br />
               relocations. Our team is ready to help you move on short notice.
             </p>
           </div>
           <div className="box-action">
-            <Link href="" className="button-secondary button text-dark">
-              Request Now
-            </Link>
+            <GsButton type="white"/>
           </div>
         </div>
       </div>

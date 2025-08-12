@@ -1151,7 +1151,7 @@ header {
     }
 
     .attr-nav>ul>li>a {
-        padding: 0
+        padding: 10px;
     }
 
     .attr-nav>ul>li>a span.badge {
