@@ -1,0 +1,156 @@
+.perfect-move-section {
+  background-color: #fff;
+  padding: 5rem 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #212529;
+}
+
+.section-subtitle {
+  color: #6c757d;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.125rem;
+}
+
+.highlight {
+  color: var(--gs-primary-color);
+}
+
+.service-card {
+  background-color: #fff;
+  border: 2px solid #f1f1f1;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  border-color: var(--gs-primary-color);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff3cd;
+  color: var(--gs-primary-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  background-color: var(--gs-primary-color);
+  color: #000;
+}
+
+.icon-svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+}
+
+.service-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #212529;
+}
+
+.service-desc {
+  color: #6c757d;
+}
+
+/* Moving Steps */
+
+/* Container for the whole section */
+.moving-steps-section {
+  background-color: #ffffff;
+  padding: 5rem 0;
+}
+
+/* Custom yellow highlight */
+.text-brand-yellow {
+  color: #ffbc00;
+}
+
+/* Limit paragraph width */
+.max-width-md {
+  max-width: 700px;
+}
+
+/* Step number */
+.step-number {
+  width: 48px;
+  height: 48px;
+  background-color: #ffbc00;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* Icon circle styles */
+.icon-box {
+  padding: 0.75rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.step-card:hover .icon-box {
+  transform: scale(1.1);
+}
+
+/* SVG Icons */
+.icon-svg {
+  width: 32px;
+  height: 32px;
+  stroke-width: 2;
+}
+
+/* Background color helpers */
+.bg-blue-50 {
+  background-color: #e7f3ff;
+}
+
+.bg-green-50 {
+  background-color: #e6f4ea;
+}
+
+.bg-yellow-50 {
+  background-color: #fff9db;
+}
+
+.bg-purple-50 {
+  background-color: #f3e8ff;
+}
+
+.bg-red-50 {
+  background-color: #ffe0e0;
+}
+
+/* Text color helpers */
+.text-blue {
+  color: #0d6efd;
+}
+
+.text-green {
+  color: #198754;
+}
+
+.text-purple {
+  color: #6f42c1;
+}
+
+.text-red {
+  color: #ff5959;
+}
+

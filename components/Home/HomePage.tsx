@@ -1,8 +1,9 @@
+import GsButton from "../ui/GsButton";
 import "./HomePage.css";
 
 function HomePage() {
   return (
-    <div className="cover-background">
+    <div className="cover-background" style={{ backgroundImage:`url(${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL+'banner.png'})` }}>
       <div className="container d-flex flex-column">
         <div className="row align-items-center min-calc-height-nav">
           <div className="col-md-11 col-lg-9 col-xl-8 col-xxl-7">
@@ -11,12 +12,7 @@ function HomePage() {
                 Give us the opportunity and you'll back on it <br /> as one
                 smart move!
               </h1>
-              <a
-                href="javascript:void(0);"
-                className="button-primary button text-dark"
-              >
-                <span>Request Now</span>
-              </a>
+              <GsButton type="primary" />
             </div>
           </div>
           {/* <div className="col-md-5 col-lg-5 col-xl-5 col-xxl-5 col-sm-12">

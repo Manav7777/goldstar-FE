@@ -20,3 +20,28 @@
     padding: 1.6rem 0rem 1.6rem 0rem;
     color: #fff;
 }
+
+.subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe-input {
+    /* width: 100%; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.news-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-color: gray !important;
+    width: 100%;
+}
+
+.subscribe-input input::placeholder {
+    color: inherit !important;
+}

@@ -24,6 +24,7 @@ const GoldStarServices = () => {
         "Moving insurance coverage",
         "Same-day and next-day moving options",
       ],
+      reverseClassNameDivOne:"order-1 order-lg-2 mb-4",
       reverse: false, // content - image
     },
     {
@@ -64,6 +65,7 @@ const GoldStarServices = () => {
         "Construction debris removal",
         "Appliance and furniture removal",
       ],
+      reverseClassNameDivOne:"order-1 order-lg-2 mb-4",
       reverse: false, // image - content
     },
     {

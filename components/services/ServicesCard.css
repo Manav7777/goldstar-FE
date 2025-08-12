@@ -75,7 +75,8 @@
     margin-bottom: 0;
     width: 85%;
     position: relative;
-    top: -50px;
+    top: -75px;
+    font-size: 0.90rem;
 }
 
 .card-style04 .btn-link-1 {
@@ -116,16 +117,16 @@
 }
 
 .display-19 {
-    font-size: 2.0rem;
+    font-size: 1.2rem;
     font-weight: 800;
 }
 
 @media only screen and (max-width: 1499px) {
     .card-style04 .card-custom-1 {
-        padding: 2rem;
+        padding: 1.8rem;
     }
 
     .card-style04 .card-custom-2 {
-        padding: 3rem 2rem;
+        padding: 3rem 1.8rem;
     }
 }
