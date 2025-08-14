@@ -1,8 +1,10 @@
-import ClientRatings from "@/components/ClientRatings/ClientRatings";
-import HomePage from "@/components/Home/HomePage";
-import LastMomentDelivery from "@/components/last-moment-delivery/LastMomentDelivery";
-import ServicesCard from "@/components/services/ServicesCard";
-import WhyChooseUs from "@/components/Why-choose-us/WhyChooseUs";
+import { lazy } from "react";
+const HomePage = lazy(() => import('../components/Home/HomePage'));
+const ClientRatings = lazy(() => import('../components/ClientRatings/ClientRatings'));
+const ClientReviewsVideos = lazy(() => import('../components/clients-reviews-videos/ClientReviewsVideos'));
+const WhyChooseUs = lazy(() => import('../components/Why-choose-us/WhyChooseUs'));
+const ServicesCard = lazy(() => import('../components/services/ServicesCard'));
+const LastMomentDelivery = lazy(() => import('../components/last-moment-delivery/LastMomentDelivery'));
 
 export default function MainScreen() {
   return (
@@ -11,6 +13,7 @@ export default function MainScreen() {
       <ServicesCard/>
       <ClientRatings/>
       <WhyChooseUs/>
+      <ClientReviewsVideos/>
       <LastMomentDelivery/>
     </div>
   );

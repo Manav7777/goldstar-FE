@@ -7,6 +7,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 import NavBar from "@/components/Navbar/NavBar";
 import Footer from "@/components/Footer/Footer";
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,7 +36,13 @@ export default async function RootLayout({
       <body data-new-gr-c-s-check-loaded="14.1248.0" data-gr-ext-installed=""
         className={`${geistSans.variable} ${plusJakarta.variable}`}>
         <NavBar />
-        {children}
+         <Suspense fallback={<div style={{
+          background: "#000",
+          width: '100vw',
+          height: '100vh'
+         }}>Loading...</div>}>
+          {children}
+        </Suspense>
         <Footer />
       </body>
     </html>
