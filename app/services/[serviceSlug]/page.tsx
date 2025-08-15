@@ -5,7 +5,7 @@ import "./serviceDetails.css";
 import PerfectMovers from "@/components/services/service-detail-section/PerfectMovers";
 import ClientRatings from "@/components/ClientRatings/ClientRatings";
 import MovingEfforts from "@/components/services/moving-efforts/MovingEfforts";
-import { commercialMovingEfforts, commercialServiceHeroSection, commercialServicesPerfectMove, crossCountryMovingEfforts, crossCountryServiceHeroSection, crossCountryServicesPerfectMove, junkRemovalMovingEfforts, junkRemovalServiceHeroSection, junkRemovalServicesPerfectMove, ResidentialMovingEfforts, residentialServiceHeroSection, residentialServices } from "@/GlobalConstant";
+import { commercialMovingEfforts, commercialServiceHeroSection, commercialServicesPerfectMove, crossCountryMovingEfforts, crossCountryServiceHeroSection, crossCountryServicesPerfectMove, junkRemovalMovingEfforts, junkRemovalServiceHeroSection, junkRemovalServicesPerfectMove, longDistanceSectionOne, longDistanceSectionThree, longDistanceSectionTwo, ResidentialMovingEfforts, residentialServiceHeroSection, residentialServices } from "@/GlobalConstant";
 import WhyChooseGoldStar from "@/components/Why-choose-us/WhyChooseGoldStar";
 
 const servicesData: any = {
@@ -54,6 +54,18 @@ const servicesData: any = {
       {
         Component: MovingEfforts,
         props: { residentialMovingEfforts: crossCountryMovingEfforts },
+      }
+    ],
+  },
+  "long-distance-moving-service": {
+    title: "Long Distance Moving Service",
+    description: "Creative visuals for your brand.",
+    components: [
+      {Component: ServiceDetailSection, props: { serviceHeroSection: longDistanceSectionOne }},
+      { Component: PerfectMovers, props: { services: longDistanceSectionTwo } },
+      {
+        Component: MovingEfforts,
+        props: { residentialMovingEfforts: longDistanceSectionThree },
       }
     ],
   },

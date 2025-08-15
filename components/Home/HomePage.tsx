@@ -1,83 +1,79 @@
-import GsButton from "../ui/GsButton";
-import "./HomePage.css";
+"use client";
 
-function HomePage() {
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./HomePage.css";
+import GsButton from "../ui/GsButton";
+
+const slides = [
+  {
+    id: 1,
+    image:
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}banner.png`,
+    title: "Smart. Secure. Seamless.",
+    subtitle: "Experience the future of moving with our intelligent logistics",
+  },
+  {
+    id: 2,
+    image:
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=800&fit=crop&auto=format&q=80",
+    title: "Your Trust. Our Promise.",
+    subtitle: "Delivering excellence with every move, every time",
+  },
+  {
+    id: 3,
+    image:
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1920&h=800&fit=crop&auto=format&q=80",
+    title: "Effortless Relocations.",
+    subtitle: "Making your journey to a new beginning extraordinary",
+  },
+];
+
+export default function HomePage() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    fade: true,
+    cssEase: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+    pauseOnHover: false,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
+  };
+
   return (
-    <div className="cover-background" style={{ backgroundImage:`url(${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL+'banner.png'})` }}>
-      <div className="container d-flex flex-column">
-        <div className="row align-items-center min-calc-height-nav">
-          <div className="col-md-11 col-lg-9 col-xl-8 col-xxl-7">
-            <div className="mt-5">
-              <h1 className="ls-minus-2px display-3 lh-2 text-white">
-                Give us the opportunity and you'll back on it <br /> as one
-                smart move!
-              </h1>
-              <GsButton type="primary" />
+    <div className="hero-slider position-relative w-100 overflow-hidden">
+      <Slider {...settings}>
+        {slides.map((slide) => (
+          <div key={slide.id}>
+            <div className="hero-slide d-flex align-items-center justify-content-center text-center text-white">
+              <div
+                className="hero-background"
+                style={{ backgroundImage: `url(${slide.image})` }}
+              >
+                <div className="hero-overlay"></div>
+                <div className="container position-relative hero-content">
+                  <h1 className="display-4 fw-bold hero-title">{slide.title}</h1>
+                  <p className="lead mb-4">{slide.subtitle}</p>
+                   <GsButton type="primary" />
+                </div>
+              </div>
             </div>
           </div>
-          {/* <div className="col-md-5 col-lg-5 col-xl-5 col-xxl-5 col-sm-12">
-            <div className="banner-form-wrapper">
-              <h3 className="">Quick Quote Calculator</h3>
-              <form>
-                <div className="">
-                  <div className="">
-                    <input
-                      type="text"
-                      name="full name"
-                      className="form-control"
-                      placeholder="Your name here"
-                      required
-                    />
-                  </div>
-                  <div className="">
-                    <input
-                      type="email"
-                      name="email"
-                      className="form-control"
-                      placeholder="Your email here"
-                      required
-                    />
-                  </div>
-                  <div className="">
-                    <input
-                      type="text"
-                      name="subject"
-                      className="form-control"
-                      placeholder="Your subject here"
-                      required
-                    />
-                  </div>
-                  <div className="">
-                    <input
-                      type="tel"
-                      name="phone"
-                      className="form-control"
-                      placeholder="Your phone number here"
-                    />
-                  </div>
-                  <div className="">
-                    <textarea
-                      name="message"
-                      className="form-control"
-                      rows={5}
-                      placeholder="Tell us a few words"
-                      required
-                    />
-                  </div>
-                </div>
-                <button
-                  type="submit"
-                  className="button-primary button mt-4 px-4"
-                >
-                  Request Quote
-                </button>
-              </form>
-            </div>
-          </div> */}
-        </div>
-      </div>
+        ))}
+      </Slider>
     </div>
   );
 }
-
-export default HomePage;

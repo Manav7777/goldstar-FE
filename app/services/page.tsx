@@ -12,7 +12,7 @@ const GoldStarServices = () => {
         "Whether you're moving across town or across the state, our residential moving services ensure your household items arrive safely at your new home.",
       badgeText: "Most Popular",
       imageSrc:
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
+        `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/residential-moving.webp`,
       imageAlt: "Residential moving service",
       price: "Fast, Reliable Home Moving Services.",
       buttonText: "Request Now",
@@ -24,7 +24,7 @@ const GoldStarServices = () => {
         "Moving insurance coverage",
         "Same-day and next-day moving options",
       ],
-      reverseClassNameDivOne:"order-1 order-lg-2 mb-4",
+      reverseClassNameDivOne: "order-1 order-lg-2 mb-4",
       reverse: false, // content - image
     },
     {
@@ -34,7 +34,7 @@ const GoldStarServices = () => {
         "Our commercial relocation experts ensure your equipment, furniture, and files are moved securely and efficiently.",
       badgeText: "Business Focused",
       imageSrc:
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop",
+        `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/commercial-moving.webp`,
       imageAlt: "Office moving service",
       price: "Office Moves With Zero Downtime.",
       buttonText: "Request Now",
@@ -53,7 +53,7 @@ const GoldStarServices = () => {
       description:
         "Declutter your space with our eco-friendly junk removal services. We donate, recycle, and dispose of items responsibly.",
       badgeText: null,
-      imageSrc: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}junk-removal-service.webp`,
+      imageSrc: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/junk-removal-service.webp`,
       imageAlt: "Junk Removal service",
       price: "Hassle-Free Junk and Trash Removal.",
       buttonText: "Request Now",
@@ -65,7 +65,7 @@ const GoldStarServices = () => {
         "Construction debris removal",
         "Appliance and furniture removal",
       ],
-      reverseClassNameDivOne:"order-1 order-lg-2 mb-4",
+      reverseClassNameDivOne: "order-1 order-lg-2 mb-4",
       reverse: false, // image - content
     },
     {
@@ -75,7 +75,7 @@ const GoldStarServices = () => {
         "Moving to a different state? Our cross-country moving services provide reliable transportation and tracking for long-distance relocations.",
       badgeText: null,
       imageSrc:
-        "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=600&h=400&fit=crop",
+        `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/cross-country-moving.webp`,
       imageAlt: "Cross-country Moving",
       price: "Long-Distance Moving Made Easy.",
       buttonText: "Request Now",
@@ -88,6 +88,29 @@ const GoldStarServices = () => {
         "Dedicated move coordinator",
       ],
       reverse: true, // content - image
+    },
+    {
+      title: "Long-Distance Moving",
+      subtitle: "Reliable long-distance movers across Canada",
+      description:
+        "Need to move over 100 km or to a different province? GoldStar Packers and Movers offers expert long-distance moving solutions across Canada, tailored for stress-free, affordable relocations with full tracking, insurance, and support.",
+      badgeText: null,
+      imageSrc:
+        `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/long-distance-moving.webp`,
+      imageAlt:
+        "GoldStar moving truck on a Canadian highway during long-distance move",
+      price: "Long-Distance Movers Across Canada",
+      buttonText: "Request Now",
+      features: [
+        "Licensed long-distance movers in Canada",
+        "Interprovincial and cross-region moving support",
+        "Real-time tracking and customer updates",
+        "Climate-controlled storage options",
+        "Fully insured transport services",
+        "Personalized planning with move coordinator",
+      ],
+      reverseClassNameDivOne: "order-1 order-lg-2 mb-4",
+      reverse: false,
     },
   ];
   return (

@@ -8,6 +8,7 @@ config.autoAddCss = false;
 import NavBar from "@/components/Navbar/NavBar";
 import Footer from "@/components/Footer/Footer";
 import { Suspense } from "react";
+import NewHeader from "@/components/Navbar/new-nav/NewHeader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,7 +36,8 @@ export default async function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body data-new-gr-c-s-check-loaded="14.1248.0" data-gr-ext-installed=""
         className={`${geistSans.variable} ${plusJakarta.variable}`}>
-        <NavBar />
+        {/* <NavBar /> */}
+        <NewHeader />
          <Suspense fallback={<div style={{
           background: "#000",
           width: '100vw',
