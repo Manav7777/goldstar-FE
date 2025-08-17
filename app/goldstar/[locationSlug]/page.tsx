@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { loadComponent } from "@/utils/dynamicComponent";
 import "./LocationDetail.css";
-import { Metadata } from "next";
+import { Metadata, ResolvingMetadata } from "next";
 
 // 👇 Force dynamic rendering
 export const dynamic = "force-dynamic";
@@ -16,15 +16,18 @@ async function loadLocationData(slug: string) {
   }
 }
 
-// ✅ Define types for clarity and type safety
-type PageParams = {
+// ✅ Use Next.js built-in types (optional, but clearer)
+interface Props {
   params: {
     locationSlug: string;
   };
-};
+}
 
-// ✅ Metadata function without unnecessary `await` on params
-export async function generateMetadata({ params }: PageParams): Promise<Metadata> {
+// ✅ Metadata function
+export async function generateMetadata(
+  { params }: Props,
+  parent?: ResolvingMetadata
+): Promise<Metadata> {
   const { locationSlug } = params;
 
   const location = await loadLocationData(locationSlug);
@@ -49,8 +52,8 @@ export async function generateMetadata({ params }: PageParams): Promise<Metadata
   };
 }
 
-// ✅ Default export page component without unnecessary `await` on params
-export default async function LocationPage({ params }: PageParams) {
+// ✅ Default export page component
+export default async function LocationPage({ params }: Props) {
   const { locationSlug } = params;
 
   const location = await loadLocationData(locationSlug);
