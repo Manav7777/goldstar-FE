@@ -3,7 +3,6 @@ import { loadComponent } from "@/utils/dynamicComponent";
 import "./LocationDetail.css";
 import { Metadata } from "next";
 
-
 // 👇 Force dynamic rendering
 export const dynamic = "force-dynamic";
 
@@ -17,9 +16,10 @@ async function loadLocationData(slug: string) {
   }
 }
 
-// ✅ Define generateMetadata inside page.tsx
-export async function generateMetadata({ params }: { params: { locationSlug: string } }): Promise<Metadata> {
-  const { locationSlug } = await params;
+
+// ✅ Correct metadata function with await params
+export async function generateMetadata({ params }: any): Promise<Metadata> {
+  const { locationSlug }:any = await params;
 
   const location = await loadLocationData(locationSlug);
 
@@ -42,15 +42,10 @@ export async function generateMetadata({ params }: { params: { locationSlug: str
   };
 }
 
-type Props = {
-  params: {
-    locationSlug: string;
-  };
-};
+// ✅ Correct default export page function
+export default async function LocationPage({ params }: any) {
+  const { locationSlug }:any = await params;
 
-
-export default async function LocationPage({ params }: Props) {
-  const { locationSlug } = await params;
   const location = await loadLocationData(locationSlug);
   if (!location) return notFound();
 
@@ -60,7 +55,6 @@ export default async function LocationPage({ params }: Props) {
       if (!DynamicComponent) return null;
 
       let props = { ...item.props };
-
       return <DynamicComponent key={idx} {...props} />;
     })
   );
