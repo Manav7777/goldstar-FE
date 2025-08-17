@@ -1,0 +1,87 @@
+{
+    "seo": {
+        "title": "Trusted Moving Company Oakville | GoldStar Movers",
+        "description": "GoldStar Movers is your go-to mover in Oakville! We provide stress-free relocations with 100% satisfaction guaranteed! Call (289) 541-7282 today.",
+        "canonical": "http://localhost:3000/goldstar/north-york",
+        "keywords": [
+            "Oakville movers",
+            "moving company Oakville"
+        ],
+        "openGraph": {
+            "title": "Oakville Moving Company",
+            "description": "Affordable and reliable movers in Oakville.",
+            "image": "http://localhost:3000/iamges/banner.png"
+        }
+    },
+    "components": [
+        {
+            "key": "LocationTopSection",
+            "props": {
+                "cityName": "Oakville",
+                "headline": "Trusted Moving Company",
+                "subtext": "Moving can induce stress, but with movers in Oakville, you can rest easy knowing your belongings are in safe hands. At Goldstar Movers, we understand that relocating is more than just transporting items; it’s about starting a new chapter in your life. Our moving company in Toronto is dedicated to providing efficient, personalized services to make your transition as smooth as possible, whether you are moving within the city or to a different province.",
+                "buttonText": "Get a Free Quote",
+                "services": [
+                    {
+                        "title": "Premium Service",
+                        "description": "High-quality moving.",
+                        "icon": "Award"
+                    },
+                    {
+                        "title": "Protected Moves",
+                        "description": "Insured relocations.",
+                        "icon": "Shield"
+                    },
+                    {
+                        "title": "Expert Packing",
+                        "description": "Professional materials.",
+                        "icon": "Package"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "LocationServiceSections",
+            "props": {
+                "title": "Our Expertise in Oakville",
+                "subtitle": "Professional packing and moving solutions for Greater Oakville Area"
+            }
+        },
+        {
+            "key": "WhyChooseUs",
+            "props": {
+                "whyLocation": {
+                    "title": "Why Choose Goldstar Movers As Your Local Movers in Oakville, Ontario?",
+                    "description": "Goldstar Moving is your trusted partner for stress-free relocation in the GTA.",
+                    "reasons": [
+                        {
+                            "icon": "Users",
+                            "title": "Professional Moving Team",
+                            "description": "Trained and experienced movers who handle your belongings with care and follow proper packing and moving techniques."
+                        },
+                        {
+                            "icon": "Clock",
+                            "title": "On-Time Moving Service",
+                            "description": "Punctual arrivals and efficient moving processes to meet your schedule and minimize disruption to your day."
+                        },
+                        {
+                            "icon": "Shield",
+                            "title": "Fully Licensed & Insured",
+                            "description": "Complete insurance coverage and proper licensing to protect your belongings and provide peace of mind during your move."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "key":"LocationMovingSteps",
+            "props": {
+                "title": "Why Choose Us as Your Moving Company Oakville",
+                "description": "At Goldstar Movers, we follow a straightforward and transparent process that makes your move easy. Let's examine how we do it"
+            }
+        },
+        {
+            "key":"SatisfactionSection"
+        }
+    ]
+}

@@ -1,27 +1,34 @@
 import TopSection from "@/components/Top-Section/TopSection";
 import "./about.css";
-import ProcessSteps from "@/components/Process-Steps/ProcessSteps";
 import ClientRatings from "@/components/ClientRatings/ClientRatings";
+import GsButton from "@/components/ui/GsButton";
+import MovingEfforts from "@/components/services/moving-efforts/MovingEfforts";
+import { aboutUsSteps } from "@/GlobalConstant";
+import TrustUs from "@/components/why-trust-us/TrustUs";
 
 const About = () => {
   return (
     <>
-      <TopSection title={"About Us"}/>
+      <TopSection title={"About Us"} />
       <div className="container sm-container-1100">
         <div className="row mt-5 mb-5 justify-content-center">
           <div className="col-md-6 col-sm-12 about-us-image">
             <img
               decoding="async"
-              src="https://demo.awaikenthemes.com/html-preview/movein/images/about-image.jpg"
+              src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}about-us.jpeg`}
               alt="gold-star-movers"
               className="border-radius-5"
               title="gold-star-movers"
             />
           </div>
           <div className="col-md-6 col-sm-12">
+            <h1 className="h3 about-title">
+              Setting new standards in the moving industry
+            </h1>
             <div className="about-section">
-              <h1>Setting new standards in the moving industry</h1>
-              <span>Our story began 2017 in Mississauga, Ontario.</span>
+              <span className="story-starts text-primary">
+                Our story began 2017 in Mississauga, Ontario.
+              </span>
               <p>
                 We started performing local residential relocation and piano
                 moving in the beginning.
@@ -52,22 +59,16 @@ const About = () => {
                 Give us the opportunity and you'll look back on it as one smart
                 move!
               </p>
-              <a
-                href="javascript:void(0);"
-                className="button-primary button text-dark"
-              >
-                <span>Request Now</span>
-              </a>
+              <GsButton type="primary" />
             </div>
           </div>
         </div>
         <div className="row">
-          <ProcessSteps/>
-        </div>
-        <div className="row">
-          <ClientRatings />
+          <MovingEfforts residentialMovingEfforts={aboutUsSteps} />
         </div>
       </div>
+      <TrustUs />
+      <ClientRatings />
     </>
   );
 };

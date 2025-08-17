@@ -1,5 +1,9 @@
-.about-section p {
+.about-section p, .story-starts {
   font-size: 0.9rem;
+}
+
+.about-title {
+  text-transform: uppercase;
 }
 
 .about-section h1 {

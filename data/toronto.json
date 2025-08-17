@@ -1,0 +1,87 @@
+{
+    "seo": {
+        "title": "Trusted Moving Company Toronto | GoldStar Movers",
+        "description": "GoldStar Movers is your go-to mover in Toronto! We provide stress-free relocations with 100% satisfaction guaranteed! Call (289) 541-7282 today.",
+        "canonical": "http://localhost:3000/goldstar/north-york",
+        "keywords": [
+            "Toronto movers",
+            "moving company Toronto"
+        ],
+        "openGraph": {
+            "title": "Toronto Moving Company",
+            "description": "Affordable and reliable movers in Toronto.",
+            "image": "http://localhost:3000/iamges/banner.png"
+        }
+    },
+    "components": [
+        {
+            "key": "LocationTopSection",
+            "props": {
+                "cityName": "Toronto",
+                "headline": "Trusted Moving Company",
+                "subtext": "Moving can induce stress, but with movers in Toronto, you can rest easy knowing your belongings are in safe hands. At Goldstar Movers, we understand that relocating is more than just transporting items; it’s about starting a new chapter in your life. Our moving company in Toronto is dedicated to providing efficient, personalized services to make your transition as smooth as possible, whether you are moving within the city or to a different province.",
+                "buttonText": "Get a Free Quote",
+                "services": [
+                    {
+                        "title": "High-Rise Moves",
+                        "description": "Apartment & condo moves.",
+                        "icon": "Building"
+                    },
+                    {
+                        "title": "City Navigation",
+                        "description": "Efficient urban moving.",
+                        "icon": "Truck"
+                    },
+                    {
+                        "title": "Professional Packing",
+                        "description": "Expert packing service.",
+                        "icon": "Boxes"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "LocationServiceSections",
+            "props": {
+                "title": "Our Moving Services in Toronto",
+                "subtitle": "Professional packing and moving solutions for Greater Toronto Area"
+            }
+        },
+        {
+            "key": "WhyChooseUs",
+            "props": {
+                "whyLocation": {
+                    "title": "Why Choose Goldstar Movers As Your Local Movers in Toronto, Ontario?",
+                    "description": "Goldstar Moving is your trusted partner for stress-free relocation in the GTA.",
+                    "reasons": [
+                        {
+                            "icon": "Users",
+                            "title": "Professional Moving Team",
+                            "description": "Trained and experienced movers who handle your belongings with care and follow proper packing and moving techniques."
+                        },
+                        {
+                            "icon": "Clock",
+                            "title": "On-Time Moving Service",
+                            "description": "Punctual arrivals and efficient moving processes to meet your schedule and minimize disruption to your day."
+                        },
+                        {
+                            "icon": "Shield",
+                            "title": "Fully Licensed & Insured",
+                            "description": "Complete insurance coverage and proper licensing to protect your belongings and provide peace of mind during your move."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "key":"LocationMovingSteps",
+            "props": {
+                "title": "How Our Professional Movers in Toronto Work",
+                "description": "At Goldstar Movers, we follow a straightforward and transparent process that makes your move easy. Let's examine how we do it"
+            }
+        },
+        {
+            "key":"SatisfactionSection"
+        }
+    ]
+}

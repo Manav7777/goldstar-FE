@@ -1,176 +1,221 @@
-"use client";
-import TopSection from "@/components/Top-Section/TopSection";
-import Link from "next/link";
-import { useState } from "react";
+import React from "react";
 import "./Contact.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookF,
-  faInstagram,
-  faTwitter,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faPhone,
-  faEnvelope,
-  faLocationDot,
-} from "@fortawesome/free-solid-svg-icons";
+import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import Link from "next/link";
+import TopSection from "@/components/Top-Section/TopSection";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    phone: "",
-    message: "",
-  });
-
-  const handleChange = (e: any) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    console.log("Form Submitted:", formData);
-    // integrate with email API like EmailJS / Nodemailer
-  };
   return (
     <>
-      <TopSection title={"Contact"}/>
-      <div className="container py-5">
-        <div className="row">
-          {/* Form */}
-          <div className="col-md-7 mb-5">
-            <p className="text-primary fw-bold">CONTACT</p>
-            <h1 className="fw-bold mb-4">Get in touch</h1>
-
-            <form onSubmit={handleSubmit}>
-              <div className="row g-3">
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    name="full name"
-                    className="form-control"
-                    placeholder="Your name here"
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="email"
-                    name="email"
-                    className="form-control"
-                    placeholder="Your email here"
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    name="subject"
-                    className="form-control"
-                    placeholder="Your subject here"
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="tel"
-                    name="phone"
-                    className="form-control"
-                    placeholder="Your phone number here"
-                    onChange={handleChange}
-                  />
-                </div>
-                <div className="col-12">
-                  <textarea
-                    name="message"
-                    className="form-control"
-                    rows={5}
-                    placeholder="Tell us a few words"
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-              </div>
-              <button type="submit" className="button-primary button mt-4 px-4">
-                Request Quote
-              </button>
-            </form>
+      <TopSection title="Contact Us" />
+      <div className="bg-light pb-3">
+        <div className="container pt-5 mb-5 position-relative z-10 px-4">
+          <div className="text-center mb-5">
+            <h2 className="display-4 fw-bold text-dark mb-3">
+              Connect With Us
+            </h2>
+            <p
+              className="lead text-muted mx-auto"
+              style={{ maxWidth: "700px" }}
+            >
+              Multiple ways to reach Canada's most trusted moving professionals
+            </p>
           </div>
 
-          {/* Contact Info */}
-          <div
-            className="col-md-5 text-white p-4 rounded"
-            style={{
-              backgroundImage: `url(${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}contact-to-gold-star-movers.webp)`,
-              position: "relative",
-            }}
-          >
-            <div className="overlay-bg"></div>
-            <div className="contact-info-wrapper">
-              <h2 className="fw-bold text-primary">Contact detail</h2>
-              <p className="text-white">
-                Need any consultations? Contact with us.
-              </p>
-
-              <div className="mb-3 d-flex ">
-                <div className="wrapper-icon">
-                  <FontAwesomeIcon className="text-primary" icon={faPhone} />
-                </div>
-                <div className="content">
-                  <p className="fw-bold mb-1">Phone Number</p>
-                  <Link href="tel:(289)541-7282">+1 (289) 541-7282</Link>
-                </div>
-              </div>
-              <hr />
-              <div className="mb-3 d-flex">
-                <div className="wrapper-icon">
-                  <FontAwesomeIcon className="text-primary" icon={faEnvelope} />
-                </div>
-                <div className="content">
-                  <p className="fw-bold mb-1">Email Address</p>
-                  <Link href="mailto:goldstar4movers@gmail.com">
-                    goldstar4movers@gmail.com
+          <div className="row g-4 justify-content-center">
+            {/* Card 1: Call Us */}
+            <div className="col-md-6 col-lg-3">
+              <div className="contact-card bg-light-5 border-0">
+                <div className="p-4 text-center d-flex flex-column h-100 justify-content-between">
+                  <div className="mb-3">
+                    <div className="icon-circle bg-primary-light">
+                      <Phone className="me-2 text-warning w-100" />
+                    </div>
+                  </div>
+                  <div className="flex-grow-1">
+                    <h5 className="fw-bold mb-2 text-dark">Call Us</h5>
+                    <p className="h6 text-dark mb-1">+1 (289) 541-7282</p>
+                    <p className="small text-muted mb-2">
+                      Available 7 days a week
+                    </p>
+                    <p className="text-muted small">
+                      Speak with our moving experts instantly
+                    </p>
+                  </div>
+                  <Link
+                    href="tel:(289) 541-7282"
+                    className="mt-3 text-primary call-to-action"
+                  >
+                    Click to Call
                   </Link>
                 </div>
               </div>
-              <hr />
-              <div className="mb-4 d-flex">
-                <div className="wrapper-icon">
-                  <FontAwesomeIcon
-                    className="text-primary"
-                    icon={faLocationDot}
-                  />
+            </div>
+
+            {/* Card 2: Email Us */}
+            <div className="col-md-6 col-lg-3">
+              <div className="contact-card bg-success-light border-0">
+                <div className="p-4 text-center d-flex flex-column h-100 justify-content-between">
+                  <div className="mb-3">
+                    <div className="icon-circle bg-success-light">
+                      <Mail className="me-2 text-success w-100" />
+                    </div>
+                  </div>
+                  <div className="flex-grow-1">
+                    <h5 className="fw-bold mb-2 text-dark">Email Us</h5>
+                    <p className="h6 text-dark mb-1">
+                      goldstar4movers@gmail.com
+                    </p>
+                    <p className="small text-muted mb-2">
+                      Quick response guaranteed
+                    </p>
+                    <p className="text-muted small">
+                      Get detailed quotes and information
+                    </p>
+                  </div>
+                  <Link
+                    href="mailto:goldstar4movers@gmail.com"
+                    className="mt-3 text-success call-to-action"
+                  >
+                    Click to Email
+                  </Link>
                 </div>
-                <div className="content">
-                  <p className="fw-bold mb-1">Location</p>
-                  <p>
-                    Guild Street 51, North Town,
-                    <br />
-                    London–06192, UK
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <div className="d-flex gap-3">
-                <Link href="/" className="text-white social-icon">
-                  <FontAwesomeIcon icon={faFacebookF} />
-                </Link>
-                <Link href="/" className="text-white social-icon">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </Link>
-                <Link href="/" className="text-white social-icon">
-                  <FontAwesomeIcon icon={faTwitter} />
-                </Link>
-                <Link href="/" className="text-white social-icon">
-                  <FontAwesomeIcon icon={faLinkedinIn} />
-                </Link>
               </div>
             </div>
+
+            {/* Card 3: Business Hours */}
+            <div className="col-md-6 col-lg-3">
+              <div className="contact-card bg-info-light border-0">
+                <div className="p-4 text-center d-flex flex-column h-100 justify-content-between">
+                  <div className="mb-3">
+                    <div className="icon-circle bg-info-light">
+                      <Clock className="me-2 text-blue w-100" />
+                    </div>
+                  </div>
+                  <div className="flex-grow-1">
+                    <h5 className="fw-bold mb-2 text-dark">Business Hours</h5>
+                    <p className="h6 text-dark mb-1">Mon-Fri: 8AM-8PM</p>
+                    <p className="small text-muted mb-2">Sat-Sun: 9AM-6PM</p>
+                    <p className="text-muted small">
+                      Extended hours for your convenience
+                    </p>
+                  </div>
+                  <div className="mt-3 call-to-action">&nbsp;</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 4: Visit Us */}
+            <div className="col-md-6 col-lg-3">
+              <div className="contact-card bg-purple-light border-0">
+                <div className="p-4 text-center d-flex flex-column h-100 justify-content-between">
+                  <div className="mb-3">
+                    <div className="icon-circle bg-purple-light">
+                      <MapPin className="me-2 text-purple w-100" />
+                    </div>
+                  </div>
+                  <div className="flex-grow-1">
+                    <h5 className="fw-bold mb-2 text-dark">Visit Our Office</h5>
+                    <p className="h6 text-dark mb-1">123 Moving Street</p>
+                    <p className="small text-muted mb-2">
+                      Mississauga, ON L5B 1A1
+                    </p>
+                    <p className="text-muted small">
+                      Free parking and easy highway access
+                    </p>
+                  </div>
+                  <div className="mt-3 call-to-action">&nbsp;</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="row mt-4 mb-4">
+          <div className="text-center d-inline-flex align-items-center justify-content-center gap-2 mb-4">
+            <div
+              className="d-inline-flex align-items-center justify-content-center mb-3 rounded"
+              style={{
+                width: "64px",
+                height: "64px",
+                background:
+                  "linear-gradient(to bottom right, #facc15, #eab308)",
+                  cursor:"pointer"
+              }}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="text-dark"
+                viewBox="0 0 24 24"
+              >
+                <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path>
+              </svg>
+            </div>
+            <h3 className="h4 fw-bold text-dark">Why Choose Us?</h3>
+          </div>
+
+          <div className="row">
+            {[
+              "Free, detailed quotes",
+              "24/7 customer support",
+              "Licensed & fully insured",
+              "Transparent pricing",
+              "Professional equipment",
+              "On-time guarantee",
+            ].map((item, index) => (
+                <div className="col-md-4 col-12">
+                <div key={index} className="d-flex align-items-start mb-3">
+                <div
+                  className="flex-shrink-0 rounded-circle mt-1 me-2"
+                  style={{
+                    width: "8px",
+                    height: "8px",
+                    backgroundColor: "#eab308",
+                  }} // yellow-500
+                ></div>
+                <p className="mb-0 text-secondary fw-medium">{item}</p>
+              </div>
+              </div>
+            ))}
+          </div>
+
+          <div
+            className="mt-4 p-3 rounded border"
+            style={{
+              background: "linear-gradient(to bottom right, #fefce8, #fef9c3)", // yellow-50 to yellow-100
+              borderColor: "#fde68a", // yellow-200
+            }}
+          >
+            <div className="d-flex align-items-center mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="me-2"
+                viewBox="0 0 24 24"
+                style={{ color: "#ca8a04" }} // yellow-700
+              >
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+              </svg>
+              <h5 className="mb-0 fw-semibold text-dark">Fully Protected</h5>
+            </div>
+            <p className="text-secondary small mb-0">
+              All moves include comprehensive insurance coverage for your
+              complete peace of mind.
+            </p>
           </div>
         </div>
       </div>

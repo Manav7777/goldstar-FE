@@ -1,0 +1,87 @@
+{
+    "seo": {
+        "title": "Top Movers in Etobicoke | GoldStarMover",
+        "description": "Etobicoke's most trusted moving service.",
+        "canonical": "http://localhost:3000/goldstar/etobicoke",
+        "keywords": [
+            "Etobicoke movers",
+            "moving company Etobicoke"
+        ],
+        "openGraph": {
+            "title": "Etobicoke Moving Company",
+            "description": "Affordable and reliable movers in Etobicoke.",
+            "image": "http://localhost:3000/iamges/banner.png"
+        }
+    },
+    "components": [
+        {
+            "key": "LocationTopSection",
+            "props": {
+                "cityName": "Etobicoke",
+                "headline": "Top-Rated Movers in",
+                "subtext": "Professional packing and moving services throughout Etobicoke. Our experienced team handles residential and commercial moves with care and efficiency in Toronto's west end.",
+                "buttonText": "Get a Free Quote",
+                "services": [
+                    {
+                        "title": "Professional Movers",
+                        "description": "Expert moving teams.",
+                        "icon": "Truck"
+                    },
+                    {
+                        "title": "Careful Packing",
+                        "description": "Premium packing materials.",
+                        "icon": "Package"
+                    },
+                    {
+                        "title": "On-Time Service",
+                        "description": "EPunctual and reliable.",
+                        "icon": "Clock"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "LocationServiceSections",
+            "props": {
+                "title": "Our Moving Services in Etobicoke",
+                "subtitle": "Professional packing and moving solutions for Peel Region"
+            }
+        },
+        {
+            "key": "WhyChooseUs",
+            "props": {
+                "whyLocation": {
+                    "title": "Why Choose Goldstar Moving in Etobicoke",
+                    "description": "Professional moving services you can trust in Toronto's West End",
+                    "reasons": [
+                        {
+                            "icon": "Users",
+                            "title": "Professional Moving Team",
+                            "description": "Trained and experienced movers who handle your belongings with care and follow proper packing and moving techniques."
+                        },
+                        {
+                            "icon": "Clock",
+                            "title": "On-Time Moving Service",
+                            "description": "Punctual arrivals and efficient moving processes to meet your schedule and minimize disruption to your day."
+                        },
+                        {
+                            "icon": "Shield",
+                            "title": "Fully Licensed & Insured",
+                            "description": "Complete insurance coverage and proper licensing to protect your belongings and provide peace of mind during your move."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "key":"LocationMovingSteps",
+            "props": {
+                "title": "Our Moving Process in Etobicoke",
+                "description": "Simple, professional moving process for Toronto's West End relocations"
+            }
+        },
+        {
+            "key":"SatisfactionSection"
+        }
+    ]
+}

@@ -1,183 +1,99 @@
 import Link from "next/link";
 import "./ServicesCard.css";
+
 const ServicesCard = () => {
+  const services:any = [
+  {
+    title: 'Residential Moving',
+    description: 'Effortless relocation for homes and apartments with professional care and attention to detail',
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/residential-moving.webp`,
+    link: '/services/residential-moving-service'
+  },
+  {
+    title: 'Commercial Moving',
+    description: 'Seamless office and business relocations with minimal downtime and maximum efficiency',
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/commercial-moving.webp`,
+    link: '/services/commercial-moving-service'
+  },
+  {
+    title: 'Junk Removal',
+    description: 'Eco-friendly disposal and decluttering services for residential and commercial spaces',
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/junk-removal-service.webp`,
+    link: '/services/junk-removal-moving-service'
+  },
+  {
+    title: 'Cross Country',
+    description: 'Nationwide moving services from coast to coast across Canada with secure transport',
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/cross-country-moving.webp`,
+    link: '/services/cross-country-moving-service'
+  },
+  {
+    title: 'Long Distance Moving',
+    description: 'Specialized long-distance moving services with secure transport, careful handling, and timely delivery across provinces',
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/long-distance-moving.webp`,
+    full: true,
+    link: '/services/long-distance-moving-service'
+  },
+  ];
   return (
-    <div className="container">
-      <div className="row mt-5 mb-5 justify-content-center">
-        <div className="col-md-12">
-          <h2 className="text-center">INCLUDED SERVICES</h2>
-        </div>
-        <div className="col-12 col-md-6 col-xl-4 mt-4">
-          <div className="card-style04 border-radius-5 cursor-pointer">
-            <img
-              decoding="async"
-              src="https://kargonwp.websitelayout.net/wp-content/uploads/2024/12/service-11.jpg"
-              alt="GoldStar-residential-service"
-              className="border-radius-5"
-              title="goldStar-residential-service"
-            />
-            <div className="opacity-light bg-extra-dark-gray border-radius-5" />
-            <div className="card-overlay border-radius-5" />
-            <div className="card-content">
-              <div className="card-custom-1">
-                <span className="text-white opacity6 d-block mb-2 position-relative z-index-1">
-                  01
-                </span>
-                <h5 className="font-weight-800 display-19 position-relative z-index-1 mb-0">
-                  <Link
-                    href="/services/residential-moving-service"
-                    className="text-white text-primary-hover"
-                  >
-                    RESIDENTIAL MOVING
-                  </Link>
-                </h5>
-              </div>
-              <div className="card-data align-items-end d-flex">
-                <div className="card-custom-2">
-                  <p className="card-text">
-                    Let us assist you in completing your residential move. We
-                    have have the team and expertise to assist you in relocating
-                  </p>
-                  <Link
-                    href="/services/residential-moving-service"
-                    className="button-primary button text-dark"
-                  >
+    <div className="container px-4 my-5">
+      <div className="text-center mb-5">
+        <h2 className="text-center fw-bold mb-4">OUR EXPERT SERVICES</h2>
+        <p className="lead text-secondary mx-auto w-75">
+          Comprehensive moving solutions tailored to your specific needs across Canada
+        </p>
+      </div>
+
+      <div className="row g-4 justify-content-center">
+        {services.map((service:any, idx:number) => (
+          <div
+            key={idx}
+            className={`col-md-6 col-lg-${service.full ? '8' : '4'}`}
+          >
+            <div className="service-card position-relative h-100">
+              <div
+                className="service-bg"
+                style={{ backgroundImage: `url(${service.image})` }}
+              />
+              <div className="service-overlay" />
+              <div className="service-hover-overlay" />
+              <div className="service-content d-flex flex-column justify-content-between h-100 p-4">
+                <div>
+                  <h3 className="service-titles text-white">{service.title}</h3>
+                </div>
+                <div className="service-info transition">
+                  <p className="service-description">{service.description}</p>
+                  <Link href={service.link} className="btn btn-warning rounded-pill px-4 py-2">
                     Read More
                   </Link>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="col-12 col-md-6 col-xl-4 mt-4">
-          <div className="card-style04 border-radius-5 cursor-pointer">
-            <img
-              decoding="async"
-              src="https://kargonwp.websitelayout.net/wp-content/uploads/2024/12/service-12.jpg"
-              alt="commercial-moving-service"
-              className="border-radius-5"
-              title="commercial-moving-service"
-            />
-            <div className="opacity-light bg-extra-dark-gray border-radius-5" />
-            <div className="card-overlay border-radius-5" />
-            <div className="card-content">
-              <div className="card-custom-1">
-                <span className="text-white opacity6 d-block mb-2 position-relative z-index-1">
-                  02
-                </span>
-                <h5 className="font-weight-800 display-19 position-relative z-index-1 mb-0">
-                  <Link
-                    href="/services/residential-service"
-                    className="text-white text-primary-hover"
-                  >
-                    COMMERCIAL MOVING
-                  </Link>
-                </h5>
-              </div>
-              <div className="card-data align-items-end d-flex">
-                <div className="card-custom-2">
-                  <p className="card-text">
-                    We can assist you with commercial moves of all complexities
-                    and sizes. Contact us today for a free consultation on your
-                    next move.
-                  </p>
-                  <Link
-                    href="/services/commercial-moving-service"
-                    className="button-primary button text-dark"
-                  >
-                    Read More
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-12 col-md-6 col-xl-4 mt-4">
-          <div className="card-style04 border-radius-5 cursor-pointer">
-            <img
-              decoding="async"
-              src="https://kargonwp.websitelayout.net/wp-content/uploads/2024/12/service-13.jpg"
-              alt="cross-country-moving-service"
-              className="border-radius-5"
-              title="cross-country-moving-service"
-            />
-            <div className="opacity-light bg-extra-dark-gray border-radius-5" />
-            <div className="card-overlay border-radius-5" />
-            <div className="card-content">
-              <div className="card-custom-1">
-                <span className="text-white opacity6 d-block mb-2 position-relative z-index-1">
-                  03
-                </span>
-                <h5 className="font-weight-800 display-19 position-relative z-index-1 mb-0">
-                  <Link
-                    href="services/cross-country-moving-service"
-                    className="text-white text-primary-hover"
-                  >
-                    CROSS-COUNTRY MOVING
-                  </Link>
-                </h5>
-              </div>
-              <div className="card-data align-items-end d-flex">
-                <div className="card-custom-2">
-                  <p className="card-text">
-                    Need help moving across Canada? No problem! Our team of
-                    experts are ready to haul all your belongings anywhere
-                    across Canada.
-                  </p>
-                  <Link
-                    href="services/cross-country-moving-service"
-                    className="button-primary button text-dark"
-                  >
-                    Read More
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <div className="col-12 col-md-6 col-xl-3 mt-4">
-          <div className="card-style04 border-radius-5 cursor-pointer">
-            <img
-              decoding="async"
-              src="https://kargonwp.websitelayout.net/wp-content/uploads/2024/12/service-13.jpg"
-              alt="cross-country-moving-service"
-              className="border-radius-5"
-              title="cross-country-moving-service"
-            />
-            <div className="opacity-light bg-extra-dark-gray border-radius-5" />
-            <div className="card-overlay border-radius-5" />
-            <div className="card-content">
-              <div className="card-custom-1">
-                <span className="text-white opacity6 d-block mb-2 position-relative z-index-1">
-                  03
-                </span>
-                <h5 className="font-weight-800 display-19 position-relative z-index-1 mb-0">
-                  <Link
-                    href="services/cross-country-moving-service"
-                    className="text-white text-primary-hover"
-                  >
-                    CROSS-COUNTRY MOVING
-                  </Link>
-                </h5>
-              </div>
-              <div className="card-data align-items-end d-flex">
-                <div className="card-custom-2">
-                  <p className="card-text">
-                    Need help moving across Canada? No problem! Our team of
-                    experts are ready to haul all your belongings anywhere
-                    across Canada.
-                  </p>
-                  <Link
-                    href="services/cross-country-moving-service"
-                    className="button-primary button text-dark"
-                  >
-                    Read More
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
+        ))}
+      </div>
+
+      <div className="text-center mt-5">
+        <p className="lead text-secondary mb-3">
+          Not sure which service you need? Let our experts help you choose the perfect solution.
+        </p>
+        <Link href={'/contact'} className="btn btn-outline-warning btn-lg d-inline-flex align-items-center gap-2">
+          Get Free Consultation
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="lucide lucide-arrow-right"
+          >
+            <path d="M5 12h14"></path>
+            <path d="m12 5 7 7-7 7"></path>
+          </svg>
+        </Link>
       </div>
     </div>
   );

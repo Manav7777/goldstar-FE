@@ -1,0 +1,87 @@
+{
+    "seo": {
+        "title": "Trusted Moving Company Vaughan | GoldStar Movers",
+        "description": "GoldStar Movers is your go-to mover in Vaughan! We provide stress-free relocations with 100% satisfaction guaranteed! Call (289) 541-7282 today.",
+        "canonical": "http://localhost:3000/goldstar/north-york",
+        "keywords": [
+            "Vaughan movers",
+            "moving company Vaughan"
+        ],
+        "openGraph": {
+            "title": "Vaughan Moving Company",
+            "description": "Affordable and reliable movers in Vaughan.",
+            "image": "http://localhost:3000/iamges/banner.png"
+        }
+    },
+    "components": [
+        {
+            "key": "LocationTopSection",
+            "props": {
+                "cityName": "Vaughan",
+                "headline": "Reliable and Professional Moving Company in",
+                "subtext": "Moving can induce stress, but with movers in Vaughan, you can rest easy knowing your belongings are in safe hands. At Goldstar Movers, we understand that relocating is more than just transporting items; it’s about starting a new chapter in your life. Our moving company in Vaughan is dedicated to providing efficient, personalized services to make your transition as smooth as possible, whether you are moving within the city or to a different province.",
+                "buttonText": "Get a Free Quote",
+                "services": [
+                    {
+                        "title": "Efficient Moving",
+                        "description": "Quick relocations.",
+                        "icon": "Truck"
+                    },
+                    {
+                        "title": "New Home Moves",
+                        "description": "Residential services.",
+                        "icon": "Home"
+                    },
+                    {
+                        "title": "Scheduled Service",
+                        "description": "Flexible timing.",
+                        "icon": "Calendar"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "LocationServiceSections",
+            "props": {
+                "title": "Here's Our Moving Services in Vaughan",
+                "subtitle": "Enjoy a Smooth Relocation - Our professionals handle packing, transportation, and unloading with precision and care."
+            }
+        },
+        {
+            "key": "WhyChooseUs",
+            "props": {
+                "whyLocation": {
+                    "title": "Why Choose Goldstar Moving for Your Relocation?",
+                    "description": "Goldstar Moving is your trusted partner for stress-free relocation in the GTA.",
+                    "reasons": [
+                        {
+                            "icon": "Users",
+                            "title": "Professional Moving Team",
+                            "description": "Trained and experienced movers who handle your belongings with care and follow proper packing and moving techniques."
+                        },
+                        {
+                            "icon": "Clock",
+                            "title": "On-Time Moving Service",
+                            "description": "Punctual arrivals and efficient moving processes to meet your schedule and minimize disruption to your day."
+                        },
+                        {
+                            "icon": "Shield",
+                            "title": "Fully Licensed & Insured",
+                            "description": "Complete insurance coverage and proper licensing to protect your belongings and provide peace of mind during your move."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "key":"LocationMovingSteps",
+            "props": {
+                "title": " How Our Moving Services in Vaughan Works in Just 3 Simple Steps",
+                "description": "Booking a move with Goldstar Movers is simple and straightforward"
+            }
+        },
+        {
+            "key":"SatisfactionSection"
+        }
+    ]
+}

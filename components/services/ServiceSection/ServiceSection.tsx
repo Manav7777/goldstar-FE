@@ -1,3 +1,4 @@
+import GsButton from "@/components/ui/GsButton";
 import React from "react";
 
 const ServiceSection = ({
@@ -146,9 +147,10 @@ const ServiceContent = ({
         </div>
       )}
       {buttonText && (
-        <button className="btn btn-warning text-dark fw-bold">
-          {buttonText}
-        </button>
+        // <button className="btn btn-warning text-dark fw-bold">
+        //   {buttonText}
+        // </button>
+        <GsButton type="defaultPrimary" text={buttonText} /> 
       )}
     </div>
   </>

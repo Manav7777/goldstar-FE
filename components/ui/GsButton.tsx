@@ -1,15 +1,24 @@
 "use client"
-import Link from "next/link";
 import React, { useState } from "react";
 import RequestQuoteForm from "../request-quote-form/RequestQuoteForm";
 
-const GsButton = ({ type, text }: any) => {
+const GsButton = ({ type, text, className }: any) => {
   const [open , setIsOpen] = useState(false);
   return (
     <>
       {type === "primary" && (
         <button className="button-primary button text-dark" onClick={() => setIsOpen(true)}>
           <span>Request Now</span>
+        </button>
+      )}
+      {type === "primaryClass" && (
+        <button className="button-primary button text-dark" onClick={() => setIsOpen(true)}>
+          <span>{text}</span>
+        </button>
+      )}
+       {type === "classBased" && (
+        <button className={className} onClick={() => setIsOpen(true)}>
+          <span>{text}</span>
         </button>
       )}
       {type === "primary-white" && (
@@ -23,7 +32,7 @@ const GsButton = ({ type, text }: any) => {
         </button>
       )}
       {type === "defaultPrimary" && (
-        <button className="btn btn-warning text-black fw-bold px-4 py-2" onClick={() => setIsOpen(true)}>
+        <button className={`btn btn-warning text-black fw-bold px-4 py-2 ${className}`} onClick={() => setIsOpen(true)}>
           <span>{ text }</span>
         </button>
       )}
