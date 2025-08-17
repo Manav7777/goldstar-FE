@@ -1,12 +1,12 @@
 import { notFound } from "next/navigation";
 import { loadComponent } from "@/utils/dynamicComponent";
 import "./LocationDetail.css";
-import { Metadata, ResolvingMetadata } from "next";
+import { Metadata } from "next";
 
 // 👇 Force dynamic rendering
 export const dynamic = "force-dynamic";
 
-// ✅ Load JSON file based on slug
+// Load location JSON file
 async function loadLocationData(slug: string) {
   try {
     const location = await import(`@/data/${slug}.json`);
@@ -16,21 +16,11 @@ async function loadLocationData(slug: string) {
   }
 }
 
-// ✅ Use Next.js built-in types (optional, but clearer)
-interface Props {
-  params: {
-    locationSlug: string;
-  };
-}
-
-// ✅ Metadata function
+// ✅ Correctly typed metadata function
 export async function generateMetadata(
-  { params }: Props,
-  parent?: ResolvingMetadata
+  { params }: { params: { locationSlug: string } }
 ): Promise<Metadata> {
-  const { locationSlug } = params;
-
-  const location = await loadLocationData(locationSlug);
+  const location = await loadLocationData(params.locationSlug);
 
   if (!location?.seo) return {};
 
@@ -52,11 +42,13 @@ export async function generateMetadata(
   };
 }
 
-// ✅ Default export page component
-export default async function LocationPage({ params }: Props) {
-  const { locationSlug } = params;
-
-  const location = await loadLocationData(locationSlug);
+// ✅ Correctly typed page component
+export default async function Page({
+  params,
+}: {
+  params: { locationSlug: string };
+}) {
+  const location = await loadLocationData(params.locationSlug);
   if (!location) return notFound();
 
   const components = await Promise.all(
