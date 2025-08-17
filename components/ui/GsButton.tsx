@@ -11,6 +11,16 @@ const GsButton = ({ type, text, className }: any) => {
           <span>Request Now</span>
         </button>
       )}
+      {type === "primaryClass" && (
+        <button className="button-primary button text-dark" onClick={() => setIsOpen(true)}>
+          <span>{text}</span>
+        </button>
+      )}
+       {type === "classBased" && (
+        <button className={className} onClick={() => setIsOpen(true)}>
+          <span>{text}</span>
+        </button>
+      )}
       {type === "primary-white" && (
         <button className="button-primary button" onClick={() => setIsOpen(true)}>
           <span>Request Now</span>

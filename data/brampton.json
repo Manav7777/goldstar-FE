@@ -1,0 +1,87 @@
+{
+    "seo": {
+        "title": "Trusted Moving Company Brampton | GoldStar Movers",
+        "description": "GoldStar Movers is your go-to mover in Brampton! We provide stress-free relocations with 100% satisfaction guaranteed! Call (289) 541-7282 today.",
+        "canonical": "http://localhost:3000/goldstar/north-york",
+        "keywords": [
+            "Brampton movers",
+            "moving company Brampton"
+        ],
+        "openGraph": {
+            "title": "Brampton Moving Company",
+            "description": "Affordable and reliable movers in Brampton.",
+            "image": "http://localhost:3000/iamges/banner.png"
+        }
+    },
+    "components": [
+        {
+            "key": "LocationTopSection",
+            "props": {
+                "cityName": "Brampton",
+                "headline": "Goldstar Movers for a hassle-free relocation",
+                "subtext": "Moving can be overwhelming, but with movers in Brampton, you don’t have to handle it alone. Goldstar Movers provides expert moving solutions tailored to your needs. Whether you’re relocating to a new home, shifting offices, or planning a long-distance move, our professional team ensures everything runs smoothly. Unlike other moving companies Brampton, we focus on precision, care, and efficiency.",
+                "buttonText": "Get a Free Quote",
+                "services": [
+                    {
+                        "title": "Family Movers",
+                        "description": "Household relocations.",
+                        "icon": "Users"
+                    },
+                    {
+                        "title": "Safe Packing",
+                        "description": "Secure belongings.",
+                        "icon": "Box"
+                    },
+                    {
+                        "title": "Rated Service",
+                        "description": "Flexible timing.",
+                        "icon": "Star"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "LocationServiceSections",
+            "props": {
+                "title": "Our Expertise in Professional Moving Services",
+                "subtitle": "At Goldstar Movers, we don’t just move belongings—we handle them with expertise. Our team undergoes rigorous training to ensure best industry practices are followed."
+            }
+        },
+        {
+            "key": "WhyChooseUs",
+            "props": {
+                "whyLocation": {
+                    "title": "What Makes Our Brampton Movers Company Different?",
+                    "description": "Goldstar Moving is your trusted partner for stress-free relocation in the GTA.",
+                    "reasons": [
+                        {
+                            "icon": "Users",
+                            "title": "Professional Moving Team",
+                            "description": "Trained and experienced movers who handle your belongings with care and follow proper packing and moving techniques."
+                        },
+                        {
+                            "icon": "Clock",
+                            "title": "On-Time Moving Service",
+                            "description": "Punctual arrivals and efficient moving processes to meet your schedule and minimize disruption to your day."
+                        },
+                        {
+                            "icon": "Shield",
+                            "title": "Fully Licensed & Insured",
+                            "description": "Complete insurance coverage and proper licensing to protect your belongings and provide peace of mind during your move."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "key":"LocationMovingSteps",
+            "props": {
+                "title": " How Our Moving Services in Brampton Works in Just 3 Simple Steps",
+                "description": "Booking a move with Goldstar Movers is simple and straightforward"
+            }
+        },
+        {
+            "key":"SatisfactionSection"
+        }
+    ]
+}

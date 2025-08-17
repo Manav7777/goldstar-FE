@@ -1,0 +1,72 @@
+/* styles.css */
+.location-service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.location-service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15);
+}
+.location-service-img {
+  transition: transform 0.5s ease;
+}
+.location-service-card:hover .location-service-img {
+  transform: scale(1.1);
+}
+.hover-shadow {
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  background-color: #f1b207; /* goldstar-400 */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Optional: Add smooth transition to icons */
+.icon-circle svg {
+  transition: transform 0.3s ease;
+}
+.icon-circle:hover svg {
+  transform: scale(1.1);
+}
+
+
+/* Main Box Background Gradient */
+.satisfaction-box {
+  background: linear-gradient(to right, #fffef0, #fffc99);
+  border: 2px solid var(--gs-primary-color) !important;
+  border-radius: 1.5rem !important;
+}
+
+/* 100% Badge */
+.icon-badge {
+  width: 96px;
+  height: 96px;
+  background-color: #f1b207; /* goldstar-400 */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icons in Grid */
+.icon-box {
+  width: 64px;
+  height: 64px;
+  background-color: #f1b207; /* goldstar-400 */
+  border-radius: 1rem; /* rounded-2xl */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,87 @@
+{
+    "seo": {
+        "title": "Trusted Moving Company North York | GoldStar Movers",
+        "description": "GoldStar Movers is your go-to mover in North York! We provide stress-free relocations with 100% satisfaction guaranteed! Call (289) 541-7282 today.",
+        "canonical": "http://localhost:3000/goldstar/north-york",
+        "keywords": [
+            "North York movers",
+            "moving company North York"
+        ],
+        "openGraph": {
+            "title": "North York Moving Company",
+            "description": "Affordable and reliable movers in North York.",
+            "image": "http://localhost:3000/iamges/banner.png"
+        }
+    },
+    "components": [
+        {
+            "key": "LocationTopSection",
+            "props": {
+                "cityName": "North York",
+                "headline": "Reputable and Reliable Movers",
+                "subtext": "Our professional movers in North York provide personalized and efficient services for your North York relocation. Our approach isn't just about moving your belongings; it's about helping you start a new chapter. Whether you're moving within the neighbourhood or across the city, our dedicated team ensures your move is handled with utmost care and expertise.",
+                "buttonText": "Get a Free Quote",
+                "services": [
+                    {
+                        "title": "Family Moving",
+                        "description": "Home relocations.",
+                        "icon": "House"
+                    },
+                    {
+                        "title": "Secure Packing",
+                        "description": "Business relocations.",
+                        "icon": "Box"
+                    },
+                    {
+                        "title": "Trained Team",
+                        "description": "Complete packing materials.",
+                        "icon": "Users"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "LocationServiceSections",
+            "props": {
+                "title": "Services by Our North York Moving Company",
+                "subtitle": "he services of our moving company in North York include."
+            }
+        },
+        {
+            "key": "WhyChooseUs",
+            "props": {
+                "whyLocation": {
+                    "title": "Why Choose GoldStar Movers Your North York Move?",
+                    "description": "Professional moving services you can trust in Toronto's West End",
+                    "reasons": [
+                        {
+                            "icon": "Users",
+                            "title": "Professional Moving Team",
+                            "description": "Trained and experienced movers who handle your belongings with care and follow proper packing and moving techniques."
+                        },
+                        {
+                            "icon": "Clock",
+                            "title": "On-Time Moving Service",
+                            "description": "Punctual arrivals and efficient moving processes to meet your schedule and minimize disruption to your day."
+                        },
+                        {
+                            "icon": "Shield",
+                            "title": "Fully Licensed & Insured",
+                            "description": "Complete insurance coverage and proper licensing to protect your belongings and provide peace of mind during your move."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "key":"LocationMovingSteps",
+            "props": {
+                "title": "Your Trusted North York Movers",
+                "description": "Move with peace of mind; get reputable movers in North York. Goldstar Movers is a moving company that goes beyond relocation – we're your North York partner, ensuring a stress-free experience"
+            }
+        },
+        {
+            "key":"SatisfactionSection"
+        }
+    ]
+}

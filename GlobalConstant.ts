@@ -1,3 +1,5 @@
+import { Home, Building2, Package, Truck, Trash } from "lucide-react";
+
 const sanitizeSvg = (svg: string) => svg.replace(/className=/g, "class=");
 
 export const goldStarMenus = [
@@ -29,11 +31,11 @@ export const goldStarMenus = [
         name: "Long Distance",
         url: "/services/long-distance-moving-service",
       },
-       {
+      {
         id: 88,
         name: "All Services",
         url: "/services",
-      }
+      },
     ],
   },
   // { id: 8, name: "Gallery", url: "/gallery" },
@@ -41,14 +43,14 @@ export const goldStarMenus = [
     id: 10,
     name: "Locations",
     subMenu: [
-      { id: 11, name: "Etobicoke", url: "/etobicoke" },
-      { id: 12, name: "Mississauga", url: "/mississauga" },
-      { id: 13, name: "North York", url: "/north-york" },
-      { id: 14, name: "Toronto", url: "/toronto" },
-      { id: 15, name: "Oakville", url: "/oakville" },
-      { id: 16, name: "Vaughan", url: "/vaughan" },
-      { id: 17, name: "Brampton", url: "/brampton" },
-      { id: 18, name: "Milton", url: "/milton" },
+      { id: 11, name: "Etobicoke", url: "/goldstar/etobicoke" },
+      { id: 12, name: "Mississauga", url: "/goldstar/mississauga" },
+      { id: 13, name: "North York", url: "/goldstar/north-york" },
+      { id: 14, name: "Toronto", url: "/goldstar/toronto" },
+      { id: 15, name: "Oakville", url: "/goldstar/oakville" },
+      { id: 16, name: "Vaughan", url: "/goldstar/vaughan" },
+      { id: 17, name: "Brampton", url: "/goldstar/brampton" },
+      { id: 18, name: "Milton", url: "/goldstar/milton" },
     ],
   },
   { id: 19, name: "Contact Us", url: "/contact" },
@@ -283,8 +285,7 @@ export const residentialServiceHeroSection: any = {
   subtitle: "Moving Made Magical",
   description:
     "Experience the joy of stress-free moving with our award-winning residential services. We don't just move your belongings—we move your life forward with care and precision.",
-  imageUrl:
-    `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/residential-moving.webp`,
+  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/residential-moving.webp`,
   buttonText: "Request Now",
   showTag: true,
   tagText: "Trusted by 1,000+ Businesses",
@@ -296,8 +297,7 @@ export const commercialServiceHeroSection: any = {
   subtitle: "Never Missing a Beat",
   description:
     "Experience enterprise-grade commercial moving that keeps your business running. From startups to Fortune 500 companies, we deliver seamless relocations with zero downtime.",
-  imageUrl:
-    `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/commercial-moving.webp`,
+  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/commercial-moving.webp`,
   buttonText: "Request Now",
   showTag: true,
   tagText: "Trusted by 1,000+ Businesses",
@@ -500,8 +500,7 @@ export const crossCountryServiceHeroSection: any = {
   subtitle: "Long-distance moves made easy",
   description:
     "Experience seamless long-distance relocations with our premium cross-country moving services. From coast to coast, we ensure your belongings travel safely with real-time tracking and comprehensive protection.",
-  imageUrl:
-    `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/cross-country-moving.webp`,
+  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/cross-country-moving.webp`,
   buttonText: "Request Now",
   showTag: true,
   tagText: "Trusted by 1,000+ Businesses",
@@ -630,8 +629,7 @@ export const longDistanceSectionOne: any = {
   subtitle: "Nationwide Relocation Experts",
   description:
     "GoldStar Packers and Movers provides expert long-distance moving services across Canada. From planning and packing to safe delivery, we ensure a seamless relocation experience backed by tracking, insurance, and professional care.",
-  imageUrl:
-    `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/long-distance-moving.webp`,
+  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/long-distance-moving.webp`,
   buttonText: "Get a Free Quote",
   showTag: true,
   tagText: "Serving 1,000+ Long-Distance Moves Nationwide",
@@ -670,7 +668,7 @@ export const longDistanceSectionTwo: any = [
   },
 ];
 
-export const longDistanceSectionThree:any = {
+export const longDistanceSectionThree: any = {
   title: `Why Businesses Choose`,
   span: " GoldStarMovers",
   description: `Our proven process ensures every move is executed flawlessly, on time, and within budget.`,
@@ -708,5 +706,51 @@ export const longDistanceSectionThree:any = {
       textColor: "text-green",
     },
   ],
-}
+};
 
+export const locationService: any = {
+  title :'Our Moving Services in Mississauga',
+  subtitle :'Professional packing and moving solutions for Peel Region',
+  services:[
+  {
+    title: "Residential Moving",
+    description:
+      "Complete home moving services including packing, loading, transportation, and unpacking for apartments, condos, and houses.",
+    image:
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&auto=format&q=80",
+    icon: Home,
+  },
+  {
+    title: "Commercial Moving",
+    description:
+      "Professional office and business relocations with minimal downtime, including furniture, equipment, and document handling.",
+    image:
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop&auto=format&q=80",
+    icon: Building2,
+  },
+  {
+    title: "Packing Services",
+    description:
+      "Expert packing using premium materials and techniques to protect your belongings during the moving process.",
+    image:
+      "https://images.unsplash.com/photo-1586796676426-f35a0b0e5d9d?w=400&h=300&fit=crop&auto=format&q=80",
+    icon: Package,
+  },
+  {
+    title: "Long Distance Moving",
+    description:
+      "Secure long-distance relocations across Ontario and Canada with real-time tracking and professional handling.",
+    image:
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop&auto=format&q=80",
+    icon: Truck,
+  },
+  {
+    title: "Junk Removal",
+    description:
+      "Eco-friendly disposal and removal services to help declutter your space before or after your move.",
+    image:
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&auto=format&q=80",
+    icon: Trash,
+  },
+]
+}
