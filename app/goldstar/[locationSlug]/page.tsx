@@ -6,7 +6,7 @@ import { Metadata } from "next";
 // 👇 Force dynamic rendering
 export const dynamic = "force-dynamic";
 
-// Load JSON file based on slug
+// ✅ Load JSON file based on slug
 async function loadLocationData(slug: string) {
   try {
     const location = await import(`@/data/${slug}.json`);
@@ -16,16 +16,23 @@ async function loadLocationData(slug: string) {
   }
 }
 
+// ✅ Define types for clarity and type safety
+type PageParams = {
+  params: {
+    locationSlug: string;
+  };
+};
 
-// ✅ Correct metadata function with await params
-export async function generateMetadata({ params }: any): Promise<Metadata> {
-  const { locationSlug }:any = await params;
+// ✅ Metadata function without unnecessary `await` on params
+export async function generateMetadata({ params }: PageParams): Promise<Metadata> {
+  const { locationSlug } = params;
 
   const location = await loadLocationData(locationSlug);
 
   if (!location?.seo) return {};
 
   const seo = location.seo;
+
   return {
     title: seo.title || "",
     description: seo.description || "",
@@ -42,9 +49,9 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
   };
 }
 
-// ✅ Correct default export page function
-export default async function LocationPage({ params }: any) {
-  const { locationSlug }:any = await params;
+// ✅ Default export page component without unnecessary `await` on params
+export default async function LocationPage({ params }: PageParams) {
+  const { locationSlug } = params;
 
   const location = await loadLocationData(locationSlug);
   if (!location) return notFound();
@@ -54,7 +61,7 @@ export default async function LocationPage({ params }: any) {
       const DynamicComponent = await loadComponent(item.key);
       if (!DynamicComponent) return null;
 
-      let props = { ...item.props };
+      const props = { ...item.props };
       return <DynamicComponent key={idx} {...props} />;
     })
   );
