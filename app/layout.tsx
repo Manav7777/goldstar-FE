@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
-import NavBar from "@/components/Navbar/NavBar";
 import Footer from "@/components/Footer/Footer";
 import { Suspense } from "react";
 import NewHeader from "@/components/Navbar/new-nav/NewHeader";

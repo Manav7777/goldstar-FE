@@ -717,7 +717,7 @@ export const locationService: any = {
     description:
       "Complete home moving services including packing, loading, transportation, and unpacking for apartments, condos, and houses.",
     image:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&auto=format&q=80",
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/residential-moving.webp`,
     icon: Home,
   },
   {
@@ -725,15 +725,15 @@ export const locationService: any = {
     description:
       "Professional office and business relocations with minimal downtime, including furniture, equipment, and document handling.",
     image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop&auto=format&q=80",
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/commercial-moving.webp`,
     icon: Building2,
   },
   {
-    title: "Packing Services",
+    title: "Cross Country Service",
     description:
-      "Expert packing using premium materials and techniques to protect your belongings during the moving process.",
+      "Nationwide moving services from coast to coast across Canada with secure transport",
     image:
-      "https://images.unsplash.com/photo-1586796676426-f35a0b0e5d9d?w=400&h=300&fit=crop&auto=format&q=80",
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/cross-country-moving.webp`,
     icon: Package,
   },
   {
@@ -741,7 +741,7 @@ export const locationService: any = {
     description:
       "Secure long-distance relocations across Ontario and Canada with real-time tracking and professional handling.",
     image:
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop&auto=format&q=80",
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/long-distance-moving.webp`,
     icon: Truck,
   },
   {
@@ -749,7 +749,7 @@ export const locationService: any = {
     description:
       "Eco-friendly disposal and removal services to help declutter your space before or after your move.",
     image:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&auto=format&q=80",
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/junk-removal-service.webp`,
     icon: Trash,
   },
 ]

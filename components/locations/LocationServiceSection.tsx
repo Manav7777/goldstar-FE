@@ -1,7 +1,6 @@
 import { locationService } from "@/GlobalConstant";
 
 const LocationServiceSections: any = ({ title, subtitle }: any) => {
-  console.log("works");
   return (
     <div className="container py-5">
       <div className="text-center mb-5">

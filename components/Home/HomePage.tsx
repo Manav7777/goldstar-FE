@@ -17,14 +17,14 @@ const slides = [
   {
     id: 2,
     image:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=800&fit=crop&auto=format&q=80",
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}home-2.webp`,
     title: "Your Trust. Our Promise.",
     subtitle: "Delivering excellence with every move, every time",
   },
   {
     id: 3,
     image:
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1920&h=800&fit=crop&auto=format&q=80",
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}Residental-moving-2.webp`,
     title: "Effortless Relocations.",
     subtitle: "Making your journey to a new beginning extraordinary",
   },
