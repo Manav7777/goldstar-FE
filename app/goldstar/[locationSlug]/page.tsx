@@ -9,7 +9,7 @@ export const dynamic = "force-dynamic";
 
 // Types
 interface PageProps {
-  params: Promise<{ locationSlug: string }>;
+  params: { locationSlug: string };
 }
 
 // Load location JSON file
