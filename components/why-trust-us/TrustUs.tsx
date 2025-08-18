@@ -3,7 +3,7 @@ import React from 'react';
 
 const TrustUs = () => {
   return (
-    <div className="bg-light">
+    <div className="bg-light" data-aos="fade-up" data-aos-delay="300">
         <div className="container px-4 py-5">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-5">
@@ -22,7 +22,7 @@ const TrustUs = () => {
             "Secure storage facilities available",
             "Same-day and emergency moving services"
           ].map((item, index) => (
-            <div key={index} className="col">
+            <div key={index} className="col" data-aos="fade-up" data-aos-delay="400">
               <div className="d-flex align-items-start gap-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ const TrustUs = () => {
           ))}
         </div>
 
-        <div className="text-center mt-5">
+        <div className="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
           <div className="bg-white rounded-xl p-4 border border-primary">
             <svg
               xmlns="http://www.w3.org/2000/svg"

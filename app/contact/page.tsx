@@ -10,7 +10,7 @@ const Contact = () => {
       <TopSection title="Contact Us" />
       <div className="bg-light pb-3">
         <div className="container pt-5 mb-5 position-relative z-10 px-4">
-          <div className="text-center mb-5">
+          <div className="text-center mb-5" data-aos="fade-up">
             <h2 className="display-4 fw-bold text-dark mb-3">
               Connect With Us
             </h2>
@@ -24,7 +24,11 @@ const Contact = () => {
 
           <div className="row g-4 justify-content-center">
             {/* Card 1: Call Us */}
-            <div className="col-md-6 col-lg-3">
+            <div
+              className="col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay={100}
+            >
               <div className="contact-card bg-light-5 border-0">
                 <div className="p-4 text-center d-flex flex-column h-100 justify-content-between">
                   <div className="mb-3">
@@ -53,7 +57,11 @@ const Contact = () => {
             </div>
 
             {/* Card 2: Email Us */}
-            <div className="col-md-6 col-lg-3">
+            <div
+              className="col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay={200}
+            >
               <div className="contact-card bg-success-light border-0">
                 <div className="p-4 text-center d-flex flex-column h-100 justify-content-between">
                   <div className="mb-3">
@@ -84,7 +92,11 @@ const Contact = () => {
             </div>
 
             {/* Card 3: Business Hours */}
-            <div className="col-md-6 col-lg-3">
+            <div
+              className="col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay={300}
+            >
               <div className="contact-card bg-info-light border-0">
                 <div className="p-4 text-center d-flex flex-column h-100 justify-content-between">
                   <div className="mb-3">
@@ -106,7 +118,11 @@ const Contact = () => {
             </div>
 
             {/* Card 4: Visit Us */}
-            <div className="col-md-6 col-lg-3">
+            <div
+              className="col-md-6 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay={400}
+            >
               <div className="contact-card bg-purple-light border-0">
                 <div className="p-4 text-center d-flex flex-column h-100 justify-content-between">
                   <div className="mb-3">
@@ -133,7 +149,10 @@ const Contact = () => {
       </div>
       <div className="container">
         <div className="row mt-4 mb-4">
-          <div className="text-center d-inline-flex align-items-center justify-content-center gap-2 mb-4">
+          <div
+            className="text-center d-inline-flex align-items-center justify-content-center gap-2 mb-4"
+            data-aos="zoom-in"
+          >
             <div
               className="d-inline-flex align-items-center justify-content-center mb-3 rounded"
               style={{
@@ -141,7 +160,7 @@ const Contact = () => {
                 height: "64px",
                 background:
                   "linear-gradient(to bottom right, #facc15, #eab308)",
-                  cursor:"pointer"
+                cursor: "pointer",
               }}
             >
               <svg
@@ -171,27 +190,34 @@ const Contact = () => {
               "Professional equipment",
               "On-time guarantee",
             ].map((item, index) => (
-                <div className="col-md-4 col-12">
+              <div
+                className="col-md-4 col-12"
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
                 <div key={index} className="d-flex align-items-start mb-3">
-                <div
-                  className="flex-shrink-0 rounded-circle mt-1 me-2"
-                  style={{
-                    width: "8px",
-                    height: "8px",
-                    backgroundColor: "#eab308",
-                  }} // yellow-500
-                ></div>
-                <p className="mb-0 text-secondary fw-medium">{item}</p>
-              </div>
+                  <div
+                    className="flex-shrink-0 rounded-circle mt-1 me-2"
+                    style={{
+                      width: "8px",
+                      height: "8px",
+                      backgroundColor: "#eab308",
+                    }} // yellow-500
+                  ></div>
+                  <p className="mb-0 text-secondary fw-medium">{item}</p>
+                </div>
               </div>
             ))}
           </div>
 
           <div
             className="mt-4 p-3 rounded border"
+            data-aos="fade-up"
+            data-aos-delay="500"
             style={{
               background: "linear-gradient(to bottom right, #fefce8, #fef9c3)", // yellow-50 to yellow-100
-              borderColor: "#fde68a", // yellow-200
+              borderColor: "#ffbc00 !important",
             }}
           >
             <div className="d-flex align-items-center mb-2">

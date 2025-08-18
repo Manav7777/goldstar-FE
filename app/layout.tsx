@@ -6,8 +6,10 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 import Footer from "@/components/Footer/Footer";
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import NewHeader from "@/components/Navbar/new-nav/NewHeader";
+import "aos/dist/aos.css";
+import AnimationAos from "@/components/ui/AnimationAos";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,16 +35,27 @@ export default async function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body data-new-gr-c-s-check-loaded="14.1248.0" data-gr-ext-installed=""
-        className={`${geistSans.variable} ${plusJakarta.variable}`}>
+      <body
+        data-new-gr-c-s-check-loaded="14.1248.0"
+        data-gr-ext-installed=""
+        className={`${geistSans.variable} ${plusJakarta.variable}`}
+      >
         {/* <NavBar /> */}
         <NewHeader />
-         <Suspense fallback={<div style={{
-          background: "#000",
-          width: '100vw',
-          height: '100vh'
-         }}>Loading...</div>}>
-          {children}
+        <Suspense
+          fallback={
+            <div
+              style={{
+                background: "#000",
+                width: "100vw",
+                height: "100vh",
+              }}
+            >
+              Loading...
+            </div>
+          }
+        >
+          <AnimationAos>{children}</AnimationAos>
         </Suspense>
         <Footer />
       </body>

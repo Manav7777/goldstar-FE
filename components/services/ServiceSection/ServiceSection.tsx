@@ -22,7 +22,11 @@ const ServiceSection = ({
           {reverse ? (
             <>
               {/* Image First */}
-              <div className="col-lg-5 col-md-12 mb-4 mb-lg-0">
+              <div
+                className="col-lg-5 col-md-12 mb-4 mb-lg-0"
+                data-aos={"fade-left"}
+                data-aos-duration="1000"
+              >
                 <img
                   src={imageSrc}
                   alt={imageAlt || title}
@@ -31,7 +35,12 @@ const ServiceSection = ({
                 />
               </div>
               {/* Content Second */}
-              <div className="col-lg-7 col-md-12">
+              <div
+                className="col-lg-7 col-md-12"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
                 <ServiceContent
                   title={title}
                   subtitle={subtitle}
@@ -46,7 +55,12 @@ const ServiceSection = ({
           ) : (
             <>
               {/* Content First */}
-              <div className={`col-lg-7 col-md-12 order-2 order-lg-1`}>
+              <div
+                className={`col-lg-7 col-md-12 order-2 order-lg-1`}
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
                 <ServiceContent
                   title={title}
                   subtitle={subtitle}
@@ -58,7 +72,11 @@ const ServiceSection = ({
                 />
               </div>
               {/* Image Second */}
-              <div className={`col-md-5 mt-4 mt-md-0 ${reverseClassNameDivOne}`}>
+              <div
+                className={`col-md-5 mt-4 mt-md-0 ${reverseClassNameDivOne}`}
+                data-aos={"fade-right"}
+                data-aos-duration="1000"
+              >
                 <img
                   src={imageSrc}
                   alt={imageAlt || title}
@@ -103,7 +121,13 @@ const ServiceContent = ({
         <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
       </svg>
       {badgeText && (
-        <span className="badge bg-primary fs-6 fw-bold">{badgeText}</span>
+        <span
+          className="badge bg-primary fs-6 fw-bold"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          {badgeText}
+        </span>
       )}
     </div>
 
@@ -116,7 +140,12 @@ const ServiceContent = ({
         <h3 className="h5 fw-bold text-dark mb-3">What's Included:</h3>
         <div className="row">
           {features.map((feature: any, index: any) => (
-            <div className="col-sm-6 mb-3 d-flex align-items-start" key={index}>
+            <div
+              className="col-sm-6 mb-3 d-flex align-items-start"
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay={`${300 + index * 50}`}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -150,7 +179,9 @@ const ServiceContent = ({
         // <button className="btn btn-warning text-dark fw-bold">
         //   {buttonText}
         // </button>
-        <GsButton type="defaultPrimary" text={buttonText} /> 
+        <div data-aos="zoom-in" data-aos-delay="600">
+          <GsButton type="defaultPrimary" text={buttonText} />
+        </div>
       )}
     </div>
   </>
