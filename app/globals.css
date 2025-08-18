@@ -344,23 +344,23 @@ select:focus,textarea:focus {
 
 /* Background color helpers */
 .bg-blue-50 {
-  background-color: #e7f3ff;
+  background-color: #e7f3ff !important;
 }
 
 .bg-green-50 {
-  background-color: #e6f4ea;
+  background-color: #e6f4ea !important;
 }
 
 .bg-yellow-50 {
-  background-color: #fff9db;
+  background-color: #fff9db !important;
 }
 
 .bg-purple-50 {
-  background-color: #f3e8ff;
+  background-color: #f3e8ff !important;
 }
 
 .bg-red-50 {
-  background-color: #ffe0e0;
+  background-color: #ffe0e0 !important;
 }
 
 /* Text color helpers */

@@ -24,11 +24,11 @@ export default function NewHeader() {
       <header className="header-bg sticky-top border-bottom">
         <Container className="d-flex align-items-center justify-content-between h-wrapper">
           <Link href="/" className="d-flex align-items-center logo-link">
-            <Image
+              <img
+                id="redux_logo"
                 src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}logo.png`}
                 width={128}
-                height={64}
-                alt="logo"
+                alt="Logo"
               />
           </Link>
 
@@ -84,11 +84,11 @@ export default function NewHeader() {
         <Offcanvas.Header closeButton>
           <Link href="/" className="d-flex align-items-center logo-link">
             <div className="p-2 rounded-lg">
-              <Image
+              <img
+                id="redux_logo-1"
                 src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}logo.png`}
                 width={128}
-                height={64}
-                alt="logo"
+                alt="Logo"
               />
             </div>
           </Link>
