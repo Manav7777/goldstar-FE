@@ -1,35 +1,18 @@
+// app/goldstar/[locationSlug]/page.tsx
+
 import { notFound } from "next/navigation";
 import { loadComponent } from "@/utils/dynamicComponent";
 import "./LocationDetail.css";
 import { Metadata } from "next";
-import { use } from "react";
 
 // Force dynamic rendering
 export const dynamic = "force-dynamic";
 
-// Types
-interface PageProps {
-  params: { locationSlug: string };
-}
-
-// Load location JSON file
-async function loadLocationData(slug: string) {
-  try {
-    const location = await import(`@/data/${slug}.json`);
-    return location.default;
-  } catch {
-    return null;
-  }
-}
-
-// Metadata generation
-export async function generateMetadata(
-  { params }: PageProps
-): Promise<Metadata> {
-
+// --- Use `any` for compatibility with Next.js 15.3.1 quirk
+export async function generateMetadata({ params }: { params: any }): Promise<Metadata> {
   const { locationSlug } = params;
-  const location = await loadLocationData(locationSlug);
 
+  const location = await loadLocationData(locationSlug);
   if (!location?.seo) return {};
 
   const seo = location.seo;
@@ -50,21 +33,30 @@ export async function generateMetadata(
   };
 }
 
-// Page component
-export default async function LocationDetail({ params }: PageProps) {
+// --- Page Component using `any` for `params`
+export default async function LocationDetail({ params }: { params: any }) {
   const { locationSlug } = params;
   const location = await loadLocationData(locationSlug);
+
   if (!location) return notFound();
 
   const components = await Promise.all(
     location.components.map(async (item: any, idx: number) => {
       const DynamicComponent = await loadComponent(item.key);
       if (!DynamicComponent) return null;
-
-      const props = { ...item.props };
-      return <DynamicComponent key={idx} {...props} />;
+      return <DynamicComponent key={idx} {...item.props} />;
     })
   );
 
   return <main>{components}</main>;
+}
+
+// --- Load location data from JSON
+async function loadLocationData(slug: string) {
+  try {
+    const location = await import(`@/data/${slug}.json`);
+    return location.default;
+  } catch {
+    return null;
+  }
 }
