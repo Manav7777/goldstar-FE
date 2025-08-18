@@ -3,14 +3,19 @@ import { locationService } from "@/GlobalConstant";
 const LocationServiceSections: any = ({ title, subtitle }: any) => {
   return (
     <div className="container py-5">
-      <div className="text-center mb-5">
+      <div className="text-center mb-5" data-aos="fade-down">
         <h2 className="display-5 fw-bold">{title}</h2>
         <p className="lead text-muted">{subtitle}</p>
       </div>
 
       <div className="row g-4 justify-content-center">
         {locationService.services.map((service: any, index: any) => (
-          <div className="col-sm-12 col-md-6 col-lg-4" key={index}>
+          <div
+            className="col-sm-12 col-md-6 col-lg-4"
+            key={index}
+            data-aos="zoom-in-up"
+            data-aos-delay={index * 100}
+          >
             <div className="card shadow-sm h-100 border-0 rounded-4 overflow-hidden location-service-card">
               <div
                 className="position-relative"

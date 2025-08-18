@@ -12,7 +12,11 @@ const About = () => {
       <TopSection title={"About Us"} />
       <div className="container sm-container-1100">
         <div className="row mt-5 mb-5 justify-content-center">
-          <div className="col-md-6 col-sm-12 about-us-image">
+          <div
+            className="col-md-6 col-sm-12 about-us-image"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
             <img
               decoding="async"
               src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}about-us.jpeg`}
@@ -21,33 +25,42 @@ const About = () => {
               title="gold-star-movers"
             />
           </div>
-          <div className="col-md-6 col-sm-12">
+          <div
+            className="col-md-6 col-sm-12"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <h1 className="h3 about-title">
               Setting new standards in the moving industry
             </h1>
             <div className="about-section">
-              <span className="story-starts text-primary">
+              <span
+                className="story-starts text-primary"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 Our story began 2017 in Mississauga, Ontario.
               </span>
-              <p>
+              <p data-aos="fade-up" data-aos-delay="400">
                 We started performing local residential relocation and piano
                 moving in the beginning.
               </p>
-              <p>
+              <p data-aos="fade-up" data-aos-delay="500">
                 Soon, we've expanded our range of services covering the business
                 industry, with the same quality as for residential.We started
                 from Mississauga and right now we are operating all around
                 Ontario and all across Canada.
               </p>
-              <p>
+              <p data-aos="fade-up" data-aos-delay="600">
                 We've got everything you need to make your moving experience
                 seamless and stress-free.
               </p>
-              <p>
+              <p data-aos="fade-up" data-aos-delay="700">
                 For a very short period of time, our company became one of the
                 best choices for your move in Toronto.
               </p>
-              <p>
+              <p data-aos="fade-up" data-aos-delay="800">
                 At Gold Star Movers, we promise to take the greatest care of
                 you, your family and your belongings from the time you ask us to
                 move until after we settle you in your new home. We promise to
@@ -55,11 +68,13 @@ const About = () => {
                 belongings to protect them while they're in our care. We promise
                 to settle any damage claims quickly and fairly.
               </p>
-              <p>
+              <p data-aos="fade-up" data-aos-delay="900">
                 Give us the opportunity and you'll look back on it as one smart
                 move!
               </p>
-              <GsButton type="primary" />
+              <div data-aos="fade-up" data-aos-delay="1000">
+                <GsButton type="primary" />
+              </div>
             </div>
           </div>
         </div>

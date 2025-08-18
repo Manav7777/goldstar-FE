@@ -16,7 +16,9 @@ const PerfectMovers = ({services}:any) => {
 
         <div className="row g-4">
           {services && services.map((item:any, idx:any) => (
-            <div key={idx} className="col-md-6 col-lg-4 cursor-pointer">
+            <div key={idx} className="col-md-6 col-lg-4 cursor-pointer" data-aos="fade-up"
+            data-aos-delay={idx * 50}
+            data-aos-duration="800">
               <div className="service-card h-100 p-4">
                 <div className="service-icon">
                   <span dangerouslySetInnerHTML={{__html:item.icon}}></span>

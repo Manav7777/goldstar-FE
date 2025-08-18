@@ -6,11 +6,13 @@ const WhyChooseGoldStar = () => {
     <div className="container py-5">
       <div className="row align-items-center g-5">
         {/* Content Section */}
-        <div className="col-lg-6">
+        <div className="col-lg-6" data-aos="fade-up"
+                  data-aos-delay={300}>
           <h2 className="h2 fw-bold text-dark mb-4">
             Why Choose GoldStarMovers?
           </h2>
-          <p className="lead text-muted mb-4">
+          <p className="lead text-muted mb-4" data-aos="fade-up"
+                  data-aos-delay={400}>
             With over 10 years of experience and thousands of successful moves,
             we're the trusted choice for residential and commercial relocations.
           </p>
@@ -24,7 +26,8 @@ const WhyChooseGoldStar = () => {
               "Satisfaction guarantee",
               "Free, no-obligation estimates",
             ].map((item, index) => (
-              <li key={index} className="d-flex align-items-center mb-3">
+              <li key={index} className="d-flex align-items-center mb-3" data-aos="fade-up"
+                  data-aos-delay={`${100}`}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={20}
@@ -69,10 +72,11 @@ const WhyChooseGoldStar = () => {
         </div>
 
         {/* Image + Stats */}
-        <div className="col-lg-6 position-relative">
+        <div className="col-lg-6 position-relative" data-aos="zoom-in"
+                  data-aos-delay={300}>
           <div className="position-relative rounded shadow overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=600&h=400&fit=crop"
+              src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}why-choose-goldstar.jpeg`}
               className="img-fluid rounded w-100"
               alt="Professional moving team"
             />

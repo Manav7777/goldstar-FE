@@ -1,10 +1,9 @@
-import Link from "next/link";
 import GsButton from "../ui/GsButton";
 
 const LastMomentDelivery = () => {
   return (
     <div className="container">
-      <div className="row">
+      <div className="row"  data-aos="zoom-in" data-aos-duration="400">
         <div className="last-moment-box">
           <div className="box-content">
             <h4 className="text-dark">Last Minute Move?</h4>

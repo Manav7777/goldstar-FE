@@ -49,6 +49,7 @@ const ServicesCard = () => {
           <div
             key={idx}
             className={`col-md-6 col-lg-${service.full ? '8' : '4'}`}
+            data-aos="zoom-in"
           >
             <div className="service-card position-relative h-100">
               <div
@@ -73,7 +74,7 @@ const ServicesCard = () => {
         ))}
       </div>
 
-      <div className="text-center mt-5">
+      <div className="text-center mt-5" data-aos="fade-up">
         <p className="lead text-secondary mb-3">
           Not sure which service you need? Let our experts help you choose the perfect solution.
         </p>

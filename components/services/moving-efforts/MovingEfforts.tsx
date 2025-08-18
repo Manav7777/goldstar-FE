@@ -23,6 +23,7 @@ const MovingEfforts = ({ residentialMovingEfforts }: any) => {
                 <div
                   className="col-12 col-md-6 col-lg-3 position-relative cursor-pointer"
                   key={idx}
+                  data-aos="fade-up" data-aos-delay="300"
                 >
                   <div className="card h-100 border border-light shadow-sm step-card">
                     <div className="card-body pt-4">

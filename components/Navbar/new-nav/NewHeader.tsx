@@ -55,13 +55,13 @@ export default function NewHeader() {
                   </div>
                 </div>
               ) : (
-                <Nav.Link
+                <Link
                   href={menu.url}
                   key={menu.id}
-                  className="text-muted-hover"
+                  className="text-muted-hover nav-link"
                 >
                   {menu.name}
-                </Nav.Link>
+                </Link>
               )
             )}
           </Nav>
@@ -104,9 +104,9 @@ export default function NewHeader() {
                     onToggle={() => toggleMenu(menu.id)}
                   />
                 ) : (
-                  <Nav.Link href={menu.url} className="py-2 px-2">
+                  <Link href={menu.url} className="py-2 nav-link px-2">
                     {menu.name}
-                  </Nav.Link>
+                  </Link>
                 )}
               </div>
             ))}

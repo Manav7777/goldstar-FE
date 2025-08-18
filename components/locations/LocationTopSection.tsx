@@ -9,13 +9,13 @@ const LocationTopSection = ({
   buttonText = "Get a Free Quote",
   services = [],
 }: any) => {
-  const servicesData: any = (services ?? []).map((service:any) => ({
+  const servicesData: any = (services ?? []).map((service: any) => ({
     ...service,
     icon: LucideIcons[service.icon as keyof typeof LucideIcons],
   }));
   return (
     <div className="container py-5">
-      <div className="text-center mb-5">
+      <div className="text-center mb-5" data-aos="fade-down">
         <h1 className="display-4 fw-bold">
           {headline} <span className="text-warning">{cityName}</span>
         </h1>
@@ -25,13 +25,20 @@ const LocationTopSection = ({
         >
           {subtext}
         </p>
-        <GsButton type="primaryClass" text={buttonText}/>
+        <div data-aos="zoom-in" data-aos-delay="200">
+          <GsButton type="primaryClass" text={buttonText} />
+        </div>
       </div>
 
       <div className="row mt-5">
         {servicesData &&
           servicesData.map((service: any, index: any) => (
-            <div key={index} className="col-md-4 text-center mb-4">
+            <div
+              key={index}
+              className="col-md-4 text-center mb-4"
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
+            >
               <div
                 className="d-flex align-items-center justify-content-center bg-warning bg-opacity-25 rounded-4 mx-auto mb-3"
                 style={{ width: "64px", height: "64px" }}

@@ -5,7 +5,7 @@ const LocationMovingSteps = ({ title = "", description = "" }: any) => {
   return (
     <div className="bg-light">
       <div className="container py-5">
-        <div className="text-center mb-5">
+        <div className="text-center mb-5" data-aos="fade-up">
           <h2 className="fw-bold display-5">{title}</h2>
           <p className="lead text-muted mx-auto">{description}</p>
         </div>
@@ -13,7 +13,11 @@ const LocationMovingSteps = ({ title = "", description = "" }: any) => {
         <div className="mx-auto position-relative">
           <div className="row text-center position-relative">
             {/* Step 1 */}
-            <div className="col-md-4 mb-5 position-relative">
+            <div
+              className="col-md-4 mb-5 position-relative"
+              data-aos="fade-up"
+              data-aos-delay={0 * 200}
+            >
               <div className="mb-4 d-flex justify-content-center position-relative z-1">
                 <div className="icon-circle shadow">
                   <CircleCheckBig size={40} className="text-white" />
@@ -27,7 +31,11 @@ const LocationMovingSteps = ({ title = "", description = "" }: any) => {
             </div>
 
             {/* Step 2 */}
-            <div className="col-md-4 mb-5 position-relative">
+            <div
+              className="col-md-4 mb-5 position-relative"
+              data-aos="fade-up"
+              data-aos-delay={1 * 200}
+            >
               <div className="mb-4 d-flex justify-content-center position-relative z-1">
                 <div className="icon-circle shadow">
                   <Package size={40} className="text-white" />
@@ -41,7 +49,11 @@ const LocationMovingSteps = ({ title = "", description = "" }: any) => {
             </div>
 
             {/* Step 3 */}
-            <div className="col-md-4 mb-5 position-relative">
+            <div
+              className="col-md-4 mb-5 position-relative"
+              data-aos="fade-up"
+              data-aos-delay={2 * 200}
+            >
               <div className="mb-4 d-flex justify-content-center position-relative z-1">
                 <div className="icon-circle shadow">
                   <Truck size={40} className="text-white" />

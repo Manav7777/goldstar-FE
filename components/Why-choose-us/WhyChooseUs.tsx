@@ -5,7 +5,7 @@ const WhyChooseUs = () => {
       <h2 className="text-center">WHY CHOOSE US</h2>
       <div className="container">
         <div className="row p-3 mt-3">
-          <div className="col-lg-6 col-md-12 col-sm-12">
+          <div className="col-lg-6 col-md-12 col-sm-12" data-aos="zoom-in" data-aos-duration="500">
             <h2>We Professional Moving Company</h2>
             <p>
               At <span className="text-primary">Gold Star Mover Company</span>,
@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
               </li>
             </ul>
           </div>
-          <div className="col-lg-6 col-md-12 col-sm-12">
+          <div className="col-lg-6 col-md-12 col-sm-12" data-aos="zoom-in" data-aos-duration="500">
             <img
               src={
                 process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL +
