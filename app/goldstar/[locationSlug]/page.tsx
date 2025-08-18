@@ -2,9 +2,15 @@ import { notFound } from "next/navigation";
 import { loadComponent } from "@/utils/dynamicComponent";
 import "./LocationDetail.css";
 import { Metadata } from "next";
+import { use } from "react";
 
-// 👇 Force dynamic rendering
+// Force dynamic rendering
 export const dynamic = "force-dynamic";
+
+// Types
+interface PageProps {
+  params: Promise<{ locationSlug: string }>;
+}
 
 // Load location JSON file
 async function loadLocationData(slug: string) {
@@ -16,11 +22,13 @@ async function loadLocationData(slug: string) {
   }
 }
 
-// ✅ Correctly typed metadata function
+// Metadata generation
 export async function generateMetadata(
-  { params }: { params: { locationSlug: string } }
+  { params }: PageProps
 ): Promise<Metadata> {
-  const location = await loadLocationData(params.locationSlug);
+
+  const { locationSlug } = params;
+  const location = await loadLocationData(locationSlug);
 
   if (!location?.seo) return {};
 
@@ -42,13 +50,10 @@ export async function generateMetadata(
   };
 }
 
-// ✅ Correctly typed page component
-export default async function Page({
-  params,
-}: {
-  params: { locationSlug: string };
-}) {
-  const location = await loadLocationData(params.locationSlug);
+// Page component
+export default async function LocationDetail({ params }: PageProps) {
+  const { locationSlug } = params;
+  const location = await loadLocationData(locationSlug);
   if (!location) return notFound();
 
   const components = await Promise.all(
