@@ -86,6 +86,13 @@ export const socialLinks = {
   youtube: "https://www.youtube.com/@goldstarmovers5806"
 }
 
+export const aboutLists = [
+  { icon: "Home" , text: "Residential & Commercial Moving"},
+  { icon: "Building2" , text: "Cross-Country and USA Relocation Services"},
+  { icon: "Truck" , text: "Junk Removal"},
+  { icon: "Trash" , text: "Professional Demolition Services"}
+]
+
 export const HouseIcon = () =>
   `<svg xmlns="http://www.w3.org/2000/svg" className="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />

@@ -21,7 +21,7 @@ const slides = [
   {
     id: 3,
     image:
-      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}effortless-allocation.webp`,
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}effortless-allocation.png`,
     title: "Effortless Relocations.",
     subtitle: "Making your journey to a new beginning extraordinary",
   },

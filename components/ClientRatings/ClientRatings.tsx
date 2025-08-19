@@ -3,36 +3,43 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import Image from "next/image";
+import { User } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Williams",
+    name: "Melodie Rose",
     position: "Marketing Manager",
-    text: "MetaFox delivered our site on time and exceeded expectations.",
-    image: "/client1.jpg",
-    starImage: "five-star-image.png"
+    text: `I've used this moving company before, and, like the previous move, they were on time, exceptionally efficient, and an absolute pleasure to work with!
+      Kudos to the whole team!`,
+    starImage: "five-star-image.png",
   },
   {
-    name: "John Smith",
+    name: "T C",
     position: "CEO, FinBridge",
-    text: "Professional, responsive, and very skilled. Highly recommend MetaFox Tech.",
-    image: "/client2.jpg",
-    starImage: "five-star-image.png"
+    text: `5 Stars is not enough !!!
+      These guys are the best, finished to load a 26ft truck in less than 1h30!!! Fantastic.
+      Thank you for your kindness as well.
+      I will recommend them to everybody
+      Take care`,
+    starImage: "five-star-image.png",
   },
   {
-    name: "Emily Chen",
+    name: "Elizabeth Carbonneau",
     position: "Product Lead",
-    text: "Their Next.js expertise helped us launch a fast, SEO-friendly site.",
-    image: "/client3.jpg",
-    starImage: "five-star-image.png"
+    text: `Gold Star Movers were amazing. The communication during 
+      the booking process was clear and professional and they sent confirmation the day before the move, 
+      as well as periodic updates throughout the day.`,
+    starImage: "five-star-image.png",
   },
   {
-    name: "Emily Chen-1",
+    name: "Sam",
     position: "Product Lead",
-    text: "Their Next.js expertise helped us launch a fast, SEO-friendly site.",
-    image: "/client3.jpg",
-    starImage: "five-star-image.png"
+    text: `Kristiyan is very responsive and communicates very well. His service is excellent! 
+      The crew arrived early, and everything was done ahead of schedule. 
+      They REALLY know how to pack a trailer! Our household goods are going across the US, 
+      so everything had to be packed into a 53 foot trailer, floor to ceiling. 
+      They did it perfectly! Pricing is very reasonable!`,
+    starImage: "five-star-image.png",
   },
 ];
 const ClientRatings = () => {
@@ -43,7 +50,9 @@ const ClientRatings = () => {
         <div className="row" data-aos="fade-right">
           <div className="col-lg-3 col-md-12 col-sm-12">
             <h5>Testimonials</h5>
-            <h3>What our <span className="text-primary h3">Customers</span> Says</h3>
+            <h3>
+              What our <span className="text-primary h3">Customers</span> Says
+            </h3>
           </div>
           <div className="col-lg-9 col-md-12 col-sm-12">
             <Swiper
@@ -60,15 +69,11 @@ const ClientRatings = () => {
               {testimonials.map((item, index) => (
                 <SwiperSlide key={index}>
                   <div className="bg-white p-4 rounded client-slider-box text-center h-100 d-flex flex-column justify-content-between">
-                    <Image
-                      src={item.image}
-                      width={80}
-                      height={80}
-                      alt={item.name}
-                      className="rounded-circle mx-auto"
-                    />
                     <img
-                      src={process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL + item.starImage}
+                      src={
+                        process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL +
+                        item.starImage
+                      }
                       width={120}
                       height={30}
                       alt={item.starImage}
@@ -76,8 +81,12 @@ const ClientRatings = () => {
                     />
                     <p className="text-muted mb-3">“{item.text}”</p>
                     <div>
-                      <h6 className="mb-0 fw-bold">{item.name}</h6>
-                      <small className="text-muted">{item.position}</small>
+                      <div className="d-flex justify-content-center align-items-center w-100 mb-2">
+                        <div className="bg-primary text-white p-2 rounded-circle me-2">
+                          <User />
+                        </div>
+                        <h6 className="mb-0 fw-bold">{item.name}</h6>
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>

@@ -3,7 +3,7 @@ import "./about.css";
 import ClientRatings from "@/components/ClientRatings/ClientRatings";
 import GsButton from "@/components/ui/GsButton";
 import MovingEfforts from "@/components/services/moving-efforts/MovingEfforts";
-import { aboutUsSteps } from "@/GlobalConstant";
+import { aboutLists, aboutUsSteps } from "@/GlobalConstant";
 import TrustUs from "@/components/why-trust-us/TrustUs";
 
 const About = () => {
@@ -40,37 +40,45 @@ const About = () => {
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
-                Our story began 2017 in Mississauga, Ontario.
+                Established in 2017
               </span>
               <p data-aos="fade-up" data-aos-delay="400">
-                We started performing local residential relocation and piano
-                moving in the beginning.
+                Gold Star Movers began as a small moving company focused on
+                local moves and piano transportation. From the very beginning,
+                our mission has been to provide reliable, efficient, and
+                professional moving solutions that customers can trust.
               </p>
               <p data-aos="fade-up" data-aos-delay="500">
-                Soon, we've expanded our range of services covering the business
-                industry, with the same quality as for residential.We started
-                from Mississauga and right now we are operating all around
-                Ontario and all across Canada.
+                Through dedication, hard work, and the loyalty of our clients,
+                we quickly expanded our services beyond local moving. Today,
+                Gold Star Movers proudly offers a full range of solutions
+                including:
               </p>
-              <p data-aos="fade-up" data-aos-delay="600">
-                We've got everything you need to make your moving experience
-                seamless and stress-free.
-              </p>
+              <ul className="list" data-aos="fade-up" data-aos-delay="600">
+                {aboutLists.map((li: any) => {
+                  return (
+                    <li key={li.text}>
+                      <span className="text-dark">{li.text}</span>
+                    </li>
+                  );
+                })}
+              </ul>
               <p data-aos="fade-up" data-aos-delay="700">
-                For a very short period of time, our company became one of the
-                best choices for your move in Toronto.
+                From our roots in Toronto, we have grown to serve not only the
+                Greater Toronto Area, but also communities across Ontario,
+                Canada, and the United States.
               </p>
               <p data-aos="fade-up" data-aos-delay="800">
-                At Gold Star Movers, we promise to take the greatest care of
-                you, your family and your belongings from the time you ask us to
-                move until after we settle you in your new home. We promise to
-                take every precaution in packing, loading and transporting your
-                belongings to protect them while they're in our care. We promise
-                to settle any damage claims quickly and fairly.
+                In a short period of time, Gold Star Movers has become one of
+                the most trusted and recommended companies in Toronto and the
+                surrounding regions. Our success is built on a reputation for
+                professionalism, customer care, and delivering results that
+                exceed expectations.
               </p>
               <p data-aos="fade-up" data-aos-delay="900">
-                Give us the opportunity and you'll look back on it as one smart
-                move!
+                No matter the size of the project—whether it’s a local move, a
+                cross-border relocation, or a large-scale demolition—Gold Star
+                Movers is your trusted partner every step of the way.
               </p>
               <div data-aos="fade-up" data-aos-delay="1000">
                 <GsButton type="primary" />

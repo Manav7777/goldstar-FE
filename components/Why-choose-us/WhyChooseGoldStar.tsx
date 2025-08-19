@@ -21,7 +21,6 @@ const WhyChooseGoldStar = () => {
             {[
               "Licensed and insured professionals",
               "Transparent, upfront pricing",
-              "Modern, well-maintained fleet",
               "24/7 customer support",
               "Satisfaction guarantee",
               "Free, no-obligation estimates",
