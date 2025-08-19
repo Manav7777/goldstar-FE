@@ -17,3 +17,8 @@
   object-fit: cover;
   border-radius: 40px;
 }
+
+.list li {
+  list-style-type: disc;
+  color: var(--gs-primary-color);
+}

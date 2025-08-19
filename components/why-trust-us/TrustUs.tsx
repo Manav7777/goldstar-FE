@@ -17,9 +17,7 @@ const TrustUs = () => {
             "Professional, trained, and background-checked movers",
             "Free, no-obligation in-home estimates",
             "Transparent pricing with no hidden fees",
-            "Modern equipment and well-maintained trucks",
             "Comprehensive packing and unpacking services",
-            "Secure storage facilities available",
             "Same-day and emergency moving services"
           ].map((item, index) => (
             <div key={index} className="col" data-aos="fade-up" data-aos-delay="400">
