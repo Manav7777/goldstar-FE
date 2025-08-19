@@ -106,8 +106,8 @@ const Contact = () => {
                   </div>
                   <div className="flex-grow-1">
                     <h5 className="fw-bold mb-2 text-dark">Business Hours</h5>
-                    <p className="h6 text-dark mb-1">Mon-Fri: 8AM-8PM</p>
-                    <p className="small text-muted mb-2">Sat-Sun: 9AM-6PM</p>
+                    <p className="h6 text-dark mb-1">Mon to sat 7am to 9pm</p>
+                    <p className="h6 small text-dark mb-2">Sunday 8am to 8pm</p>
                     <p className="text-muted small">
                       Extended hours for your convenience
                     </p>
@@ -131,13 +131,14 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="flex-grow-1">
-                    <h5 className="fw-bold mb-2 text-dark">Visit Our Office</h5>
-                    <p className="h6 text-dark mb-1">123 Moving Street</p>
+                    <h5 className="fw-bold mb-2 text-dark">Our Location</h5>
+                    <p className="h6 text-dark mb-1">1850 Rathburn Rd E,</p>
                     <p className="small text-muted mb-2">
-                      Mississauga, ON L5B 1A1
+                       Mississauga, ON L4W 2X9, Canada
                     </p>
                     <p className="text-muted small">
-                      Free parking and easy highway access
+                      <strong>Located in:</strong>
+                       Forest Park Circle Apartments
                     </p>
                   </div>
                   <div className="mt-3 call-to-action">&nbsp;</div>

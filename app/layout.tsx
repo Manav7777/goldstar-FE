@@ -10,6 +10,8 @@ import { Suspense, useEffect } from "react";
 import NewHeader from "@/components/Navbar/new-nav/NewHeader";
 import "aos/dist/aos.css";
 import AnimationAos from "@/components/ui/AnimationAos";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

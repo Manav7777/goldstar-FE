@@ -22,14 +22,14 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(to right, #00000099, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
   z-index: 1;
 }
 
 .hero-content {
   z-index: 2;
-  top: 50%;
-  transform: translate(0%, -50%);
+  top: 70%;
+  transform: translate(0%, -70%);
 }
 
 .hero-title {
