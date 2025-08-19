@@ -80,6 +80,12 @@ export const openingTimes = [
   { id: 18, day: "Sunday", time: "7:00AM to 8:00PM" },
 ];
 
+export const socialLinks = {
+  instagram: "https://www.instagram.com/goldstarmovers/",
+  facebook: "https://www.facebook.com/people/Gold-Star-Movers/100037978853263/",
+  youtube: "https://www.youtube.com/@goldstarmovers5806"
+}
+
 export const HouseIcon = () =>
   `<svg xmlns="http://www.w3.org/2000/svg" className="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />

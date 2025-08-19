@@ -4,10 +4,11 @@ import {
   MapPin,
   InstagramIcon,
   FacebookIcon,
-  LinkedinIcon,
+  YoutubeIcon,
 } from "lucide-react";
 import "./Footer.css";
 import Link from "next/link";
+import { socialLinks } from "@/GlobalConstant";
 const Footer = () => {
   return (
     <div className="bg-secondary">
@@ -43,14 +44,14 @@ const Footer = () => {
                 affordable moving services across the country.
               </p>
               <div className="d-flex">
-                <Link href="#" className="text-gray-300 me-2">
+                <Link href={socialLinks.facebook} target="_blank" className="text-gray-300 me-2">
                   <FacebookIcon className="me-2 text-warning wi-18" />
                 </Link>
-                <Link href="/" className="text-gray-300 me-2">
+                <Link href={socialLinks.instagram} target="_blank" className="text-gray-300 me-2">
                   <InstagramIcon className="me-2 text-warning wi-18" />
                 </Link>
-                <Link href="/" className="text-gray-300">
-                  <LinkedinIcon className="me-2 text-warning wi-18" />
+                <Link href={socialLinks.youtube} target="_blank" className="text-gray-300">
+                  <YoutubeIcon className="me-2 text-warning wi-18" />
                 </Link>
               </div>
             </div>
@@ -162,10 +163,10 @@ const Footer = () => {
               </div>
               <div className="d-flex align-items-start">
                 <MapPin className="me-2 text-warning wi-18" />
-                <span className="text-gray-300">
-                  123 Main Street
+                <span className="text-white">
+                  1850 Rathburn Rd E,
                   <br />
-                  Toronto, ON M5V 3A8
+                   Mississauga, ON L4W 2X9, Canada
                 </span>
               </div>
             </div>
