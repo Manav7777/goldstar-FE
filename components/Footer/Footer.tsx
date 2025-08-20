@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import "./Footer.css";
 import Link from "next/link";
-import { socialLinks } from "@/GlobalConstant";
+import { footersLinks, socialLinks } from "@/GlobalConstant";
 const Footer = () => {
   return (
     <div className="bg-secondary">
@@ -91,14 +91,6 @@ const Footer = () => {
                     Contact
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="/request"
-                    className="text-gray-300 text-decoration-none"
-                  >
-                    Request Quote
-                  </Link>
-                </li>
               </ul>
             </div>
 
@@ -106,38 +98,16 @@ const Footer = () => {
             <div className="col-12 col-md-3">
               <h5 className="font-weight-semibold mb-4 text-white">Services</h5>
               <ul className="list-unstyled small">
-                <li>
+                {footersLinks.map((s) => {
+                  return <li key={s.id}>
                   <Link
-                    href="/services/residential"
+                    href={s.url}
                     className="text-gray-300 text-decoration-none"
                   >
-                    Residential Moving
+                   {s.menu}
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="/services/commercial"
-                    className="text-gray-300 text-decoration-none"
-                  >
-                    Commercial Moving
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/services/junk-removal"
-                    className="text-gray-300 text-decoration-none"
-                  >
-                    Junk Removal
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/services/cross-country"
-                    className="text-gray-300 text-decoration-none"
-                  >
-                    Cross-Country
-                  </Link>
-                </li>
+                })}
               </ul>
             </div>
 
