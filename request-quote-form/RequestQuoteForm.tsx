@@ -27,10 +27,12 @@ export default function RequestQuoteForm({ open, close }: any) {
     { value: "studio", label: "Studio Apartment" },
     { value: "commercial", label: "Commercial Space" },
     { value: "piano", label: "Piano Moving" },
+    { value: "safe", label: "Safe Move"},
     { value: "long distance", label: "Long Distance Move" },
     { value: "cross-country", label: "Cross-Country Move" },
     { value: "junk-removal", label: "Junk Removal" },
     { value: "demolition", label: "Demolition" },
+   
   ];
 
   const handleInputChange = (field: string, value: string) => {
@@ -174,14 +176,14 @@ export default function RequestQuoteForm({ open, close }: any) {
               </h6>
               <div className="row">
                 <div className="col-md-6 mb-3">
-                  <label className="form-label">Type of Move *</label>
+                  <label className="form-label">Type of Services *</label>
                   <select
                     className="form-select gold-star-select"
                     value={formData.movingType}
                     onChange={(e) => handleInputChange("movingType", e.target.value)}
                     required
                   >
-                    <option value="">Select your moving type</option>
+                    <option value="">Select your Service type</option>
                     {movingOptions.map((option) => (
                       <option key={option.value} value={option.value}>
                         {option.label}
@@ -284,4 +286,5 @@ export default function RequestQuoteForm({ open, close }: any) {
     </Modal>
   );
 }
+
 
