@@ -8,8 +8,8 @@ const slides = [
     id: 1,
     image:
       `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}banner.png`,
-    title: "Movin. Made. Magical.",
-    subtitle: "Experience the future of moving with our intelligent logistics",
+    title: "Experienced and Professional Movers",
+    subtitle: "Professional movers who handle your belongings with respect.",
   },
   {
     id: 2,
@@ -30,14 +30,14 @@ const slides = [
     image:
       `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}junk-removal-banner.jpeg`,
     title: "Junk Gone. Peace On.",
-    subtitle: "Fast, eco-friendly junk removal for homes, offices, and job sites",
+    subtitle: "Reliable junk removal with eco-friendly disposal.",
   },
   {
     id: 5,
     image:
       `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}demolition-service.jpeg`,
-    title: "Safe. Smart. Demolition.",
-    subtitle: "Professional demolition services — precision, safety, and site-ready clearance",
+    title: "Professional Demolition Services",
+    subtitle: "From small interior jobs to large-scale projects – we demolish with precision.",
   }
 ];
 
