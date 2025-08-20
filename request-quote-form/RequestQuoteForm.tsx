@@ -19,22 +19,18 @@ export default function RequestQuoteForm({ open, close }: any) {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const movingOptions = [
-    { value: "1bhk", label: "1 BHK Apartment" },
-    { value: "2bhk", label: "2 BHK Apartment" },
-    { value: "3bhk", label: "3 BHK Apartment" },
-    { value: "4bhk", label: "4+ BHK House" },
+ const movingOptions = [
+  { value: "1bhk", label: "1 Bed Room" },
+    { value: "2bhk", label: "2 Bed Room" },
+    { value: "3bhk", label: "3 Bed Room" },
+    { value: "4bhk", label: "4+ Bed Room" },
     { value: "studio", label: "Studio Apartment" },
-    { value: "office-small", label: "Small Office (1-10 employees)" },
-    { value: "office-medium", label: "Medium Office (11-50 employees)" },
-    { value: "office-large", label: "Large Office (50+ employees)" },
     { value: "commercial", label: "Commercial Space" },
-    { value: "warehouse", label: "Warehouse/Storage" },
-    { value: "box-delivery", label: "Box Delivery Service" },
-    { value: "junk-removal", label: "Junk Removal" },
     { value: "piano", label: "Piano Moving" },
-    { value: "furniture", label: "Furniture Only" },
+    { value: "long distance", label: "Long Distance Move" },
     { value: "cross-country", label: "Cross-Country Move" },
+    { value: "junk-removal", label: "Junk Removal" },
+    { value: "demolition", label: "Demolition" },
   ];
 
   const handleInputChange = (field: string, value: string) => {
@@ -288,3 +284,4 @@ export default function RequestQuoteForm({ open, close }: any) {
     </Modal>
   );
 }
+
