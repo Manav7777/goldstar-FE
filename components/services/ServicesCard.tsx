@@ -15,11 +15,12 @@ const ServicesCard = () => {
     image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/commercial-moving.webp`,
     link: '/services/commercial-moving-service'
   },
-  {
-    title: 'Junk Removal',
-    description: 'Eco-friendly disposal and decluttering services for residential and commercial spaces',
-    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/junk-removal-service.webp`,
-    link: '/services/junk-removal-moving-service'
+ {
+    title: 'Long Distance Moving',
+    description: 'Specialized long-distance moving services with secure transport, careful handling, and timely delivery across provinces',
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/long-distance-moving.webp`,
+    full: true,
+    link: '/services/long-distance-moving-service'
   },
   {
     title: 'Cross Country',
@@ -27,12 +28,19 @@ const ServicesCard = () => {
     image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/cross-country-moving.webp`,
     link: '/services/cross-country-moving-service'
   },
+  
   {
-    title: 'Long Distance Moving',
-    description: 'Specialized long-distance moving services with secure transport, careful handling, and timely delivery across provinces',
-    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/long-distance-moving.webp`,
-    full: true,
-    link: '/services/long-distance-moving-service'
+    title: 'Junk Removal',
+    description: 'Eco-friendly disposal and decluttering services for residential and commercial spaces',
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/junk-removal-service.webp`,
+    link: '/services/junk-removal-moving-service'
+  },
+
+     {
+    title: 'Demolition',
+    description: 'From small interior jobs to large-scale projects – we demolish with precision.',
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/junk-removal-service.webp`,
+    link: '/services/junk-removal-moving-service'
   },
   ];
   return (
