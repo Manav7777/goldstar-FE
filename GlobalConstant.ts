@@ -23,14 +23,22 @@ export const goldStarMenus = [
       },
       {
         id: 7,
-        name: "Junk Removal",
-        url: "/services/junk-removal-moving-service",
-      },
-      {
-        id: 8,
         name: "Long Distance",
         url: "/services/long-distance-moving-service",
       },
+      
+      {
+        id: 8,
+        name: "Junk Removal",
+        url: "/services/junk-removal-moving-service",
+      },
+
+        {
+        id: 9,
+        name: "Demolition",
+        url: "/services/demolition-service",
+      },
+      
       {
         id: 88,
         name: "All Services",
@@ -71,13 +79,13 @@ export const footersLinks = [
 ];
 
 export const openingTimes = [
-  { id: 11, day: "Monday", time: "6:00AM to 9:00PM" },
-  { id: 12, day: "Tuesday", time: "6:00AM to 9:00PM" },
-  { id: 14, day: "Wednesday", time: "6:00AM to 9:00PM" },
-  { id: 15, day: "Thursday", time: "6:00AM to 9:00PM" },
-  { id: 16, day: "Friday", time: "6:00AM to 9:00PM" },
-  { id: 17, day: "Saturday", time: "7:00AM to 8:00PM" },
-  { id: 18, day: "Sunday", time: "7:00AM to 8:00PM" },
+  { id: 11, day: "Monday", time: "6:00 AM to 9:00 PM" },
+  { id: 12, day: "Tuesday", time: "6:00 AM to 9:00 PM" },
+  { id: 14, day: "Wednesday", time: "6:00 AM to 9:00 PM" },
+  { id: 15, day: "Thursday", time: "6:00 AM to 9:00 PM" },
+  { id: 16, day: "Friday", time: "6:00 AM to 9:00 PM" },
+  { id: 17, day: "Saturday", time: "7:00 AM to 8:00 PM" },
+  { id: 18, day: "Sunday", time: "7:00 AM to 8:00 PM" },
 ];
 
 export const socialLinks = {
