@@ -57,17 +57,17 @@ export const goldStarMenus = [
 ];
 
 export const footersLinks = [
-  { id: 3, menu: "Home", url: "/" },
-  { id: 4, menu: "About Us", url: "/about" },
-  { id: 5, menu: "Our Service", url: "/services" },
-  { id: 6, menu: "Residential Service", url: "/services/residential-service" },
-  { id: 7, menu: "Commercial Service", url: "/services/commercial-service" },
+  { id: 6, menu: "Residential Service", url: "/services/residential-moving-service" },
+  { id: 7, menu: "Commercial Service", url: "/services/commercial-moving-service" },
   {
     id: 8,
-    menu: "Cross Country Service",
+    menu: "Long Distance Service",
     url: "/services/cross-country-service",
   },
-  // { id: 9, menu: "Gallery", url: "/gallery" },
+  { id: 9, menu: "Cross Country Service", url: "/services/cross-country-moving-service" },
+  { id: 10, menu: "Junk Removal", url: "/services/junk-removal-moving-service" },
+  { id: 11, menu: "Demolition Service", url: "/services/demolition-service" },
+
 ];
 
 export const openingTimes = [
@@ -293,11 +293,12 @@ export const ResidentialMovingEfforts: any = {
 };
 
 export const residentialServiceHeroSection: any = {
-  title: "Your Home.",
-  highlightedTitle: "Our Mission.",
+  title: "Residential",
+  highlightedTitle: "Moving Service.",
   subtitle: "Moving Made Magical",
-  description:
-    "Experience the joy of stress-free moving with our award-winning residential services. We don't just move your belongings—we move your life forward with care and precision.",
+  description: `Moving into a new home is a big step and at Gold Star Movers, we make sure the process is smooth, stress-free, and efficient. 
+  Our residential moving services are designed to fit your needs, whether you’re moving from a small apartment, a condo, 
+  or a large family house.`,
   imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/residential-moving.webp`,
   buttonText: "Request Now",
   showTag: true,
@@ -369,36 +370,36 @@ export const commercialMovingEfforts: any = {
 };
 
 export const residentialServices: any = [
-  {
-    title: "Full-Service Packing",
-    desc: "Professional packing with premium materials",
-    icon: sanitizeSvg(PackageIcon()),
-  },
-  {
-    title: "Furniture Assembly",
-    desc: "Complete disassembly and reassembly service",
-    icon: sanitizeSvg(truckIcon()),
-  },
-  {
-    title: "Specialty Items",
-    desc: "Piano, artwork, and antique handling",
-    icon: sanitizeSvg(guardIcon()),
-  },
-  {
-    title: "Flexible Timing",
-    desc: "Same-day and next-day options",
-    icon: sanitizeSvg(clockIcon()),
-  },
-  {
-    title: "Storage Solutions",
-    desc: "Temporary and long-term storage",
-    icon: sanitizeSvg(internetIcon()),
-  },
-  {
-    title: "Insurance Coverage",
-    desc: "Comprehensive protection included",
-    icon: sanitizeSvg(awardIcon()),
-  },
+    {
+      title: "Full-Service Packing",
+      desc: "Professional packing with premium materials",
+      icon: sanitizeSvg(PackageIcon()),
+    },
+    {
+      title: "Furniture Assembly",
+      desc: "Complete disassembly and reassembly service",
+      icon: sanitizeSvg(truckIcon()),
+    },
+    {
+      title: "Specialty Items",
+      desc: "Piano, artwork, and antique handling",
+      icon: sanitizeSvg(guardIcon()),
+    },
+    {
+      title: "Flexible Timing",
+      desc: "Same-day and next-day options",
+      icon: sanitizeSvg(clockIcon()),
+    },
+    {
+      title: "Storage Solutions",
+      desc: "Temporary and long-term storage",
+      icon: sanitizeSvg(internetIcon()),
+    },
+    {
+      title: "Insurance Coverage",
+      desc: "Comprehensive protection included",
+      icon: sanitizeSvg(awardIcon()),
+    },
 ];
 
 export const commercialServicesPerfectMove: any = [
@@ -725,45 +726,45 @@ export const locationService: any = {
   title :'Our Moving Services in Mississauga',
   subtitle :'Professional packing and moving solutions for Peel Region',
   services:[
-  {
-    title: "Residential Moving",
-    description:
-      "Complete home moving services including packing, loading, transportation, and unpacking for apartments, condos, and houses.",
+    {
+      title: "Residential Moving",
+      description:
+        "Complete home moving services including packing, loading, transportation, and unpacking for apartments, condos, and houses.",
     image:
       `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/residential-moving.webp`,
-    icon: Home,
-  },
-  {
-    title: "Commercial Moving",
-    description:
-      "Professional office and business relocations with minimal downtime, including furniture, equipment, and document handling.",
+      icon: Home,
+    },
+    {
+      title: "Commercial Moving",
+      description:
+        "Professional office and business relocations with minimal downtime, including furniture, equipment, and document handling.",
     image:
       `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/commercial-moving.webp`,
-    icon: Building2,
-  },
-  {
-    title: "Cross Country Service",
-    description:
-      "Nationwide moving services from coast to coast across Canada with secure transport",
+      icon: Building2,
+    },
+    {
+      title: "Cross Country Service",
+      description:
+        "Nationwide moving services from coast to coast across Canada with secure transport",
     image:
       `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/cross-country-moving.webp`,
-    icon: Package,
-  },
-  {
-    title: "Long Distance Moving",
-    description:
-      "Secure long-distance relocations across Ontario and Canada with real-time tracking and professional handling.",
+      icon: Package,
+    },
+    {
+      title: "Long Distance Moving",
+      description:
+        "Secure long-distance relocations across Ontario and Canada with real-time tracking and professional handling.",
     image:
       `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/long-distance-moving.webp`,
-    icon: Truck,
-  },
-  {
-    title: "Junk Removal",
-    description:
-      "Eco-friendly disposal and removal services to help declutter your space before or after your move.",
+      icon: Truck,
+    },
+    {
+      title: "Junk Removal",
+      description:
+        "Eco-friendly disposal and removal services to help declutter your space before or after your move.",
     image:
       `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/junk-removal-service.webp`,
-    icon: Trash,
-  },
+      icon: Trash,
+    },
 ]
 }

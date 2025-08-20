@@ -8,7 +8,7 @@ const slides = [
     id: 1,
     image:
       `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}banner.png`,
-    title: "Smart. Secure. Seamless.",
+    title: "Movin. Made. Magical.",
     subtitle: "Experience the future of moving with our intelligent logistics",
   },
   {
@@ -25,6 +25,20 @@ const slides = [
     title: "Effortless Relocations.",
     subtitle: "Making your journey to a new beginning extraordinary",
   },
+  {
+    id: 4,
+    image:
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}junk-removal-banner.jpeg`,
+    title: "Junk Gone. Peace On.",
+    subtitle: "Fast, eco-friendly junk removal for homes, offices, and job sites",
+  },
+  {
+    id: 5,
+    image:
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}demolition-service.jpeg`,
+    title: "Safe. Smart. Demolition.",
+    subtitle: "Professional demolition services — precision, safety, and site-ready clearance",
+  }
 ];
 
 export default function HomePage() {

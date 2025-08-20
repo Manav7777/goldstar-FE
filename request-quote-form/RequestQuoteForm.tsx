@@ -26,10 +26,10 @@ export default function RequestQuoteForm({ open, close }: any) {
     { value: "4bhk", label: "4+ Bed Room" },
     { value: "studio", label: "Studio Apartment" },
     { value: "commercial", label: "Commercial Space" },
-    { value: "piano", label: "Piano Moving" },
     { value: "safe", label: "Safe Move"},
     { value: "long distance", label: "Long Distance Move" },
     { value: "cross-country", label: "Cross-Country Move" },
+    { value: "piano", label: "Piano Moving" },
     { value: "junk-removal", label: "Junk Removal" },
     { value: "demolition", label: "Demolition" },
    

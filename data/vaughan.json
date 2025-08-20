@@ -82,6 +82,9 @@
         },
         {
             "key":"SatisfactionSection"
+        },
+        {
+            "key":"LocationMap"
         }
     ]
 }
