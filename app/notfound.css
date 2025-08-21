@@ -1,0 +1,73 @@
+/* styles/404.css */
+
+/* Full-screen gradient background */
+.bg-gradient-custom {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom right, #FFF9E5, #FFFFFF, #FDEBCB);
+}
+
+/* Blur circles */
+.blur-circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(50px);
+  opacity: 0.2;
+}
+
+.blur-circle.gold-200 { background-color: #FCD34D; width: 128px; height: 128px; top: 80px; left: 40px; }
+.blur-circle.gold-300 { background-color: #FBBF24; width: 96px; height: 96px; top: 160px; right: 80px; opacity: 0.3; filter: blur(75px); }
+.blur-circle.gold-100 { background-color: #FEF3C7; width: 160px; height: 160px; bottom: 80px; left: 25%; opacity: 0.25; filter: blur(100px); }
+.blur-circle.gold-400 { background-color: #F59E0B; width: 80px; height: 80px; bottom: 160px; right: 40px; opacity: 0.2; filter: blur(60px); }
+
+/* Gradient text 404 */
+.text-404-gradient {
+  font-size: 8rem;
+  font-weight: 900;
+  background: linear-gradient(to right, #FBBF24, #F59E0B, #D97706);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+
+/* Bouncing sparkles */
+@keyframes bounce { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+
+.sparkle-1 { position: absolute; top: 0; left: 25%; animation: bounce 2s infinite 0.075s; }
+.sparkle-2 { position: absolute; top: 25%; right: 25%; animation: bounce 2s infinite 0.15s; }
+.sparkle-3 { position: absolute; bottom: 25%; left: 33%; animation: bounce 2s infinite 0.3s; }
+
+/* Card hover effects */
+.service-card-hover {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+  transition: transform .3s, box-shadow .3s, border-color .3s;
+  border: 2px solid #FCD34D;
+}
+.service-card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+  border-color: #F59E0B;
+}
+
+/* Gradient button */
+.btn-gradient-gold {
+  background: linear-gradient(to right, #FBBF24, #F59E0B);
+  color: #000;
+  font-weight: 600;
+}
+.btn-gradient-gold:hover {
+  background: linear-gradient(to right, #F59E0B, #D97706);
+}
+
+/* Contact cards icons background */
+.service-icon-circle {
+  width: 48px; height: 48px;
+  border-radius: 0.75rem;
+  background-color: #ffe38d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
