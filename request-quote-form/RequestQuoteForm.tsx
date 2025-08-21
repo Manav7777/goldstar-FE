@@ -228,13 +228,12 @@ export default function RequestQuoteForm({ open, close }: any) {
                 </div>
                 <div className="col-md-6 mb-3">
                   <label htmlFor="modal-destinationAddress" className="form-label">
-                    Moving To *
+                    Moving To
                   </label>
                   <textarea
                     id="modal-destinationAddress"
                     value={formData.destinationAddress}
                     onChange={(e) => handleInputChange("destinationAddress", e.target.value)}
-                    required
                     rows={2}
                     className="form-control"
                   />
