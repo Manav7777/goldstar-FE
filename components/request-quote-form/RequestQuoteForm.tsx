@@ -84,7 +84,7 @@ export default function RequestQuoteForm( {open , close}: any) {
     >
       <Modal.Header closeButton className="bg-primary">
         <Modal.Title id="example-custom-modal-styling-title">
-            Get Your Free Moving Quote
+            Get Your Free Quote Today
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -160,14 +160,14 @@ export default function RequestQuoteForm( {open , close}: any) {
               </h6>
               <div className="row">
                 <div className="col-md-6 mb-3">
-                  <label className="form-label">Type of Move *</label>
+                  <label className="form-label">Type of Service *</label>
                   <select
                     className="form-select gold-star-select"
                     value={formData.movingType}
                     onChange={(e) => handleInputChange("movingType", e.target.value)}
                     required
                   >
-                    <option value="">Select your moving type</option>
+                    <option value="">Select your Service type</option>
                     {movingOptions.map((option) => (
                       <option key={option.value} value={option.value}>
                         {option.label}
@@ -176,7 +176,7 @@ export default function RequestQuoteForm( {open , close}: any) {
                   </select>
                 </div>
                 <div className="col-md-6 mb-3">
-                  <label htmlFor="modal-moveDate" className="form-label">Preferred Move Date</label>
+                  <label htmlFor="modal-moveDate" className="form-label">Preferred Service Date</label>
                   <input
                     id="modal-moveDate"
                     type="date"
@@ -192,11 +192,11 @@ export default function RequestQuoteForm( {open , close}: any) {
             <div className="mb-4 border-top pt-4">
               <h6 className="d-flex align-items-center text-dark mb-3">
                 <MapPin className="me-2 text-warning wi-18" />
-                Moving Locations
+               Service Locations
               </h6>
               <div className="row">
                 <div className="col-md-6 mb-3">
-                  <label htmlFor="modal-originAddress" className="form-label">Moving From *</label>
+                  <label htmlFor="modal-originAddress" className="form-label">From *</label>
                   <textarea
                     id="modal-originAddress"
                     value={formData.originAddress}
@@ -207,7 +207,7 @@ export default function RequestQuoteForm( {open , close}: any) {
                   />
                 </div>
                 <div className="col-md-6 mb-3">
-                  <label htmlFor="modal-destinationAddress" className="form-label">Moving To</label>
+                  <label htmlFor="modal-destinationAddress" className="form-label">To</label>
                   <textarea
                     id="modal-destinationAddress"
                     value={formData.destinationAddress}
@@ -226,7 +226,7 @@ export default function RequestQuoteForm( {open , close}: any) {
                 Additional Information
               </h6>
               <div className="mb-3">
-                <label htmlFor="modal-additionalInfo" className="form-label">Tell us more about your move (Optional)</label>
+                <label htmlFor="modal-additionalInfo" className="form-label">Tell us more about your Services (Optional)</label>
                 <textarea
                   id="modal-additionalInfo"
                   value={formData.additionalInfo}
