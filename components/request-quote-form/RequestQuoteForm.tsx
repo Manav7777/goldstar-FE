@@ -19,15 +19,17 @@ export default function RequestQuoteForm( {open , close}: any) {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const movingOptions = [
-    { value: "1bhk", label: "1 Bed Room" },
-    { value: "2bhk", label: "2 Bed Room" },
-    { value: "3bhk", label: "3 Bed Room" },
+    { value: "1bhk", label: "1 Bedroom" },
+    { value: "2bhk", label: "2 Bedroom" },
+    { value: "3bhk", label: "3 Bedroom" },
     { value: "4bhk", label: "4+ Bed Room" },
     { value: "studio", label: "Studio Apartment" },
     { value: "commercial", label: "Commercial Space" },
     { value: "long distance", label: "Long Distance Move" },
     { value: "cross-country", label: "Cross-Country Move" },
     { value: "piano", label: "Piano Moving" },
+     { value: "safe", label: "Safe Moving" },
+     { value: "packingunpacking", label: "Packing/Unpacking" },
     { value: "junk-removal", label: "Junk Removal" },
     { value: "demolition", label: "Demolition" },
   ];
