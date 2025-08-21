@@ -74,17 +74,48 @@
             }
         },
         {
-            "key":"LocationMovingSteps",
+            "key": "LocationMovingSteps",
             "props": {
                 "title": "Your Professional Movers in Milton",
                 "description": "Our professional movers aren't just good at their job; they're great! They know all the tips and tricks to make your move go smoothly."
             }
         },
         {
-            "key":"SatisfactionSection"
+            "key": "SatisfactionSection"
         },
         {
-            "key":"LocationMap"
+            "key": "LocationMap"
+        },
+        {
+            "key": "Faqs",
+            "props": {
+                "faqs": [
+                    {
+                        "question": "What are the moving rates for Milton?",
+                        "answer": "Moving within Milton typically costs between $500 and $2,000, depending on the size of the move and number of items."
+                    },
+                    {
+                        "question": "Do you provide moving services for all Milton neighborhoods?",
+                        "answer": "Yes, we serve all neighborhoods in Milton, including **Bronte Meadows**, **Coates**, and **Dempsey**. We offer both local and long-distance moving services."
+                    },
+                    {
+                        "question": "How can I save on moving costs in Milton?",
+                        "answer": "To save on moving costs in Milton, try to book early, declutter your home, and move outside peak seasons. You can also compare quotes from different moving companies."
+                    },
+                    {
+                        "question": "Do you offer packing and unpacking services in Milton?",
+                        "answer": "Yes, we offer full packing and unpacking services in Milton, ensuring your items are packed safely and ready for the move."
+                    },
+                    {
+                        "question": "Can you move specialty items like pianos in Milton?",
+                        "answer": "Yes, we specialize in moving specialty items such as **pianos**, **antiques**, and **fragile art** in Milton."
+                    },
+                    {
+                        "question": "How long does a move typically take in Milton?",
+                        "answer": "A local move in Milton typically takes 4-6 hours, depending on the number of items and complexity of the move."
+                    }
+                ]
+            }
         }
     ]
 }

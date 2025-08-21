@@ -74,17 +74,48 @@
             }
         },
         {
-            "key":"LocationMovingSteps",
+            "key": "LocationMovingSteps",
             "props": {
                 "title": "Your Professional Movers in Mississauga",
                 "description": "Our professional movers aren't just good at their job; they're great! They know all the tips and tricks to make your move go smoothly."
             }
         },
         {
-            "key":"SatisfactionSection"
+            "key": "SatisfactionSection"
         },
         {
-            "key":"LocationMap"
+            "key": "LocationMap"
+        },
+        {
+            "key": "Faqs",
+            "props": {
+                "faqs": [
+                    {
+                        "question": "What is the cost of moving services in Mississauga?",
+                        "answer": "Moving costs in Mississauga typically range from $500 to $2,000 for local moves. Long-distance moves from Mississauga can cost up to $6,000."
+                    },
+                    {
+                        "question": "Do you provide moving services for all Mississauga neighborhoods?",
+                        "answer": "Yes, we serve all neighborhoods in Mississauga, including Port Credit, Square One, and Erin Mills. We cater to both local and long-distance moves."
+                    },
+                    {
+                        "question": "How can I reduce my moving costs in Mississauga?",
+                        "answer": "To lower your moving costs in Mississauga, declutter, compare quotes from moving companies, and avoid weekends or summer months for a cheaper rate."
+                    },
+                    {
+                        "question": "Do you offer packing and unpacking services in Mississauga?",
+                        "answer": "Yes, our professional team offers packing and unpacking services in Mississauga, ensuring your items are safely handled throughout the moving process."
+                    },
+                    {
+                        "question": "Do you move specialty items in Mississauga?",
+                        "answer": "We handle specialty items like pianos, fine art, and antiques in Mississauga with specialized equipment to ensure safe transport."
+                    },
+                    {
+                        "question": "How long does a move take in Mississauga?",
+                        "answer": "The duration of a move in Mississauga depends on the size of the property. Local moves typically take 4-6 hours, while long-distance moves can take up to a day or more."
+                    }
+                ]
+            }
         }
     ]
 }

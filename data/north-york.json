@@ -74,17 +74,48 @@
             }
         },
         {
-            "key":"LocationMovingSteps",
+            "key": "LocationMovingSteps",
             "props": {
                 "title": "Your Trusted North York Movers",
                 "description": "Move with peace of mind; get reputable movers in North York. Goldstar Movers is a moving company that goes beyond relocation – we're your North York partner, ensuring a stress-free experience"
             }
         },
         {
-            "key":"SatisfactionSection"
+            "key": "SatisfactionSection"
         },
         {
-            "key":"LocationMap"
+            "key": "LocationMap"
+        },
+        {
+            "key": "Faqs",
+            "props": {
+                "faqs": [
+                    {
+                        "question": "How much does a move in North York cost?",
+                        "answer": "Moving within North York generally costs between $500 and $1,800, with rates depending on the distance and amount of belongings being moved."
+                    },
+                    {
+                        "question": "Do you offer specialized moving services in North York?",
+                        "answer": "Yes, we provide specialized moving services in North York, including piano moving, art moving, and senior relocation."
+                    },
+                    {
+                        "question": "Can you help with packing in North York?",
+                        "answer": "Yes, we offer full packing and unpacking services in North York. Our movers use high-quality materials to ensure your belongings are well-protected."
+                    },
+                    {
+                        "question": "How far in advance should I schedule my move in North York?",
+                        "answer": "It’s best to schedule your move at least 2-3 weeks in advance, especially during the busy summer months."
+                    },
+                    {
+                        "question": "Do you offer insurance for moves in North York?",
+                        "answer": "Yes, we offer moving insurance in North York to cover your belongings in case of damage during the move."
+                    },
+                    {
+                        "question": "What is the best time to move in North York?",
+                        "answer": "The best time to move in North York is during the spring and fall, when demand is lower, and rates are more affordable."
+                    }
+                ]
+            }
         }
     ]
 }

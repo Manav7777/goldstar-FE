@@ -74,17 +74,48 @@
             }
         },
         {
-            "key":"LocationMovingSteps",
+            "key": "LocationMovingSteps",
             "props": {
                 "title": "Our Moving Process in Etobicoke",
                 "description": "Simple, professional moving process for Toronto's West End relocations"
             }
         },
         {
-            "key":"SatisfactionSection"
+            "key": "SatisfactionSection"
         },
         {
-            "key":"LocationMap"
+            "key": "LocationMap"
+        },
+        {
+            "key": "Faqs",
+            "props": {
+                "faqs": [
+                    {
+                        "question": "What are the moving rates in Etobicoke?",
+                        "answer": "The cost of moving services in Etobicoke typically ranges from $500 to $2,000 for local moves, depending on the number of items and moving distance."
+                    },
+                    {
+                        "question": "Can I get packing services in Etobicoke?",
+                        "answer": "Yes, we provide professional packing and unpacking services in Etobicoke to ensure your belongings are safely packed for the move."
+                    },
+                    {
+                        "question": "Are there additional fees for moving in Etobicoke?",
+                        "answer": "In Etobicoke, additional fees may apply for heavy or specialty items, long elevator wait times, or long-distance moves. These will be discussed during the initial quote."
+                    },
+                    {
+                        "question": "Can you move a piano or antiques in Etobicoke?",
+                        "answer": "Yes, we specialize in moving pianos, antiques, and fragile items in Etobicoke with expert care and specialized equipment."
+                    },
+                    {
+                        "question": "How do I prepare for my move in Etobicoke?",
+                        "answer": "Start by decluttering, packing non-essential items early, and confirming the moving details with your Etobicoke moving company. Ensure clear access to entrances on moving day."
+                    },
+                    {
+                        "question": "What are your operating hours for Etobicoke moves?",
+                        "answer": "We operate from 8:00 AM to 7:00 PM every day, with flexible scheduling options for your convenience in Etobicoke."
+                    }
+                ]
+            }
         }
     ]
 }
