@@ -22,7 +22,7 @@ export default function RequestQuoteForm( {open , close}: any) {
     { value: "1bhk", label: "1 Bedroom" },
     { value: "2bhk", label: "2 Bedroom" },
     { value: "3bhk", label: "3 Bedroom" },
-    { value: "4bhk", label: "4+ Bed Room" },
+    { value: "4bhk", label: "4+ Bedroom" },
     { value: "studio", label: "Studio Apartment" },
     { value: "commercial", label: "Commercial Space" },
     { value: "long distance", label: "Long Distance Move" },
