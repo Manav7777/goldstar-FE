@@ -92,8 +92,11 @@ export default function ServiceAreaMap() {
 
   return (
     <div className="container py-5 text-center bg-white">
-      <h2 className="fw-bold display-5">Our Locations in <span className="text-primary">Canada</span></h2>
-      <p className="text-secondary mb-4 mx-auto" style={{ maxWidth: "700px" }}>
+      <h2 className="fw-bold display-5" data-aos="fade-up"
+        data-aos-duration="1200">Our Locations in <span className="text-primary">Canada</span></h2>
+      <p className="text-secondary mb-4 mx-auto" style={{ maxWidth: "700px" }} data-aos="fade-up"
+        data-aos-duration="1200"
+        data-aos-delay="200">
         Our team proudly provides services across Southern Ontario. Explore the
         highlighted area to see where we deliver excellence.
       </p>
@@ -105,6 +108,8 @@ export default function ServiceAreaMap() {
           borderRadius: "1rem",
         //   boxShadow: "0 .5rem 1.5rem rgba(0,0,0,0.15)",
         }}
+        data-aos="zoom-in"
+        data-aos-duration="1500"
       ></div>
 
       <style jsx global>{`

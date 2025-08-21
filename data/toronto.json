@@ -74,17 +74,48 @@
             }
         },
         {
-            "key":"LocationMovingSteps",
+            "key": "LocationMovingSteps",
             "props": {
                 "title": "How Our Professional Movers in Toronto Work",
                 "description": "At Goldstar Movers, we follow a straightforward and transparent process that makes your move easy. Let's examine how we do it"
             }
         },
         {
-            "key":"SatisfactionSection"
+            "key": "SatisfactionSection"
         },
         {
-            "key":"LocationMap"
+            "key": "LocationMap"
+        },
+        {
+            "key": "Faqs",
+            "props": {
+                "faqs": [
+                    {
+                        "question": "What are the typical moving costs in Toronto?",
+                        "answer": "Moving costs in Toronto range from $500 to $2,000 for local moves. Long-distance moves can cost anywhere from $2,000 to $7,000, depending on the distance and number of items."
+                    },
+                    {
+                        "question": "Do you offer moving services in all Toronto neighborhoods?",
+                        "answer": "Yes, we provide moving services throughout Toronto, including neighborhoods like Scarborough, Etobicoke, North York, and Downtown Toronto."
+                    },
+                    {
+                        "question": "How can I save on moving costs in Toronto?",
+                        "answer": "To save on your move in Toronto, try to book early, avoid peak seasons, and declutter before the move. You can also compare quotes from different moving companies."
+                    },
+                    {
+                        "question": "Do you provide packing services in Toronto?",
+                        "answer": "Yes, we offer professional packing and unpacking services in Toronto, ensuring your items are safely packed and ready for transport."
+                    },
+                    {
+                        "question": "Can you move specialty items like pianos in Toronto?",
+                        "answer": "We specialize in moving specialty items such as pianos, artwork, and antiques in Toronto. Our movers are trained to handle fragile and valuable items with care."
+                    },
+                    {
+                        "question": "How far in advance should I book my move in Toronto?",
+                        "answer": "For Toronto moves, it’s recommended to book your move at least 2-4 weeks in advance, especially if you’re moving during the busy season (spring and summer)."
+                    }
+                ]
+            }
         }
     ]
 }
