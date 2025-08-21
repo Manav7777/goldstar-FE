@@ -19,7 +19,7 @@ const ServicesCard = () => {
     title: 'Long Distance Moving',
     description: 'Specialized long-distance moving services with secure transport, careful handling, and timely delivery across provinces',
     image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/long-distance-moving.webp`,
-    full: true,
+    // full: true,
     link: '/services/long-distance-moving-service'
   },
   {
@@ -39,8 +39,8 @@ const ServicesCard = () => {
      {
     title: 'Demolition',
     description: 'From small interior jobs to large-scale projects – we demolish with precision.',
-    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/junk-removal-service.webp`,
-    link: '/services/junk-removal-moving-service'
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}demolition-service.jpeg`,
+    link: '/services/demolition-service'
   },
   ];
   return (
