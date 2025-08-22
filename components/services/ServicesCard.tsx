@@ -6,33 +6,33 @@ const ServicesCard = () => {
   {
     title: 'Residential Moving',
     description: 'Effortless relocation for homes and apartments with professional care and attention to detail',
-    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/residential-moving.webp`,
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}residential-moving-service-card.jpeg`,
     link: '/services/residential-moving-service'
   },
   {
     title: 'Commercial Moving',
     description: 'Seamless office and business relocations with minimal downtime and maximum efficiency',
-    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/commercial-moving.webp`,
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}commercial-moving-service.jpeg`,
     link: '/services/commercial-moving-service'
   },
  {
     title: 'Long Distance Moving',
     description: 'Specialized long-distance moving services with secure transport, careful handling, and timely delivery across provinces',
-    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/long-distance-moving.webp`,
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}long-distance-moving-service-card.jpeg`,
     // full: true,
     link: '/services/long-distance-moving-service'
   },
   {
     title: 'Cross Country',
     description: 'Nationwide moving services from coast to coast across Canada with secure transport',
-    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/cross-country-moving.webp`,
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}cross-country-service-card.jpeg`,
     link: '/services/cross-country-moving-service'
   },
   
   {
     title: 'Junk Removal',
     description: 'Eco-friendly disposal and decluttering services for residential and commercial spaces',
-    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/junk-removal-service.webp`,
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}junk-removal-banner.jpeg`,
     link: '/services/junk-removal-moving-service'
   },
 

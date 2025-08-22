@@ -1,7 +1,7 @@
 import React from 'react';
 
 const FloatingWhatsAppButton = () => {
-  const phoneNumber = '6352118120'; // Your WhatsApp number with country code (no '+' sign)
+  const phoneNumber = '916352118120'; // Your WhatsApp number with country code (no '+' sign)
   const preText = 'I%20need%20packers%20and%20movers%20for%20my%20move'; // URL encoded message
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${preText}`;
 

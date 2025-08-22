@@ -156,7 +156,7 @@ export default function RequestQuoteForm( {open , close}: any) {
             <div className="mb-4 border-top pt-4">
               <h6 className="d-flex align-items-center text-dark mb-3">
                 <Package className="me-2 text-warning wi-18" />
-                Moving Details
+                Service Details
               </h6>
               <div className="row">
                 <div className="col-md-6 mb-3">

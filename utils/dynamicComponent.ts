@@ -8,7 +8,7 @@ export const componentMap: Record<string, () => Promise<{ default: React.Compone
   WhyChooseUs: () => import("@/components/locations/LocationWhyChoose"),
   LocationMovingSteps: () => import("@/components/locations/LocationMovingSteps"),
   SatisfactionSection: () => import("@/components/locations/SatisfactionSection" ),
-  LocationMap: () => import("@/components/locations/LocationMap"),
+  // LocationMap: () => import("@/components/locations/LocationMap"),
   Faqs: () => import("@/components/Faqs/Faqs")
   // add more components as needed
 };
