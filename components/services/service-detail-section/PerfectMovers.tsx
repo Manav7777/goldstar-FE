@@ -3,7 +3,7 @@ import React from 'react'
 const PerfectMovers = ({services}:any) => {
   return (
     <>
-    <section className="perfect-move-section bg-light mt-5">
+    <section className="perfect-move-section bg-light mt-5" key={"perfect-move"}>
       <div className="container">
         <div className="text-center mb-5">
           <h2 className="section-title">

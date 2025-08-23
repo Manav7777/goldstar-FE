@@ -16,21 +16,24 @@ const Footer = () => {
         <div className="container-xl">
           <div className="row g-4">
             {/* <div className="col-12"> */}
-              <div className="col-sm-12 col-md-8 text-gray-300">
-                <p>Subscribe to our newsletter to <br /> receive updates on the latest news!</p>
-              </div>
-              <div className="subscribe-input col-sm-12 col-md-4 ">
-                  <input
-                    className="form-control news-box"
-                    placeholder="Subscribe with us"
-                    type="email"
-                    name="email"
-                    required
-                  />
-                  <button className="btn btn-warning">Subscribe</button>
-              </div>
+            <div className="col-sm-12 col-md-8 text-gray-300">
+              <p>
+                Subscribe to our newsletter to <br /> receive updates on the
+                latest news!
+              </p>
+            </div>
+            <div className="subscribe-input col-sm-12 col-md-4 ">
+              <input
+                className="form-control news-box"
+                placeholder="Subscribe with us"
+                type="email"
+                name="email"
+                required
+              />
+              <button className="btn btn-warning">Subscribe</button>
+            </div>
             {/* </div> */}
-            <hr style={{color: "#fff"}} />
+            <hr style={{ color: "#fff" }} />
             <div className="col-12 col-md-4">
               <div className="d-inline-block mb-1">
                 <img
@@ -44,13 +47,25 @@ const Footer = () => {
                 affordable moving services across the country.
               </p>
               <div className="d-flex">
-                <Link href={socialLinks.facebook} target="_blank" className="text-gray-300 me-2">
+                <Link
+                  href={socialLinks.facebook}
+                  target="_blank"
+                  className="text-gray-300 me-2"
+                >
                   <FacebookIcon className="me-2 text-warning wi-18" />
                 </Link>
-                <Link href={socialLinks.instagram} target="_blank" className="text-gray-300 me-2">
+                <Link
+                  href={socialLinks.instagram}
+                  target="_blank"
+                  className="text-gray-300 me-2"
+                >
                   <InstagramIcon className="me-2 text-warning wi-18" />
                 </Link>
-                <Link href={socialLinks.youtube} target="_blank" className="text-gray-300">
+                <Link
+                  href={socialLinks.youtube}
+                  target="_blank"
+                  className="text-gray-300"
+                >
                   <YoutubeIcon className="me-2 text-warning wi-18" />
                 </Link>
               </div>
@@ -99,14 +114,16 @@ const Footer = () => {
               <h5 className="font-weight-semibold mb-4 text-white">Services</h5>
               <ul className="list-unstyled small">
                 {footersLinks.map((s) => {
-                  return <li key={s.id}>
-                  <Link
-                    href={s.url}
-                    className="text-gray-300 text-decoration-none"
-                  >
-                   {s.menu}
-                  </Link>
-                </li>
+                  return (
+                    <li key={s.id}>
+                      <Link
+                        href={s.url}
+                        className="text-gray-300 text-decoration-none"
+                      >
+                        {s.menu}
+                      </Link>
+                    </li>
+                  );
                 })}
               </ul>
             </div>
@@ -136,7 +153,7 @@ const Footer = () => {
                 <span className="text-white">
                   1850 Rathburn Rd E,
                   <br />
-                   Mississauga, ON L4W 2X9, Canada
+                  Mississauga, ON L4W 2X9, Canada
                 </span>
               </div>
             </div>
@@ -147,7 +164,13 @@ const Footer = () => {
               {" "}
               © 2021 Gold Star Movers. All Rights Reserved.
             </div>
-            <div className="col-md-6 col-sm-12"> Powered by : MetaFox Tech</div>
+            <div className="col-md-6 col-sm-12">
+              {" "}
+              Powered by :{" "}
+              <Link href={"https://metafoxtech.com/"} target="_blank">
+                MetaFox Tech
+              </Link>
+            </div>
           </div>
         </div>
       </div>

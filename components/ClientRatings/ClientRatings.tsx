@@ -4,6 +4,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { User } from "lucide-react";
+import Link from "next/link";
 
 const testimonials = [
   {
@@ -53,23 +54,23 @@ const ClientRatings = () => {
             <h3>
               What our <span className="text-primary h3">Customers</span> Says
             </h3>
-            {/* <img
-              src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}5-star-google-rating.jpeg`}
-              alt="5-star-google-rating"
+            <img
+              src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}google-five-star-ratting.png`}
+              alt="google-five-star-ratting"
               className="img-fluid"
-              width={150}
+              width={100}
             />
             <img
-              src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}statisfaction.jpeg`}
+              src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}statisfaction.png`}
               alt="statisfaction"
               className="img-fluid mt-2"
-              width={150}
-            /> */}
+              width={120}
+            />
           </div>
           <div className="col-lg-9 col-md-12 col-sm-12">
             <Swiper
               modules={[Autoplay, Pagination]}
-              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              autoplay={{ delay: 3000000, disableOnInteraction: false }}
               spaceBetween={30}
               slidesPerView={1}
               breakpoints={{
@@ -81,25 +82,43 @@ const ClientRatings = () => {
               {testimonials.map((item, index) => (
                 <SwiperSlide key={index}>
                   <div className="bg-white p-4 rounded client-slider-box text-center h-100 d-flex flex-column justify-content-between">
-                    <img
-                      src={
-                        process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL +
-                        item.starImage
-                      }
-                      width={120}
-                      height={30}
-                      alt={item.starImage}
-                      className="mx-auto mb-3"
-                    />
-                    <p className="text-muted mb-3">“{item.text}”</p>
-                    <div>
-                      <div className="d-flex justify-content-center align-items-center w-100 mb-2">
-                        <div className="bg-primary text-white p-2 rounded-circle me-2">
-                          <User />
-                        </div>
-                        <h6 className="mb-0 fw-bold">{item.name}</h6>
-                      </div>
+                    <div className="d-flex align-items-center justify-content-between gap-1">
+                      <span className="d-flex gap-1">
+                        {Array(5)
+                        .fill(0)
+                        .map((_, i) => (
+                          <svg
+                            key={i}
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            className="bi bi-star-fill text-warning"
+                            viewBox="0 0 16 16"
+                          >
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73-3.523-3.356c-.329-.314-.158-.888.283-.95l4.898-.696 2.173-4.39c.197-.398.73-.398.927 0l2.173 4.39 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                          </svg>
+                        ))}
+                      </span>
+                      <span className="badge bg-success-subtle text-success border border-success-subtle fw-semibold">
+                        Verified
+                      </span>
                     </div>
+
+                    <Link href={`https://share.google/9PEfqy12GYGINouiB`} className="text-blue text-left fw-medium small mt-2">
+                      Rated 5 Stars on Google
+                    </Link>
+                  <blockquote className="blockquote text-muted text-left mb-3 mt-2">
+                    “{item.text}”
+                  </blockquote>
+                  <div className="border-top">
+                    <div className="d-flex justify-content-center align-items-center w-100 mb-2 pt-3">
+                      <div className="bg-primary text-white p-2 rounded-circle me-2">
+                        <User />
+                      </div>
+                      <h6 className="mb-0 fw-bold">{item.name}</h6>
+                    </div>
+                  </div>
                   </div>
                 </SwiperSlide>
               ))}

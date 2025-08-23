@@ -148,6 +148,18 @@ a[href^="mailto"] {
   color: #0f313a !important;
 }
 
+.text-blue {
+  color: #2563eb
+}
+
+.blockquote {
+  font-size: 0.95rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
 .primary-shadow {
   box-shadow: 0px 3px 10px 0px rgba(41, 45, 194, 0.08);
 }

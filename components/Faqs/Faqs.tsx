@@ -8,7 +8,7 @@ import './Faq.css';
 
 const FaqItem = ({ question, answer, eventKey }:any) => (
   <AccordionItem eventKey={eventKey}>
-    <AccordionHeader className="py-3 fw-medium text-start customHeader" data-aos="fade-up" data-aos-duration="1000">
+    <AccordionHeader className="py-2 fw-medium text-start customHeader" data-aos="fade-up" data-aos-duration="1000">
       {question}
     </AccordionHeader>
     <AccordionBody className="text-secondary" data-aos="fade-up" data-aos-duration="1000">

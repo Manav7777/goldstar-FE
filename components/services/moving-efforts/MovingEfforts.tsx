@@ -4,7 +4,7 @@ import React from "react";
 const MovingEfforts = ({ residentialMovingEfforts }: any) => {
   return (
     <>
-      <div className="container mt-5 py-5">
+      <div className="container mt-5 py-5" key={"moving-efforts"}>
         <div className="text-center mb-5">
           <h2 className="display-5 fw-bold text-dark">
             {residentialMovingEfforts.title}
