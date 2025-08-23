@@ -7,7 +7,7 @@ import { User } from "lucide-react";
 
 const testimonials = [
   {
-    name: "melodie Rose",
+    name: "Melodie Rose",
     position: "Marketing Manager",
     text: `I've used this moving company before, and, like the previous move, they were on time, exceptionally efficient, and an absolute pleasure to work with!
       Kudos to the whole team!`,
