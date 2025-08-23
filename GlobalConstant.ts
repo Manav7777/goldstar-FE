@@ -23,14 +23,22 @@ export const goldStarMenus = [
       },
       {
         id: 7,
-        name: "Junk Removal",
-        url: "/services/junk-removal-moving-service",
-      },
-      {
-        id: 8,
         name: "Long Distance",
         url: "/services/long-distance-moving-service",
       },
+      
+      {
+        id: 8,
+        name: "Junk Removal",
+        url: "/services/junk-removal-moving-service",
+      },
+
+        {
+        id: 9,
+        name: "Demolition",
+        url: "/services/demolition-service",
+      },
+      
       {
         id: 88,
         name: "All Services",
@@ -57,27 +65,27 @@ export const goldStarMenus = [
 ];
 
 export const footersLinks = [
-  { id: 3, menu: "Home", url: "/" },
-  { id: 4, menu: "About Us", url: "/about" },
-  { id: 5, menu: "Our Service", url: "/services" },
-  { id: 6, menu: "Residential Service", url: "/services/residential-service" },
-  { id: 7, menu: "Commercial Service", url: "/services/commercial-service" },
+  { id: 6, menu: "Residential Service", url: "/services/residential-moving-service" },
+  { id: 7, menu: "Commercial Service", url: "/services/commercial-moving-service" },
   {
     id: 8,
-    menu: "Cross Country Service",
+    menu: "Long Distance Service",
     url: "/services/cross-country-service",
   },
-  // { id: 9, menu: "Gallery", url: "/gallery" },
+  { id: 9, menu: "Cross Country Service", url: "/services/cross-country-moving-service" },
+  { id: 10, menu: "Junk Removal", url: "/services/junk-removal-moving-service" },
+  { id: 11, menu: "Demolition Service", url: "/services/demolition-service" },
+
 ];
 
 export const openingTimes = [
-  { id: 11, day: "Monday", time: "6:00AM to 9:00PM" },
-  { id: 12, day: "Tuesday", time: "6:00AM to 9:00PM" },
-  { id: 14, day: "Wednesday", time: "6:00AM to 9:00PM" },
-  { id: 15, day: "Thursday", time: "6:00AM to 9:00PM" },
-  { id: 16, day: "Friday", time: "6:00AM to 9:00PM" },
-  { id: 17, day: "Saturday", time: "7:00AM to 8:00PM" },
-  { id: 18, day: "Sunday", time: "7:00AM to 8:00PM" },
+  { id: 11, day: "Monday", time: "6:00 AM to 9:00 PM" },
+  { id: 12, day: "Tuesday", time: "6:00 AM to 9:00 PM" },
+  { id: 14, day: "Wednesday", time: "6:00 AM to 9:00 PM" },
+  { id: 15, day: "Thursday", time: "6:00 AM to 9:00 PM" },
+  { id: 16, day: "Friday", time: "6:00 AM to 9:00 PM" },
+  { id: 17, day: "Saturday", time: "7:00 AM to 8:00 PM" },
+  { id: 18, day: "Sunday", time: "7:00 AM to 8:00 PM" },
 ];
 
 export const socialLinks = {
@@ -293,11 +301,12 @@ export const ResidentialMovingEfforts: any = {
 };
 
 export const residentialServiceHeroSection: any = {
-  title: "Your Home.",
-  highlightedTitle: "Our Mission.",
+  title: "Residential",
+  highlightedTitle: "Moving Service.",
   subtitle: "Moving Made Magical",
-  description:
-    "Experience the joy of stress-free moving with our award-winning residential services. We don't just move your belongings—we move your life forward with care and precision.",
+  description: `Moving into a new home is a big step and at Gold Star Movers, we make sure the process is smooth, stress-free, and efficient. 
+  Our residential moving services are designed to fit your needs, whether you’re moving from a small apartment, a condo, 
+  or a large family house.`,
   imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/residential-moving.webp`,
   buttonText: "Request Now",
   showTag: true,
@@ -309,7 +318,7 @@ export const commercialServiceHeroSection: any = {
   highlightedTitle: "Always Moving.",
   subtitle: "Never Missing a Beat",
   description:
-    "Experience enterprise-grade commercial moving that keeps your business running. From startups to Fortune 500 companies, we deliver seamless relocations with zero downtime.",
+    "Relocating your business doesn’t have to mean downtime or stress. At Gold Star Movers, we specialize in professional commercial moving services designed to keep your operations running smoothly. Whether you’re moving a small office, a retail store, or an entire corporate facility, our team ensures a fast, efficient, and organized transition.",
   imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/commercial-moving.webp`,
   buttonText: "Request Now",
   showTag: true,
@@ -321,7 +330,7 @@ export const junkRemovalServiceHeroSection: any = {
   highlightedTitle: "Our Mission.",
   subtitle: "Clean out and disposal services",
   description:
-    "Reclaim your space with our comprehensive junk removal services. We make decluttering effortless while prioritizing environmental responsibility through donation, recycling, and proper disposal.",
+    "Clutter taking over your home, office, or job site? At Gold Star Movers, we provide fast, reliable, and affordable junk removal services. Whether it’s old furniture, appliances, renovation debris, or general household clutter, our team handles the heavy lifting so you don’t have to.",
   imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/junk-removal-service.webp`,
   buttonText: "Request Now",
   showTag: true,
@@ -369,36 +378,36 @@ export const commercialMovingEfforts: any = {
 };
 
 export const residentialServices: any = [
-  {
-    title: "Full-Service Packing",
-    desc: "Professional packing with premium materials",
-    icon: sanitizeSvg(PackageIcon()),
-  },
-  {
-    title: "Furniture Assembly",
-    desc: "Complete disassembly and reassembly service",
-    icon: sanitizeSvg(truckIcon()),
-  },
-  {
-    title: "Specialty Items",
-    desc: "Piano, artwork, and antique handling",
-    icon: sanitizeSvg(guardIcon()),
-  },
-  {
-    title: "Flexible Timing",
-    desc: "Same-day and next-day options",
-    icon: sanitizeSvg(clockIcon()),
-  },
-  {
-    title: "Storage Solutions",
-    desc: "Temporary and long-term storage",
-    icon: sanitizeSvg(internetIcon()),
-  },
-  {
-    title: "Insurance Coverage",
-    desc: "Comprehensive protection included",
-    icon: sanitizeSvg(awardIcon()),
-  },
+    {
+      title: "Full-Service Packing",
+      desc: "Professional packing with premium materials",
+      icon: sanitizeSvg(PackageIcon()),
+    },
+    {
+      title: "Furniture Assembly",
+      desc: "Complete disassembly and reassembly service",
+      icon: sanitizeSvg(truckIcon()),
+    },
+    {
+      title: "Specialty Items",
+      desc: "Piano, artwork, and antique handling",
+      icon: sanitizeSvg(guardIcon()),
+    },
+    {
+      title: "Flexible Timing",
+      desc: "Same-day and next-day options",
+      icon: sanitizeSvg(clockIcon()),
+    },
+    {
+      title: "Storage Solutions",
+      desc: "Temporary and long-term storage",
+      icon: sanitizeSvg(internetIcon()),
+    },
+    {
+      title: "Insurance Coverage",
+      desc: "Comprehensive protection included",
+      icon: sanitizeSvg(awardIcon()),
+    },
 ];
 
 export const commercialServicesPerfectMove: any = [
@@ -641,7 +650,7 @@ export const longDistanceSectionOne: any = {
   highlightedTitle: "Handled with Care.",
   subtitle: "Nationwide Relocation Experts",
   description:
-    "GoldStar Packers and Movers provides expert long-distance moving services across Canada. From planning and packing to safe delivery, we ensure a seamless relocation experience backed by tracking, insurance, and professional care.",
+    "Moving across the province, to another city, or even across the country? At Gold Star Movers, we make long-distance moving simple, safe, and stress-free. With years of experience and a trusted team of professional movers, we handle every detail so you can enjoy the journey to your new home or business location.",
   imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/long-distance-moving.webp`,
   buttonText: "Get a Free Quote",
   showTag: true,
@@ -725,45 +734,45 @@ export const locationService: any = {
   title :'Our Moving Services in Mississauga',
   subtitle :'Professional packing and moving solutions for Peel Region',
   services:[
-  {
-    title: "Residential Moving",
-    description:
-      "Complete home moving services including packing, loading, transportation, and unpacking for apartments, condos, and houses.",
+    {
+      title: "Residential Moving",
+      description:
+        "Complete home moving services including packing, loading, transportation, and unpacking for apartments, condos, and houses.",
     image:
       `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/residential-moving.webp`,
-    icon: Home,
-  },
-  {
-    title: "Commercial Moving",
-    description:
-      "Professional office and business relocations with minimal downtime, including furniture, equipment, and document handling.",
+      icon: Home,
+    },
+    {
+      title: "Commercial Moving",
+      description:
+        "Professional office and business relocations with minimal downtime, including furniture, equipment, and document handling.",
     image:
       `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/commercial-moving.webp`,
-    icon: Building2,
-  },
-  {
-    title: "Cross Country Service",
-    description:
-      "Nationwide moving services from coast to coast across Canada with secure transport",
+      icon: Building2,
+    },
+    {
+      title: "Cross Country Service",
+      description:
+        "Nationwide moving services from coast to coast across Canada with secure transport",
     image:
       `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/cross-country-moving.webp`,
-    icon: Package,
-  },
-  {
-    title: "Long Distance Moving",
-    description:
-      "Secure long-distance relocations across Ontario and Canada with real-time tracking and professional handling.",
+      icon: Package,
+    },
+    {
+      title: "Long Distance Moving",
+      description:
+        "Secure long-distance relocations across Ontario and Canada with real-time tracking and professional handling.",
     image:
       `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/long-distance-moving.webp`,
-    icon: Truck,
-  },
-  {
-    title: "Junk Removal",
-    description:
-      "Eco-friendly disposal and removal services to help declutter your space before or after your move.",
+      icon: Truck,
+    },
+    {
+      title: "Junk Removal",
+      description:
+        "Eco-friendly disposal and removal services to help declutter your space before or after your move.",
     image:
       `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/junk-removal-service.webp`,
-    icon: Trash,
-  },
+      icon: Trash,
+    },
 ]
 }

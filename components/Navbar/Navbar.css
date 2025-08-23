@@ -1038,7 +1038,8 @@ header {
         top: 13px;
         cursor: pointer;
         z-index: 12399994;
-        border: none
+        border: none;
+        margin-right: 10px;
     }
 
     .navbar-toggler:after {

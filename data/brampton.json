@@ -74,14 +74,48 @@
             }
         },
         {
-            "key":"LocationMovingSteps",
+            "key": "LocationMovingSteps",
             "props": {
                 "title": " How Our Moving Services in Brampton Works in Just 3 Simple Steps",
                 "description": "Booking a move with Goldstar Movers is simple and straightforward"
             }
         },
         {
-            "key":"SatisfactionSection"
+            "key": "SatisfactionSection"
+        },
+        {
+            "key": "LocationMap"
+        },
+        {
+            "key": "Faqs",
+            "props": {
+                "faqs":[
+                {
+                    "question": "What are the moving rates for Brampton?",
+                    "answer": "Moving within Brampton typically costs between $500 and $2,000, depending on the size of the move and number of items."
+                },
+                {
+                    "question": "Can I get packing services in Brampton?",
+                    "answer": "Yes, we offer full packing services in Brampton to ensure your items are safely packed for transport."
+                },
+                {
+                    "question": "Do you move specialty items like pianos in Brampton?",
+                    "answer": "We specialize in moving pianos, art, and other specialty items in Brampton, ensuring they are safely transported."
+                },
+                {
+                    "question": "How can I reduce moving costs in Brampton?",
+                    "answer": "To reduce moving costs in Brampton, declutter, book in advance, and avoid peak moving seasons like summer."
+                },
+                {
+                    "question": "What should I expect on moving day in Brampton?",
+                    "answer": "On moving day, our team will arrive early, pack your items, and transport them to your new location in Brampton with care and efficiency."
+                },
+                {
+                    "question": "Do you provide insurance for moves in Brampton?",
+                    "answer": "Yes, we offer moving insurance for your belongings during your move in Brampton, ensuring peace of mind."
+                }
+            ]
+            }
         }
     ]
 }

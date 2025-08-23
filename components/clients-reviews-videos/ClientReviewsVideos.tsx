@@ -150,7 +150,7 @@ const ClientReviewsVideos = () => {
     },
     {
       title: "Long Distance Excellence",
-      description: "Moving from Toronto to Vancouver made simple",
+      description: "Moving from Toronto to Ottawa made simple",
       person: "Turiska Nolan",
       location: "Toronto, ON to Ottawa, ON ",
       videoSrc: `${process.env.NEXT_PUBLIC_VIDEO_SERVICE_URL}Turiska-Nolan.mp4`,

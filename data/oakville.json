@@ -74,14 +74,48 @@
             }
         },
         {
-            "key":"LocationMovingSteps",
+            "key": "LocationMovingSteps",
             "props": {
                 "title": "Why Choose Us as Your Moving Company Oakville",
                 "description": "At Goldstar Movers, we follow a straightforward and transparent process that makes your move easy. Let's examine how we do it"
             }
         },
         {
-            "key":"SatisfactionSection"
+            "key": "SatisfactionSection"
+        },
+        {
+            "key": "LocationMap"
+        },
+        {
+            "key": "Faqs",
+            "props": {
+                "faqs": [
+                    {
+                        "question": "What are the moving costs in Oakville?",
+                        "answer": "Moving within Oakville generally costs between $500 and $2,000 for local moves. For long-distance moves, costs may range from $2,000 to $7,000."
+                    },
+                    {
+                        "question": "Do you provide moving services for all Oakville neighborhoods?",
+                        "answer": "Yes, we serve all Oakville neighborhoods, including **Bronte**, **River Oaks**, and **Clearview**. We cater to both local and long-distance moves."
+                    },
+                    {
+                        "question": "How can I reduce moving costs in Oakville?",
+                        "answer": "To reduce moving costs in Oakville, try to declutter your home, book early, and avoid moving during the peak summer months. Comparing quotes from multiple companies can also help you find the best deal."
+                    },
+                    {
+                        "question": "Do you offer professional packing services in Oakville?",
+                        "answer": "Yes, we offer professional packing and unpacking services in Oakville, using high-quality packing materials to ensure the safety of your items."
+                    },
+                    {
+                        "question": "Can you move specialty items like pianos in Oakville?",
+                        "answer": "Yes, we specialize in moving **pianos**, **fine art**, and other specialty items in Oakville. Our team is trained to handle delicate and valuable items with care."
+                    },
+                    {
+                        "question": "What should I expect on moving day in Oakville?",
+                        "answer": "On moving day in Oakville, our team will arrive on time, disassemble and pack your items, and transport them safely to your new home. We aim for a smooth, efficient move."
+                    }
+                ]
+            }
         }
     ]
 }

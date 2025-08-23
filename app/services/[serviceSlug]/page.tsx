@@ -59,7 +59,7 @@ const servicesData: any = {
     ],
   },
   "junk-removal-moving-service": {
-    title: "Junk Removal Moving Service",
+    title: "Junk Removal Service",
     description: "Creative visuals for your brand.",
     components: [
       {

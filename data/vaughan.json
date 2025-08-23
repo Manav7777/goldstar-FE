@@ -74,14 +74,48 @@
             }
         },
         {
-            "key":"LocationMovingSteps",
+            "key": "LocationMovingSteps",
             "props": {
                 "title": " How Our Moving Services in Vaughan Works in Just 3 Simple Steps",
                 "description": "Booking a move with Goldstar Movers is simple and straightforward"
             }
         },
         {
-            "key":"SatisfactionSection"
+            "key": "SatisfactionSection"
+        },
+        {
+            "key": "LocationMap"
+        },
+        {
+            "key": "Faqs",
+            "props": {
+                "faqs": [
+                    {
+                        "question": "How much do packers and movers cost in Vaughan?",
+                        "answer": "In Vaughan, moving costs range from $600 to $2,000 for local moves, with long-distance moves being more expensive depending on the distance."
+                    },
+                    {
+                        "question": "Do you serve all of Vaughan?",
+                        "answer": "Yes, we serve all neighborhoods in Vaughan, including Maple, Woodbridge, and Concord. We offer both local and long-distance moving services."
+                    },
+                    {
+                        "question": "How can I save on moving costs in Vaughan?",
+                        "answer": "Save on your move in Vaughan by booking early, decluttering your home, and moving outside of peak season (summer)."
+                    },
+                    {
+                        "question": "Can you handle fragile items in Vaughan?",
+                        "answer": "Yes, we specialize in moving fragile items like glassware, fine art, and antiques in Vaughan."
+                    },
+                    {
+                        "question": "Do you offer unpacking services in Vaughan?",
+                        "answer": "Yes, our team provides unpacking services in Vaughan to help you settle into your new home quickly and efficiently."
+                    },
+                    {
+                        "question": "How long does a typical move take in Vaughan?",
+                        "answer": "A local move in Vaughan usually takes between 4-6 hours, depending on the size of the property and number of items."
+                    }
+                ]
+            }
         }
     ]
 }

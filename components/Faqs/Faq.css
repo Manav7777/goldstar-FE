@@ -1,0 +1,20 @@
+.accordion-button:not(.collapsed) {
+    color: var(--gs-primary-color);
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:focus-visible {
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+.accordion-button {
+  font-size: 1.5rem;
+  font-weight: 500;
+}

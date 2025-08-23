@@ -53,6 +53,18 @@ const ClientRatings = () => {
             <h3>
               What our <span className="text-primary h3">Customers</span> Says
             </h3>
+            {/* <img
+              src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}5-star-google-rating.jpeg`}
+              alt="5-star-google-rating"
+              className="img-fluid"
+              width={150}
+            />
+            <img
+              src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}statisfaction.jpeg`}
+              alt="statisfaction"
+              className="img-fluid mt-2"
+              width={150}
+            /> */}
           </div>
           <div className="col-lg-9 col-md-12 col-sm-12">
             <Swiper

@@ -63,6 +63,7 @@
   cursor: pointer;
   z-index: 12399994;
   border: none;
+  margin-right: 10px;
 }
 
 .navbar-toggler:after {

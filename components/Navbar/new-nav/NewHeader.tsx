@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { Container, Navbar, Nav, Button, Offcanvas } from "react-bootstrap";
+import { Container, Nav, Button, Offcanvas } from "react-bootstrap";
 import "./NewHeader.css";
-import Image from "next/image";
 import Link from "next/link";
 import { Phone } from "lucide-react";
 import GsButton from "@/components/ui/GsButton";
@@ -104,9 +103,9 @@ export default function NewHeader() {
                     onToggle={() => toggleMenu(menu.id)}
                   />
                 ) : (
-                  <Link href={menu.url} className="py-2 nav-link px-2">
+                  <Nav.Link href={menu.url} className="py-2 nav-link px-2">
                     {menu.name}
-                  </Link>
+                  </Nav.Link>
                 )}
               </div>
             ))}

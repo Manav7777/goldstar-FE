@@ -12,6 +12,8 @@ import "aos/dist/aos.css";
 import AnimationAos from "@/components/ui/AnimationAos";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "leaflet/dist/leaflet.css";
+import FloatingWhatsAppButton from "@/components/ui/FloatingWhatsAppButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -58,6 +60,7 @@ export default async function RootLayout({
           }
         >
           <AnimationAos>{children}</AnimationAos>
+          <FloatingWhatsAppButton />
         </Suspense>
         <Footer />
       </body>

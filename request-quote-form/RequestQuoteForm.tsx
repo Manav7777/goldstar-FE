@@ -26,10 +26,10 @@ export default function RequestQuoteForm({ open, close }: any) {
     { value: "4bhk", label: "4+ Bed Room" },
     { value: "studio", label: "Studio Apartment" },
     { value: "commercial", label: "Commercial Space" },
-    { value: "piano", label: "Piano Moving" },
     { value: "safe", label: "Safe Move"},
     { value: "long distance", label: "Long Distance Move" },
     { value: "cross-country", label: "Cross-Country Move" },
+    { value: "piano", label: "Piano Moving" },
     { value: "junk-removal", label: "Junk Removal" },
     { value: "demolition", label: "Demolition" },
    
@@ -172,7 +172,7 @@ export default function RequestQuoteForm({ open, close }: any) {
             <div className="mb-4 border-top pt-4">
               <h6 className="d-flex align-items-center text-dark mb-3">
                 <Package className="me-2 text-warning wi-18" />
-                Moving Details
+                Service Details
               </h6>
               <div className="row">
                 <div className="col-md-6 mb-3">
@@ -228,13 +228,12 @@ export default function RequestQuoteForm({ open, close }: any) {
                 </div>
                 <div className="col-md-6 mb-3">
                   <label htmlFor="modal-destinationAddress" className="form-label">
-                    Moving To *
+                    Moving To
                   </label>
                   <textarea
                     id="modal-destinationAddress"
                     value={formData.destinationAddress}
                     onChange={(e) => handleInputChange("destinationAddress", e.target.value)}
-                    required
                     rows={2}
                     className="form-control"
                   />
@@ -286,5 +285,6 @@ export default function RequestQuoteForm({ open, close }: any) {
     </Modal>
   );
 }
+
 
 
