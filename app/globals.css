@@ -27,7 +27,7 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
@@ -36,7 +36,7 @@ body {
   font-family: var(--font-plus-jakarta) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 * {
@@ -154,6 +154,14 @@ a[href^="mailto"] {
 
 .blockquote {
   font-size: 0.95rem;
+}
+
+.google-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .text-left {
@@ -474,6 +482,9 @@ select:focus,textarea:focus {
   /* .sm-container-1100 {
     max-width: 1100px !important;
   } */
+   .m-center {
+    text-align: center;
+   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -497,3 +508,20 @@ select:focus,textarea:focus {
   }
 }
 
+@media screen and (max-width: 545px) {
+  .pad-10 {
+    padding: 10px !important;
+  }
+}
+
+@media screen and (max-width: 467px) {
+  .m-btn {
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  .m-btn a {
+    width: 100%;
+    text-align: center;
+  }
+}

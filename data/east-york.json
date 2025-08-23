@@ -1,0 +1,121 @@
+{
+  "seo": {
+    "title": "Top-Rated Moving Company East York | GoldStar Movers",
+    "description": "Looking for reliable movers in East York? GoldStar Movers delivers stress-free moving services with trusted professionals. Call (289) 541-7282 today!",
+    "canonical": "http://localhost:3000/goldstar/east-york",
+    "keywords": [
+      "East York movers",
+      "moving company East York"
+    ],
+    "openGraph": {
+      "title": "East York Moving Company",
+      "description": "Affordable and professional moving services in East York.",
+      "image": "http://localhost:3000/images/banner.png"
+    }
+  },
+  "components": [
+    {
+      "key": "LocationTopSection",
+      "props": {
+        "cityName": "East York",
+        "headline": "Goldstar Movers: Reliable Moving Services in",
+        "subtext": "Whether you're relocating across East York or planning a major move, trust GoldStar Movers to make the process smooth and stress-free. Our dedicated team delivers efficient residential and commercial moving solutions tailored to your needs. We’re not just another moving company—we’re your moving partners committed to quality and care.",
+        "buttonText": "Get a Free Quote",
+        "services": [
+          {
+            "title": "Family Movers",
+            "description": "Safe and efficient household moves.",
+            "icon": "Users"
+          },
+          {
+            "title": "Safe Packing",
+            "description": "Expert packing with top-grade materials.",
+            "icon": "Box"
+          },
+          {
+            "title": "Rated Service",
+            "description": "Flexible scheduling with reliable movers.",
+            "icon": "Star"
+          }
+        ]
+      }
+    },
+    {
+      "key": "LocationServiceSections",
+      "props": {
+        "title": "Expert Moving Services Tailored for East York",
+        "subtitle": "At GoldStar Movers, we handle your belongings with precision and care. Our East York moving crews are trained to industry standards, ensuring every move is handled professionally from start to finish."
+      }
+    },
+    {
+      "key": "WhyChooseUs",
+      "props": {
+        "whyLocation": {
+          "title": "Why Choose GoldStar Movers in East York?",
+          "description": "East York residents count on us for dependable, stress-free relocations. From condos to family homes, we move it all.",
+          "reasons": [
+            {
+              "icon": "Users",
+              "title": "Trained & Friendly Movers",
+              "description": "Our experienced moving professionals treat your possessions as if they were their own, with attention to detail and respect."
+            },
+            {
+              "icon": "Clock",
+              "title": "On-Time Guarantee",
+              "description": "We respect your time. Our crews arrive promptly and complete your move efficiently—no delays, no surprises."
+            },
+            {
+              "icon": "Shield",
+              "title": "Fully Licensed & Insured",
+              "description": "Peace of mind comes standard. Our services include insurance coverage and proper licensing for every move."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "LocationMovingSteps",
+      "props": {
+        "title": "How Our Moving Services in East York Work — 3 Simple Steps",
+        "description": "Moving in East York has never been easier. With GoldStar Movers, you're only three steps away from a smooth, stress-free relocation."
+      }
+    },
+    {
+      "key": "SatisfactionSection"
+    },
+    {
+      "key": "LocationMap"
+    },
+    {
+      "key": "Faqs",
+      "props": {
+        "faqs": [
+          {
+            "question": "What are the moving rates in East York?",
+            "answer": "Moving costs in East York typically range from $450 to $1,800 depending on home size, distance, and service level."
+          },
+          {
+            "question": "Do you offer packing services in East York?",
+            "answer": "Absolutely. Our team can pack your entire home or specific items using high-quality materials and proven techniques."
+          },
+          {
+            "question": "Can you move large or delicate items in East York?",
+            "answer": "Yes, we specialize in moving fragile and specialty items like pianos, antiques, and electronics with care and precision."
+          },
+          {
+            "question": "How can I lower my moving costs in East York?",
+            "answer": "You can reduce costs by decluttering, booking early, and choosing weekday moves when demand is lower."
+          },
+          {
+            "question": "What should I expect on moving day in East York?",
+            "answer": "Expect our team to arrive on time, handle your items with care, and ensure a seamless move from start to finish."
+          },
+          {
+            "question": "Is insurance included in your East York moves?",
+            "answer": "Yes, we include insurance for every move to protect your items throughout the relocation process."
+          }
+        ]
+      }
+    }
+  ]
+}

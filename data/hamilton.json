@@ -1,0 +1,121 @@
+{
+  "seo": {
+    "title": "Reliable Moving Company Hamilton | GoldStar Movers",
+    "description": "Moving in Hamilton? GoldStar Movers offers expert, stress-free moving services backed by a trusted local team. Call (289) 541-7282 today for a free quote.",
+    "canonical": "http://localhost:3000/goldstar/hamilton",
+    "keywords": [
+      "Hamilton movers",
+      "moving company Hamilton"
+    ],
+    "openGraph": {
+      "title": "Hamilton Moving Company",
+      "description": "Your trusted and affordable movers in Hamilton.",
+      "image": "http://localhost:3000/images/banner.png"
+    }
+  },
+  "components": [
+    {
+      "key": "LocationTopSection",
+      "props": {
+        "cityName": "Hamilton",
+        "headline": "GoldStar Movers – Your Trusted Moving Company in",
+        "subtext": "Relocating within Hamilton or moving to a new neighborhood? GoldStar Movers makes the process smooth and stress-free. With local expertise and a customer-first approach, our Hamilton movers handle residential, office, and long-distance moves with professionalism and care. We do the heavy lifting so you can focus on settling in.",
+        "buttonText": "Get a Free Quote",
+        "services": [
+          {
+            "title": "Family Movers",
+            "description": "Efficient and secure home relocations.",
+            "icon": "Users"
+          },
+          {
+            "title": "Safe Packing",
+            "description": "Expert packing to protect your valuables.",
+            "icon": "Box"
+          },
+          {
+            "title": "Rated Service",
+            "description": "Top-rated by Hamilton residents.",
+            "icon": "Star"
+          }
+        ]
+      }
+    },
+    {
+      "key": "LocationServiceSections",
+      "props": {
+        "title": "Comprehensive Moving Services in Hamilton",
+        "subtitle": "GoldStar Movers offers more than just moving trucks—we bring experience, planning, and care to every Hamilton move. Our trained professionals ensure your items are packed, loaded, and delivered safely."
+      }
+    },
+    {
+      "key": "WhyChooseUs",
+      "props": {
+        "whyLocation": {
+          "title": "Why Choose GoldStar Movers in Hamilton?",
+          "description": "We’re Hamilton’s trusted movers for a reason. With reliable service, local knowledge, and fair pricing, we’re committed to exceeding expectations every time.",
+          "reasons": [
+            {
+              "icon": "Users",
+              "title": "Experienced Local Movers",
+              "description": "Our Hamilton team understands the city’s neighborhoods, traffic patterns, and building rules—so your move is faster and smoother."
+            },
+            {
+              "icon": "Clock",
+              "title": "Punctual & Efficient",
+              "description": "We value your time. Our movers arrive on schedule, work quickly, and finish your move without delays."
+            },
+            {
+              "icon": "Shield",
+              "title": "Licensed & Insured",
+              "description": "We’re fully licensed and insured for all Hamilton moves, so you can rest easy knowing your belongings are protected."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "LocationMovingSteps",
+      "props": {
+        "title": "How Our Hamilton Moving Process Works – 3 Easy Steps",
+        "description": "GoldStar Movers has simplified the moving experience in Hamilton. From start to finish, we focus on clear communication, safety, and speed."
+      }
+    },
+    {
+      "key": "SatisfactionSection"
+    },
+    {
+      "key": "LocationMap"
+    },
+    {
+      "key": "Faqs",
+      "props": {
+        "faqs": [
+          {
+            "question": "How much does a move in Hamilton typically cost?",
+            "answer": "Most local moves in Hamilton range from $500 to $2,200, depending on the home size, distance, and services needed."
+          },
+          {
+            "question": "Are packing services available in Hamilton?",
+            "answer": "Yes, we offer complete packing services in Hamilton using high-quality materials and expert techniques."
+          },
+          {
+            "question": "Do you handle heavy or special items like safes or pianos?",
+            "answer": "Absolutely. We have experience moving heavy, bulky, and delicate items like safes, pianos, and antiques with the right tools and training."
+          },
+          {
+            "question": "Can I reduce my moving costs in Hamilton?",
+            "answer": "Yes—decluttering before the move, booking off-peak dates, and being ready on moving day can help lower your overall cost."
+          },
+          {
+            "question": "What happens on moving day?",
+            "answer": "Our Hamilton crew arrives on time, protects your space, packs or loads your belongings, and ensures everything arrives safely at your new location."
+          },
+          {
+            "question": "Do you offer insurance coverage?",
+            "answer": "Yes, all our moves in Hamilton come with insurance coverage for added peace of mind during your relocation."
+          }
+        ]
+      }
+    }
+  ]
+}

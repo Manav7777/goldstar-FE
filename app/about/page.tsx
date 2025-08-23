@@ -19,7 +19,7 @@ const About = () => {
           >
             <img
               decoding="async"
-              src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}about-us.jpeg`}
+              src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}why-choose-goldstar.jpeg`}
               alt="gold-star-movers"
               className="border-radius-5"
               title="gold-star-movers"
@@ -64,21 +64,23 @@ const About = () => {
                 })}
               </ul>
               <p data-aos="fade-up" data-aos-delay="700">
+                As we grew, we recognized the need to support our clients with
+                more than just moving. We now provide expert junk removal and
+                professional demolition services, ensuring that every
+                project—from relocation to renovations—is handled efficiently,
+                safely, and stress-free.
+              </p>
+              <p data-aos="fade-up" data-aos-delay="800">
                 From our roots in Toronto, we have grown to serve not only the
                 Greater Toronto Area, but also communities across Ontario,
                 Canada, and the United States.
               </p>
-              <p data-aos="fade-up" data-aos-delay="800">
+              <p data-aos="fade-up" data-aos-delay="900">
                 In a short period of time, Gold Star Movers has become one of
                 the most trusted and recommended companies in Toronto and the
                 surrounding regions. Our success is built on a reputation for
                 professionalism, customer care, and delivering results that
                 exceed expectations.
-              </p>
-              <p data-aos="fade-up" data-aos-delay="900">
-                No matter the size of the project—whether it’s a local move, a
-                cross-border relocation, or a large-scale demolition—Gold Star
-                Movers is your trusted partner every step of the way.
               </p>
               <div data-aos="fade-up" data-aos-delay="1000">
                 <GsButton type="primary" />

@@ -6,26 +6,27 @@ const ServicesCard = () => {
   {
     title: 'Residential Moving',
     description: 'Effortless relocation for homes and apartments with professional care and attention to detail',
-    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}residential-moving-service-card.jpeg`,
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}residential-service-card.jpeg`,
     link: '/services/residential-moving-service'
   },
   {
     title: 'Commercial Moving',
     description: 'Seamless office and business relocations with minimal downtime and maximum efficiency',
-    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}commercial-moving-service.jpeg`,
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}residential-moving-service-card.jpeg`,
+
     link: '/services/commercial-moving-service'
   },
  {
     title: 'Long Distance Moving',
     description: 'Specialized long-distance moving services with secure transport, careful handling, and timely delivery across provinces',
-    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}long-distance-moving-service-card.jpeg`,
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}long-distance-service-card.jpeg`,
     // full: true,
     link: '/services/long-distance-moving-service'
   },
   {
     title: 'Cross Country',
     description: 'Nationwide moving services from coast to coast across Canada with secure transport',
-    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}cross-country-service-card.jpeg`,
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}cross-country-service-cards.jpeg`,
     link: '/services/cross-country-moving-service'
   },
   
@@ -48,7 +49,7 @@ const ServicesCard = () => {
       <div className="text-center mb-5">
         <h2 className="text-center fw-bold mb-4">OUR EXPERT SERVICES</h2>
         <p className="lead text-secondary mx-auto w-75">
-          Comprehensive moving solutions tailored to your specific needs across Canada
+          Moving, Demolition & Junk Removal—done professional, safe, and stress-free.
         </p>
       </div>
 
