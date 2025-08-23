@@ -1,0 +1,121 @@
+{
+    "seo": {
+        "title": "Trusted Moving Company Toronto | GoldStar Movers",
+        "description": "GoldStar Movers is your go-to mover in Toronto! We provide stress-free relocations with 100% satisfaction guaranteed! Call (289) 541-7282 today.",
+        "canonical": "http://localhost:3000/goldstar/north-york",
+        "keywords": [
+            "Toronto movers",
+            "moving company Toronto"
+        ],
+        "openGraph": {
+            "title": "Toronto Moving Company",
+            "description": "Affordable and reliable movers in Toronto.",
+            "image": "http://localhost:3000/iamges/banner.png"
+        }
+    },
+    "components": [
+        {
+            "key": "LocationTopSection",
+            "props": {
+                "cityName": "Toronto",
+                "headline": "Trusted Moving Company",
+                "subtext": "Moving can induce stress, but with movers in Toronto, you can rest easy knowing your belongings are in safe hands. At Goldstar Movers, we understand that relocating is more than just transporting items; it’s about starting a new chapter in your life. Our moving company in Toronto is dedicated to providing efficient, personalized services to make your transition as smooth as possible, whether you are moving within the city or to a different province.",
+                "buttonText": "Get a Free Quote",
+                "services": [
+                    {
+                        "title": "High-Rise Moves",
+                        "description": "Apartment & condo moves.",
+                        "icon": "Building"
+                    },
+                    {
+                        "title": "City Navigation",
+                        "description": "Efficient urban moving.",
+                        "icon": "Truck"
+                    },
+                    {
+                        "title": "Professional Packing",
+                        "description": "Expert packing service.",
+                        "icon": "Boxes"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "LocationServiceSections",
+            "props": {
+                "title": "Our Moving Services in Toronto",
+                "subtitle": "Professional packing and moving solutions for Greater Toronto Area"
+            }
+        },
+        {
+            "key": "WhyChooseUs",
+            "props": {
+                "whyLocation": {
+                    "title": "Why Choose Goldstar Movers As Your Local Movers in Toronto, Ontario?",
+                    "description": "Goldstar Moving is your trusted partner for stress-free relocation in the GTA.",
+                    "reasons": [
+                        {
+                            "icon": "Users",
+                            "title": "Professional Moving Team",
+                            "description": "Trained and experienced movers who handle your belongings with care and follow proper packing and moving techniques."
+                        },
+                        {
+                            "icon": "Clock",
+                            "title": "On-Time Moving Service",
+                            "description": "Punctual arrivals and efficient moving processes to meet your schedule and minimize disruption to your day."
+                        },
+                        {
+                            "icon": "Shield",
+                            "title": "Fully Licensed & Insured",
+                            "description": "Complete insurance coverage and proper licensing to protect your belongings and provide peace of mind during your move."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "key": "LocationMovingSteps",
+            "props": {
+                "title": "How Our Professional Movers in Toronto Work",
+                "description": "At Goldstar Movers, we follow a straightforward and transparent process that makes your move easy. Let's examine how we do it"
+            }
+        },
+        {
+            "key": "SatisfactionSection"
+        },
+        {
+            "key": "LocationMap"
+        },
+        {
+            "key": "Faqs",
+            "props": {
+                "faqs": [
+                    {
+                        "question": "What are the typical moving costs in Toronto?",
+                        "answer": "Moving costs in Toronto range from $500 to $2,000 for local moves. Long-distance moves can cost anywhere from $2,000 to $7,000, depending on the distance and number of items."
+                    },
+                    {
+                        "question": "Do you offer moving services in all Toronto neighborhoods?",
+                        "answer": "Yes, we provide moving services throughout Toronto, including neighborhoods like Scarborough, Etobicoke, North York, and Downtown Toronto."
+                    },
+                    {
+                        "question": "How can I save on moving costs in Toronto?",
+                        "answer": "To save on your move in Toronto, try to book early, avoid peak seasons, and declutter before the move. You can also compare quotes from different moving companies."
+                    },
+                    {
+                        "question": "Do you provide packing services in Toronto?",
+                        "answer": "Yes, we offer professional packing and unpacking services in Toronto, ensuring your items are safely packed and ready for transport."
+                    },
+                    {
+                        "question": "Can you move specialty items like pianos in Toronto?",
+                        "answer": "We specialize in moving specialty items such as pianos, artwork, and antiques in Toronto. Our movers are trained to handle fragile and valuable items with care."
+                    },
+                    {
+                        "question": "How far in advance should I book my move in Toronto?",
+                        "answer": "For Toronto moves, it’s recommended to book your move at least 2-4 weeks in advance, especially if you’re moving during the busy season (spring and summer)."
+                    }
+                ]
+            }
+        }
+    ]
+}

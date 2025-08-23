@@ -1,0 +1,92 @@
+/* Color Variants */
+.bg-primary-light {
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
+.bg-success-light {
+  background-color: rgba(25, 135, 84, 0.1);
+}
+
+.bg-info-light {
+  background-color: rgba(13, 202, 240, 0.1);
+}
+
+.bg-purple-light {
+  background-color: rgba(111, 66, 193, 0.1);
+}
+
+.text-purple {
+  color: #6f42c1;
+}
+
+.bg-light-5 {
+  background-color: rgb(255 217 0 / 5%);
+}
+
+/* Icon circle */
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.icon-circle svg {
+  max-width: 32px;
+  height: 32px;
+  margin-right: 0px !important;
+}
+
+.icon-lg {
+  font-size: 2.5rem;
+}
+
+/* Card */
+.contact-card {
+  border-radius: 0.75rem;
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 1.25rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+/* Animate hover pulse */
+.animate-hover:hover {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Call-to-action reveal on hover */
+.call-to-action {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--bs-primary);
+  letter-spacing: 0.05em;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.contact-card:hover .call-to-action {
+  opacity: 1;
+}

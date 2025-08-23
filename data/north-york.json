@@ -1,0 +1,121 @@
+{
+    "seo": {
+        "title": "Trusted Moving Company North York | GoldStar Movers",
+        "description": "GoldStar Movers is your go-to mover in North York! We provide stress-free relocations with 100% satisfaction guaranteed! Call (289) 541-7282 today.",
+        "canonical": "http://localhost:3000/goldstar/north-york",
+        "keywords": [
+            "North York movers",
+            "moving company North York"
+        ],
+        "openGraph": {
+            "title": "North York Moving Company",
+            "description": "Affordable and reliable movers in North York.",
+            "image": "http://localhost:3000/iamges/banner.png"
+        }
+    },
+    "components": [
+        {
+            "key": "LocationTopSection",
+            "props": {
+                "cityName": "North York",
+                "headline": "Reputable and Reliable Movers",
+                "subtext": "Our professional movers in North York provide personalized and efficient services for your North York relocation. Our approach isn't just about moving your belongings; it's about helping you start a new chapter. Whether you're moving within the neighbourhood or across the city, our dedicated team ensures your move is handled with utmost care and expertise.",
+                "buttonText": "Get a Free Quote",
+                "services": [
+                    {
+                        "title": "Family Moving",
+                        "description": "Home relocations.",
+                        "icon": "House"
+                    },
+                    {
+                        "title": "Secure Packing",
+                        "description": "Business relocations.",
+                        "icon": "Box"
+                    },
+                    {
+                        "title": "Trained Team",
+                        "description": "Complete packing materials.",
+                        "icon": "Users"
+                    }
+                ]
+            }
+        },
+        {
+            "key": "LocationServiceSections",
+            "props": {
+                "title": "Services by Our North York Moving Company",
+                "subtitle": "he services of our moving company in North York include."
+            }
+        },
+        {
+            "key": "WhyChooseUs",
+            "props": {
+                "whyLocation": {
+                    "title": "Why Choose GoldStar Movers Your North York Move?",
+                    "description": "Professional moving services you can trust in Toronto's West End",
+                    "reasons": [
+                        {
+                            "icon": "Users",
+                            "title": "Professional Moving Team",
+                            "description": "Trained and experienced movers who handle your belongings with care and follow proper packing and moving techniques."
+                        },
+                        {
+                            "icon": "Clock",
+                            "title": "On-Time Moving Service",
+                            "description": "Punctual arrivals and efficient moving processes to meet your schedule and minimize disruption to your day."
+                        },
+                        {
+                            "icon": "Shield",
+                            "title": "Fully Licensed & Insured",
+                            "description": "Complete insurance coverage and proper licensing to protect your belongings and provide peace of mind during your move."
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "key": "LocationMovingSteps",
+            "props": {
+                "title": "Your Trusted North York Movers",
+                "description": "Move with peace of mind; get reputable movers in North York. Goldstar Movers is a moving company that goes beyond relocation – we're your North York partner, ensuring a stress-free experience"
+            }
+        },
+        {
+            "key": "SatisfactionSection"
+        },
+        {
+            "key": "LocationMap"
+        },
+        {
+            "key": "Faqs",
+            "props": {
+                "faqs": [
+                    {
+                        "question": "How much does a move in North York cost?",
+                        "answer": "Moving within North York generally costs between $500 and $1,800, with rates depending on the distance and amount of belongings being moved."
+                    },
+                    {
+                        "question": "Do you offer specialized moving services in North York?",
+                        "answer": "Yes, we provide specialized moving services in North York, including piano moving, art moving, and senior relocation."
+                    },
+                    {
+                        "question": "Can you help with packing in North York?",
+                        "answer": "Yes, we offer full packing and unpacking services in North York. Our movers use high-quality materials to ensure your belongings are well-protected."
+                    },
+                    {
+                        "question": "How far in advance should I schedule my move in North York?",
+                        "answer": "It’s best to schedule your move at least 2-3 weeks in advance, especially during the busy summer months."
+                    },
+                    {
+                        "question": "Do you offer insurance for moves in North York?",
+                        "answer": "Yes, we offer moving insurance in North York to cover your belongings in case of damage during the move."
+                    },
+                    {
+                        "question": "What is the best time to move in North York?",
+                        "answer": "The best time to move in North York is during the spring and fall, when demand is lower, and rates are more affordable."
+                    }
+                ]
+            }
+        }
+    ]
+}

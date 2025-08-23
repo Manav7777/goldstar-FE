@@ -1,0 +1,47 @@
+{
+  "name": "goldstarmovers",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fontsource/plus-jakarta-sans": "^5.2.5",
+    "@fortawesome/fontawesome-svg-core": "^7.0.0",
+    "@fortawesome/free-brands-svg-icons": "^7.0.0",
+    "@fortawesome/free-solid-svg-icons": "^7.0.0",
+    "@fortawesome/react-fontawesome": "^0.2.3",
+    "@next/font": "^14.2.15",
+    "@radix-ui/react-dialog": "^1.1.14",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.5",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.539.0",
+    "mjml": "^4.15.3",
+    "next": "15.3.1",
+    "nodemailer": "^7.0.5",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.9",
+    "react-dom": "^19.0.0",
+    "react-slick": "^0.31.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.2.10"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/aos": "^3.0.7",
+    "@types/leaflet": "^1.9.20",
+    "@types/mjml": "^4.7.4",
+    "@types/node": "^20",
+    "@types/nodemailer": "^7.0.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-slick": "^0.23.13",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.1",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,81 @@
+.perfect-move-section {
+  background-color: #fff;
+  padding: 5rem 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #212529;
+}
+
+.section-subtitle {
+  color: #6c757d;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.125rem;
+}
+
+.highlight {
+  color: var(--gs-primary-color);
+}
+
+.service-card {
+  background-color: #fff;
+  border: 2px solid #f1f1f1;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  border-color: var(--gs-primary-color);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff3cd;
+  color: var(--gs-primary-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  background-color: var(--gs-primary-color);
+  color: #000;
+}
+
+.icon-svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+}
+
+.service-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #212529;
+}
+
+.service-desc {
+  color: #6c757d;
+}
+
+/* Moving Steps */
+
+/* Container for the whole section */
+.moving-steps-section {
+  background-color: #ffffff;
+  padding: 5rem 0;
+}
+
+/* Limit paragraph width */
+.max-width-md {
+  max-width: 700px;
+}
+
