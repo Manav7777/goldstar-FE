@@ -54,6 +54,8 @@ export const goldStarMenus = [
       { id: 11, name: "Etobicoke", url: "/goldstar/etobicoke" },
       { id: 12, name: "Mississauga", url: "/goldstar/mississauga" },
       { id: 13, name: "North York", url: "/goldstar/north-york" },
+      { id: 18, name: "East York", url: "/goldstar/east-york" },
+      { id: 18, name: "Hamilton", url: "/goldstar/hamilton" },
       { id: 14, name: "Toronto", url: "/goldstar/toronto" },
       { id: 15, name: "Oakville", url: "/goldstar/oakville" },
       { id: 16, name: "Vaughan", url: "/goldstar/vaughan" },
@@ -337,36 +339,36 @@ export const ResidentialMovingEfforts: any = {
   data: [
     {
       number: "01",
-      title: "Smart Assessment",
+      title: "Get Your Free Quote",
       description:
-        "AI-powered virtual survey provides instant, accurate quotes based on your specific inventory and needs.",
+        "Contact us online or by phone for a quick, no-obligation quote tailored to your moving needs.",
       icon: sanitizeSvg(HouseIcon()),
       bgColor: "bg-blue-50",
       textColor: "text-blue",
     },
     {
       number: "02",
-      title: "Custom Planning",
+      title: "Schedule Your Move",
       description:
-        "Personalized moving timeline with flexibility built in for your schedule and preferences.",
+        "Choose the date and time that works best for you. We’ll coordinate everything to fit your schedule.",
       icon: sanitizeSvg(CalendarIcon()),
       bgColor: "bg-green-50",
       textColor: "text-green",
     },
     {
       number: "03",
-      title: "Expert Execution",
+      title: "We Do the Heavy Lifting",
       description:
-        "Professional team handles packing, loading, and transport with real-time updates.",
+        "Our professional movers arrive on time, equipped and ready. From packing to loading, we handle your belongings with care.",
       icon: sanitizeSvg(PackageIcon()),
       bgColor: "bg-yellow-50",
       textColor: "text-brand-yellow",
     },
     {
       number: "04",
-      title: "Perfect Delivery",
+      title: "Enjoy a Stress-Free Move",
       description:
-        "White-glove delivery, setup, and final walkthrough to ensure complete satisfaction.",
+        "We deliver and set up your items in your new home or office, so you can relax and settle in.",
       icon: sanitizeSvg(MapPinIcon()),
       bgColor: "bg-purple-50",
       textColor: "text-purple",
@@ -381,7 +383,7 @@ export const residentialServiceHeroSection: any = {
   description: `Moving into a new home is a big step and at Gold Star Movers, we make sure the process is smooth, stress-free, and efficient. 
   Our residential moving services are designed to fit your needs, whether you’re moving from a small apartment, a condo, 
   or a large family house.`,
-  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/residential-moving.webp`,
+  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}top-section-old.jpeg`,
   buttonText: "Request Now",
   showTag: true,
   tagText: "Trusted by 1,000+ Businesses",
@@ -393,7 +395,7 @@ export const commercialServiceHeroSection: any = {
   subtitle: "Never Missing a Beat",
   description:
     "Relocating your business doesn’t have to mean downtime or stress. At Gold Star Movers, we specialize in professional commercial moving services designed to keep your operations running smoothly. Whether you’re moving a small office, a retail store, or an entire corporate facility, our team ensures a fast, efficient, and organized transition.",
-  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/commercial-moving.webp`,
+  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/commercial-service-new.jpeg`,
   buttonText: "Request Now",
   showTag: true,
   tagText: "Trusted by 1,000+ Businesses",
@@ -417,33 +419,37 @@ export const commercialMovingEfforts: any = {
   description: `We understand that time is money. Our proven methodology minimizes disruption while maximizing efficiency.`,
   data: [
     {
-      title: "Smart Assessment",
+      number: "01",
+      title: "Get Your Free Quote",
       description:
-        "AI-powered virtual survey provides instant, accurate quotes based on your specific inventory and needs.",
-      icon: sanitizeSvg(clockIcon()),
-      bgColor: "bg-green-50",
-      textColor: "text-green",
-    },
-    {
-      title: "Strategic Planning",
-      description:
-        "Personalized moving timeline with flexibility built in for your schedule and preferences.",
-      icon: sanitizeSvg(usersIcons()),
+        "Contact us online or by phone for a quick, no-obligation quote tailored to your moving needs.",
+      icon: sanitizeSvg(HouseIcon()),
       bgColor: "bg-blue-50",
       textColor: "text-blue",
     },
     {
-      title: "Coordinated Execution",
+      number: "02",
+      title: "Schedule Your Move",
       description:
-        "Professional team handles packing, loading, and transport with real-time updates.",
+        "Choose the date and time that works best for you. We’ll coordinate everything to fit your schedule.",
+      icon: sanitizeSvg(CalendarIcon()),
+      bgColor: "bg-green-50",
+      textColor: "text-green",
+    },
+    {
+      number: "03",
+      title: "We Do the Heavy Lifting",
+      description:
+        "Our professional movers arrive on time, equipped and ready. From packing to loading, we handle your belongings with care.",
       icon: sanitizeSvg(PackageIcon()),
       bgColor: "bg-yellow-50",
       textColor: "text-brand-yellow",
     },
     {
-      title: "Perfect Delivery",
+      number: "04",
+      title: "Enjoy a Stress-Free Move",
       description:
-        "White-glove delivery, setup, and final walkthrough to ensure complete satisfaction.",
+        "We deliver and set up your items in your new home or office, so you can relax and settle in.",
       icon: sanitizeSvg(MapPinIcon()),
       bgColor: "bg-purple-50",
       textColor: "text-purple",
@@ -453,8 +459,8 @@ export const commercialMovingEfforts: any = {
 
 export const residentialServices: any = [
     {
-      title: "Full-Service Packing",
-      desc: "Professional packing with premium materials",
+      title: "Loading / Unloading Service",
+      desc: "Professional Loading & Unloading Service",
       icon: sanitizeSvg(PackageIcon()),
     },
     {
@@ -464,7 +470,7 @@ export const residentialServices: any = [
     },
     {
       title: "Specialty Items",
-      desc: "Piano, artwork, and antique handling",
+      desc: "Piano, Safe, and Hot-tubs handling",
       icon: sanitizeSvg(guardIcon()),
     },
     {
@@ -473,8 +479,8 @@ export const residentialServices: any = [
       icon: sanitizeSvg(clockIcon()),
     },
     {
-      title: "Storage Solutions",
-      desc: "Temporary and long-term storage",
+      title: "Packing",
+      desc: "Professional packing with premium materials",
       icon: sanitizeSvg(internetIcon()),
     },
     {
@@ -486,33 +492,33 @@ export const residentialServices: any = [
 
 export const commercialServicesPerfectMove: any = [
   {
-    title: "Zero Downtime",
-    desc: "Strategic planning and execution designed to minimize business interruption and maintain productivity.",
+    title: "Free On-Site Consultation",
+    desc: "We assess your office or business space, understand your needs, and create a custom moving plan tailored to your operations.",
     icon: sanitizeSvg(bagIcon()),
   },
   {
-    title: "Project Management",
-    desc: "Dedicated project manager coordinates every detail of your commercial relocation from start to finish.",
+    title: "Detailed Moving Plan & Quote",
+    desc: "You receive a transparent quote and timeline, including packing, transport, and setup, ensuring minimal disruption to your business.",
     icon: sanitizeSvg(usersIcons()),
   },
   {
-    title: "Secure Operations",
-    desc: "Advanced security protocols for confidential documents and sensitive business equipment.",
+    title: "Professional Packing & Labeling",
+    desc: "Our team securely packs and labels equipment, furniture, and documents to guarantee safe transport and easy unpacking.",
     icon: sanitizeSvg(guardIcon()),
   },
   {
-    title: "After-Hours Service",
-    desc: "Weekend, evening, and holiday moving options to accommodate your business schedule.",
+    title: "Efficient Moving Day Execution",
+    desc: "Our movers arrive on time, fully equipped to handle office furniture, electronics, and sensitive materials with precision.",
     icon: sanitizeSvg(clockIcon()),
   },
   {
-    title: "IT Specialists",
-    desc: "Certified technicians handle servers, networking equipment, and sensitive technology with expertise.",
+    title: "Secure Handling",
+    desc: "Your assets are moved using specialized equipment designed for commercial moves.",
     icon: sanitizeSvg(serverIcon()),
   },
   {
-    title: "Complete Setup",
-    desc: "Full office configuration and workstation setup to get your team operational immediately.",
+    title: "Unpacking & Setup",
+    desc: "We position furniture, reconnect workstations, and ensure your office is ready for business—so you can resume operations immediately.",
     icon: sanitizeSvg(companyIcon()),
   },
 ];
@@ -682,7 +688,7 @@ export const aboutUsSteps: any = {
   data: [
     {
       number: "01",
-      title: "Book Your Service",
+      title: "Booking",
       description:
         "Easily book trusted packers and movers online for hassle-free relocation services.",
       icon: sanitizeSvg(CalendarIcon()),
@@ -691,7 +697,7 @@ export const aboutUsSteps: any = {
     },
     {
       number: "02",
-      title: "Pack Your Good",
+      title: "Packing",
       description:
         "Professional packing using high-quality materials to protect your belongings during the move.",
       icon: sanitizeSvg(PackageIcon()),
@@ -709,7 +715,7 @@ export const aboutUsSteps: any = {
     },
     {
       number: "04",
-      title: "Safe Delivery",
+      title: "Safe Unloading",
       description:
         "Timely and safe delivery of your goods to the destination, guaranteed by verified movers.",
       icon: sanitizeSvg(fastDeliveryIcon()),

@@ -15,21 +15,21 @@ const slides = [
     id: 2,
     image:
       `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}why-choose-goldstar.jpeg`,
-    title: "Your Trust. Our Promise.",
+    title: "Your Trust, Our Promise",
     subtitle: "Delivering excellence with every move, every time",
   },
   {
     id: 3,
     image:
       `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}effortless-allocation.png`,
-    title: "Effortless Relocations.",
+    title: "Effortless Relocations",
     subtitle: "Making your journey to a new beginning extraordinary",
   },
   {
     id: 4,
     image:
       `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}junk-removal-banner.jpeg`,
-    title: "Junk Gone. Peace On.",
+    title: "Junk Gone, Peace On",
     subtitle: "Reliable junk removal with eco-friendly disposal.",
   },
   {
