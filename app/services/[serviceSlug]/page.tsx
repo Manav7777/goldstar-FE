@@ -12,6 +12,9 @@ import {
   crossCountryMovingEfforts,
   crossCountryServiceHeroSection,
   crossCountryServicesPerfectMove,
+  demolitionSectionOne,
+  demolitionSectionThree,
+  demolitionSectionTwo,
   junkRemovalMovingEfforts,
   junkRemovalServiceHeroSection,
   junkRemovalServicesPerfectMove,
@@ -106,6 +109,21 @@ const servicesData: any = {
       {
         Component: MovingEfforts,
         props: { residentialMovingEfforts: longDistanceSectionThree },
+      },
+    ],
+  },
+  "demolition-service": {
+    title: "Demolition  Service",
+    description: "Creative visuals for your brand.",
+    components: [
+      {
+        Component: ServiceDetailSection,
+        props: { serviceHeroSection: demolitionSectionOne },
+      },
+      { Component: PerfectMovers, props: { services: demolitionSectionTwo } },
+      {
+        Component: MovingEfforts,
+        props: { residentialMovingEfforts: demolitionSectionThree },
       },
     ],
   },

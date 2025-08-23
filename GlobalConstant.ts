@@ -1,4 +1,4 @@
-import { Home, Building2, Package, Truck, Trash } from "lucide-react";
+import { Home, Building2, Package, Truck, Trash, Wrench } from "lucide-react";
 
 const sanitizeSvg = (svg: string) => svg.replace(/className=/g, "class=");
 
@@ -255,6 +255,80 @@ export const fastDeliveryIcon = () =>
 
 export const loadBoxes = () =>
   `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="32px" height="32px" viewBox="0 0 24 24" data-name="Layer 1"><path d="M22,16H19.82A3,3,0,0,0,20,15V10a3,3,0,0,0-3-3H11a3,3,0,0,0-3,3v5a3,3,0,0,0,.18,1H7a1,1,0,0,1-1-1V5A3,3,0,0,0,3,2H2A1,1,0,0,0,2,4H3A1,1,0,0,1,4,5V15a3,3,0,0,0,2.22,2.88,3,3,0,1,0,5.6.12h3.36a3,3,0,1,0,5.64,0H22a1,1,0,0,0,0-2ZM9,20a1,1,0,1,1,1-1A1,1,0,0,1,9,20Zm2-4a1,1,0,0,1-1-1V10a1,1,0,0,1,1-1h6a1,1,0,0,1,1,1v5a1,1,0,0,1-1,1Zm7,4a1,1,0,1,1,1-1A1,1,0,0,1,18,20Z"/></svg>`;
+
+export const buildingIcon = () =>
+  `<svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+     <rect x="3" y="7" width="18" height="14" rx="2" />
+     <line x1="3" y1="11" x2="21" y2="11" />
+     <line x1="7" y1="7" x2="7" y2="21" />
+     <line x1="12" y1="7" x2="12" y2="21" />
+     <line x1="17" y1="7" x2="17" y2="21" />
+  </svg>`;
+
+export const toolboxIcon = () =>
+  `<svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+     <rect x="2" y="7" width="20" height="12" rx="2" />
+     <line x1="8" y1="7" x2="8" y2="19" />
+     <path d="M2 11h20" />
+     <rect x="10" y="2" width="4" height="4" />
+  </svg>`;
+
+export const cleanUpIcon = () =>
+  `<svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+     <rect x="3" y="4" width="18" height="16" rx="2" />
+     <line x1="3" y1="8" x2="21" y2="8" />
+     <line x1="7" y1="12" x2="17" y2="12" stroke-dasharray="2 2" />
+     <line x1="7" y1="16" x2="17" y2="16" />
+  </svg>`;
+
+export const alertIcon = () =>
+  `<svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+     <polygon points="12 2 2 22 22 22" />
+     <line x1="12" y1="8" x2="12" y2="14" />
+     <circle cx="12" cy="18" r="1" />
+  </svg>`;
+
+  export const documentIcon = () =>
+  `<svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+     <path d="M6 2h8l6 6v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
+     <polyline points="14 2 14 8 20 8" />
+     <line x1="8" y1="13" x2="16" y2="13" />
+     <line x1="8" y1="17" x2="16" y2="17" />
+  </svg>`;
+
+  export const planIcon = () =>
+  `<svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+     <path d="M3 19h18" />
+     <path d="M3 5h12" />
+     <path d="M3 9h18" />
+     <polyline points="7 9 9 5 11 9" />
+     <line x1="9" y1="5" x2="9" y2="19" />
+  </svg>`;
+
+export const safetyHelmetIcon = () =>
+  `<svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+     <path d="M4 12a8 8 0 0 1 16 0v5H4v-5z" />
+     <path d="M2 12h20" />
+     <path d="M8 12v-3a4 4 0 0 1 8 0v3" />
+  </svg>`;
+
+export const checklistIcon = () =>
+  `<svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+     <rect x="3" y="4" width="18" height="16" rx="2" />
+     <line x1="7" y1="10" x2="17" y2="10" />
+     <line x1="7" y1="14" x2="17" y2="14" />
+     <polyline points="5 10 6 12 8 8" />
+     <polyline points="5 14 6 16 8 12" />
+  </svg>`;
+
+export const projectIcon = () =>
+  `<svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+     <rect x="4" y="4" width="16" height="16" rx="2" />
+     <line x1="4" y1="8" x2="20" y2="8" />
+     <line x1="8" y1="4" x2="8" y2="20" />
+     <polyline points="12 16 16 12 12 8" />
+  </svg>`;
+
 
 export const ResidentialMovingEfforts: any = {
   title: `How We Make Moving`,
@@ -730,6 +804,92 @@ export const longDistanceSectionThree: any = {
   ],
 };
 
+export const demolitionSectionOne: any = {
+  title: "Professional",
+  highlightedTitle: "Demolition Services.",
+  subtitle: "Residential & Commercial Demolition Across Canada",
+  description:
+    "At GoldStar Movers, we go beyond moving. Our licensed demolition team provides expert teardown services for homes, businesses, and industrial sites across Canada. Whether you're renovating, rebuilding, or clearing a lot, we ensure every project is handled with precision, safety, and full compliance with local regulations.",
+  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/demolition-service.webp`,
+  buttonText: "Request a Free Demolition Quote",
+  showTag: true,
+  tagText: "Proudly Serving 500+ Projects Across Canadian Provinces",
+};
+
+export const demolitionSectionTwo: any = [
+  {
+    title: "Complete Structural Demolition",
+    desc: "We handle full teardown of residential, commercial, and industrial buildings with safety-first protocols.",
+    icon: sanitizeSvg(buildingIcon()),
+  },
+  {
+    title: "Interior & Selective Demolition",
+    desc: "Ideal for renovations—carefully remove specific walls, flooring, or interiors while preserving structure.",
+    icon: sanitizeSvg(toolboxIcon()),
+  },
+  {
+    title: "Hazardous Material Removal",
+    desc: "Certified handling of asbestos, lead, and other hazardous materials in accordance with Canadian safety standards.",
+    icon: sanitizeSvg(guardIcon()),
+  },
+  {
+    title: "Debris Removal & Site Cleanup",
+    desc: "We ensure your site is clean, cleared, and ready for the next phase with full waste hauling services.",
+    icon: sanitizeSvg(cleanUpIcon()),
+  },
+  {
+    title: "Permit & Regulation Compliance",
+    desc: "We manage all required permits and ensure strict adherence to provincial and municipal codes.",
+    icon: sanitizeSvg(documentIcon()),
+  },
+  {
+    title: "Emergency & Urgent Demolition",
+    desc: "Quick-response services available for fire-damaged, unsafe, or unstable structures.",
+    icon: sanitizeSvg(alertIcon()),
+  },
+];
+
+export const demolitionSectionThree: any = {
+  title: `Why Canadians Trust`,
+  span: " GoldStar Movers",
+  description: `From planning to debris removal, we offer a streamlined demolition experience with industry-leading safety, scheduling, and support.`,
+  data: [
+    {
+      title: "Project Planning & Assessment",
+      description:
+        "We start with a detailed site evaluation, including utility mapping and demolition scope planning.",
+      icon: sanitizeSvg(planIcon()),
+      bgColor: "bg-yellow-50",
+      textColor: "text-yellow",
+    },
+    {
+      title: "Certified Safety Standards",
+      description:
+        "Our crews follow CSA and provincial safety protocols—equipped and trained for every job site.",
+      icon: sanitizeSvg(safetyHelmetIcon()),
+      bgColor: "bg-red-50",
+      textColor: "text-red",
+    },
+    {
+      title: "Full Legal Compliance",
+      description:
+        "We navigate Canadian demolition regulations, permits, and environmental laws so you don’t have to.",
+      icon: sanitizeSvg(checklistIcon()),
+      bgColor: "bg-blue-50",
+      textColor: "text-blue",
+    },
+    {
+      title: "End-to-End Project Management",
+      description:
+        "We manage every detail—from initial consultation to site cleanup—ensuring your demolition stays on time and on budget.",
+      icon: sanitizeSvg(projectIcon()),
+      bgColor: "bg-green-50",
+      textColor: "text-green",
+    },
+  ],
+};
+
+
 export const locationService: any = {
   title :'Our Moving Services in Mississauga',
   subtitle :'Professional packing and moving solutions for Peel Region',
@@ -737,17 +897,17 @@ export const locationService: any = {
     {
       title: "Residential Moving",
       description:
-        "Complete home moving services including packing, loading, transportation, and unpacking for apartments, condos, and houses.",
+        "Effortless relocation for homes and apartments with professional care and attention to detail.",
     image:
-      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/residential-moving.webp`,
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}residential-moving-service-card.jpeg`,
       icon: Home,
     },
     {
       title: "Commercial Moving",
       description:
-        "Professional office and business relocations with minimal downtime, including furniture, equipment, and document handling.",
+        "Seamless office and business relocations with minimal downtime and maximum efficiency.",
     image:
-      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/commercial-moving.webp`,
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}commercial-moving-service.jpeg`,
       icon: Building2,
     },
     {
@@ -755,24 +915,32 @@ export const locationService: any = {
       description:
         "Nationwide moving services from coast to coast across Canada with secure transport",
     image:
-      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/cross-country-moving.webp`,
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}cross-country-service-card.jpeg`,
       icon: Package,
     },
     {
       title: "Long Distance Moving",
       description:
-        "Secure long-distance relocations across Ontario and Canada with real-time tracking and professional handling.",
+        "Specialized long-distance moving services with secure transport, careful handling, and timely delivery across provinces.",
     image:
-      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/long-distance-moving.webp`,
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}long-distance-moving-service-card.jpeg`,
       icon: Truck,
     },
     {
       title: "Junk Removal",
       description:
-        "Eco-friendly disposal and removal services to help declutter your space before or after your move.",
+        "Eco-friendly disposal and decluttering services for residential and commercial spaces.",
     image:
-      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/junk-removal-service.webp`,
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}junk-removal-banner.jpeg`,
       icon: Trash,
+    },
+    {
+      title: "Demolition",
+      description:
+        "From small interior jobs to large-scale projects – we demolish with precision.",
+    image:
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}demolition-service.jpeg`,
+      icon: Wrench,
     },
 ]
 }

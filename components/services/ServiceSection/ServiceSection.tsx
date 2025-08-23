@@ -105,7 +105,7 @@ const ServiceContent = ({
   <>
     <div className="d-flex align-items-center mb-3">
       {/* Icon */}
-      <svg
+      {/* <svg
         xmlns="http://www.w3.org/2000/svg"
         width="48"
         height="48"
@@ -119,7 +119,7 @@ const ServiceContent = ({
       >
         <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
         <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-      </svg>
+      </svg> */}
       {badgeText && (
         <span
           className="badge bg-primary fs-6 fw-bold"
@@ -171,7 +171,7 @@ const ServiceContent = ({
     <div className="d-flex justify-content-between align-items-center border-top pt-4 mt-4">
       {price && (
         <div>
-          <p className="h4 fw-bold text-dark mb-1">{price}</p>
+          <p className="h5 fw-bold text-dark mb-1">{price}</p>
           <p className="text-muted small mb-0">Contact us for details</p>
         </div>
       )}

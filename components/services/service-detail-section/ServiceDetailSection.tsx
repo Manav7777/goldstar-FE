@@ -24,7 +24,7 @@ const ServiceDetailSection = (serviceHeroSection: any) => {
             }}
           />
 
-          <div className="container position-relative">
+          <div className="container position-relative" key={"top-section"}>
             <div className="row align-items-center g-5">
               {/* Left Column: Text Content */}
               <div className="col-lg-6 col-md-12 md:order-last">

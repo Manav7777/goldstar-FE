@@ -6,7 +6,6 @@ const ServicesCard = () => {
   {
     title: 'Residential Moving',
     description: 'Effortless relocation for homes and apartments with professional care and attention to detail',
-    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/residential-moving.webp`,
     image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}residential-moving-service-card.jpeg`,
     link: '/services/residential-moving-service'
   },

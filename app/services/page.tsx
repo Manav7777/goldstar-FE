@@ -112,6 +112,30 @@ const GoldStarServices = () => {
       reverseClassNameDivOne: "order-1 order-lg-2 mb-4",
       reverse: false,
     },
+    {
+    title: "Professional Demolition Services",
+    subtitle: "Safe, Efficient, and Compliant Demolition Solutions",
+    description:
+      "GoldStar Demolition offers expert demolition services for residential, commercial, and industrial projects. We handle everything from full structural teardowns to selective interior demolition with complete safety, compliance, and efficiency. Trust our team for secure, on-time, and on-budget demolition services across Canada.",
+    badgeText: null,
+    imageSrc:
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}demolition-service.jpeg`,
+    imageAlt:
+      "GoldStar team performing a demolition job on a commercial building site",
+    price: "Expert Demolition Services Nationwide",
+    buttonText: "Request Now",
+    features: [
+      "Complete structural demolition for all property types",
+      "Selective demolition for renovations and rebuilds",
+      "Certified handling of hazardous materials",
+      "Site cleanup and debris removal services",
+      "Strict adherence to safety and legal regulations",
+      "24/7 emergency demolition services available",
+    ],
+    reverseClassNameDivOne: "order-1 order-lg-2 mb-4",
+    reverse: true,
+  }
+
   ];
   return (
     <>
