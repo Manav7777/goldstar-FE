@@ -1,0 +1,121 @@
+{
+  "seo": {
+    "title": "Reliable Moving Company Scarborough | GoldStar Movers",
+    "description": "Moving in or out of Scarborough? GoldStar Movers offers professional and affordable moving services tailored to your needs. Call (289) 541-7282 for a free quote.",
+    "canonical": "http://localhost:3000/goldstar/scarborough",
+    "keywords": [
+      "Scarborough movers",
+      "moving company Scarborough"
+    ],
+    "openGraph": {
+      "title": "Scarborough Moving Company",
+      "description": "Trusted local movers in Scarborough offering stress-free residential and commercial moving services with top-rated customer care.",
+      "image": "http://localhost:3000/images/banner.png"
+    }
+  },
+  "components": [
+    {
+      "key": "LocationTopSection",
+      "props": {
+        "cityName": "Scarborough",
+        "headline": "GoldStar Movers – Your Trusted Moving Company in",
+        "subtext": "Planning a move in Scarborough? GoldStar Movers is your reliable partner for a stress-free experience. We handle local and long-distance moves, residential or commercial, with care, speed, and a commitment to customer satisfaction. Let our trained team take the weight off your shoulders—literally.",
+        "buttonText": "Get a Free Quote",
+        "services": [
+          {
+            "title": "Family Movers",
+            "description": "Residential moving services with attention to detail and care.",
+            "icon": "Users"
+          },
+          {
+            "title": "Safe Packing",
+            "description": "Professional packing services to protect your belongings during transit.",
+            "icon": "Box"
+          },
+          {
+            "title": "Rated Service",
+            "description": "Highly rated by Scarborough residents for reliability and service.",
+            "icon": "Star"
+          }
+        ]
+      }
+    },
+    {
+      "key": "LocationServiceSections",
+      "props": {
+        "title": "Comprehensive Moving Services in Scarborough",
+        "subtitle": "From condos and family homes to office relocations, our Scarborough movers are equipped to handle every aspect of your move. We focus on safety, planning, and efficiency so you can enjoy peace of mind."
+      }
+    },
+    {
+      "key": "WhyChooseUs",
+      "props": {
+        "whyLocation": {
+          "title": "Why Choose GoldStar Movers in Scarborough?",
+          "description": "We’re proud to serve Scarborough with reliable, professional moving solutions tailored to your timeline and budget.",
+          "reasons": [
+            {
+              "icon": "Users",
+              "title": "Scarborough Experts",
+              "description": "We know Scarborough’s neighborhoods, traffic patterns, and building rules—helping your move go faster and smoother."
+            },
+            {
+              "icon": "Clock",
+              "title": "On-Time & Organized",
+              "description": "We respect your schedule. Our team shows up on time and works efficiently from start to finish."
+            },
+            {
+              "icon": "Shield",
+              "title": "Licensed & Insured",
+              "description": "All of our Scarborough moves are fully licensed and insured for your safety and peace of mind."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "LocationMovingSteps",
+      "props": {
+        "title": "Scarborough Moving in 3 Easy Steps",
+        "description": "GoldStar Movers takes the stress out of moving with a straightforward, reliable process. From planning to unloading, we make moving day feel effortless."
+      }
+    },
+    {
+      "key": "SatisfactionSection"
+    },
+    {
+      "key": "LocationMap"
+    },
+    {
+      "key": "Faqs",
+      "props": {
+        "faqs": [
+          {
+            "question": "What’s the average cost of a move in Scarborough?",
+            "answer": "Local moves in Scarborough usually range from $500 to $2,200, depending on the size of the property and additional services."
+          },
+          {
+            "question": "Do you offer packing services in Scarborough?",
+            "answer": "Yes, we provide full and partial packing services using high-quality materials and professional techniques."
+          },
+          {
+            "question": "Can you move condos or high-rise apartments?",
+            "answer": "Absolutely. We’re experienced with building regulations, elevator bookings, and tight spaces common in Scarborough high-rises."
+          },
+          {
+            "question": "Do you move special items like gym equipment or pianos?",
+            "answer": "Yes. Our team is trained and equipped to move large, heavy, or fragile items safely and efficiently."
+          },
+          {
+            "question": "What should I prepare before moving day?",
+            "answer": "Make sure all items are packed, labeled, and any fragile or special instructions are communicated. Clearing hallways and entrances helps too."
+          },
+          {
+            "question": "Is insurance coverage included?",
+            "answer": "Yes. Every move we perform in Scarborough includes basic insurance coverage for your peace of mind."
+          }
+        ]
+      }
+    }
+  ]
+}

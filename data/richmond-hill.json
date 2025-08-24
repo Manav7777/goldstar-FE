@@ -1,0 +1,121 @@
+{
+  "seo": {
+    "title": "Reliable Moving Company Richmond Hill | GoldStar Movers",
+    "description": "Planning a move in Richmond Hill? GoldStar Movers offers trusted, efficient, and stress-free moving services by experienced local movers. Call (289) 541-7282 for a free quote.",
+    "canonical": "http://localhost:3000/goldstar/richmond-hill",
+    "keywords": [
+      "Richmond Hill movers",
+      "moving company Richmond Hill"
+    ],
+    "openGraph": {
+      "title": "Richmond Hill Moving Company",
+      "description": "Professional and affordable movers in Richmond Hill ready to serve you.",
+      "image": "http://localhost:3000/images/banner.png"
+    }
+  },
+  "components": [
+    {
+      "key": "LocationTopSection",
+      "props": {
+        "cityName": "Richmond Hill",
+        "headline": "GoldStar Movers – Your Trusted Moving Company in",
+        "subtext": "Relocating in or out of Richmond Hill? GoldStar Movers offers local expertise, dependable service, and a stress-free moving experience. From apartments and homes to offices and long-distance moves, we handle every job with care and precision.",
+        "buttonText": "Get a Free Quote",
+        "services": [
+          {
+            "title": "Family Movers",
+            "description": "Safe and efficient moves for homes of all sizes.",
+            "icon": "Users"
+          },
+          {
+            "title": "Safe Packing",
+            "description": "Professional packing services to protect your belongings.",
+            "icon": "Box"
+          },
+          {
+            "title": "Rated Service",
+            "description": "Trusted by Richmond Hill residents for reliable moves.",
+            "icon": "Star"
+          }
+        ]
+      }
+    },
+    {
+      "key": "LocationServiceSections",
+      "props": {
+        "title": "Full-Service Moving in Richmond Hill",
+        "subtitle": "GoldStar Movers goes beyond just moving boxes. Our Richmond Hill team brings planning, coordination, and care to every move—ensuring your experience is seamless from beginning to end."
+      }
+    },
+    {
+      "key": "WhyChooseUs",
+      "props": {
+        "whyLocation": {
+          "title": "Why Choose GoldStar Movers in Richmond Hill?",
+          "description": "With a reputation built on reliability, professionalism, and local know-how, GoldStar Movers is the preferred choice for moving in Richmond Hill.",
+          "reasons": [
+            {
+              "icon": "Users",
+              "title": "Local Knowledge",
+              "description": "Our Richmond Hill movers are familiar with local traffic, parking, and building regulations, making your move quicker and easier."
+            },
+            {
+              "icon": "Clock",
+              "title": "Reliable & On Time",
+              "description": "We arrive on schedule, work efficiently, and ensure everything runs smoothly so your move stays stress-free."
+            },
+            {
+              "icon": "Shield",
+              "title": "Licensed & Insured",
+              "description": "We’re fully insured and licensed to give you peace of mind throughout your move in Richmond Hill."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "LocationMovingSteps",
+      "props": {
+        "title": "Our 3-Step Richmond Hill Moving Process",
+        "description": "Moving doesn’t have to be complicated. At GoldStar Movers, we’ve simplified the process to ensure your Richmond Hill move is organized, timely, and worry-free."
+      }
+    },
+    {
+      "key": "SatisfactionSection"
+    },
+    {
+      "key": "LocationMap"
+    },
+    {
+      "key": "Faqs",
+      "props": {
+        "faqs": [
+          {
+            "question": "How much does a move in Richmond Hill typically cost?",
+            "answer": "Local moves in Richmond Hill usually cost between $500 and $2,200 depending on home size, move distance, and service level."
+          },
+          {
+            "question": "Do you provide packing services in Richmond Hill?",
+            "answer": "Yes, we offer professional packing services to help ensure your items are well-protected during your move."
+          },
+          {
+            "question": "Can you move oversized or delicate items?",
+            "answer": "Absolutely. We have the experience and equipment to move items like pianos, safes, antiques, and large furniture safely."
+          },
+          {
+            "question": "How can I save money on my move?",
+            "answer": "You can reduce moving costs by downsizing, being fully packed before moving day, and choosing off-peak days for your move."
+          },
+          {
+            "question": "What happens on moving day?",
+            "answer": "Our Richmond Hill team arrives on time, protects your home, carefully loads and transports your items, and sets everything up at your new location."
+          },
+          {
+            "question": "Is insurance included with my move?",
+            "answer": "Yes, all our Richmond Hill moves include insurance coverage for your belongings, providing extra protection and peace of mind."
+          }
+        ]
+      }
+    }
+  ]
+}

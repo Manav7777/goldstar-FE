@@ -1,0 +1,121 @@
+{
+  "seo": {
+    "title": "Trusted Moving Company Burlington | GoldStar Movers",
+    "description": "Need reliable movers in Burlington? GoldStar Movers offers expert moving services with a local touch. Call (289) 541-7282 today for a free, no-obligation quote.",
+    "canonical": "http://localhost:3000/goldstar/burlington",
+    "keywords": [
+      "Burlington movers",
+      "moving company Burlington"
+    ],
+    "openGraph": {
+      "title": "Burlington Moving Company",
+      "description": "Top-rated movers in Burlington providing stress-free, efficient moving solutions.",
+      "image": "http://localhost:3000/images/banner.png"
+    }
+  },
+  "components": [
+    {
+      "key": "LocationTopSection",
+      "props": {
+        "cityName": "Burlington",
+        "headline": "GoldStar Movers – Your Trusted Moving Company in",
+        "subtext": "Whether you're relocating across Burlington or heading to a new city, GoldStar Movers is your go-to team for dependable, hassle-free moving services. Our experienced movers handle everything from homes to offices with professionalism and care. You can count on us to make moving day smooth and stress-free.",
+        "buttonText": "Get a Free Quote",
+        "services": [
+          {
+            "title": "Family Movers",
+            "description": "Reliable moving for homes, condos, and apartments.",
+            "icon": "Users"
+          },
+          {
+            "title": "Safe Packing",
+            "description": "Careful packing to keep your items safe in transit.",
+            "icon": "Box"
+          },
+          {
+            "title": "Rated Service",
+            "description": "Highly rated by Burlington customers for quality and care.",
+            "icon": "Star"
+          }
+        ]
+      }
+    },
+    {
+      "key": "LocationServiceSections",
+      "props": {
+        "title": "Complete Moving Services in Burlington",
+        "subtitle": "GoldStar Movers provides full-service moving in Burlington—from packing and loading to unloading and setup. Our team ensures every detail is managed so you can settle in faster."
+      }
+    },
+    {
+      "key": "WhyChooseUs",
+      "props": {
+        "whyLocation": {
+          "title": "Why Choose GoldStar Movers in Burlington?",
+          "description": "Moving doesn’t have to be overwhelming. Burlington residents choose GoldStar Movers for our reputation, reliability, and customer-first approach.",
+          "reasons": [
+            {
+              "icon": "Users",
+              "title": "Burlington-Based Crew",
+              "description": "We know Burlington—its streets, buildings, and neighborhoods—which helps us move smarter and faster."
+            },
+            {
+              "icon": "Clock",
+              "title": "Always On Time",
+              "description": "Punctual service with no delays—our crew arrives when we say we will and gets to work right away."
+            },
+            {
+              "icon": "Shield",
+              "title": "Fully Licensed & Insured",
+              "description": "Your belongings are safe with us. Our services in Burlington are fully insured for your peace of mind."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "LocationMovingSteps",
+      "props": {
+        "title": "Our 3-Step Moving Process in Burlington",
+        "description": "We’ve simplified moving in Burlington. With our clear process and experienced team, you’ll be from Point A to Point B in no time—minus the stress."
+      }
+    },
+    {
+      "key": "SatisfactionSection"
+    },
+    {
+      "key": "LocationMap"
+    },
+    {
+      "key": "Faqs",
+      "props": {
+        "faqs": [
+          {
+            "question": "What does a local move in Burlington cost?",
+            "answer": "A typical move in Burlington ranges from $500 to $2,200 depending on the size of your home and how many services you need."
+          },
+          {
+            "question": "Do you offer packing services in Burlington?",
+            "answer": "Yes, we provide both full and partial packing services using high-quality materials and expert packing methods."
+          },
+          {
+            "question": "Can you move large or fragile items?",
+            "answer": "Absolutely. We’re trained to move delicate or oversized items like pianos, safes, artwork, and antiques safely and securely."
+          },
+          {
+            "question": "What’s the best way to lower my moving cost?",
+            "answer": "Be ready before we arrive, move during non-peak days, and reduce the number of items you’re moving to save money."
+          },
+          {
+            "question": "What happens on the day of the move?",
+            "answer": "Our Burlington team arrives on time, preps your space, loads your belongings carefully, and delivers everything to your new location safely."
+          },
+          {
+            "question": "Is insurance included in your services?",
+            "answer": "Yes. Every Burlington move includes insurance coverage for added security and peace of mind."
+          }
+        ]
+      }
+    }
+  ]
+}

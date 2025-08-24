@@ -1,0 +1,121 @@
+{
+  "seo": {
+    "title": "Professional Moving Company Pickering | GoldStar Movers",
+    "description": "Looking for reliable movers in Pickering? GoldStar Movers delivers efficient, affordable, and stress-free moving services. Call (289) 541-7282 today for a free quote.",
+    "canonical": "http://localhost:3000/goldstar/pickering",
+    "keywords": [
+      "Pickering movers",
+      "moving company Pickering"
+    ],
+    "openGraph": {
+      "title": "Pickering Moving Company",
+      "description": "Top-rated moving services in Pickering by GoldStar Movers. Residential, commercial, and long-distance moves made easy.",
+      "image": "http://localhost:3000/images/banner.png"
+    }
+  },
+  "components": [
+    {
+      "key": "LocationTopSection",
+      "props": {
+        "cityName": "Pickering",
+        "headline": "GoldStar Movers – Your Trusted Moving Company in",
+        "subtext": "Moving in Pickering? Let GoldStar Movers handle the heavy lifting. With a skilled team, local experience, and commitment to customer satisfaction, we make residential and commercial moves in Pickering easy and stress-free. From packing to final delivery, we’re with you every step of the way.",
+        "buttonText": "Get a Free Quote",
+        "services": [
+          {
+            "title": "Family Movers",
+            "description": "Reliable and efficient household moving services.",
+            "icon": "Users"
+          },
+          {
+            "title": "Safe Packing",
+            "description": "Expert packing solutions to protect your belongings.",
+            "icon": "Box"
+          },
+          {
+            "title": "Rated Service",
+            "description": "Highly reviewed by Pickering residents for quality and care.",
+            "icon": "Star"
+          }
+        ]
+      }
+    },
+    {
+      "key": "LocationServiceSections",
+      "props": {
+        "title": "Full-Service Moving in Pickering",
+        "subtitle": "At GoldStar Movers, we do more than just move boxes. Our Pickering team handles packing, transport, and setup so you can enjoy a smooth, stress-free move from start to finish."
+      }
+    },
+    {
+      "key": "WhyChooseUs",
+      "props": {
+        "whyLocation": {
+          "title": "Why Choose GoldStar Movers in Pickering?",
+          "description": "We’re more than just movers—we’re a team you can trust. Pickering residents choose us for our reliability, efficiency, and personalized service.",
+          "reasons": [
+            {
+              "icon": "Users",
+              "title": "Local Knowledge",
+              "description": "Our movers understand Pickering’s neighborhoods, buildings, and roads—helping you avoid delays and complications."
+            },
+            {
+              "icon": "Clock",
+              "title": "Prompt & Professional",
+              "description": "We show up on time, work efficiently, and handle your belongings with care and respect."
+            },
+            {
+              "icon": "Shield",
+              "title": "Fully Licensed & Insured",
+              "description": "All our Pickering moves include insurance for peace of mind and full protection of your items."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "LocationMovingSteps",
+      "props": {
+        "title": "Pickering Moves Made Simple – 3 Easy Steps",
+        "description": "GoldStar Movers has streamlined the moving process in Pickering. With professional service and a clear plan, we help you transition smoothly to your new home or office."
+      }
+    },
+    {
+      "key": "SatisfactionSection"
+    },
+    {
+      "key": "LocationMap"
+    },
+    {
+      "key": "Faqs",
+      "props": {
+        "faqs": [
+          {
+            "question": "What is the cost of moving in Pickering?",
+            "answer": "Most local Pickering moves cost between $500 and $2,200, depending on the size of the move and the services required."
+          },
+          {
+            "question": "Do you offer packing services in Pickering?",
+            "answer": "Yes, we provide full and partial packing services using high-quality materials to protect your belongings."
+          },
+          {
+            "question": "Can you move large or specialty items?",
+            "answer": "Yes. We’re experienced in moving heavy, fragile, and valuable items like pianos, antiques, and gym equipment."
+          },
+          {
+            "question": "How can I save on moving costs?",
+            "answer": "To cut costs, try decluttering beforehand, booking during off-peak times, and having everything packed before moving day."
+          },
+          {
+            "question": "What should I expect on moving day?",
+            "answer": "Our Pickering crew will arrive on time, prep your home, load and transport your items safely, and unload everything at your new place with care."
+          },
+          {
+            "question": "Is insurance included with your Pickering services?",
+            "answer": "Yes, insurance coverage is included in all our Pickering moves to protect your items throughout the process."
+          }
+        ]
+      }
+    }
+  ]
+}

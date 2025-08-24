@@ -1,0 +1,121 @@
+{
+  "seo": {
+    "title": "Trusted Moving Company Guelph | GoldStar Movers",
+    "description": "Planning a move in Guelph? GoldStar Movers offers dependable and affordable moving services with local expertise. Call (289) 541-7282 for a free quote today.",
+    "canonical": "http://localhost:3000/goldstar/guelph",
+    "keywords": [
+      "Guelph movers",
+      "moving company Guelph"
+    ],
+    "openGraph": {
+      "title": "Guelph Moving Company",
+      "description": "GoldStar Movers provides professional residential and commercial moving services in Guelph with a focus on customer satisfaction.",
+      "image": "http://localhost:3000/images/banner.png"
+    }
+  },
+  "components": [
+    {
+      "key": "LocationTopSection",
+      "props": {
+        "cityName": "Guelph",
+        "headline": "GoldStar Movers – Your Trusted Moving Company in",
+        "subtext": "Moving within or to Guelph? GoldStar Movers delivers reliable and efficient moving services designed to make your relocation smooth and worry-free. Whether it’s your home or business, our experienced team takes care of every detail.",
+        "buttonText": "Get a Free Quote",
+        "services": [
+          {
+            "title": "Family Movers",
+            "description": "Safe and efficient home moving services tailored to your needs.",
+            "icon": "Users"
+          },
+          {
+            "title": "Safe Packing",
+            "description": "Expert packing to protect your belongings throughout the move.",
+            "icon": "Box"
+          },
+          {
+            "title": "Rated Service",
+            "description": "Highly rated by Guelph residents for reliability and professionalism.",
+            "icon": "Star"
+          }
+        ]
+      }
+    },
+    {
+      "key": "LocationServiceSections",
+      "props": {
+        "title": "Comprehensive Moving Services in Guelph",
+        "subtitle": "From packing and loading to transportation and unloading, GoldStar Movers offers complete moving solutions customized for Guelph residents and businesses."
+      }
+    },
+    {
+      "key": "WhyChooseUs",
+      "props": {
+        "whyLocation": {
+          "title": "Why Choose GoldStar Movers in Guelph?",
+          "description": "Our Guelph team combines experience, local knowledge, and dedication to deliver timely and careful moving services that meet your expectations.",
+          "reasons": [
+            {
+              "icon": "Users",
+              "title": "Experienced Local Movers",
+              "description": "We understand Guelph’s neighborhoods and traffic, ensuring efficient and smooth moves."
+            },
+            {
+              "icon": "Clock",
+              "title": "Punctual & Professional",
+              "description": "Our movers respect your time and work efficiently to complete your move on schedule."
+            },
+            {
+              "icon": "Shield",
+              "title": "Licensed & Insured",
+              "description": "All moves in Guelph are fully insured and licensed for your peace of mind."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "LocationMovingSteps",
+      "props": {
+        "title": "How Our Guelph Moving Process Works",
+        "description": "GoldStar Movers simplifies moving with clear communication, expert packing, and careful transport to ensure a hassle-free experience."
+      }
+    },
+    {
+      "key": "SatisfactionSection"
+    },
+    {
+      "key": "LocationMap"
+    },
+    {
+      "key": "Faqs",
+      "props": {
+        "faqs": [
+          {
+            "question": "What is the average cost of moving in Guelph?",
+            "answer": "Local moves in Guelph typically range from $500 to $2,200, depending on the size and services required."
+          },
+          {
+            "question": "Do you offer packing services in Guelph?",
+            "answer": "Yes, we provide full and partial packing services using quality materials to protect your belongings."
+          },
+          {
+            "question": "Can you move bulky or delicate items?",
+            "answer": "Absolutely. Our team is trained to safely handle large, heavy, and fragile items including pianos and antiques."
+          },
+          {
+            "question": "Do you serve areas surrounding Guelph?",
+            "answer": "Yes, we also provide moving services to and from nearby communities including Cambridge, Kitchener, and Waterloo."
+          },
+          {
+            "question": "What should I prepare before moving day?",
+            "answer": "Ensure all your belongings are packed and labeled. Clearing pathways and informing us about any special items helps the process."
+          },
+          {
+            "question": "Is insurance included with your moving services?",
+            "answer": "Yes, all our moves in Guelph come with insurance coverage to protect your belongings."
+          }
+        ]
+      }
+    }
+  ]
+}
