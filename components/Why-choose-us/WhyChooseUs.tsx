@@ -6,7 +6,7 @@ const WhyChooseUs = () => {
       <div className="container">
         <div className="row p-3 mt-3">
           <div className="col-lg-6 col-md-12 col-sm-12" data-aos="zoom-in" data-aos-duration="500">
-            <h2>We Professional Moving Company</h2>
+            <h2>We Are Professional Moving Company</h2>
             <p>
               At <span className="text-primary">Gold Star Mover Company</span>,
               we’re more than just a moving service — we’re your trusted partner
