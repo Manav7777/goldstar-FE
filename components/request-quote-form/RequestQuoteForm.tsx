@@ -1,43 +1,47 @@
-"use client"
-import React, { useState } from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { Button, Modal } from "react-bootstrap";
 import { Phone, Mail, MapPin, Package, CheckCircle } from "lucide-react";
 
-
-export default function RequestQuoteForm( {open , close}: any) {
+export default function RequestQuoteForm({ open, close }: any) {
   const [formData, setFormData] = useState({
-    name: "",
+    fullname: "",
     email: "",
     phone: "",
-    movingType: "",
-    originAddress: "",
-    destinationAddress: "",
+    typeService: "",
+    from: "",
+    to: "",
     moveDate: "",
     additionalInfo: "",
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [btnDisabled, setIsBtnDisabled] = useState(false);
 
   const movingOptions = [
     { value: "1bhk", label: "1 Bedroom" },
     { value: "2bhk", label: "2 Bedroom" },
     { value: "3bhk", label: "3 Bedroom" },
     { value: "4bhk", label: "4+ Bedroom" },
- 
+
     { value: "studio", label: "Studio Apartment" },
     { value: "office", label: "Office Moving" },
     { value: "storage", label: "Storage Moving" },
     { value: "long distance", label: "Long Distance Moving" },
     { value: "cross-country", label: "Cross-Country Moving" },
-  { value: "appliance", label: "Appliance Moving" },
-  { value: "piano", label: "Piano Moving" },
-  { value: "safe", label: "Safe Moving" },
-  { value: "hot-tub moving", label:"Hot-Tub Moving"},
+    { value: "appliance", label: "Appliance Moving" },
+    { value: "piano", label: "Piano Moving" },
+    { value: "safe", label: "Safe Moving" },
+    { value: "hot-tub moving", label: "Hot-Tub Moving" },
 
-   { value: "packingunpacking", label: "Packing/Unpacking" },
+    { value: "packing/unpacking", label: "Packing/Unpacking" },
     { value: "junk-removal", label: "Junk Removal" },
     { value: "demolition", label: "Demolition" },
   ];
+
+  useEffect(() => {
+    resetForm();
+  },[open])
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prev) => ({
@@ -46,35 +50,52 @@ export default function RequestQuoteForm( {open , close}: any) {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      close();
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        movingType: "",
-        originAddress: "",
-        destinationAddress: "",
-        moveDate: "",
-        additionalInfo: "",
-      });
-    }, 3000);
+    setIsBtnDisabled(true);
+    try {
+      const response = await submitQuote(formData);
+      if (response.ok) {
+        setIsSubmitted(true);
+        setIsBtnDisabled(false);
+      } else {
+        console.error("Error submitting the quote:", response.statusText);
+      }
+    } catch (error) {
+      console.error("Error occurred while submitting the quote:", error);
+    }
+  };
+
+  const submitQuote = async (formData: any) => {
+    const apiUrl = process.env.NEXT_PUBLIC_API; // Make sure to set this in your .env file
+
+    const form = new FormData();
+    form.append("fullname", formData.fullname);
+    form.append("email", formData.email);
+    form.append("phone", formData.phone);
+    form.append("typeService", formData.typeService);
+    form.append("from", formData.from);
+    form.append("to", formData.to);
+    form.append("moveDate", formData.moveDate);
+    form.append("additionalInfo", formData.additionalInfo);
+
+    const response = await fetch(`${apiUrl}request-quote`, {
+      method: "POST",
+      body: form, // Send FormData directly
+    });
+
+    return response;
   };
 
   const resetForm = () => {
     setIsSubmitted(false);
     setFormData({
-      name: "",
+      fullname: "",
       email: "",
       phone: "",
-      movingType: "",
-      originAddress: "",
-      destinationAddress: "",
+      typeService: "",
+      from: "",
+      to: "",
       moveDate: "",
       additionalInfo: "",
     });
@@ -89,7 +110,7 @@ export default function RequestQuoteForm( {open , close}: any) {
     >
       <Modal.Header closeButton className="bg-primary">
         <Modal.Title id="example-custom-modal-styling-title">
-            Get Your Free Quote Today
+          Get Your Free Quote Today
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -99,13 +120,14 @@ export default function RequestQuoteForm( {open , close}: any) {
               <CheckCircle className="text-dark" size={40} />
             </div>
             <h3 className="h4 text-dark mb-3">Request Submitted!</h3>
-            <p className="text-muted mb-4 mx-auto" style={{ maxWidth: "500px" }}>
-              Thank you for your request. Our team will contact you to provide your personalized quote.
-            </p>
-            <Button
-              onClick={resetForm}
-              className="btn btn-warning fw-semibold"
+            <p
+              className="text-muted mb-4 mx-auto"
+              style={{ maxWidth: "500px" }}
             >
+              Thank you for your request. Our team will contact you to provide
+              your personalized quote.
+            </p>
+            <Button onClick={resetForm} className="btn btn-warning fw-semibold">
               Submit Another Request
             </Button>
           </div>
@@ -119,19 +141,25 @@ export default function RequestQuoteForm( {open , close}: any) {
               </h6>
               <div className="row">
                 <div className="col-md-6 mb-3">
-                  <label htmlFor="modal-name" className="form-label">Full Name *</label>
+                  <label htmlFor="modal-name" className="form-label">
+                    Full Name *
+                  </label>
                   <input
                     id="modal-name"
                     type="text"
                     placeholder="Enter your full name"
-                    value={formData.name}
-                    onChange={(e) => handleInputChange("name", e.target.value)}
+                    value={formData.fullname}
+                    onChange={(e) =>
+                      handleInputChange("fullname", e.target.value)
+                    }
                     required
                     className="form-control"
                   />
                 </div>
                 <div className="col-md-6 mb-3">
-                  <label htmlFor="modal-phone" className="form-label">Mobile Number *</label>
+                  <label htmlFor="modal-phone" className="form-label">
+                    Mobile Number *
+                  </label>
                   <input
                     id="modal-phone"
                     type="tel"
@@ -144,7 +172,9 @@ export default function RequestQuoteForm( {open , close}: any) {
                 </div>
               </div>
               <div className="mb-3">
-                <label htmlFor="modal-email" className="form-label">Email Address *</label>
+                <label htmlFor="modal-email" className="form-label">
+                  Email Address *
+                </label>
                 <input
                   id="modal-email"
                   type="email"
@@ -168,8 +198,10 @@ export default function RequestQuoteForm( {open , close}: any) {
                   <label className="form-label">Type of Service *</label>
                   <select
                     className="form-select gold-star-select"
-                    value={formData.movingType}
-                    onChange={(e) => handleInputChange("movingType", e.target.value)}
+                    value={formData.typeService}
+                    onChange={(e) =>
+                      handleInputChange("typeService", e.target.value)
+                    }
                     required
                   >
                     <option value="">Select your Service type</option>
@@ -181,12 +213,16 @@ export default function RequestQuoteForm( {open , close}: any) {
                   </select>
                 </div>
                 <div className="col-md-6 mb-3">
-                  <label htmlFor="modal-moveDate" className="form-label">Preferred Service Date</label>
+                  <label htmlFor="modal-moveDate" className="form-label">
+                    Preferred Service Date
+                  </label>
                   <input
                     id="modal-moveDate"
                     type="date"
                     value={formData.moveDate}
-                    onChange={(e) => handleInputChange("moveDate", e.target.value)}
+                    onChange={(e) =>
+                      handleInputChange("moveDate", e.target.value)
+                    }
                     className="form-control"
                   />
                 </div>
@@ -197,26 +233,33 @@ export default function RequestQuoteForm( {open , close}: any) {
             <div className="mb-4 border-top pt-4">
               <h6 className="d-flex align-items-center text-dark mb-3">
                 <MapPin className="me-2 text-warning wi-18" />
-               Service Locations
+                Service Locations
               </h6>
               <div className="row">
                 <div className="col-md-6 mb-3">
-                  <label htmlFor="modal-originAddress" className="form-label">From *</label>
+                  <label htmlFor="modal-originAddress" className="form-label">
+                    From *
+                  </label>
                   <textarea
                     id="modal-originAddress"
-                    value={formData.originAddress}
-                    onChange={(e) => handleInputChange("originAddress", e.target.value)}
+                    value={formData.from}
+                    onChange={(e) => handleInputChange("from", e.target.value)}
                     required
                     rows={2}
                     className="form-control"
                   />
                 </div>
                 <div className="col-md-6 mb-3">
-                  <label htmlFor="modal-destinationAddress" className="form-label">To</label>
+                  <label
+                    htmlFor="modal-destinationAddress"
+                    className="form-label"
+                  >
+                    To
+                  </label>
                   <textarea
                     id="modal-destinationAddress"
-                    value={formData.destinationAddress}
-                    onChange={(e) => handleInputChange("destinationAddress", e.target.value)}
+                    value={formData.to}
+                    onChange={(e) => handleInputChange("to", e.target.value)}
                     rows={2}
                     className="form-control"
                   />
@@ -231,11 +274,15 @@ export default function RequestQuoteForm( {open , close}: any) {
                 Additional Information
               </h6>
               <div className="mb-3">
-                <label htmlFor="modal-additionalInfo" className="form-label">Tell us more about your Services (Optional)</label>
+                <label htmlFor="modal-additionalInfo" className="form-label">
+                  Tell us more about your Services (Optional)
+                </label>
                 <textarea
                   id="modal-additionalInfo"
                   value={formData.additionalInfo}
-                  onChange={(e) => handleInputChange("additionalInfo", e.target.value)}
+                  onChange={(e) =>
+                    handleInputChange("additionalInfo", e.target.value)
+                  }
                   rows={3}
                   className="form-control"
                 />
@@ -244,7 +291,12 @@ export default function RequestQuoteForm( {open , close}: any) {
 
             {/* Submit Button */}
             <div className="text-center mt-4">
-              <Button type="submit" variant="warning" className="fw-semibold">
+              <Button
+                type="submit"
+                disabled={btnDisabled}
+                variant="warning"
+                className="fw-semibold"
+              >
                 Get My Quote
               </Button>
             </div>

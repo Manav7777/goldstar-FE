@@ -1,3 +1,4 @@
+"use client";
 import {
   Phone,
   Mail,
@@ -5,11 +6,73 @@ import {
   InstagramIcon,
   FacebookIcon,
   YoutubeIcon,
+  Check,
 } from "lucide-react";
 import "./Footer.css";
 import Link from "next/link";
 import { footersLinks, socialLinks } from "@/GlobalConstant";
+import { useState } from "react";
 const Footer = () => {
+  const [formData, setFormData] = useState({
+    email: "",
+  });
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [btnDisabled, setIsBtnDisabled] = useState(false);
+  const [showError, setShowError] = useState(false);
+  const handleInputChange = (field: string, value: string) => {
+    setFormData((prev) => ({
+      ...prev,
+      [field]: value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsBtnDisabled(true);
+    try {
+      const response = await submitQuote(formData);
+      if (response.ok) {
+        setIsSubmitted(true);
+        setIsBtnDisabled(false);
+      } else {
+        setShowError(true);
+        setIsSubmitted(false);
+        console.error("Error submitting the quote:", response.statusText);
+      }
+    } catch (error) {
+      setShowError(true);
+      setIsSubmitted(false);
+      console.error("Error occurred while submitting the quote:", error);
+    }
+    finally {
+      setTimeout(() => {
+      resetForm();
+    }, 3000);
+    }
+  };
+
+  const submitQuote = async (formData: any) => {
+    const apiUrl = process.env.NEXT_PUBLIC_API; // Make sure to set this in your .env file
+
+    const form = new FormData();
+    form.append("email", formData.email);
+
+    const response = await fetch(`${apiUrl}newsletter`, {
+      method: "POST",
+      body: form, // Send FormData directly
+    });
+
+    return response;
+  };
+
+  const resetForm = () => {
+    setIsSubmitted(false);
+    setFormData({
+      email: "",
+    });
+    setShowError(false);
+    setIsBtnDisabled(false);
+  };
   return (
     <div className="bg-secondary">
       <div className="pt-5 pb-2">
@@ -23,14 +86,22 @@ const Footer = () => {
               </p>
             </div>
             <div className="subscribe-input col-sm-12 col-md-4 ">
-              <input
+              <div className="d-flex input-section">
+                <input
                 className="form-control news-box"
                 placeholder="Subscribe with us"
                 type="email"
                 name="email"
                 required
+                onChange={(e: any) =>
+                  handleInputChange("email", e.target.value)
+                }
               />
-              <button className="btn btn-warning">Subscribe</button>
+               {showError && <small className="text-danger">Something went wrong while subscribe</small>} 
+              </div>
+              <button className="btn btn-warning" disabled={btnDisabled} onClick={handleSubmit}>
+                {isSubmitted ? <Check /> : "Subscribe"}
+              </button>
             </div>
             {/* </div> */}
             <hr style={{ color: "#fff" }} />
