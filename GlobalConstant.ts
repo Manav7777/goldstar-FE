@@ -815,7 +815,7 @@ export const demolitionSectionOne: any = {
   highlightedTitle: "Demolition Services.",
   subtitle: "Residential & Commercial Demolition Across Canada",
   description:
-    "At GoldStar Movers, we go beyond moving. Our licensed demolition team provides expert teardown services for homes, businesses, and industrial sites across Canada. Whether you're renovating, rebuilding, or clearing a lot, we ensure every project is handled with precision, safety, and full compliance with local regulations.",
+    "At Gold Star Movers, we provide safe, efficient, and professional demolition services for residential, commercial, and industrial projects. Whether you need a complete teardown or selective interior demolition, our experienced crew has the tools and expertise to get the job done right.",
   imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/demolition-service.webp`,
   buttonText: "Request a Free Demolition Quote",
   showTag: true,
@@ -824,33 +824,33 @@ export const demolitionSectionOne: any = {
 
 export const demolitionSectionTwo: any = [
   {
-    title: "Complete Structural Demolition",
-    desc: "We handle full teardown of residential, commercial, and industrial buildings with safety-first protocols.",
+    title: "Free Site Assessment",
+    desc: "We inspect the property and understand your demolition requirements.",
     icon: sanitizeSvg(buildingIcon()),
   },
   {
-    title: "Interior & Selective Demolition",
-    desc: "Ideal for renovations—carefully remove specific walls, flooring, or interiors while preserving structure.",
+    title: "Clear Estimate & Plan",
+    desc: "You receive a transparent quote and step-by-step demolition plan with timeline.",
     icon: sanitizeSvg(toolboxIcon()),
   },
   {
-    title: "Hazardous Material Removal",
-    desc: "Certified handling of asbestos, lead, and other hazardous materials in accordance with Canadian safety standards.",
+    title: "Permits & Safety Prep",
+    desc: "We handle required permits and prepare the site with safety measures.",
     icon: sanitizeSvg(guardIcon()),
   },
   {
-    title: "Debris Removal & Site Cleanup",
-    desc: "We ensure your site is clean, cleared, and ready for the next phase with full waste hauling services.",
+    title: "Professional Demolition",
+    desc: "Our crew executes the demolition efficiently using the right tools and techniques.",
     icon: sanitizeSvg(cleanUpIcon()),
   },
   {
-    title: "Permit & Regulation Compliance",
-    desc: "We manage all required permits and ensure strict adherence to provincial and municipal codes.",
+    title: "Debris Removal & Recycling",
+    desc: "All debris is sorted, hauled away, and recycled or disposed of responsibly.",
     icon: sanitizeSvg(documentIcon()),
   },
   {
-    title: "Emergency & Urgent Demolition",
-    desc: "Quick-response services available for fire-damaged, unsafe, or unstable structures.",
+    title: "Final Site Clean-Up",
+    desc: "We leave the site clean, safe, and ready for the next stage of your project.",
     icon: sanitizeSvg(alertIcon()),
   },
 ];
