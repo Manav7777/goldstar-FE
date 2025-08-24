@@ -88,7 +88,7 @@ const ServicesCard = () => {
           Not sure which service you need? Let our experts help you choose the perfect solution.
         </p>
         <Link href={'/contact'} className="btn btn-outline-warning btn-lg d-inline-flex align-items-center gap-2">
-          Get Free Consultation
+         Get Free Quote
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
