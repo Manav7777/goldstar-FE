@@ -26,58 +26,86 @@ export const goldStarMenus = [
         name: "Long Distance",
         url: "/services/long-distance-moving-service",
       },
-      
+
       {
         id: 8,
         name: "Junk Removal",
         url: "/services/junk-removal-moving-service",
       },
 
-        {
+      {
         id: 9,
         name: "Demolition",
         url: "/services/demolition-service",
       },
-      
-      {
-        id: 88,
-        name: "All Services",
-        url: "/services",
-      },
+
+      // {
+      //   id: 88,
+      //   name: "All Services",
+      //   url: "/services",
+      // },
     ],
   },
   // { id: 8, name: "Gallery", url: "/gallery" },
   {
     id: 10,
     name: "Locations",
+    className: "grid-submenu",
     subMenu: [
       { id: 11, name: "Etobicoke", url: "/goldstar/etobicoke" },
       { id: 12, name: "Mississauga", url: "/goldstar/mississauga" },
       { id: 13, name: "North York", url: "/goldstar/north-york" },
-      { id: 18, name: "East York", url: "/goldstar/east-york" },
-      { id: 18, name: "Hamilton", url: "/goldstar/hamilton" },
+      { id: 9, name: "East York", url: "/goldstar/east-york" },
+      { id: 10, name: "Hamilton", url: "/goldstar/hamilton" },
       { id: 14, name: "Toronto", url: "/goldstar/toronto" },
       { id: 15, name: "Oakville", url: "/goldstar/oakville" },
       { id: 16, name: "Vaughan", url: "/goldstar/vaughan" },
       { id: 17, name: "Brampton", url: "/goldstar/brampton" },
       { id: 18, name: "Milton", url: "/goldstar/milton" },
+      { id: 19, name: "Aurora", url: "/goldstar/aurora" },
+      { id: 20, name: "Richmond Hill", url: "/goldstar/richmond-hill" },
+      { id: 21, name: "Burlington", url: "/goldstar/burlington" },
+      { id: 22, name: "Pickering", url: "/goldstar/pickering" },
+      { id: 23, name: "St. Catharines", url: "/goldstar/st-catharines" },
+      { id: 24, name: "Grimsby ", url: "/goldstar/grimsby " },
+      { id: 25, name: "Scarborough ", url: "/goldstar/scarborough" },
+      { id: 26, name: "Niagara Falls ", url: "/goldstar/niagara-falls" },
+      { id: 27, name: "Markham", url: "/goldstar/markham" },
+      { id: 28, name: "Guelph", url: "/goldstar/guelph" },
+      { id: 29, name: "Caledon", url: "/goldstar/caledon" },   
+      { id: 30, name: "Oshawa", url: "/goldstar/oshawa" },   
     ],
   },
   { id: 19, name: "Contact Us", url: "/contact" },
 ];
 
 export const footersLinks = [
-  { id: 6, menu: "Residential Service", url: "/services/residential-moving-service" },
-  { id: 7, menu: "Commercial Service", url: "/services/commercial-moving-service" },
+  {
+    id: 6,
+    menu: "Residential Service",
+    url: "/services/residential-moving-service",
+  },
+  {
+    id: 7,
+    menu: "Commercial Service",
+    url: "/services/commercial-moving-service",
+  },
   {
     id: 8,
     menu: "Long Distance Service",
     url: "/services/cross-country-service",
   },
-  { id: 9, menu: "Cross Country Service", url: "/services/cross-country-moving-service" },
-  { id: 10, menu: "Junk Removal", url: "/services/junk-removal-moving-service" },
+  {
+    id: 9,
+    menu: "Cross Country Service",
+    url: "/services/cross-country-moving-service",
+  },
+  {
+    id: 10,
+    menu: "Junk Removal",
+    url: "/services/junk-removal-moving-service",
+  },
   { id: 11, menu: "Demolition Service", url: "/services/demolition-service" },
-
 ];
 
 export const openingTimes = [
@@ -93,15 +121,15 @@ export const openingTimes = [
 export const socialLinks = {
   instagram: "https://www.instagram.com/goldstarmovers/",
   facebook: "https://www.facebook.com/people/Gold-Star-Movers/100037978853263/",
-  youtube: "https://www.youtube.com/@goldstarmovers5806"
-}
+  youtube: "https://www.youtube.com/@goldstarmovers5806",
+};
 
 export const aboutLists = [
-  { icon: "Home" , text: "Residential & Commercial Moving"},
-  { icon: "Building2" , text: "Cross-Country and USA Relocation Services"},
-  { icon: "Truck" , text: "Junk Removal"},
-  { icon: "Trash" , text: "Professional Demolition Services"}
-]
+  { icon: "Home", text: "Residential & Commercial Moving" },
+  { icon: "Building2", text: "Cross-Country and USA Relocation Services" },
+  { icon: "Truck", text: "Junk Removal" },
+  { icon: "Trash", text: "Professional Demolition Services" },
+];
 
 export const HouseIcon = () =>
   `<svg xmlns="http://www.w3.org/2000/svg" className="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -290,7 +318,7 @@ export const alertIcon = () =>
      <circle cx="12" cy="18" r="1" />
   </svg>`;
 
-  export const documentIcon = () =>
+export const documentIcon = () =>
   `<svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
      <path d="M6 2h8l6 6v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
      <polyline points="14 2 14 8 20 8" />
@@ -298,7 +326,7 @@ export const alertIcon = () =>
      <line x1="8" y1="17" x2="16" y2="17" />
   </svg>`;
 
-  export const planIcon = () =>
+export const planIcon = () =>
   `<svg xmlns="http://www.w3.org/2000/svg" class="icon-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
      <path d="M3 19h18" />
      <path d="M3 5h12" />
@@ -330,7 +358,6 @@ export const projectIcon = () =>
      <line x1="8" y1="4" x2="8" y2="20" />
      <polyline points="12 16 16 12 12 8" />
   </svg>`;
-
 
 export const ResidentialMovingEfforts: any = {
   title: `How We Make Moving`,
@@ -407,7 +434,7 @@ export const junkRemovalServiceHeroSection: any = {
   subtitle: "Clean out and disposal services",
   description:
     "Clutter taking over your home, office, or job site? At Gold Star Movers, we provide fast, reliable, and affordable junk removal services. Whether it’s old furniture, appliances, renovation debris, or general household clutter, our team handles the heavy lifting so you don’t have to.",
-  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/junk-removal-service.webp`,
+  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}junk-removal-banner.jpeg`,
   buttonText: "Request Now",
   showTag: true,
   tagText: "Trusted by 1,000+ Businesses",
@@ -458,36 +485,36 @@ export const commercialMovingEfforts: any = {
 };
 
 export const residentialServices: any = [
-    {
-      title: "Loading / Unloading Service",
-      desc: "Professional Loading & Unloading Service",
-      icon: sanitizeSvg(PackageIcon()),
-    },
-    {
-      title: "Furniture Assembly",
-      desc: "Complete disassembly and reassembly service",
-      icon: sanitizeSvg(truckIcon()),
-    },
-    {
-      title: "Specialty Items",
-      desc: "Piano, Safe, and Hot-tubs handling",
-      icon: sanitizeSvg(guardIcon()),
-    },
-    {
-      title: "Flexible Timing",
-      desc: "Same-day and next-day options",
-      icon: sanitizeSvg(clockIcon()),
-    },
-    {
-      title: "Packing",
-      desc: "Professional packing with premium materials",
-      icon: sanitizeSvg(internetIcon()),
-    },
-    {
-      title: "Insurance Coverage",
-      desc: "Comprehensive protection included",
-      icon: sanitizeSvg(awardIcon()),
-    },
+  {
+    title: "Loading / Unloading Service",
+    desc: "Professional Loading & Unloading Service",
+    icon: sanitizeSvg(PackageIcon()),
+  },
+  {
+    title: "Furniture Assembly",
+    desc: "Complete disassembly and reassembly service",
+    icon: sanitizeSvg(truckIcon()),
+  },
+  {
+    title: "Specialty Items",
+    desc: "Piano, Safe, and Hot-tubs handling",
+    icon: sanitizeSvg(guardIcon()),
+  },
+  {
+    title: "Flexible Timing",
+    desc: "Same-day and next-day options",
+    icon: sanitizeSvg(clockIcon()),
+  },
+  {
+    title: "Packing",
+    desc: "Professional packing with premium materials",
+    icon: sanitizeSvg(internetIcon()),
+  },
+  {
+    title: "Insurance Coverage",
+    desc: "Comprehensive protection included",
+    icon: sanitizeSvg(awardIcon()),
+  },
 ];
 
 export const commercialServicesPerfectMove: any = [
@@ -562,33 +589,33 @@ export const junkRemovalMovingEfforts: any = {
   description: `Our proven process ensures every move is executed flawlessly, on time, and within budget.`,
   data: [
     {
-      title: "Quick Booking",
+      title: "Easy Booking",
       description:
-        "Easy online scheduling or phone booking with flexible time slots to fit your schedule.",
+        "Schedule your junk removal online or by phone at a time that suits you.",
       icon: sanitizeSvg(CalendarIcon()),
       bgColor: "bg-blue-50",
       textColor: "text-blue",
     },
     {
-      title: "Transparent Pricing",
+      title: "Upfront Pricing",
       description:
-        "Upfront, honest pricing based on volume with no hidden fees or surprise charges.",
+        "We provide a clear, no-obligation estimate with no hidden fees.",
       icon: sanitizeSvg(usersIcons()),
       bgColor: "bg-purple-50",
       textColor: "text-purple",
     },
     {
-      title: "Expert Removal",
+      title: "Full-Service Removal",
       description:
-        "Professional team handles packing, loading, and transport with real-time updates.",
+        "We lift, load, and remove all unwanted items—no work required from you.",
       icon: sanitizeSvg(removeIcon()),
       bgColor: "bg-red-50",
       textColor: "text-red",
     },
     {
-      title: "Responsible Disposal",
+      title: "Eco-Friendly Disposal",
       description:
-        "Items are sorted for donation, recycling, or proper disposal according to environmental standards.",
+        "Items are sorted for donation, recycling, or proper disposal to reduce landfill waste.",
       icon: sanitizeSvg(recycleIcon()),
       bgColor: "bg-green-50",
       textColor: "text-green",
@@ -602,7 +629,7 @@ export const crossCountryServiceHeroSection: any = {
   subtitle: "Long-distance moves made easy",
   description:
     "Experience seamless long-distance relocations with our premium cross-country moving services. From coast to coast, we ensure your belongings travel safely with real-time tracking and comprehensive protection.",
-  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/cross-country-moving.webp`,
+  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}cross-country-service-cards.jpeg`,
   buttonText: "Request Now",
   showTag: true,
   tagText: "Trusted by 1,000+ Businesses",
@@ -610,33 +637,33 @@ export const crossCountryServiceHeroSection: any = {
 
 export const crossCountryServicesPerfectMove: any = [
   {
-    title: "Real-Time Tracking",
-    desc: "Advanced GPS tracking system provides live updates on your shipment's location throughout the journey.",
+    title: "Free Consultation & Estimate",
+    desc: "We provide a clear, upfront quote tailored to your move across the country.",
     icon: sanitizeSvg(realTimeTrackIcon()),
   },
   {
-    title: "Premium Protection",
-    desc: "Comprehensive insurance coverage with multiple protection levels for valuable and irreplaceable items.",
+    title: "Customized Moving Plan",
+    desc: "A step-by-step plan designed around your timeline, distance, and special requirements.",
     icon: sanitizeSvg(guardIcon()),
   },
   {
-    title: "Nationwide Network",
-    desc: "Coast-to-coast coverage with local expertise in every Canadian province and major U.S. cities.",
+    title: "Professional Packing & Protection",
+    desc: "We carefully wrap, box, and secure your belongings for long-distance travel.",
     icon: sanitizeSvg(usersIcons()),
   },
   {
-    title: "Flexible Delivery",
+    title: "Safe Loading & Handling",
     desc: "Express, standard, and economy delivery options to match your timeline and budget requirements.",
     icon: sanitizeSvg(clockIcon()),
   },
   {
-    title: "Border Expertise",
-    desc: "Specialized knowledge for seamless Canada-U.S. relocations with all customs documentation handled.",
+    title: "Progress Updates & Support",
+    desc: "You receive real-time communication and dedicated support throughout the entire journey.",
     icon: sanitizeSvg(MapPinIcon()),
   },
   {
-    title: "Vehicle Transport",
-    desc: "Professional car, motorcycle, and RV transportation services for complete family relocations.",
+    title: "Unloading & Setup",
+    desc: "At your new home or office, we reassemble furniture and set up your space so you can settle in quickly.",
     icon: sanitizeSvg(truckIcon()),
   },
 ];
@@ -731,7 +758,7 @@ export const longDistanceSectionOne: any = {
   subtitle: "Nationwide Relocation Experts",
   description:
     "Moving across the province, to another city, or even across the country? At Gold Star Movers, we make long-distance moving simple, safe, and stress-free. With years of experience and a trusted team of professional movers, we handle every detail so you can enjoy the journey to your new home or business location.",
-  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/long-distance-moving.webp`,
+  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}long-distance-service-card.jpeg`,
   buttonText: "Get a Free Quote",
   showTag: true,
   tagText: "Serving 1,000+ Long-Distance Moves Nationwide",
@@ -739,33 +766,33 @@ export const longDistanceSectionOne: any = {
 
 export const longDistanceSectionTwo: any = [
   {
-    title: "Precision Distance Planning",
-    desc: "Route optimization tools ensure your items travel the safest and fastest path, saving time and reducing costs.",
+    title: "Free Consultation & Estimate",
+    desc: "We provide a clear, no-obligation quote tailored to your moving needs.",
     icon: sanitizeSvg(distanceIcon()),
   },
   {
-    title: "Real-Time Tracking",
-    desc: "Advanced GPS tracking system provides live updates on your shipment's location throughout the journey.",
+    title: "Customized Moving Plan",
+    desc: "A detailed timeline and strategy designed to make your long-distance relocation smooth and stress-free.",
     icon: sanitizeSvg(realTimeTrackIcon()),
   },
   {
-    title: "Premium Protection",
-    desc: "Comprehensive insurance coverage with multiple protection levels for valuable and irreplaceable items.",
+    title: "Professional Packing & Protection",
+    desc: "Your belongings are carefully wrapped, boxed, and protected with high-quality materials.",
     icon: sanitizeSvg(guardIcon()),
   },
   {
-    title: "Cross-Border Specialists",
-    desc: "Expertise in U.S.-Canada moves with full customs handling, compliance checks, and smooth transitions.",
+    title: "Safe Loading & Handling",
+    desc: "Our movers expertly handle heavy items, furniture, and fragile belongings with care.",
     icon: sanitizeSvg(MapPinIcon()),
   },
   {
-    title: "Vehicle Transport",
-    desc: "Professional car, motorcycle, and RV shipping options—perfect for coast-to-coast family relocations.",
+    title: "Communication & Tracking",
+    desc: "You stay informed with updates and direct support throughout the journey for peace of mind.",
     icon: sanitizeSvg(truckIcon()),
   },
   {
-    title: "Flexible Scheduling",
-    desc: "We work around your timeline with guaranteed pickup and delivery slots that match your availability.",
+    title: "Unloading & Setup",
+    desc: "We unpack, reassemble, and place your furniture so you can settle into your new space quickly.",
     icon: sanitizeSvg(clockIcon()),
   },
 ];
@@ -816,7 +843,7 @@ export const demolitionSectionOne: any = {
   subtitle: "Residential & Commercial Demolition Across Canada",
   description:
     "At Gold Star Movers, we provide safe, efficient, and professional demolition services for residential, commercial, and industrial projects. Whether you need a complete teardown or selective interior demolition, our experienced crew has the tools and expertise to get the job done right.",
-  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/demolition-service.webp`,
+  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}demolition-service.jpeg`,
   buttonText: "Request a Free Demolition Quote",
   showTag: true,
   tagText: "Proudly Serving 500+ Projects Across Canadian Provinces",
@@ -850,7 +877,7 @@ export const demolitionSectionTwo: any = [
   },
   {
     title: "Final Site Clean-Up",
-    desc: "We leave the site clean, safe, and ready for the next stage of your project.",
+    desc: "We leave the site clean, safe, and ready for the next stage of your project.",
     icon: sanitizeSvg(alertIcon()),
   },
 ];
@@ -895,58 +922,51 @@ export const demolitionSectionThree: any = {
   ],
 };
 
-
 export const locationService: any = {
-  title :'Our Moving Services in Mississauga',
-  subtitle :'Professional packing and moving solutions for Peel Region',
-  services:[
+  title: "Our Moving Services in Mississauga",
+  subtitle: "Professional packing and moving solutions for Peel Region",
+  services: [
     {
       title: "Residential Moving",
       description:
         "Effortless relocation for homes and apartments with professional care and attention to detail.",
-    image:
-      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}residential-moving-service-card.jpeg`,
+      image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}residential-moving-service-card.jpeg`,
       icon: Home,
     },
     {
       title: "Commercial Moving",
       description:
         "Seamless office and business relocations with minimal downtime and maximum efficiency.",
-    image:
-      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}commercial-moving-service.jpeg`,
+      image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}commercial-moving-service.jpeg`,
       icon: Building2,
     },
     {
       title: "Cross Country Service",
       description:
         "Nationwide moving services from coast to coast across Canada with secure transport",
-    image:
-      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}cross-country-service-card.jpeg`,
+      image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}cross-country-service-card.jpeg`,
       icon: Package,
     },
     {
       title: "Long Distance Moving",
       description:
         "Specialized long-distance moving services with secure transport, careful handling, and timely delivery across provinces.",
-    image:
-      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}long-distance-moving-service-card.jpeg`,
+      image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}long-distance-service-card.jpeg`,
       icon: Truck,
     },
     {
       title: "Junk Removal",
       description:
         "Eco-friendly disposal and decluttering services for residential and commercial spaces.",
-    image:
-      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}junk-removal-banner.jpeg`,
+      image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}junk-removal-banner.jpeg`,
       icon: Trash,
     },
     {
       title: "Demolition",
       description:
         "From small interior jobs to large-scale projects – we demolish with precision.",
-    image:
-      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}demolition-service.jpeg`,
+      image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}demolition-service.jpeg`,
       icon: Wrench,
     },
-]
-}
+  ],
+};

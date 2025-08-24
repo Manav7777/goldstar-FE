@@ -41,10 +41,10 @@ export default function NewHeader() {
                   >
                     {menu.name}
                   </span>
-                  <div className="dropdown-menu show-on-hover">
-                    {menu.subMenu.map((sub) => (
+                  <div className={`dropdown-menu show-on-hover ${menu.className}`}>
+                    {menu.subMenu.map((sub:any) => (
                       <Link
-                        className="dropdown-item"
+                        className={`dropdown-item`}
                         href={sub.url}
                         key={sub.id}
                       >

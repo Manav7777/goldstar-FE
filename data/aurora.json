@@ -1,0 +1,121 @@
+{
+  "seo": {
+    "title": "Trusted Moving Company Aurora | GoldStar Movers",
+    "description": "Relocating in Aurora? GoldStar Movers delivers reliable, efficient, and stress-free moving services by local professionals. Call (289) 541-7282 for your free quote today.",
+    "canonical": "http://localhost:3000/goldstar/aurora",
+    "keywords": [
+      "Aurora movers",
+      "moving company Aurora"
+    ],
+    "openGraph": {
+      "title": "Aurora Moving Company",
+      "description": "Affordable and professional movers in Aurora you can count on.",
+      "image": "http://localhost:3000/images/banner.png"
+    }
+  },
+  "components": [
+    {
+      "key": "LocationTopSection",
+      "props": {
+        "cityName": "Aurora",
+        "headline": "GoldStar Movers – Your Trusted Moving Company in",
+        "subtext": "Moving in or out of Aurora? GoldStar Movers is here to make it seamless. We specialize in residential and commercial relocations, ensuring your belongings are handled with care. With local knowledge and a commitment to quality, our Aurora movers take the stress out of your moving day.",
+        "buttonText": "Get a Free Quote",
+        "services": [
+          {
+            "title": "Family Movers",
+            "description": "Smooth and secure moves for homes and apartments.",
+            "icon": "Users"
+          },
+          {
+            "title": "Safe Packing",
+            "description": "Professional packing to safeguard your valuables.",
+            "icon": "Box"
+          },
+          {
+            "title": "Rated Service",
+            "description": "Highly recommended by Aurora residents.",
+            "icon": "Star"
+          }
+        ]
+      }
+    },
+    {
+      "key": "LocationServiceSections",
+      "props": {
+        "title": "Full-Service Moving Solutions in Aurora",
+        "subtitle": "At GoldStar Movers, we offer more than just transportation. From careful packing to on-time delivery, our Aurora team provides everything needed for a hassle-free move."
+      }
+    },
+    {
+      "key": "WhyChooseUs",
+      "props": {
+        "whyLocation": {
+          "title": "Why Choose GoldStar Movers in Aurora?",
+          "description": "Aurora families and businesses rely on us for one reason—we deliver. With a local team, transparent pricing, and proven reliability, we make moving easier.",
+          "reasons": [
+            {
+              "icon": "Users",
+              "title": "Local Moving Experts",
+              "description": "We know Aurora’s neighborhoods, building rules, and traffic patterns, which helps us complete your move efficiently."
+            },
+            {
+              "icon": "Clock",
+              "title": "Timely & Professional",
+              "description": "We show up on time and handle your move with precision so you can stay on schedule without the stress."
+            },
+            {
+              "icon": "Shield",
+              "title": "Insured & Reliable",
+              "description": "All Aurora moves are covered by insurance and handled by experienced, background-checked professionals."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "LocationMovingSteps",
+      "props": {
+        "title": "Moving in Aurora? Here's How It Works in 3 Simple Steps",
+        "description": "We’ve streamlined the moving process for Aurora residents. From your first call to final delivery, we focus on clear communication, safety, and customer satisfaction."
+      }
+    },
+    {
+      "key": "SatisfactionSection"
+    },
+    {
+      "key": "LocationMap"
+    },
+    {
+      "key": "Faqs",
+      "props": {
+        "faqs": [
+          {
+            "question": "What’s the average cost of moving in Aurora?",
+            "answer": "Local moves in Aurora typically range from $500 to $2,200, depending on the size of your home and the services you need."
+          },
+          {
+            "question": "Do you offer packing services in Aurora?",
+            "answer": "Yes. We offer full and partial packing services using high-quality materials and skilled staff to protect your items."
+          },
+          {
+            "question": "Can you move large items like pianos or gym equipment?",
+            "answer": "Yes, we’re fully equipped to move heavy, bulky, and delicate items, including pianos, exercise machines, and safes."
+          },
+          {
+            "question": "Any tips to lower moving costs in Aurora?",
+            "answer": "Decluttering, booking your move during off-peak times, and being packed before moving day can all help reduce costs."
+          },
+          {
+            "question": "What can I expect on moving day?",
+            "answer": "Our Aurora crew arrives on time, preps your space, carefully loads your items, and ensures everything is delivered safely to your new location."
+          },
+          {
+            "question": "Is insurance included?",
+            "answer": "Yes, all moves in Aurora come with insurance coverage for added peace of mind throughout your relocation."
+          }
+        ]
+      }
+    }
+  ]
+}

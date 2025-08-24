@@ -1,0 +1,121 @@
+{
+  "seo": {
+    "title": "Trusted Moving Company Niagara Falls | GoldStar Movers",
+    "description": "Moving in or out of Niagara Falls? GoldStar Movers provides reliable, affordable moving services with a focus on customer satisfaction. Call (289) 541-7282 for your free quote.",
+    "canonical": "http://localhost:3000/goldstar/niagara-falls",
+    "keywords": [
+      "Niagara Falls movers",
+      "moving company Niagara Falls"
+    ],
+    "openGraph": {
+      "title": "Niagara Falls Moving Company",
+      "description": "Dependable movers in Niagara Falls offering stress-free residential and commercial moving solutions.",
+      "image": "http://localhost:3000/images/banner.png"
+    }
+  },
+  "components": [
+    {
+      "key": "LocationTopSection",
+      "props": {
+        "cityName": "Niagara Falls",
+        "headline": "GoldStar Movers – Your Trusted Moving Company in",
+        "subtext": "Relocating in Niagara Falls? GoldStar Movers combines local knowledge with professional service to make your move easy and worry-free. Whether it’s a family home, apartment, or business relocation, we handle every step with care.",
+        "buttonText": "Get a Free Quote",
+        "services": [
+          {
+            "title": "Family Movers",
+            "description": "Efficient, safe residential moves tailored to your needs.",
+            "icon": "Users"
+          },
+          {
+            "title": "Safe Packing",
+            "description": "Careful packing to protect your belongings throughout the move.",
+            "icon": "Box"
+          },
+          {
+            "title": "Rated Service",
+            "description": "Highly rated by Niagara Falls residents for reliability and professionalism.",
+            "icon": "Star"
+          }
+        ]
+      }
+    },
+    {
+      "key": "LocationServiceSections",
+      "props": {
+        "title": "Full-Service Moving in Niagara Falls",
+        "subtitle": "From packing to transportation and unloading, GoldStar Movers handles every part of your Niagara Falls move with precision and care."
+      }
+    },
+    {
+      "key": "WhyChooseUs",
+      "props": {
+        "whyLocation": {
+          "title": "Why Choose GoldStar Movers in Niagara Falls?",
+          "description": "We’re proud to serve Niagara Falls with dependable, friendly movers who know the area and care about your satisfaction.",
+          "reasons": [
+            {
+              "icon": "Users",
+              "title": "Local Expertise",
+              "description": "Our team understands Niagara Falls’ neighborhoods and logistics to ensure a smooth move."
+            },
+            {
+              "icon": "Clock",
+              "title": "Prompt & Efficient",
+              "description": "We respect your schedule and work efficiently to complete your move on time."
+            },
+            {
+              "icon": "Shield",
+              "title": "Fully Licensed & Insured",
+              "description": "Your belongings are protected with our full licensing and insurance coverage."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "LocationMovingSteps",
+      "props": {
+        "title": "Our Niagara Falls Moving Process – Simple & Stress-Free",
+        "description": "GoldStar Movers makes moving in Niagara Falls straightforward. Clear communication, expert packing, and careful transport mean a hassle-free move."
+      }
+    },
+    {
+      "key": "SatisfactionSection"
+    },
+    {
+      "key": "LocationMap"
+    },
+    {
+      "key": "Faqs",
+      "props": {
+        "faqs": [
+          {
+            "question": "How much does moving in Niagara Falls usually cost?",
+            "answer": "Most local moves in Niagara Falls range between $500 and $2,200 depending on the size and services required."
+          },
+          {
+            "question": "Are packing services available in Niagara Falls?",
+            "answer": "Yes, we provide expert packing services with high-quality materials to safeguard your items."
+          },
+          {
+            "question": "Do you move large or fragile items?",
+            "answer": "Absolutely. We have experience moving pianos, antiques, and other delicate or bulky items safely."
+          },
+          {
+            "question": "What areas near Niagara Falls do you serve?",
+            "answer": "Besides Niagara Falls, we serve neighboring communities like St. Catharines, Welland, and Fort Erie."
+          },
+          {
+            "question": "What happens on moving day?",
+            "answer": "Our team arrives on time, carefully loads your belongings, transports them safely, and unloads everything at your new location."
+          },
+          {
+            "question": "Is insurance included with your moving services?",
+            "answer": "Yes, all moves include insurance coverage for your peace of mind during the relocation."
+          }
+        ]
+      }
+    }
+  ]
+}

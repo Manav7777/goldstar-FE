@@ -1,0 +1,121 @@
+{
+  "seo": {
+    "title": "Top Moving Company St. Catharines | GoldStar Movers",
+    "description": "Moving in St. Catharines? GoldStar Movers provides trusted, efficient, and affordable moving services. Get a free quote today by calling (289) 541-7282.",
+    "canonical": "http://localhost:3000/goldstar/st-catharines",
+    "keywords": [
+      "St. Catharines movers",
+      "moving company St. Catharines"
+    ],
+    "openGraph": {
+      "title": "St. Catharines Moving Company",
+      "description": "Dependable and professional movers in St. Catharines offering stress-free relocation services for homes and businesses.",
+      "image": "http://localhost:3000/images/banner.png"
+    }
+  },
+  "components": [
+    {
+      "key": "LocationTopSection",
+      "props": {
+        "cityName": "St. Catharines",
+        "headline": "GoldStar Movers – Your Trusted Moving Company in",
+        "subtext": "Relocating to or from St. Catharines? GoldStar Movers is here to make your move simple and stress-free. With an experienced team, careful handling, and tailored moving services, we support residential and business moves of all sizes. Let us take the stress out of moving day.",
+        "buttonText": "Get a Free Quote",
+        "services": [
+          {
+            "title": "Family Movers",
+            "description": "Residential moving services tailored for homes and apartments.",
+            "icon": "Users"
+          },
+          {
+            "title": "Safe Packing",
+            "description": "Secure, professional packing to protect all your items.",
+            "icon": "Box"
+          },
+          {
+            "title": "Rated Service",
+            "description": "Top-rated movers in St. Catharines for quality and care.",
+            "icon": "Star"
+          }
+        ]
+      }
+    },
+    {
+      "key": "LocationServiceSections",
+      "props": {
+        "title": "Complete Moving Services in St. Catharines",
+        "subtitle": "GoldStar Movers offers full-service moving in St. Catharines—from expert packing and careful loading to safe transport and unloading. We make relocation effortless and efficient."
+      }
+    },
+    {
+      "key": "WhyChooseUs",
+      "props": {
+        "whyLocation": {
+          "title": "Why Choose GoldStar Movers in St. Catharines?",
+          "description": "We're proud to be one of the most trusted moving companies in St. Catharines. Our local expertise, professional crew, and customer-first approach make all the difference.",
+          "reasons": [
+            {
+              "icon": "Users",
+              "title": "Local Knowledge",
+              "description": "We understand St. Catharines—its roads, neighborhoods, and buildings—ensuring a faster, smoother moving process."
+            },
+            {
+              "icon": "Clock",
+              "title": "Timely & Efficient",
+              "description": "We value your time. Our team is punctual, prepared, and dedicated to completing your move without delays."
+            },
+            {
+              "icon": "Shield",
+              "title": "Licensed & Insured",
+              "description": "Every move in St. Catharines is fully licensed and insured, so your belongings are safe from start to finish."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "LocationMovingSteps",
+      "props": {
+        "title": "How Our St. Catharines Moving Process Works",
+        "description": "Moving is easier with GoldStar Movers. We've simplified the process into three clear steps that focus on safety, communication, and efficiency—tailored to your needs in St. Catharines."
+      }
+    },
+    {
+      "key": "SatisfactionSection"
+    },
+    {
+      "key": "LocationMap"
+    },
+    {
+      "key": "Faqs",
+      "props": {
+        "faqs": [
+          {
+            "question": "How much does a move in St. Catharines cost?",
+            "answer": "The average cost for local moves in St. Catharines ranges from $500 to $2,200, based on the size of your home and services needed."
+          },
+          {
+            "question": "Do you offer packing services in St. Catharines?",
+            "answer": "Yes. We provide both full and partial packing services, using quality materials to ensure your items are protected during the move."
+          },
+          {
+            "question": "Do you move heavy or delicate items?",
+            "answer": "Absolutely. We handle items like pianos, antiques, artwork, and safes with expert care and proper equipment."
+          },
+          {
+            "question": "How can I reduce my moving costs?",
+            "answer": "Declutter before moving, pack what you can in advance, and try booking during weekdays or non-peak times to save money."
+          },
+          {
+            "question": "What happens on moving day?",
+            "answer": "Our St. Catharines movers arrive on time, protect your home and belongings, load everything securely, and unload it safely at your new location."
+          },
+          {
+            "question": "Is insurance included?",
+            "answer": "Yes. All of our moves in St. Catharines include insurance coverage to give you extra peace of mind."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "seo": {
+    "title": "Trusted Moving Company Markham | GoldStar Movers",
+    "description": "Planning a move in Markham? GoldStar Movers offers reliable and affordable moving services with expert local knowledge. Call (289) 541-7282 for a free quote today.",
+    "canonical": "http://localhost:3000/goldstar/markham",
+    "keywords": [
+      "Markham movers",
+      "moving company Markham"
+    ],
+    "openGraph": {
+      "title": "Markham Moving Company",
+      "description": "GoldStar Movers provides professional residential and commercial moving services in Markham with a focus on customer satisfaction.",
+      "image": "http://localhost:3000/images/banner.png"
+    }
+  },
+  "components": [
+    {
+      "key": "LocationTopSection",
+      "props": {
+        "cityName": "Markham",
+        "headline": "GoldStar Movers – Your Trusted Moving Company in",
+        "subtext": "Moving in or around Markham? GoldStar Movers brings local expertise and a dedicated team to ensure a smooth, hassle-free relocation. Whether it's your home or office, we handle each step with care and professionalism.",
+        "buttonText": "Get a Free Quote",
+        "services": [
+          {
+            "title": "Family Movers",
+            "description": "Safe and efficient home moving services tailored to your needs.",
+            "icon": "Users"
+          },
+          {
+            "title": "Safe Packing",
+            "description": "Professional packing to protect your belongings throughout the move.",
+            "icon": "Box"
+          },
+          {
+            "title": "Rated Service",
+            "description": "Markham’s trusted movers, highly rated by our customers.",
+            "icon": "Star"
+          }
+        ]
+      }
+    },
+    {
+      "key": "LocationServiceSections",
+      "props": {
+        "title": "Comprehensive Moving Services in Markham",
+        "subtitle": "From packing and loading to transportation and unloading, GoldStar Movers offers complete moving solutions customized for Markham residents and businesses."
+      }
+    },
+    {
+      "key": "WhyChooseUs",
+      "props": {
+        "whyLocation": {
+          "title": "Why Choose GoldStar Movers in Markham?",
+          "description": "Our Markham team combines experience, local knowledge, and dedication to deliver timely and careful moving services that meet your expectations.",
+          "reasons": [
+            {
+              "icon": "Users",
+              "title": "Experienced Local Movers",
+              "description": "We understand Markham’s neighborhoods and traffic, ensuring efficient and smooth moves."
+            },
+            {
+              "icon": "Clock",
+              "title": "Punctual & Professional",
+              "description": "Our movers respect your time and work efficiently to complete your move on schedule."
+            },
+            {
+              "icon": "Shield",
+              "title": "Licensed & Insured",
+              "description": "All moves in Markham are fully insured and licensed for your peace of mind."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "LocationMovingSteps",
+      "props": {
+        "title": "How Our Markham Moving Process Works",
+        "description": "GoldStar Movers simplifies moving with clear communication, expert packing, and careful transport to ensure a hassle-free experience."
+      }
+    },
+    {
+      "key": "SatisfactionSection"
+    },
+    {
+      "key": "LocationMap"
+    },
+    {
+      "key": "Faqs",
+      "props": {
+        "faqs": [
+          {
+            "question": "What is the average cost of moving in Markham?",
+            "answer": "Local moves in Markham typically range from $500 to $2,200, depending on the size and services required."
+          },
+          {
+            "question": "Do you offer packing services in Markham?",
+            "answer": "Yes, we provide full and partial packing services using quality materials to protect your belongings."
+          },
+          {
+            "question": "Can you move bulky or delicate items?",
+            "answer": "Absolutely. Our team is trained to safely handle large, heavy, and fragile items including pianos and antiques."
+          },
+          {
+            "question": "Do you serve areas surrounding Markham?",
+            "answer": "Yes, we also provide moving services to and from nearby communities including Richmond Hill, Vaughan, and Toronto."
+          },
+          {
+            "question": "What should I prepare before moving day?",
+            "answer": "Ensure all your belongings are packed and labeled. Clearing pathways and informing us about any special items helps the process."
+          },
+          {
+            "question": "Is insurance included with your moving services?",
+            "answer": "Yes, all our moves in Markham come with insurance coverage to protect your belongings."
+          }
+        ]
+      }
+    }
+  ]
+}

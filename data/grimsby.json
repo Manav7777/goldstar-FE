@@ -1,0 +1,121 @@
+{
+  "seo": {
+    "title": "Reliable Moving Company Grimsby | GoldStar Movers",
+    "description": "Searching for dependable movers in Grimsby? GoldStar Movers delivers stress-free, professional moving services tailored to your needs. Call (289) 541-7282 for a free quote today.",
+    "canonical": "http://localhost:3000/goldstar/grimsby",
+    "keywords": [
+      "Grimsby movers",
+      "moving company Grimsby"
+    ],
+    "openGraph": {
+      "title": "Grimsby Moving Company",
+      "description": "GoldStar Movers offers trusted residential and commercial moving services in Grimsby. Experience a smooth move with local experts.",
+      "image": "http://localhost:3000/images/banner.png"
+    }
+  },
+  "components": [
+    {
+      "key": "LocationTopSection",
+      "props": {
+        "cityName": "Grimsby",
+        "headline": "GoldStar Movers – Your Trusted Moving Company in",
+        "subtext": "Moving to, from, or within Grimsby? GoldStar Movers brings local experience, reliable crews, and stress-free service to every move. Whether you're relocating your home or office, we handle each item with care and every detail with professionalism.",
+        "buttonText": "Get a Free Quote",
+        "services": [
+          {
+            "title": "Family Movers",
+            "description": "Safe, efficient moves for households of all sizes.",
+            "icon": "Users"
+          },
+          {
+            "title": "Safe Packing",
+            "description": "Expert packing to protect your belongings during transport.",
+            "icon": "Box"
+          },
+          {
+            "title": "Rated Service",
+            "description": "Grimsby’s trusted movers, rated for quality and care.",
+            "icon": "Star"
+          }
+        ]
+      }
+    },
+    {
+      "key": "LocationServiceSections",
+      "props": {
+        "title": "Complete Moving Services in Grimsby",
+        "subtitle": "At GoldStar Movers, we offer more than transportation. From careful packing and loading to secure delivery and setup, our Grimsby team handles every aspect of your move with skill and dedication."
+      }
+    },
+    {
+      "key": "WhyChooseUs",
+      "props": {
+        "whyLocation": {
+          "title": "Why Choose GoldStar Movers in Grimsby?",
+          "description": "Grimsby residents trust us because we deliver what we promise—timely, careful, and friendly moving service tailored to your needs.",
+          "reasons": [
+            {
+              "icon": "Users",
+              "title": "Locally Experienced",
+              "description": "Our crews are familiar with Grimsby’s neighborhoods, helping ensure a faster and smoother move."
+            },
+            {
+              "icon": "Clock",
+              "title": "Punctual & Efficient",
+              "description": "We arrive on time, work quickly, and stay organized to keep your move stress-free."
+            },
+            {
+              "icon": "Shield",
+              "title": "Fully Insured & Licensed",
+              "description": "All Grimsby moves are protected with full insurance coverage for peace of mind."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "LocationMovingSteps",
+      "props": {
+        "title": "Our Grimsby Moving Process – 3 Simple Steps",
+        "description": "GoldStar Movers makes moving in Grimsby easy. From quote to completion, our team communicates clearly and works efficiently so you can focus on settling in."
+      }
+    },
+    {
+      "key": "SatisfactionSection"
+    },
+    {
+      "key": "LocationMap"
+    },
+    {
+      "key": "Faqs",
+      "props": {
+        "faqs": [
+          {
+            "question": "How much does a move in Grimsby usually cost?",
+            "answer": "Local moves in Grimsby typically cost between $500 and $2,200 depending on the size and scope of the move."
+          },
+          {
+            "question": "Do you offer packing services in Grimsby?",
+            "answer": "Yes. We offer both full and partial packing services to suit your needs, using quality materials and trained professionals."
+          },
+          {
+            "question": "Can you move large or delicate items like pianos?",
+            "answer": "Absolutely. Our team is trained to handle heavy and fragile items, including pianos, antiques, and large furniture."
+          },
+          {
+            "question": "What areas around Grimsby do you serve?",
+            "answer": "In addition to Grimsby, we serve nearby areas such as Beamsville, Stoney Creek, and Vineland."
+          },
+          {
+            "question": "What should I expect on moving day?",
+            "answer": "Our team will arrive on time, protect your home and belongings, load everything carefully, and transport your items safely to your new location."
+          },
+          {
+            "question": "Is insurance included with your services?",
+            "answer": "Yes. Every move includes insurance coverage to protect your belongings from start to finish."
+          }
+        ]
+      }
+    }
+  ]
+}

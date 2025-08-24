@@ -1,0 +1,121 @@
+{
+  "seo": {
+    "title": "Reliable Moving Company Caledon | GoldStar Movers",
+    "description": "Moving in Caledon? GoldStar Movers offers trusted, affordable moving services with a local touch. Call (289) 541-7282 today for a free moving quote.",
+    "canonical": "http://localhost:3000/goldstar/caledon",
+    "keywords": [
+      "Caledon movers",
+      "moving company Caledon"
+    ],
+    "openGraph": {
+      "title": "Caledon Moving Company",
+      "description": "Dependable movers in Caledon providing smooth residential and commercial moving services.",
+      "image": "http://localhost:3000/images/banner.png"
+    }
+  },
+  "components": [
+    {
+      "key": "LocationTopSection",
+      "props": {
+        "cityName": "Caledon",
+        "headline": "GoldStar Movers – Your Trusted Moving Company in",
+        "subtext": "Relocating within or to Caledon? GoldStar Movers combines local expertise with professional moving services to make your move hassle-free and efficient. Whether you’re moving a home or office, we’re here to help.",
+        "buttonText": "Get a Free Quote",
+        "services": [
+          {
+            "title": "Family Movers",
+            "description": "Safe, efficient home moving tailored to your needs.",
+            "icon": "Users"
+          },
+          {
+            "title": "Safe Packing",
+            "description": "Expert packing to ensure your belongings stay protected.",
+            "icon": "Box"
+          },
+          {
+            "title": "Rated Service",
+            "description": "Highly rated by Caledon residents for quality and reliability.",
+            "icon": "Star"
+          }
+        ]
+      }
+    },
+    {
+      "key": "LocationServiceSections",
+      "props": {
+        "title": "Complete Moving Services in Caledon",
+        "subtitle": "GoldStar Movers handles every part of your move in Caledon—from packing and loading to transportation and unloading—with care and professionalism."
+      }
+    },
+    {
+      "key": "WhyChooseUs",
+      "props": {
+        "whyLocation": {
+          "title": "Why Choose GoldStar Movers in Caledon?",
+          "description": "Our Caledon movers bring experience, local knowledge, and dedication to every move, ensuring your relocation is smooth and stress-free.",
+          "reasons": [
+            {
+              "icon": "Users",
+              "title": "Experienced Local Movers",
+              "description": "We know Caledon’s neighborhoods and logistics, making your move faster and easier."
+            },
+            {
+              "icon": "Clock",
+              "title": "On-Time & Efficient",
+              "description": "We respect your schedule and complete moves promptly without sacrificing care."
+            },
+            {
+              "icon": "Shield",
+              "title": "Fully Licensed & Insured",
+              "description": "Your belongings are protected with our full licensing and insurance coverage."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "LocationMovingSteps",
+      "props": {
+        "title": "Our Caledon Moving Process – Easy and Transparent",
+        "description": "GoldStar Movers guides you through every step with clear communication, expert packing, and careful handling to make your Caledon move worry-free."
+      }
+    },
+    {
+      "key": "SatisfactionSection"
+    },
+    {
+      "key": "LocationMap"
+    },
+    {
+      "key": "Faqs",
+      "props": {
+        "faqs": [
+          {
+            "question": "What is the typical cost of moving in Caledon?",
+            "answer": "Local moves in Caledon generally cost between $600 and $2,300 depending on home size and services."
+          },
+          {
+            "question": "Do you provide packing services in Caledon?",
+            "answer": "Yes, we offer professional packing services using quality materials to keep your belongings safe."
+          },
+          {
+            "question": "Can you move fragile and heavy items?",
+            "answer": "Absolutely. Our team is trained to handle delicate and bulky items like pianos and antiques with care."
+          },
+          {
+            "question": "Do you serve areas near Caledon?",
+            "answer": "Yes, we also serve neighboring communities including Bolton, Orangeville, and Brampton."
+          },
+          {
+            "question": "What do I need to prepare before moving day?",
+            "answer": "Please ensure your belongings are packed and labeled. Inform us of any special items or access considerations."
+          },
+          {
+            "question": "Is moving insurance included?",
+            "answer": "Yes, all our moves in Caledon come with insurance coverage for added peace of mind."
+          }
+        ]
+      }
+    }
+  ]
+}

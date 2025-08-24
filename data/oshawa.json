@@ -1,0 +1,121 @@
+{
+  "seo": {
+    "title": "Trusted Moving Company Oshawa | GoldStar Movers",
+    "description": "Looking for reliable movers in Oshawa? GoldStar Movers provides professional, affordable moving services for homes and businesses. Call (289) 541-7282 for a free quote today.",
+    "canonical": "http://localhost:3000/goldstar/oshawa",
+    "keywords": [
+      "Oshawa movers",
+      "moving company Oshawa"
+    ],
+    "openGraph": {
+      "title": "Oshawa Moving Company",
+      "description": "GoldStar Movers is your trusted partner for residential and commercial moves in Oshawa. Stress-free and affordable service, every time.",
+      "image": "http://localhost:3000/images/banner.png"
+    }
+  },
+  "components": [
+    {
+      "key": "LocationTopSection",
+      "props": {
+        "cityName": "Oshawa",
+        "headline": "GoldStar Movers – Your Trusted Moving Company in",
+        "subtext": "Planning a move in or out of Oshawa? GoldStar Movers provides dependable moving services backed by experienced professionals. Whether you're relocating your home, apartment, or business, we ensure a smooth, stress-free experience from start to finish.",
+        "buttonText": "Get a Free Quote",
+        "services": [
+          {
+            "title": "Family Movers",
+            "description": "Reliable residential moves tailored to families and individuals.",
+            "icon": "Users"
+          },
+          {
+            "title": "Safe Packing",
+            "description": "Professional packing services to protect your items during transit.",
+            "icon": "Box"
+          },
+          {
+            "title": "Rated Service",
+            "description": "Trusted by Oshawa residents for our service and attention to detail.",
+            "icon": "Star"
+          }
+        ]
+      }
+    },
+    {
+      "key": "LocationServiceSections",
+      "props": {
+        "title": "Complete Moving Services in Oshawa",
+        "subtitle": "From residential to commercial moves, packing to delivery—GoldStar Movers provides everything you need for a successful move in Oshawa. No shortcuts, just expert service."
+      }
+    },
+    {
+      "key": "WhyChooseUs",
+      "props": {
+        "whyLocation": {
+          "title": "Why Choose GoldStar Movers in Oshawa?",
+          "description": "Moving in Oshawa requires more than just muscle—it takes planning, experience, and local knowledge. That’s where we come in.",
+          "reasons": [
+            {
+              "icon": "Users",
+              "title": "Local Moving Experts",
+              "description": "We know Oshawa’s neighborhoods, traffic, and building rules—helping your move go quickly and smoothly."
+            },
+            {
+              "icon": "Clock",
+              "title": "Timely & Efficient",
+              "description": "We arrive on time, work efficiently, and treat your belongings with care from start to finish."
+            },
+            {
+              "icon": "Shield",
+              "title": "Fully Licensed & Insured",
+              "description": "Rest easy knowing every Oshawa move is covered by our comprehensive insurance and licensing."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "LocationMovingSteps",
+      "props": {
+        "title": "How Our Oshawa Moving Process Works",
+        "description": "GoldStar Movers takes the guesswork out of your move. From your first call to the final box delivered, we prioritize communication, safety, and service."
+      }
+    },
+    {
+      "key": "SatisfactionSection"
+    },
+    {
+      "key": "LocationMap"
+    },
+    {
+      "key": "Faqs",
+      "props": {
+        "faqs": [
+          {
+            "question": "How much does moving in Oshawa typically cost?",
+            "answer": "Most local moves in Oshawa range from $500 to $2,200 depending on the size of your home and the services you require."
+          },
+          {
+            "question": "Do you offer packing services in Oshawa?",
+            "answer": "Yes, we offer full and partial packing services using high-quality materials to ensure safe transport."
+          },
+          {
+            "question": "Can you move apartments or condos with elevators?",
+            "answer": "Definitely. We're experienced with high-rise moves and know how to coordinate elevator access and building regulations."
+          },
+          {
+            "question": "Do you serve areas around Oshawa?",
+            "answer": "Yes, we serve nearby communities including Whitby, Courtice, and Bowmanville."
+          },
+          {
+            "question": "What should I do before moving day?",
+            "answer": "Have your items packed and labeled, and inform us of any large or fragile items. Clear hallways and entrances where possible."
+          },
+          {
+            "question": "Is insurance included with your service?",
+            "answer": "Yes, all our Oshawa moves come with standard insurance coverage for your protection."
+          }
+        ]
+      }
+    }
+  ]
+}
