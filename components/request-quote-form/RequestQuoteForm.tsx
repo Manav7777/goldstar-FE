@@ -32,7 +32,7 @@ export default function RequestQuoteForm( {open , close}: any) {
   { value: "appliance", label: "Appliance Moving" },
   { value: "piano", label: "Piano Moving" },
   { value: "safe", label: "Safe Moving" },
-  { value: "hot-tub moving", label:"Hot-tub moving"},
+  { value: "hot-tub moving", label:"Hot-Tub Moving"},
 
    { value: "packingunpacking", label: "Packing/Unpacking" },
     { value: "junk-removal", label: "Junk Removal" },
