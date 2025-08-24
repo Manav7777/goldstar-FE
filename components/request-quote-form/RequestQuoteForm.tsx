@@ -29,7 +29,7 @@ export default function RequestQuoteForm( {open , close}: any) {
     { value: "storage", label: "Storage Moving" },
     { value: "long distance", label: "Long Distance Moving" },
     { value: "cross-country", label: "Cross-Country Moving" },
-  { value: "appliance", label: "Appliance Moving },
+  { value: "appliance", label: "Appliance Moving" },
   { value: "piano", label: "Piano Moving" },
   { value: "safe", label: "Safe Moving" },
   { value: "hot-tub moving", label:"Hot-tub moving"},
