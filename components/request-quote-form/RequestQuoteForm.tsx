@@ -79,7 +79,7 @@ export default function RequestQuoteForm({ open, close }: any) {
     form.append("moveDate", formData.moveDate);
     form.append("additionalInfo", formData.additionalInfo);
 
-    const response = await fetch(`${apiUrl}request-quote`, {
+    const response = await fetch(`${apiUrl}/api/request-quote`, {
       method: "POST",
       body: form, // Send FormData directly
     });

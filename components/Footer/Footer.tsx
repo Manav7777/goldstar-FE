@@ -57,7 +57,7 @@ const Footer = () => {
     const form = new FormData();
     form.append("email", formData.email);
 
-    const response = await fetch(`${apiUrl}newsletter`, {
+    const response = await fetch(`${apiUrl}/api/newsletter`, {
       method: "POST",
       body: form, // Send FormData directly
     });
