@@ -1,3 +1,4 @@
+import Loader from "@/components/ui/loader/Loader";
 import { lazy } from "react";
 const HomePage = lazy(() => import('../components/Home/HomePage'));
 const ClientRatings = lazy(() => import('../components/ClientRatings/ClientRatings'));

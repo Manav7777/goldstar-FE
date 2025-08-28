@@ -27,7 +27,16 @@ import {
 } from "@/GlobalConstant";
 import WhyChooseGoldStar from "@/components/Why-choose-us/WhyChooseGoldStar";
 
-const servicesData: any = {
+type Props = {
+  params: {
+    serviceSlug: string;
+  };
+};
+
+export default async function ServicePage({ params }: Props) {
+  const { serviceSlug } = await params;
+
+  const servicesData: any = {
   "residential-moving-service": {
     title: "Residential Moving Service",
     description: "Build fast and scalable websites.",
@@ -36,7 +45,7 @@ const servicesData: any = {
         Component: ServiceDetailSection,
         props: { serviceHeroSection: residentialServiceHeroSection },
       },
-      { Component: PerfectMovers, props: { services: residentialServices } },
+      { Component: PerfectMovers, props: { services: residentialServices, slug: serviceSlug } },
       {
         Component: MovingEfforts,
         props: { residentialMovingEfforts: ResidentialMovingEfforts },
@@ -53,7 +62,7 @@ const servicesData: any = {
       },
       {
         Component: PerfectMovers,
-        props: { services: commercialServicesPerfectMove },
+        props: { services: commercialServicesPerfectMove, slug: serviceSlug },
       },
       {
         Component: MovingEfforts,
@@ -71,7 +80,7 @@ const servicesData: any = {
       },
       {
         Component: PerfectMovers,
-        props: { services: junkRemovalServicesPerfectMove },
+        props: { services: junkRemovalServicesPerfectMove, slug: serviceSlug },
       },
       {
         Component: MovingEfforts,
@@ -89,7 +98,7 @@ const servicesData: any = {
       },
       {
         Component: PerfectMovers,
-        props: { services: crossCountryServicesPerfectMove },
+        props: { services: crossCountryServicesPerfectMove, slug: serviceSlug },
       },
       {
         Component: MovingEfforts,
@@ -105,7 +114,7 @@ const servicesData: any = {
         Component: ServiceDetailSection,
         props: { serviceHeroSection: longDistanceSectionOne },
       },
-      { Component: PerfectMovers, props: { services: longDistanceSectionTwo } },
+      { Component: PerfectMovers, props: { services: longDistanceSectionTwo, slug: serviceSlug } },
       {
         Component: MovingEfforts,
         props: { residentialMovingEfforts: longDistanceSectionThree },
@@ -120,7 +129,7 @@ const servicesData: any = {
         Component: ServiceDetailSection,
         props: { serviceHeroSection: demolitionSectionOne },
       },
-      { Component: PerfectMovers, props: { services: demolitionSectionTwo } },
+      { Component: PerfectMovers, props: { services: demolitionSectionTwo, slug: serviceSlug } },
       {
         Component: MovingEfforts,
         props: { residentialMovingEfforts: demolitionSectionThree },
@@ -128,15 +137,6 @@ const servicesData: any = {
     ],
   },
 };
-
-type Props = {
-  params: {
-    serviceSlug: string;
-  };
-};
-
-export default async function ServicePage({ params }: Props) {
-  const { serviceSlug } = await params;
 
   const service = servicesData[serviceSlug];
 

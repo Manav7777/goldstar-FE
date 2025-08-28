@@ -108,9 +108,10 @@ const Footer = () => {
             <div className="col-12 col-md-4">
               <div className="d-inline-block mb-1">
                 <img
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}footer-logo.png`}
+                  src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}footer-logo.webp`}
                   width={180}
                   alt="logo"
+                  loading="lazy"
                 />
               </div>
               <p className="text-gray-300 small">
