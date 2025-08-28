@@ -6,7 +6,7 @@ const TopSection = ({title}:any) => {
     <div
       className="main-top-section"
       style={{
-        backgroundImage: `url(${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}packers-and-movers-new.webp)`,
+        backgroundImage: `url(${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/packers-and-movers-new.webp)`,
       }}
     >
       <div className="overlay-section"></div>
