@@ -8,6 +8,16 @@ import Link from "next/link";
 
 const testimonials = [
   {
+    name: "Marjolein van Seeters",
+    position: "Marketing Manager",
+    text: `We moved from a house to an apartment. It was very hot, but the movers worked hard. They were careful with our things and had a very fast pace, despite the heat. We had arranged a moving truck ourselves and the men from Gold Star Movers got all the furniture and boxes in it, while I thought our truck was really too small. Like a puzzle, they made it fit. I definitely recommend!`,
+  },
+  {
+    name: "Anton Belianin",
+    position: "Marketing Manager",
+    text: `We had great experience with the movers. They came on time, packed everything very carefully and moved our 1 bedroom + den apartment during 3 hours. It was a pleasure to work with Gold Star Movers, highly recommend.`,
+  },
+  {
     name: "Melodie Rose",
     position: "Marketing Manager",
     text: `I've used this moving company before, and, like the previous move, they were on time, exceptionally efficient, and an absolute pleasure to work with!
@@ -42,6 +52,17 @@ const testimonials = [
       They did it perfectly! Pricing is very reasonable!`,
     starImage: "five-star-image.png",
   },
+  {
+    name: "Maureen Lawlor",
+    position: "Marketing Manager",
+    text: `Thy were great. They were very responsive by email leading up to the move. They arrived on time and got right to work. They worked very hard throughout the three hours we had booked with them.
+There were stairs on both ends of the move, and we had a lot of stuff for the size of truck we had ordered, but they were very resourceful. They were pleasant and upbeat the whole time. I can’t say enough kind things. I would happily recommend them, and would gladly use their services again.`,
+  },
+   {
+    name: "Mina Youssef",
+    position: "Product Lead",
+    text: `I needed 2 people to help with moving my furniture from a storage unit to a house. I provided the truck and they did all the lifting. They were very professional, polite, didn’t have any issues with a couple of pretty heavy items I had, took great care of the furniture and didn’t waste any time. Very hard-working crew! I would definitely recommend them for any moving job.`,
+  }
 ];
 const ClientRatings = () => {
   return (

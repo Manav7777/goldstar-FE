@@ -25,7 +25,7 @@ export default function NewHeader() {
           <Link href="/" className="d-flex align-items-center logo-link">
               <img
                 id="redux_logo"
-                src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/logo.png`}
+                src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/logo.webp`}
                 width={128}
                 alt="Logo"
               />
@@ -85,7 +85,7 @@ export default function NewHeader() {
             <div className="p-2 rounded-lg">
               <img
                 id="redux_logo-1"
-                src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/logo.png`}
+                src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/logo.webp`}
                 width={128}
                 alt="Logo"
               />

@@ -45,7 +45,7 @@ const WhyChooseUs = () => {
             <img
               src={
                 process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL +
-                "/images/why-choose-goldstar.jpeg"
+                "/images/why-choose-goldstar.webp"
               }
               alt={"why-choose-goldstar-movers"}
               className="border-radius-5 img-fluid"

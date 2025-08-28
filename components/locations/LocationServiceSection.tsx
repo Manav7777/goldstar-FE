@@ -25,6 +25,7 @@ const LocationServiceSections: any = ({ title, subtitle }: any) => {
                   src={service.image}
                   className="card-img-top img-fluid h-100 w-100 object-fit-cover location-service-img"
                   alt={service.alt || service.title}
+                  loading="lazy"
                 />
                 <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
                 <div className="position-absolute bottom-0 start-0 m-3">

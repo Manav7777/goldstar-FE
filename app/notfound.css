@@ -65,7 +65,8 @@
 .service-icon-circle {
   width: 48px; height: 48px;
   border-radius: 0.75rem;
-  background-color: #ffe38d;
+  background-color: var(--gs-primary-color);
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;

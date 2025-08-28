@@ -6,41 +6,41 @@ const ServicesCard = () => {
   {
     title: 'Residential Moving',
     description: 'Effortless relocation for homes and apartments with professional care and attention to detail',
-    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/residential-service-card.jpeg`,
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/residential-service-card.webp`,
     link: '/services/residential-moving-service'
   },
   {
     title: 'Commercial Moving',
     description: 'Seamless office and business relocations with minimal downtime and maximum efficiency',
-    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/residential-moving-service-card.jpeg`,
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/residential-moving-service-card.webp`,
 
     link: '/services/commercial-moving-service'
   },
  {
     title: 'Long Distance Moving',
     description: 'Specialized long-distance moving services with secure transport, careful handling, and timely delivery across provinces',
-    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/long-distance-service-card.jpeg`,
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/long-distance-service-card.webp`,
     // full: true,
     link: '/services/long-distance-moving-service'
   },
   {
     title: 'Cross Country',
     description: 'Nationwide moving services from coast to coast across Canada with secure transport',
-    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/cross-country-service-cards.jpeg`,
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/cross-country-service-cards.webp`,
     link: '/services/cross-country-moving-service'
   },
   
   {
     title: 'Junk Removal',
     description: 'Eco-friendly disposal and decluttering services for residential and commercial spaces',
-    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/junk-removal-banner.jpeg`,
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/junk-removal-banner.webp`,
     link: '/services/junk-removal-moving-service'
   },
 
      {
     title: 'Demolition',
     description: 'From small interior jobs to large-scale projects – we demolish with precision.',
-    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/demolition-service.jpeg`,
+    image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/demolition-service.webp`,
     link: '/services/demolition-service'
   },
   ];

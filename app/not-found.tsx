@@ -1,6 +1,6 @@
 import Link from "next/link";
 import "./notfound.css";
-import { House, Mail, MapPin, Phone, Search } from "lucide-react";
+import { House, Mail, MapPin, Phone } from "lucide-react";
 import GsButton from "@/components/ui/GsButton";
 
 export default function NotFound() {
@@ -15,9 +15,10 @@ export default function NotFound() {
           <Link href="/">
             <span className="d-inline-flex align-items-center gap-3 text-decoration-none">
               <img
-                src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/logo.png`}
+                src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/logo.webp`}
                 width={200}
                 alt="goldStar-logo"
+                loading="lazy"
               />
             </span>
           </Link>
@@ -47,31 +48,13 @@ export default function NotFound() {
                 <div className="service-icon-circle">
                   <House />
                 </div>
-                <h5 className="card-title">Go Home</h5>
-                <p className="card-text flex-grow-1">
+                <h5 className="">Go Home</h5>
+                <p className="text-dark flex-grow-1">
                   Return to our homepage and explore our moving services
                 </p>
                 <Link href="/">
                   <span className="btn btn-warning w-100">
                     Back to Homepage
-                  </span>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="card service-card-hover h-100">
-              <div className="card-body d-flex flex-column">
-                <div className="service-icon-circle">
-                  <Search />
-                </div>
-                <h5 className="card-title">Find Services</h5>
-                <p className="card-text flex-grow-1">
-                  Explore our comprehensive moving solutions
-                </p>
-                <Link href="/services">
-                  <span className="btn btn-outline-secondary w-100">
-                    View Services
                   </span>
                 </Link>
               </div>

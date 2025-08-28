@@ -1,17 +1,42 @@
 import React from 'react'
 
-const PerfectMovers = ({services}:any) => {
+const PerfectMovers = ({services, slug}:any) => {
+  const subtitles:any = {
+    "residential-moving-service":
+      "Our comprehensive residential moving services are designed to handle every aspect of your move with precision and care.",
+    "commercial-moving-service":
+      "We provide efficient commercial moving solutions tailored to businesses of all sizes.",
+    "cross-country-moving-service":
+      "Relocate across states smoothly with our reliable cross-country moving services.",
+    "junk-removal-moving-service":
+      "Efficient and eco-friendly junk removal tailored to your needs.",
+    "long-distance-moving-service":
+      "We specialize in long-distance moves, ensuring your belongings arrive safely and on time.",
+    "demolition-service": "Our demolition services are designed to handle every aspect of your project with precision and care.",
+  };
+
+  const subtitleText =
+    subtitles[slug] ||
+    "We provide professional moving and removal services tailored to your needs.";
   return (
     <>
     <section className="perfect-move-section bg-light mt-5" key={"perfect-move"}>
       <div className="container">
         <div className="text-center mb-5">
           <h2 className="section-title">
-            Everything You Need for a <span className="highlight">Perfect Move</span>
+             {slug === "junk-removal-moving-service"
+              ? "Everything You Need for Effortless "
+              : "Everything You Need for a"}
+            <span className="highlight">
+              {" "}
+              {slug === "junk-removal-moving-service"
+                ? "Junk Removal"
+                : slug === "demolition-service"
+                ? "Safe Demolition"
+                : "Perfect Move"}
+            </span>
           </h2>
-          <p className="section-subtitle">
-            Our comprehensive residential moving services are designed to handle every aspect of your move with precision and care.
-          </p>
+          <p className="section-subtitle">{subtitleText}</p>
         </div>
 
         <div className="row g-4">

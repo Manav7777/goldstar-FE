@@ -19,7 +19,7 @@ const About = () => {
           >
             <img
               decoding="async"
-              src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/why-choose-goldstar.jpeg`}
+              src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/why-choose-goldstar.webp`}
               alt="gold-star-movers"
               className="border-radius-5"
               title="gold-star-movers"
