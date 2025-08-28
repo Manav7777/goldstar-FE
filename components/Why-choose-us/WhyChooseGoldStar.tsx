@@ -75,7 +75,7 @@ const WhyChooseGoldStar = () => {
                   data-aos-delay={300}>
           <div className="position-relative rounded shadow overflow-hidden">
             <img
-              src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}why-choose-goldstar.jpeg`}
+              src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}why-choose-goldstar.webp`}
               className="img-fluid rounded w-100"
               alt="Professional moving team"
             />

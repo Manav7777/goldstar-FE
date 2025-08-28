@@ -87,6 +87,7 @@ const ServiceDetailSection = (serviceHeroSection: any) => {
                     alt="Service Illustration"
                     className="img-fluid rounded-4 shadow-lg"
                     style={{ transition: "transform 0.3s ease-in-out" }}
+                    loading="lazy"
                   />
                 </div>
               </div>

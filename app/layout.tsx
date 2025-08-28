@@ -14,6 +14,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "leaflet/dist/leaflet.css";
 import FloatingWhatsAppButton from "@/components/ui/FloatingWhatsAppButton";
+import Loader from "@/components/ui/loader/Loader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -48,15 +49,7 @@ export default async function RootLayout({
         <NewHeader />
         <Suspense
           fallback={
-            <div
-              style={{
-                background: "#000",
-                width: "100vw",
-                height: "100vh",
-              }}
-            >
-              Loading...
-            </div>
+            <Loader/>
           }
         >
           <AnimationAos>{children}</AnimationAos>
