@@ -11,7 +11,7 @@ const ProcessSteps = () => {
                 decoding="async"
                 src={
                   process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL +
-                  "process-svgs/paper-pen-svgrepo-com.svg"
+                  "/images/process-svgs/paper-pen-svgrepo-com.svg"
                 }
                 alt="book-appointment"
                 width={55}
@@ -38,7 +38,7 @@ const ProcessSteps = () => {
                 decoding="async"
                 src={
                   process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL +
-                  "process-svgs/box-open-svgrepo-com.svg"
+                  "/images/process-svgs/box-open-svgrepo-com.svg"
                 }
                 alt="Pack Your Good"
                 width={55}
@@ -65,7 +65,7 @@ const ProcessSteps = () => {
                 decoding="async"
                 src={
                   process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL +
-                  "process-svgs/truck-loading-svgrepo-com.svg"
+                  "/images/process-svgs/truck-loading-svgrepo-com.svg"
                 }
                 alt="Safe Loading"
                 width={55}
@@ -92,7 +92,7 @@ const ProcessSteps = () => {
                 decoding="async"
                 src={
                   process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL +
-                  "process-svgs/truck-speed-svgrepo-com.svg"
+                  "/images/process-svgs/truck-speed-svgrepo-com.svg"
                 }
                 alt="Safe Delivery"
                 width={55}

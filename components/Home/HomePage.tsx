@@ -7,35 +7,35 @@ const slides = [
   {
     id: 1,
     image:
-      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}banner.png`,
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/banner.png`,
     title: "Experienced and Professional Movers",
     subtitle: "Professional movers who handle your belongings with respect.",
   },
   {
     id: 2,
     image:
-      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}why-choose-goldstar.jpeg`,
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/why-choose-goldstar.jpeg`,
     title: "Your Trust, Our Promise",
     subtitle: "Delivering excellence with every move, every time",
   },
   {
     id: 3,
     image:
-      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}effortless-allocation.png`,
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/effortless-allocation.png`,
     title: "Effortless Relocations",
     subtitle: "Making your journey to a new beginning extraordinary",
   },
   {
     id: 4,
     image:
-      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}junk-removal-banner.jpeg`,
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/junk-removal-banner.jpeg`,
     title: "Junk Gone, Peace On",
     subtitle: "Reliable junk removal with eco-friendly disposal.",
   },
   {
     id: 5,
     image:
-      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}demolition-service.jpeg`,
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/demolition-service.jpeg`,
     title: "Professional Demolition Services",
     subtitle: "From small interior jobs to large-scale projects – we demolish with precision.",
   }

@@ -12,7 +12,7 @@ const GoldStarServices = () => {
         "Whether you're moving across town or across the state, our residential moving services ensure your household items arrive safely at your new home.",
       badgeText: "Most Popular",
       imageSrc:
-        `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/residential-moving.webp`,
+        `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/services/residential-moving.webp`,
       imageAlt: "Residential moving service",
       price: "Fast, Reliable Home Moving Services.",
       buttonText: "Request Now",
@@ -34,7 +34,7 @@ const GoldStarServices = () => {
         "Our commercial relocation experts ensure your equipment, furniture, and files are moved securely and efficiently.",
       badgeText: "Business Focused",
       imageSrc:
-        `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/commercial-moving.webp`,
+        `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/services/commercial-moving.webp`,
       imageAlt: "Office moving service",
       price: "Office Moves With Zero Downtime.",
       buttonText: "Request Now",
@@ -53,7 +53,7 @@ const GoldStarServices = () => {
       description:
         "Declutter your space with our eco-friendly junk removal services. We donate, recycle, and dispose of items responsibly.",
       badgeText: null,
-      imageSrc: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/junk-removal-service.webp`,
+      imageSrc: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/services/junk-removal-service.webp`,
       imageAlt: "Junk Removal service",
       price: "Hassle-Free Junk and Trash Removal.",
       buttonText: "Request Now",
@@ -75,7 +75,7 @@ const GoldStarServices = () => {
         "Moving to a different state? Our cross-country moving services provide reliable transportation and tracking for long-distance relocations.",
       badgeText: null,
       imageSrc:
-        `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/cross-country-moving.webp`,
+        `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/services/cross-country-moving.webp`,
       imageAlt: "Cross-country Moving",
       price: "Long-Distance Moving Made Easy.",
       buttonText: "Request Now",
@@ -96,7 +96,7 @@ const GoldStarServices = () => {
         "Need to move over 100 km or to a different province? GoldStar Packers and Movers offers expert long-distance moving solutions across Canada, tailored for stress-free, affordable relocations with full tracking, insurance, and support.",
       badgeText: null,
       imageSrc:
-        `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}services/long-distance-moving.webp`,
+        `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/services/long-distance-moving.webp`,
       imageAlt:
         "GoldStar moving truck on a Canadian highway during long-distance move",
       price: "Long-Distance Movers Across Canada",
@@ -119,7 +119,7 @@ const GoldStarServices = () => {
       "GoldStar Demolition offers expert demolition services for residential, commercial, and industrial projects. We handle everything from full structural teardowns to selective interior demolition with complete safety, compliance, and efficiency. Trust our team for secure, on-time, and on-budget demolition services across Canada.",
     badgeText: null,
     imageSrc:
-      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}demolition-service.jpeg`,
+      `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/demolition-service.jpeg`,
     imageAlt:
       "GoldStar team performing a demolition job on a commercial building site",
     price: "Expert Demolition Services Nationwide",

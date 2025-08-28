@@ -56,13 +56,13 @@ const ClientRatings = () => {
               What our <span className="text-primary h3">Customers</span> Says
             </h3>
             <img
-              src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}google-five-star-ratting.png`}
+              src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/google-five-star-ratting.png`}
               alt="google-five-star-ratting"
               className="img-fluid"
               width={100}
             />
             <img
-              src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}statisfaction.png`}
+              src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/statisfaction.png`}
               alt="statisfaction"
               className="img-fluid mt-2"
               width={120}
