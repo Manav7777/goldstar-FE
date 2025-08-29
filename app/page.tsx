@@ -10,7 +10,6 @@ const LastMomentDelivery = lazy(() => import('../components/last-moment-delivery
 export default function MainScreen() {
   return (
     <div className="">
-      <Loader />
       <Suspense fallback={<Loader/>}>
         <HomePage />
         <ServicesCard/>
