@@ -16,17 +16,18 @@ export const goldStarMenus = [
         url: "/services/residential-moving-service",
       },
       { id: 5, name: "Commercial", url: "/services/commercial-moving-service" },
+          {
+        id: 7,
+        name: "Long-Distance",
+        url: "/services/long-distance-moving-service",
+      },
+
       {
         id: 6,
         name: "Cross-Country",
         url: "/services/cross-country-moving-service",
       },
-      {
-        id: 7,
-        name: "Long Distance",
-        url: "/services/long-distance-moving-service",
-      },
-
+  
       {
         id: 8,
         name: "Junk Removal",
