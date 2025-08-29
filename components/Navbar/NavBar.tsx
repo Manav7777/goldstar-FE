@@ -19,7 +19,7 @@ const NavBar = () => {
                   <Link href="/" className="navbar-brand show-scroll">
                     <img
                       id="redux_logo"
-                      src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/logo.png`}
+                      src={`/images/logo.png`}
                       alt="Logo"
                     />
                   </Link>

@@ -411,7 +411,7 @@ export const residentialServiceHeroSection: any = {
   description: `Moving into a new home is a big step and at Gold Star Movers, we make sure the process is smooth, stress-free, and efficient. 
   Our residential moving services are designed to fit your needs, whether you’re moving from a small apartment, a condo, 
   or a large family house.`,
-  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/top-section-old.webp`,
+  imageUrl: `/images/top-section-old.webp`,
   buttonText: "Request Now",
   showTag: true,
   tagText: "Trusted by 1,000+ Businesses",
@@ -423,7 +423,7 @@ export const commercialServiceHeroSection: any = {
   subtitle: "Never Missing a Beat",
   description:
     "Relocating your business doesn’t have to mean downtime or stress. At Gold Star Movers, we specialize in professional commercial moving services designed to keep your operations running smoothly. Whether you’re moving a small office, a retail store, or an entire corporate facility, our team ensures a fast, efficient, and organized transition.",
-  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/services/commercial-service-new.webp`,
+  imageUrl: `/images/services/commercial-service-new.webp`,
   buttonText: "Request Now",
   showTag: true,
   tagText: "Trusted by 1,000+ Businesses",
@@ -435,7 +435,7 @@ export const junkRemovalServiceHeroSection: any = {
   subtitle: "Clean out and disposal services",
   description:
     "Clutter taking over your home, office, or job site? At Gold Star Movers, we provide fast, reliable, and affordable junk removal services. Whether it’s old furniture, appliances, renovation debris, or general household clutter, our team handles the heavy lifting so you don’t have to.",
-  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/junk-removal-banner.webp`,
+  imageUrl: `/images/junk-removal-banner.webp`,
   buttonText: "Request Now",
   showTag: true,
   tagText: "Trusted by 1,000+ Businesses",
@@ -631,7 +631,7 @@ export const crossCountryServiceHeroSection: any = {
   subtitle: "Affordable cross country moving made easy.",
   description:
     "Whether you’re moving across Canada or relocating to the United States, our team is here to make the journey smooth and stress-free. We specialize in long-distance and cross-border moving, handling every step with care — from professional packing and secure loading to customs preparation and on-time delivery.",
-  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/cross-country-service-cards.webp`,
+  imageUrl: `/images/cross-country-service-cards.webp`,
   buttonText: "Request Now",
   showTag: true,
   tagText: "Trusted by 1,000+ Businesses",
@@ -760,7 +760,7 @@ export const longDistanceSectionOne: any = {
   subtitle: "Nationwide Relocation Experts",
   description:
     "Moving to a new city or province is a big step — and we’re here to make it simple. Our long-distance moving services cover all of Ontario and Quebec, ensuring your belongings are packed, loaded, and delivered with care and precision.",
-  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/long-distance-service-card.webp`,
+  imageUrl: `/images/long-distance-service-card.webp`,
   buttonText: "Get a Free Quote",
   showTag: true,
   tagText: "Serving 1,000+ Long-Distance Moves Nationwide",
@@ -845,7 +845,7 @@ export const demolitionSectionOne: any = {
   subtitle: "Residential & Commercial Demolition Across the Greater Toronto Area",
   description:
     "At Gold Star Movers, we provide safe, efficient, and professional demolition services for residential, commercial, and industrial projects. Whether you need a complete teardown or selective interior demolition, our experienced crew has the tools and expertise to get the job done right.",
-  imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/demolition-service.webp`,
+  imageUrl: `/images/demolition-service.webp`,
   buttonText: "Request a Free Demolition Quote",
   showTag: true,
   tagText: "Proudly Serving 500+ Projects Across Canadian Provinces",
@@ -932,42 +932,42 @@ export const locationService: any = {
       title: "Residential Moving",
       description:
         "Effortless relocation for homes and apartments with professional care and attention to detail.",
-      image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/residential-moving-service-card.webp`,
+      image: `/images/residential-moving-service-card.webp`,
       icon: Home,
     },
     {
       title: "Commercial Moving",
       description:
         "Seamless office and business relocations with minimal downtime and maximum efficiency.",
-      image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/commercial-moving-service.jpeg`,
+      image: `/images/commercial-moving-service.jpeg`,
       icon: Building2,
     },
     {
       title: "Cross-Country Moving",
       description:
         "Nationwide moving services from coast to coast across Canada with secure transport",
-      image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/cross-country-service-card.jpeg`,
+      image: `/images/cross-country-service-card.jpeg`,
       icon: Package,
     },
     {
       title: "Long-Distance Moving",
       description:
         "Specialized long-distance moving services with secure transport, careful handling, and timely delivery across provinces.",
-      image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/long-distance-service-card.webp`,
+      image: `/images/long-distance-service-card.webp`,
       icon: Truck,
     },
     {
       title: "Junk Removal",
       description:
         "Eco-friendly disposal and decluttering services for residential and commercial spaces.",
-      image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/junk-removal-banner.webp`,
+      image: `/images/junk-removal-banner.webp`,
       icon: Trash,
     },
     {
       title: "Demolition",
       description:
         "From small interior jobs to large-scale projects – we demolish with precision.",
-      image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/demolition-service.webp`,
+      image: `/images/demolition-service.webp`,
       icon: Wrench,
     },
   ],

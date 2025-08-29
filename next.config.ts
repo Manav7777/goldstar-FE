@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    remotePatterns: [new URL('http://localhost:3000/images/**')],
+    unoptimized: false,
   },
   typescript: {
     ignoreBuildErrors: true,

@@ -15,7 +15,7 @@ export default function NotFound() {
           <Link href="/">
             <span className="d-inline-flex align-items-center gap-3 text-decoration-none">
               <img
-                src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/logo.webp`}
+                src={`/images/logo.webp`}
                 width={200}
                 alt="goldStar-logo"
                 loading="lazy"

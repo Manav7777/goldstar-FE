@@ -49,7 +49,7 @@ const WhyChooseGoldStar = () => {
             <GsButton type="defaultPrimary" text="GET A FREE QUOTE" />
             <Link
               href="tel:2895417282"
-              className="btn btn-outline-warning fw-bold px-4 py-2 d-flex align-items-center text-dark"
+              className="btn btn-outline-warning fw-bold px-4 py-2 d-flex align-items-center justify-content-center text-dark"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ const WhyChooseGoldStar = () => {
                   data-aos-delay={300}>
           <div className="position-relative rounded shadow overflow-hidden">
             <img
-              src={`${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/why-choose-goldstar.webp`}
+              src={`/images/why-choose-goldstar.webp`}
               className="img-fluid rounded w-100"
               alt="Professional moving team"
             />

@@ -1,7 +1,14 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Button, Modal } from "react-bootstrap";
-import { Phone, Mail, MapPin, Package, CheckCircle } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Package,
+  CheckCircle,
+  CircleAlert,
+} from "lucide-react";
 
 export default function RequestQuoteForm({ open, close }: any) {
   const [formData, setFormData] = useState({
@@ -17,6 +24,8 @@ export default function RequestQuoteForm({ open, close }: any) {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [btnDisabled, setIsBtnDisabled] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(true);
 
   const movingOptions = [
     { value: "1bhk", label: "1 Bedroom" },
@@ -33,7 +42,6 @@ export default function RequestQuoteForm({ open, close }: any) {
     { value: "piano", label: "Piano Moving" },
     { value: "safe", label: "Safe Moving" },
     { value: "hot-tub moving", label: "Hot-Tub Moving" },
-
     { value: "packing/unpacking", label: "Packing/Unpacking" },
     { value: "junk-removal", label: "Junk Removal" },
     { value: "demolition", label: "Demolition" },
@@ -41,7 +49,7 @@ export default function RequestQuoteForm({ open, close }: any) {
 
   useEffect(() => {
     resetForm();
-  },[open])
+  }, [open]);
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prev) => ({
@@ -53,16 +61,24 @@ export default function RequestQuoteForm({ open, close }: any) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsBtnDisabled(true);
+    setIsLoading(true);
     try {
       const response = await submitQuote(formData);
       if (response.ok) {
         setIsSubmitted(true);
         setIsBtnDisabled(false);
+        setIsLoading(false);
       } else {
         console.error("Error submitting the quote:", response.statusText);
+        setIsBtnDisabled(false);
+        setIsLoading(false);
+        setIsError(true);
       }
     } catch (error) {
       console.error("Error occurred while submitting the quote:", error);
+      setIsBtnDisabled(false);
+      setIsLoading(false);
+      setIsError(true);
     }
   };
 
@@ -78,7 +94,10 @@ export default function RequestQuoteForm({ open, close }: any) {
     form.append("to", formData.to);
     form.append("moveDate", formData.moveDate);
     form.append("additionalInfo", formData.additionalInfo);
-
+return {
+  ok: true,
+  statusText: ""
+}
     const response = await fetch(`${apiUrl}/api/request-quote`, {
       method: "POST",
       body: form, // Send FormData directly
@@ -89,6 +108,9 @@ export default function RequestQuoteForm({ open, close }: any) {
 
   const resetForm = () => {
     setIsSubmitted(false);
+    setIsBtnDisabled(false);
+    setIsLoading(false);
+    setIsError(false);
     setFormData({
       fullname: "",
       email: "",
@@ -132,175 +154,206 @@ export default function RequestQuoteForm({ open, close }: any) {
             </Button>
           </div>
         ) : (
-          <form onSubmit={handleSubmit}>
-            {/* Contact Information */}
-            <div className="mb-4">
-              <h6 className="d-flex align-items-center text-dark mb-3">
-                <Phone className="me-2 text-warning wi-18" />
-                Contact Information
-              </h6>
-              <div className="row">
-                <div className="col-md-6 mb-3">
-                  <label htmlFor="modal-name" className="form-label">
-                    Full Name *
-                  </label>
-                  <input
-                    id="modal-name"
-                    type="text"
-                    placeholder="Enter your full name"
-                    value={formData.fullname}
-                    onChange={(e) =>
-                      handleInputChange("fullname", e.target.value)
-                    }
-                    required
-                    className="form-control"
-                  />
+          <>
+            {isError ? (
+              <div className="text-center py-5">
+                <div className="bg-danger rounded-circle d-inline-flex align-items-center justify-content-center p-3 mb-4">
+                  <CircleAlert className="text-white" size={40} />
                 </div>
-                <div className="col-md-6 mb-3">
-                  <label htmlFor="modal-phone" className="form-label">
-                    Mobile Number *
-                  </label>
-                  <input
-                    id="modal-phone"
-                    type="tel"
-                    placeholder="(xxx) xxx-xxxx"
-                    value={formData.phone}
-                    onChange={(e) => handleInputChange("phone", e.target.value)}
-                    required
-                    className="form-control"
-                  />
+                <h3 className="h4 text-danger mb-3">Something went wrong while submit quote!</h3>
+                <Button
+                  onClick={resetForm}
+                  className="btn btn-dark fw-semibold"
+                >
+                  Submit Another Request
+                </Button>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit}>
+                {/* Contact Information */}
+                <div className="mb-4">
+                  <h6 className="d-flex align-items-center text-dark mb-3">
+                    <Phone className="me-2 text-warning wi-18" />
+                    Contact Information
+                  </h6>
+                  <div className="row">
+                    <div className="col-md-6 mb-3">
+                      <label htmlFor="modal-name" className="form-label">
+                        Full Name *
+                      </label>
+                      <input
+                        id="modal-name"
+                        type="text"
+                        placeholder="Enter your full name"
+                        value={formData.fullname}
+                        onChange={(e) =>
+                          handleInputChange("fullname", e.target.value)
+                        }
+                        required
+                        className="form-control"
+                      />
+                    </div>
+                    <div className="col-md-6 mb-3">
+                      <label htmlFor="modal-phone" className="form-label">
+                        Mobile Number *
+                      </label>
+                      <input
+                        id="modal-phone"
+                        type="tel"
+                        placeholder="(xxx) xxx-xxxx"
+                        value={formData.phone}
+                        onChange={(e) =>
+                          handleInputChange("phone", e.target.value)
+                        }
+                        required
+                        className="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div className="mb-3">
+                    <label htmlFor="modal-email" className="form-label">
+                      Email Address *
+                    </label>
+                    <input
+                      id="modal-email"
+                      type="email"
+                      placeholder="Enter your email address"
+                      value={formData.email}
+                      onChange={(e) =>
+                        handleInputChange("email", e.target.value)
+                      }
+                      required
+                      className="form-control"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="mb-3">
-                <label htmlFor="modal-email" className="form-label">
-                  Email Address *
-                </label>
-                <input
-                  id="modal-email"
-                  type="email"
-                  placeholder="Enter your email address"
-                  value={formData.email}
-                  onChange={(e) => handleInputChange("email", e.target.value)}
-                  required
-                  className="form-control"
-                />
-              </div>
-            </div>
 
-            {/* Moving Details */}
-            <div className="mb-4 border-top pt-4">
-              <h6 className="d-flex align-items-center text-dark mb-3">
-                <Package className="me-2 text-warning wi-18" />
-                Service Details
-              </h6>
-              <div className="row">
-                <div className="col-md-6 mb-3">
-                  <label className="form-label">Type of Service *</label>
-                  <select
-                    className="form-select gold-star-select"
-                    value={formData.typeService}
-                    onChange={(e) =>
-                      handleInputChange("typeService", e.target.value)
-                    }
-                    required
+                {/* Moving Details */}
+                <div className="mb-4 border-top pt-4">
+                  <h6 className="d-flex align-items-center text-dark mb-3">
+                    <Package className="me-2 text-warning wi-18" />
+                    Service Details
+                  </h6>
+                  <div className="row">
+                    <div className="col-md-6 mb-3">
+                      <label className="form-label">Type of Service *</label>
+                      <select
+                        className="form-select gold-star-select"
+                        value={formData.typeService}
+                        onChange={(e) =>
+                          handleInputChange("typeService", e.target.value)
+                        }
+                        required
+                      >
+                        <option value="">Select your Service type</option>
+                        {movingOptions.map((option) => (
+                          <option key={option.value} value={option.value}>
+                            {option.label}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                    <div className="col-md-6 mb-3">
+                      <label htmlFor="modal-moveDate" className="form-label">
+                        Preferred Service Date
+                      </label>
+                      <input
+                        id="modal-moveDate"
+                        type="date"
+                        value={formData.moveDate}
+                        onChange={(e) =>
+                          handleInputChange("moveDate", e.target.value)
+                        }
+                        className="form-control"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Addresses */}
+                <div className="mb-4 border-top pt-4">
+                  <h6 className="d-flex align-items-center text-dark mb-3">
+                    <MapPin className="me-2 text-warning wi-18" />
+                    Service Locations
+                  </h6>
+                  <div className="row">
+                    <div className="col-md-6 mb-3">
+                      <label
+                        htmlFor="modal-originAddress"
+                        className="form-label"
+                      >
+                        From *
+                      </label>
+                      <textarea
+                        id="modal-originAddress"
+                        value={formData.from}
+                        onChange={(e) =>
+                          handleInputChange("from", e.target.value)
+                        }
+                        required
+                        rows={2}
+                        className="form-control"
+                      />
+                    </div>
+                    <div className="col-md-6 mb-3">
+                      <label
+                        htmlFor="modal-destinationAddress"
+                        className="form-label"
+                      >
+                        To
+                      </label>
+                      <textarea
+                        id="modal-destinationAddress"
+                        value={formData.to}
+                        onChange={(e) =>
+                          handleInputChange("to", e.target.value)
+                        }
+                        rows={2}
+                        className="form-control"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Additional Information */}
+                <div className="mb-4 border-top pt-4">
+                  <h6 className="d-flex align-items-center text-dark mb-3">
+                    <Mail className="me-2 text-warning wi-18" />
+                    Additional Information
+                  </h6>
+                  <div className="mb-3">
+                    <label
+                      htmlFor="modal-additionalInfo"
+                      className="form-label"
+                    >
+                      Tell Us More About Your Project?
+                    </label>
+                    <textarea
+                      id="modal-additionalInfo"
+                      value={formData.additionalInfo}
+                      onChange={(e) =>
+                        handleInputChange("additionalInfo", e.target.value)
+                      }
+                      rows={3}
+                      className="form-control"
+                    />
+                  </div>
+                </div>
+
+                {/* Submit Button */}
+                <div className="text-center mt-4">
+                  <Button
+                    type="submit"
+                    disabled={btnDisabled}
+                    variant="warning"
+                    className="fw-semibold"
                   >
-                    <option value="">Select your Service type</option>
-                    {movingOptions.map((option) => (
-                      <option key={option.value} value={option.value}>
-                        {option.label}
-                      </option>
-                    ))}
-                  </select>
+                    {isLoading ? "Sending..." : "Get Your Free Estimate"}
+                  </Button>
                 </div>
-                <div className="col-md-6 mb-3">
-                  <label htmlFor="modal-moveDate" className="form-label">
-                    Preferred Service Date
-                  </label>
-                  <input
-                    id="modal-moveDate"
-                    type="date"
-                    value={formData.moveDate}
-                    onChange={(e) =>
-                      handleInputChange("moveDate", e.target.value)
-                    }
-                    className="form-control"
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Addresses */}
-            <div className="mb-4 border-top pt-4">
-              <h6 className="d-flex align-items-center text-dark mb-3">
-                <MapPin className="me-2 text-warning wi-18" />
-                Service Locations
-              </h6>
-              <div className="row">
-                <div className="col-md-6 mb-3">
-                  <label htmlFor="modal-originAddress" className="form-label">
-                    From *
-                  </label>
-                  <textarea
-                    id="modal-originAddress"
-                    value={formData.from}
-                    onChange={(e) => handleInputChange("from", e.target.value)}
-                    required
-                    rows={2}
-                    className="form-control"
-                  />
-                </div>
-                <div className="col-md-6 mb-3">
-                  <label
-                    htmlFor="modal-destinationAddress"
-                    className="form-label"
-                  >
-                    To
-                  </label>
-                  <textarea
-                    id="modal-destinationAddress"
-                    value={formData.to}
-                    onChange={(e) => handleInputChange("to", e.target.value)}
-                    rows={2}
-                    className="form-control"
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Additional Information */}
-            <div className="mb-4 border-top pt-4">
-              <h6 className="d-flex align-items-center text-dark mb-3">
-                <Mail className="me-2 text-warning wi-18" />
-                Additional Information
-              </h6>
-              <div className="mb-3">
-                <label htmlFor="modal-additionalInfo" className="form-label">
-                  Tell us more about your Services (Optional)
-                </label>
-                <textarea
-                  id="modal-additionalInfo"
-                  value={formData.additionalInfo}
-                  onChange={(e) =>
-                    handleInputChange("additionalInfo", e.target.value)
-                  }
-                  rows={3}
-                  className="form-control"
-                />
-              </div>
-            </div>
-
-            {/* Submit Button */}
-            <div className="text-center mt-4">
-              <Button
-                type="submit"
-                disabled={btnDisabled}
-                variant="warning"
-                className="fw-semibold"
-              >
-                Get My Quote
-              </Button>
-            </div>
-          </form>
+              </form>
+            )}
+          </>
         )}
       </Modal.Body>
     </Modal>
