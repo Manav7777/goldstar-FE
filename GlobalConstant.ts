@@ -628,9 +628,9 @@ export const junkRemovalMovingEfforts: any = {
 export const crossCountryServiceHeroSection: any = {
   title: "Your Journey",
   highlightedTitle: "Our Mission.",
-  subtitle: "Long-distance moves made easy",
+  subtitle: "Affordable cross country moving made easy.",
   description:
-    "Experience seamless long-distance relocations with our premium cross-country moving services. From coast to coast, we ensure your belongings travel safely with real-time tracking and comprehensive protection.",
+    "Whether you’re moving across Canada or relocating to the United States, our team is here to make the journey smooth and stress-free. We specialize in long-distance and cross-border moving, handling every step with care — from professional packing and secure loading to customs preparation and on-time delivery.",
   imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/cross-country-service-cards.webp`,
   buttonText: "Request Now",
   showTag: true,
@@ -639,33 +639,33 @@ export const crossCountryServiceHeroSection: any = {
 
 export const crossCountryServicesPerfectMove: any = [
   {
-    title: "Free Consultation & Estimate",
-    desc: "We provide a clear, upfront quote tailored to your move across the country.",
+    title: "Personalized Consultation",
+    desc: "We start by understanding your moving needs, timeline, and destination.",
     icon: sanitizeSvg(realTimeTrackIcon()),
   },
   {
-    title: "Customized Moving Plan",
-    desc: "A step-by-step plan designed around your timeline, distance, and special requirements.",
+    title: "Custom Moving Plan",
+    desc: "Our team designs a clear strategy for packing, labor, and coordination.",
     icon: sanitizeSvg(guardIcon()),
   },
   {
-    title: "Professional Packing & Protection",
-    desc: "We carefully wrap, box, and secure your belongings for long-distance travel.",
+    title: "Expert Packing & Protection",
+    desc: "Every item is carefully wrapped, packed, and prepared for the long journey.",
     icon: sanitizeSvg(usersIcons()),
   },
   {
-    title: "Safe Loading & Handling",
-    desc: "Express, standard, and economy delivery options to match your timeline and budget requirements.",
+    title: "Professional Loading",
+    desc: "Our movers skillfully load your belongings into your chosen container or rental truck, maximizing space and safety.",
     icon: sanitizeSvg(clockIcon()),
   },
   {
-    title: "Progress Updates & Support",
-    desc: "You receive real-time communication and dedicated support throughout the entire journey.",
+    title: "Unloading & Placement",
+    desc: "At your new home, we unload and set everything exactly where you need it.",
     icon: sanitizeSvg(MapPinIcon()),
   },
   {
-    title: "Unloading & Setup",
-    desc: "At your new home or office, we reassemble furniture and set up your space so you can settle in quickly.",
+    title: "Final Check & Ongoing Support",
+    desc: "We review the move with you to ensure satisfaction and provide follow-up support if needed.",
     icon: sanitizeSvg(truckIcon()),
   },
 ];
@@ -676,33 +676,33 @@ export const crossCountryMovingEfforts: any = {
   description: `Our proven process ensures every move is executed flawlessly, on time, and within budget.`,
   data: [
     {
-      title: "Distance Planning",
+      title: "Tailored Moving Strategy",
       description:
-        "Comprehensive long-distance consultation with route optimization and timeline coordination.",
+        "Every business is unique. We create a customized relocation plan that minimizes downtime and keeps your operations running smoothly.",
       icon: sanitizeSvg(distanceIcon()),
       bgColor: "bg-blue-50",
       textColor: "text-blue",
     },
     {
-      title: "Logistics Coordination",
+      title: "Professional Packing & Handling",
       description:
-        "Detailed scheduling with pickup, transit, and delivery windows customized to your needs.",
+        "From office furniture and equipment to sensitive files, our team ensures everything is securely packed and protected.",
       icon: sanitizeSvg(usersIcons()),
       bgColor: "bg-purple-50",
       textColor: "text-purple",
     },
     {
-      title: "Secure Transit",
+      title: "Efficient Execution",
       description:
-        "Professional loading with GPS monitoring and climate-controlled transport options available.",
+        "Skilled movers handle the heavy lifting, loading, and unloading with precision and speed — saving your team time and effort.",
       icon: sanitizeSvg(guardIcon()),
       bgColor: "bg-red-50",
       textColor: "text-red",
     },
     {
-      title: "Destination Service",
+      title: "Seamless Setup & Support",
       description:
-        "White-glove delivery and setup at your new location with final inventory verification.",
+        "We place everything exactly where it belongs, review the move with you, and provide ongoing support to ensure a smooth transition.",
       icon: sanitizeSvg(MapPinIcon()),
       bgColor: "bg-green-50",
       textColor: "text-green",
@@ -759,7 +759,7 @@ export const longDistanceSectionOne: any = {
   highlightedTitle: "Handled with Care.",
   subtitle: "Nationwide Relocation Experts",
   description:
-    "Moving across the province, to another city, or even across the country? At Gold Star Movers, we make long-distance moving simple, safe, and stress-free. With years of experience and a trusted team of professional movers, we handle every detail so you can enjoy the journey to your new home or business location.",
+    "Moving to a new city or province is a big step — and we’re here to make it simple. Our long-distance moving services cover all of Ontario and Quebec, ensuring your belongings are packed, loaded, and delivered with care and precision.",
   imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/long-distance-service-card.webp`,
   buttonText: "Get a Free Quote",
   showTag: true,
@@ -768,33 +768,33 @@ export const longDistanceSectionOne: any = {
 
 export const longDistanceSectionTwo: any = [
   {
-    title: "Free Consultation & Estimate",
-    desc: "We provide a clear, no-obligation quote tailored to your moving needs.",
+    title: "Initial Consultation & Estimate",
+    desc: "We start with a detailed discussion of your move and provide a clear, upfront quote tailored to your needs.",
     icon: sanitizeSvg(distanceIcon()),
   },
   {
     title: "Customized Moving Plan",
-    desc: "A detailed timeline and strategy designed to make your long-distance relocation smooth and stress-free.",
+    desc: "A step-by-step plan is designed to cover packing, loading, and delivery — ensuring nothing is overlooked.",
     icon: sanitizeSvg(realTimeTrackIcon()),
   },
   {
     title: "Professional Packing & Protection",
-    desc: "Your belongings are carefully wrapped, boxed, and protected with high-quality materials.",
+    desc: "Our team carefully wraps, packs, and secures your belongings, including fragile or oversized items, for long travel.",
     icon: sanitizeSvg(guardIcon()),
   },
   {
-    title: "Safe Loading & Handling",
-    desc: "Our movers expertly handle heavy items, furniture, and fragile belongings with care.",
+    title: "Skilled Loading",
+    desc: "Movers maximize space and safety by loading your items into the container or the truck with precision.",
     icon: sanitizeSvg(MapPinIcon()),
   },
   {
-    title: "Communication & Tracking",
-    desc: "You stay informed with updates and direct support throughout the journey for peace of mind.",
+    title: "Delivery & Unloading",
+    desc: "At your destination, we unload everything efficiently and place items exactly where you need them.",
     icon: sanitizeSvg(truckIcon()),
   },
   {
-    title: "Unloading & Setup",
-    desc: "We unpack, reassemble, and place your furniture so you can settle into your new space quickly.",
+    title: "Final Walkthrough & Support",
+    desc: "We check everything with you, ensure your satisfaction, and remain available for any follow-up assistance.",
     icon: sanitizeSvg(clockIcon()),
   },
 ];
@@ -805,33 +805,33 @@ export const longDistanceSectionThree: any = {
   description: `Our proven process ensures every move is executed flawlessly, on time, and within budget.`,
   data: [
     {
-      title: "Distance Planning",
+      title: "Strategic Planning",
       description:
-        "Comprehensive long-distance consultation with route optimization and timeline coordination.",
+        "We design a detailed moving plan that minimizes downtime and ensures your business continues to run smoothly.",
       icon: sanitizeSvg(distanceIcon()),
       bgColor: "bg-blue-50",
       textColor: "text-blue",
     },
     {
-      title: "Logistics Coordination",
+      title: "Expert Packing & Handling",
       description:
-        "Detailed scheduling with pickup, transit, and delivery windows customized to your needs.",
+        "Office furniture, electronics, and sensitive equipment are carefully packed and protected for long-distance travel.",
       icon: sanitizeSvg(usersIcons()),
       bgColor: "bg-purple-50",
       textColor: "text-purple",
     },
     {
-      title: "Secure Transit",
+      title: "Efficient Execution",
       description:
-        "Professional loading with GPS monitoring and climate-controlled transport options available.",
+        "Our experienced movers handle every detail of loading and unloading with speed, precision, and professionalism.",
       icon: sanitizeSvg(guardIcon()),
       bgColor: "bg-red-50",
       textColor: "text-red",
     },
     {
-      title: "Destination Service",
+      title: "Seamless Setup & Ongoing Support",
       description:
-        "White-glove delivery and setup at your new location with final inventory verification.",
+        "We place everything exactly where it’s needed, review the move with you, and provide post-move assistance for a stress-free transition.",
       icon: sanitizeSvg(MapPinIcon()),
       bgColor: "bg-green-50",
       textColor: "text-green",
@@ -842,7 +842,7 @@ export const longDistanceSectionThree: any = {
 export const demolitionSectionOne: any = {
   title: "Professional",
   highlightedTitle: "Demolition Services.",
-  subtitle: "Residential & Commercial Demolition Across Canada",
+  subtitle: "Residential & Commercial Demolition Across the Greater Toronto Area",
   description:
     "At Gold Star Movers, we provide safe, efficient, and professional demolition services for residential, commercial, and industrial projects. Whether you need a complete teardown or selective interior demolition, our experienced crew has the tools and expertise to get the job done right.",
   imageUrl: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/demolition-service.webp`,
@@ -854,7 +854,7 @@ export const demolitionSectionOne: any = {
 export const demolitionSectionTwo: any = [
   {
     title: "Free Site Assessment",
-    desc: "We inspect the property and understand your demolition requirements.",
+    desc: "We inspect the property and discuss your demolition requirements in detail.",
     icon: sanitizeSvg(buildingIcon()),
   },
   {
@@ -863,13 +863,13 @@ export const demolitionSectionTwo: any = [
     icon: sanitizeSvg(toolboxIcon()),
   },
   {
-    title: "Permits & Safety Prep",
-    desc: "We handle required permits and prepare the site with safety measures.",
+    title: "Professional Preparation",
+    desc: "Our crew prepares the site for demolition, ensuring safety and efficiency from the start.",
     icon: sanitizeSvg(guardIcon()),
   },
   {
-    title: "Professional Demolition",
-    desc: "Our crew executes the demolition efficiently using the right tools and techniques.",
+    title: "Expert Demolition",
+    desc: "Using the right tools and techniques, our team carries out the demolition with precision.",
     icon: sanitizeSvg(cleanUpIcon()),
   },
   {
