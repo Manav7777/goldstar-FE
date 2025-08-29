@@ -46,7 +46,7 @@ const WhyChooseGoldStar = () => {
             ))}
           </ul>
           <div className="d-flex flex-column flex-sm-row gap-3">
-            <GsButton type="defaultPrimary" text="Get A Free Quote" />
+            <GsButton type="defaultPrimary" text="Get a Free Quote" />
             <Link
               href="tel:2895417282"
               className="btn btn-outline-warning fw-bold px-4 py-2 d-flex align-items-center text-dark"
