@@ -249,7 +249,7 @@ export default function RequestQuoteForm({ open, close }: any) {
               </h6>
               <div className="mb-3">
                 <label htmlFor="modal-additionalInfo" className="form-label">
-                  Tell us more about your move (Optional)
+                  Tell Us More About Your Project?
                 </label>
                 <textarea
                   id="modal-additionalInfo"
@@ -276,7 +276,7 @@ export default function RequestQuoteForm({ open, close }: any) {
             {/* Submit Button */}
             <div className="text-center mt-4">
               <Button type="submit" variant="warning" className="fw-semibold" disabled={isLoading}>
-                {isLoading ? "Sending..." : "Get My Quote"}
+                {isLoading ? "Sending..." : "Get Your Free Estimate"}
               </Button>
             </div>
           </form>
