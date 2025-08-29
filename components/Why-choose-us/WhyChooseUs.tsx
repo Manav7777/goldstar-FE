@@ -44,7 +44,6 @@ const WhyChooseUs = () => {
           <div className="col-lg-6 col-md-12 col-sm-12" data-aos="zoom-in" data-aos-duration="500">
             <img
               src={
-                process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL +
                 "/images/why-choose-goldstar.webp"
               }
               alt={"why-choose-goldstar-movers"}

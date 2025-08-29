@@ -54,3 +54,10 @@
 .breadcrumb ul li:last-child::after {
     display: none;
 }
+
+
+@media screen and (max-width: 767px) {
+  .main-top-section {
+    background-position: 90%;
+  }
+}

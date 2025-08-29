@@ -226,7 +226,7 @@ const Footer = () => {
             <hr />
             <div className="col-md-6 col-sm-12">
               {" "}
-              © 2021 Gold Star Movers. All Rights Reserved.
+              © 2025 Gold Star Movers. All Rights Reserved.
             </div>
             <div className="col-md-6 col-sm-12">
               {" "}
