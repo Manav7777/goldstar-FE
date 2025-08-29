@@ -93,12 +93,12 @@ export const footersLinks = [
   },
   {
     id: 8,
-    menu: "Long Distance Service",
+    menu: "Long-Distance Service",
     url: "/services/cross-country-service",
   },
   {
     id: 9,
-    menu: "Cross Country Service",
+    menu: "Cross-Country Service",
     url: "/services/cross-country-moving-service",
   },
   {
