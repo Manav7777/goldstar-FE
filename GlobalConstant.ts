@@ -943,14 +943,14 @@ export const locationService: any = {
       icon: Building2,
     },
     {
-      title: "Cross Country Service",
+      title: "Cross-Country Moving",
       description:
         "Nationwide moving services from coast to coast across Canada with secure transport",
       image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/cross-country-service-card.jpeg`,
       icon: Package,
     },
     {
-      title: "Long Distance Moving",
+      title: "Long-Distance Moving",
       description:
         "Specialized long-distance moving services with secure transport, careful handling, and timely delivery across provinces.",
       image: `${process.env.NEXT_PUBLIC_IMAGE_SERVICE_URL}/images/long-distance-service-card.webp`,
