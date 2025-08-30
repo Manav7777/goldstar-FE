@@ -2,7 +2,7 @@ import styles from "./WhyChooseUs.module.css";
 const WhyChooseUs = () => {
   return (
     <>
-      <h2 className="text-center">WHY CHOOSE US</h2>
+      <h2 className="text-center">WHY TO CHOOSE US</h2>
       <div className="container">
         <div className="row p-3 mt-3">
           <div className="col-lg-6 col-md-12 col-sm-12" data-aos="zoom-in" data-aos-duration="500">
