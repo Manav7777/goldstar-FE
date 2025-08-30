@@ -122,7 +122,7 @@ export default function NewHeader() {
           <div className="mt-3">
             <GsButton
               type="defaultPrimary"
-              text={"Get Free Quote"}
+              text={"GET A FREE QUOTE"}
               className={"w-100"}
             />
           </div>
