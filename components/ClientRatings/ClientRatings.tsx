@@ -88,6 +88,13 @@ const ClientRatings = () => {
               className="img-fluid mt-2"
               width={120}
             />
+            
+            <img
+              src={`/images/award-winner-2025.png`}
+              alt="winner"
+              className="img-fluid mt-3"
+              width={80}
+            />
           </div>
           <div className="col-lg-9 col-md-12 col-sm-12">
             <div
