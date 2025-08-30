@@ -101,7 +101,7 @@ export default function NotFound() {
               <p className="text-muted small">Toronto, ON</p>
             </div>
           </div>
-          <GsButton type={'primaryClass'} text="Get Free Quote Now"/>
+          <GsButton type={'primaryClass'} text="GET A FREE QUOTE NOW"/>
         </div>
       </div>
     </div>
