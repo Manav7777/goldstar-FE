@@ -5,6 +5,8 @@ import GsButton from "@/components/ui/GsButton";
 import MovingEfforts from "@/components/services/moving-efforts/MovingEfforts";
 import { aboutLists, aboutUsSteps } from "@/GlobalConstant";
 import TrustUs from "@/components/why-trust-us/TrustUs";
+import Image from "next/image";
+import AwardSection from "@/components/award/AwardSection";
 
 const About = () => {
   return (
@@ -88,7 +90,51 @@ const About = () => {
             </div>
           </div>
         </div>
+        {/* <div className="row">
+          <h2 className="h2 text-uppercase text-center mb-5">
+            Our <span className="text-primary">Award-Winning</span> Commitment
+          </h2>
+          <div className="col-md-7 col-sm-12">
+            <p data-aos="fade-up" data-aos-delay="200">
+              We are proud to announce that <span className="text-primary">Gold Star Movers</span> has been awarded
+              the Canadian Choice <span className="text-primary">
+                Award for Best Moving Company in Mississauga
+              2025!
+              </span>
+            </p>
+            <p data-aos="fade-up" data-aos-delay="300">
+              This marks the third year in a row that we’ve earned this
+              incredible recognition, and it’s all thanks to our amazing
+              customers who continue to trust us with their moves.
+            </p>
+            <p data-aos="fade-up" data-aos-delay="400">
+              Consistency, reliability, and dedication are at the heart of what
+              we do and being recognized three years straight proves that our
+              commitment to excellence never wavers.
+            </p>
+            <p data-aos="fade-up" data-aos-delay="500">
+              Thank you, Mississauga, for making us your top choice year after
+              year. Here’s to many more moves together!
+            </p>
+          </div>
+          <div
+            className="col-md-5 col-sm-12 about-us-image"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            style={{ aspectRatio: "3 / 3" }}
+          >
+            <Image
+              src={`/images/goldStar-award.webp`}
+              alt="Service Illustration"
+              fill
+              className="img-fluid object-fit-cover rounded-4"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              loading="lazy"
+            />
+          </div>
+        </div> */}
         <div className="row">
+          <AwardSection />
           <MovingEfforts residentialMovingEfforts={aboutUsSteps} />
         </div>
       </div>
