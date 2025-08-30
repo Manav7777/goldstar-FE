@@ -4,7 +4,7 @@ const sanitizeSvg = (svg: string) => svg.replace(/className=/g, "class=");
 
 export const goldStarMenus = [
   { id: 1, name: "Home", url: "/" },
-  { id: 2, name: "About", url: "/about" },
+  { id: 2, name: "About Us", url: "/about" },
   {
     id: 3,
     name: "Services",
