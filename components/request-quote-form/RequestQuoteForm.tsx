@@ -326,7 +326,7 @@ return {
                       htmlFor="modal-additionalInfo"
                       className="form-label"
                     >
-                      Tell Us More About Your Project?
+                      Describe your service needs (optional)
                     </label>
                     <textarea
                       id="modal-additionalInfo"
