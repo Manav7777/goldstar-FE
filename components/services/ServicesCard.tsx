@@ -110,7 +110,7 @@ const ServicesCard = () => {
           href={"/contact"}
           className="btn btn-outline-warning btn-lg d-inline-flex align-items-center gap-2"
         >
-          Get Free Quote
+          GET A FREE QUOTE
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
