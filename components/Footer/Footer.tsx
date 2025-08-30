@@ -167,7 +167,7 @@ const Footer = () => {
                     href="/contact"
                     className="text-gray-300 text-decoration-none"
                   >
-                    Contact
+                    Contact Us
                   </Link>
                 </li>
               </ul>
