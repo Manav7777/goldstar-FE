@@ -18,14 +18,14 @@ const services: any = [
     link: "/services/commercial-moving-service",
   },
   {
-    title: "Long Distance Moving",
+    title: "Long-Distance Moving",
     description:
       "Specialized long-distance moving services with secure transport, careful handling, and timely delivery across provinces",
     image: "/images/long-distance-service-card.webp",
     link: "/services/long-distance-moving-service",
   },
   {
-    title: "Cross Country",
+    title: "Cross-Country Moving",
     description:
       "Nationwide moving services from coast to coast across Canada with secure transport",
     image: "/images/cross-country-service-cards.webp",
@@ -39,7 +39,7 @@ const services: any = [
     link: "/services/junk-removal-moving-service",
   },
   {
-    title: "Demolition",
+    title: "Demolition Service",
     description:
       "From small interior jobs to large-scale projects – we demolish with precision.",
     image: "/images/demolition-service.webp",
