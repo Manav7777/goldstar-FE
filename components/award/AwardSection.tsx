@@ -82,7 +82,7 @@ const AwardSection: FC = () => {
           <div className="position-relative d-inline-block">
             <div className="position-absolute top-0 start-0 w-100 h-100 rounded" />
             <Image
-              src="/images/goldstar-award.webp"
+              src="/images/goldStar-award.webp"
               alt="Gold Star Movers Award"
               width={400}
               height={400}
